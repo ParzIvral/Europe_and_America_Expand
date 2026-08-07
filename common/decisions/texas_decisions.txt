@@ -1,0 +1,341 @@
+TXS_texcos_politics_decisions = {#
+#德士古
+    TXS_texcos_decision_Stock_price_manipulation = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 14
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Stock_price_manipulation"
+			add_to_variable = { TXS_TEXACOS = 5  }
+			custom_effect_tooltip = TXS_texcos_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_texcos_decision_infiltrate_council = { #
+		cost = 25
+		days_remove = 7  
+		days_re_enable = 21
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_infiltrate_council"
+			add_to_variable = { TXS_TEXACOS = -15  }
+			add_to_variable = { TXS_FORD = -10  }
+			add_to_variable = { TXS_USS = -10  }
+			add_to_variable = { TXS_DUPONT = -10 }
+			add_to_variable = { TXS_BOEING = -10  }
+			custom_effect_tooltip = TXS_texcos_decision_infiltrate_council_tt
+		}
+    }
+	TXS_texcos_decision_Embezzling_small_businesses = { #
+		cost = 30
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Embezzling_small_businesses"
+			add_to_variable = { TXS_TEXACOS = 10  }
+			custom_effect_tooltip = TXS_texcos_decision_Embezzling_small_businesses_tt
+		}
+    }
+	TXS_texcos_decision_Revised_financial_statement = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 21
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Revised_financial_statement"
+			add_to_variable = { TXS_TEXACOS = 5  }
+			custom_effect_tooltip = TXS_texcos_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_texcos_decision_Buy_off_executives = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 21
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Buy_off_executives"
+			add_to_variable = { TXS_TEXACOS = 7.5  }
+			custom_effect_tooltip = TXS_texcos_decision_Buy_off_executives_tt
+		}
+    }
+	TXS_texcos_decision_Survey_New_England = { #
+		cost = 30
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Survey_New_England"
+			add_to_variable = { TXS_TEXACOS = -5 }
+			add_to_variable = { TXS_DUPONT = -10 }
+			custom_effect_tooltip = TXS_texcos_decision_Survey_New_England_tt
+		}
+    }
+	TXS_texcos_decision_Seized_mine = { #
+		cost = 30
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Seized_mine"
+			add_to_variable = { TXS_TEXACOS = -5 }
+			add_to_variable = { TXS_USS = -10 }
+			custom_effect_tooltip = TXS_texcos_decision_Seized_mine_tt
+		}
+    }
+	TXS_texcos_decision_Disrupt_supply_chain = { #
+		cost = 30
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Disrupt_supply_chain"
+			add_to_variable = { TXS_TEXACOS = -5 }
+			add_to_variable = { TXS_FORD = -10 }
+			custom_effect_tooltip = TXS_texcos_decision_Disrupt_supply_chain_tt
+		}
+    }
+	TXS_texcos_decision_Cause_aviation_accident = { #
+		cost = 30
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = TEXCOS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_texcos_decision_Cause_aviation_accident"
+			add_to_variable = { TXS_TEXACOS = -5 }
+			add_to_variable = { TXS_BOEING = -10 }
+			custom_effect_tooltip = TXS_texcos_decision_Cause_aviation_accident_tt
+		}
+    }
+#福特
+ 	TXS_ford_decision_Stock_price_manipulation = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = FORD_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_ford_decision_Stock_price_manipulation"
+			add_to_variable = { TXS_FORD = 5  }
+			custom_effect_tooltip = TXS_ford_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_ford_decision_Embezzling_small_businesses = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = FORD_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_ford_decision_Embezzling_small_businesses"
+			add_to_variable = { TXS_FORD = 7.5  }
+			custom_effect_tooltip = TXS_ford_decision_Embezzling_small_businesses_tt
+		}
+    }
+	TXS_ford_decision_Revised_financial_statement = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = FORD_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_ford_decision_Revised_financial_statement"
+			add_to_variable = { TXS_FORD = 5  }
+			custom_effect_tooltip = TXS_ford_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_ford_decision_Buy_off_executives = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = FORD_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_ford_decision_Buy_off_executives"
+			add_to_variable = { TXS_FORD = 7.5  }
+			custom_effect_tooltip = TXS_ford_decision_Buy_off_executives_tt
+		}
+    }
+#杜邦
+ 	TXS_dupont_decision_Stock_price_manipulation = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = DUPONT_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_dupont_decision_Stock_price_manipulation"
+			add_to_variable = { TXS_DUPONT = 5  }
+			custom_effect_tooltip = TXS_dupont_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_dupont_decision_Embezzling_small_businesses = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = DUPONT_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_dupont_decision_Embezzling_small_businesses"
+			add_to_variable = { TXS_DUPONT = 7.5  }
+			custom_effect_tooltip = TXS_dupont_decision_Embezzling_small_businesses_tt
+		}
+    }
+	TXS_dupont_decision_Revised_financial_statement = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = DUPONT_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_dupont_decision_Revised_financial_statement"
+			add_to_variable = { TXS_DUPONT = 5  }
+			custom_effect_tooltip = TXS_dupont_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_dupont_decision_Buy_off_executives = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = DUPONT_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_dupont_decision_Buy_off_executives"
+			add_to_variable = { TXS_DUPONT = 7.5  }
+			custom_effect_tooltip = TXS_dupont_decision_Buy_off_executives_tt
+		}
+    }
+#美国钢铁
+ 	TXS_uss_decision_Stock_price_manipulation = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = USS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_uss_decision_Stock_price_manipulation"
+			add_to_variable = { TXS_USS = 5  }
+			custom_effect_tooltip = TXS_uss_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_uss_decision_Embezzling_small_businesses = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = USS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_uss_decision_Embezzling_small_businesses"
+			add_to_variable = { TXS_USS = 7.5  }
+			custom_effect_tooltip = TXS_uss_decision_Embezzling_small_businesses_tt
+		}
+    }
+	TXS_uss_decision_Revised_financial_statement = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = USS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_uss_decision_Revised_financial_statement"
+			add_to_variable = { TXS_USS = 5  }
+			custom_effect_tooltip = TXS_uss_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_uss_decision_Buy_off_executives = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = USS_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_uss_decision_Buy_off_executives"
+			add_to_variable = { TXS_USS = 7.5  }
+			custom_effect_tooltip = TXS_uss_decision_Buy_off_executives_tt
+		}
+    }
+#波音
+ 	TXS_boeing_decision_Stock_price_manipulation = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = BOEING_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_boeing_decision_Stock_price_manipulation"
+			add_to_variable = { TXS_BOEING = 5  }
+			custom_effect_tooltip = TXS_boeing_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_boeing_decision_Embezzling_small_businesses = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = BOEING_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_boeing_decision_Embezzling_small_businesses"
+			add_to_variable = { TXS_BOEING = 7.5  }
+			custom_effect_tooltip = TXS_boeing_decision_Embezzling_small_businesses_tt
+		}
+    }
+	TXS_boeing_decision_Revised_financial_statement = { #
+		cost = 20
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = BOEING_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_boeing_decision_Revised_financial_statement"
+			add_to_variable = { TXS_BOEING = 5  }
+			custom_effect_tooltip = TXS_boeing_decision_Stock_price_manipulation_tt
+		}
+    }
+	TXS_boeing_decision_Buy_off_executives = { #
+		cost = 50
+		days_remove = 3
+		days_re_enable = 30
+		visible = {
+			has_country_flag = BOEING_OPEN
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision TXS_boeing_decision_Buy_off_executives"
+			add_to_variable = { TXS_BOEING = 7.5  }
+			custom_effect_tooltip = TXS_boeing_decision_Buy_off_executives_tt
+		}
+    }
+}
+
