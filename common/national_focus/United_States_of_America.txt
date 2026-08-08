@@ -23800,13 +23800,13 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_necessity_of_being_guided"
 			if = {
 				limit = {
-					country_exists = GBR
-					GBR = {
+					country_exists = GBP
+					GBP = {
 						is_subject_of = ROOT
 						controls_state = 126
 					}
 				}
-				GBR = {
+				GBP = {
 					USA_britain_consolidate_us_puppet_britain = yes
 					USA_britain_install_lee_government = yes
 				}
