@@ -22919,6 +22919,11 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Re-delineate_the_boundaries_of_oceans"
+			custom_effect_tooltip = USA_Re-delineate_the_boundaries_of_oceans_tt
+			add_to_variable = { USA_Trade_in_Alliance_speed_dockyard = 0.1 }
+			add_to_variable = { USA_Trade_in_Alliance_repair_speed = 0.15 }
+			add_to_variable = { USA_Trade_in_Alliance_navy_max_range = 0.15 }
+			add_to_variable = { USA_Trade_in_Alliance_sortie_efficiency = 0.1 }
 		}
 	}
 
@@ -22985,7 +22990,7 @@ focus_tree = {
 	focus = {#共赴科学时代
 		id = USA_Jointly_embark_on_the_era_of_science
 		icon = GFX_USA_Jointly_embark_on_the_era_of_science
-		cost = 5.00
+		cost = 2.00
 		available = {
 		}
 		prerequisite = {

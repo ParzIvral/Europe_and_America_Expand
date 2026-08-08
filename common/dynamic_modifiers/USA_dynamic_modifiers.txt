@@ -265,6 +265,11 @@ USA_Trade_in_Alliance_modifier = {
 	production_speed_fuel_silo_factor = USA_NRA_production_speed_fuel_silo_factor						#储油罐建设速度
 	fuel_gain_factor = USA_NRA_fuel_gain_factor											#从石油获得的燃油 £fuel_gain_oil_texticon
 	factory_energy_consumption = USA_NRA_factory_energy_consumption						#工厂能源消耗 
+	
+	production_speed_dockyard_factor = USA_Trade_in_Alliance_speed_dockyard				#海军船坞建造速度
+	repair_speed_factor = USA_Trade_in_Alliance_repair_speed							#舰船修理速度
+	navy_max_range_factor = USA_Trade_in_Alliance_navy_max_range						#海军最大航程参数
+	sortie_efficiency = USA_Trade_in_Alliance_sortie_efficiency							#出击效率
 }
 
 USA_syndicalist_modifier = {
