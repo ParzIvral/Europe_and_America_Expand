@@ -22387,6 +22387,10 @@ focus_tree = {
 		icon = GFX_USA_The_World_Two_Pole_Conference
 		cost = 5.00
 		available = {
+			RUS = {
+				has_socialist_government = no
+				is_subject = no
+			}
 		}
 		prerequisite = {
 			focus = USA_The_New_Colonial_Era
@@ -22410,6 +22414,16 @@ focus_tree = {
 		icon = GFX_USA_The_iron_curtain_fell
 		cost = 5.00
 		available = {
+			OR = {
+				country_exists = SOV
+				AND = {
+					country_exists = RUS
+					RUS = {
+						has_socialist_government = no
+						is_subject = no
+					}
+				}
+			}
 		}
 		prerequisite = {
 			focus = USA_In_the_vast_expanse_of_ice_and_snow
@@ -22826,6 +22840,12 @@ focus_tree = {
 		icon = GFX_USA_Two_eagles_standing 
 		cost = 1
 		available = {
+			NOT = {
+				is_in_faction_with = CAN
+			}
+		}
+		bypass = {
+			is_in_faction_with = GER
 		}
 		prerequisite = {
 			focus = USA_From_the_New_World
@@ -23037,6 +23057,12 @@ focus_tree = {
 		icon = GFX_USA_Entente_Friends
 		cost = 1
 		available = {
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+		bypass = {
+			is_in_faction_with = CAN
 		}
 		prerequisite = {
 			focus = USA_From_the_New_World
@@ -23518,6 +23544,12 @@ focus_tree = {
 		icon = GFX_USA_European_Conquest
 		cost = 1
 		available = {
+			NOT = {
+				is_in_faction_with = GER
+			}
+			NOT = {
+				is_in_faction_with = CAN
+			}
 		}
 		prerequisite = {
 			focus = USA_From_the_New_World
@@ -23600,7 +23632,6 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = USA_Spread_our_kindness_everywhere
-			focus = USA_trade_window_with_Central_European_Union
 		}
 		relative_position_id = USA_Spread_our_kindness_everywhere
 		ai_will_do = {
@@ -28012,7 +28043,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_the_beautiful_pacific"
-			country_event = ustates.3182
+			country_event = USA.979
 			add_political_power = 50
 		}
 	}

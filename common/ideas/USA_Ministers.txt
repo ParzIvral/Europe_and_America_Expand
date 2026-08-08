@@ -2117,6 +2117,25 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		USA_Alfred_Mitchell_Bingham_eco_rso = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			picture = USA_Alfred_Mitchell_Bingham_eco_rso
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Alfred_Mitchell_Bingham_eco_rso"
+			}
+			traits = {
+				economy_minister
+				rs_pp
+				eco_planned_economy_proponent
+			}
+			cancel_if_invalid = no
+		}
 		USA_John_Gates_eco_rso = { #约翰·盖茨
 			allowed = { original_tag = USA }
 			available = {
@@ -3853,6 +3872,25 @@ ideas = {
 			traits = {
 				security_minister
 				paternal_autocrat
+				sec_prince_of_terror
+			}
+			cancel_if_invalid = no
+		}
+		USA_Elizabeth_Eloise_Kirkpatrick_Dilling_sec_npo = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			picture = COR_Elizabeth_Eloise_Kirkpatrick_Dilling_sec_npo
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Elizabeth_Eloise_Kirkpatrick_Dilling_sec_npo"
+			}
+			traits = {
+				security_minister
+				np_npp
 				sec_prince_of_terror
 			}
 			cancel_if_invalid = no

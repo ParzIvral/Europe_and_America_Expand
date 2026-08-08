@@ -22142,7 +22142,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_progressive_primary_robert
-			
+			set_country_flag = USA_has_nominated_PRO_1948
 		}
 		option = { #提名格伦·泰勒
 			name = USA.709.b
@@ -22162,7 +22162,8 @@ add_namespace = usanew
 					NOT = { has_country_flag = USA_PRO_win_1944_election }
 				}
 			}
-			set_country_flag = USA_1948_progressive_primary_taylor			
+			set_country_flag = USA_1948_progressive_primary_taylor		
+			set_country_flag = USA_has_nominated_PRO_1948	
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.709.c
@@ -22200,6 +22201,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1948_progressive_primary_Roosevelt
 			}
+			set_country_flag = USA_has_nominated_PRO_1948
 		}
 	}
 	country_event = { # 年共和党初选
@@ -22294,6 +22296,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_republican_primary_Dewey
+			set_country_flag = USA_has_nominated_GOP_1948
 		}		
 		option = { #提名厄尔·沃伦
 			name = USA.710.b
@@ -22315,6 +22318,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_republican_primary_warren			
+			set_country_flag = USA_has_nominated_GOP_1948
 		}
 		option = {
 			name = USA.710.c
@@ -22336,6 +22340,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_republican_primary_rooseveltII
+			set_country_flag = USA_has_nominated_GOP_1948
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.710.e
@@ -22383,6 +22388,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1948_republican_primary_Rockefeller
 			}	
+			set_country_flag = USA_has_nominated_GOP_1948
 		}
 	}
 	country_event = { # 年民主党初选
@@ -22477,6 +22483,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_democrat_primary_truman
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 		option = { #提名威廉·埃夫里尔·哈里曼
 			name = USA.711.b
@@ -22499,6 +22506,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_democrat_primary_harriman
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 		option = { #提名萨姆·雷伯恩
 			name = USA.711.c
@@ -22521,6 +22529,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_democratic_primary_rayburn
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 		option = { #提名詹姆斯·斯图尔特
 			name = USA.711.e
@@ -22544,6 +22553,7 @@ add_namespace = usanew
 				has_country_flag = USA_Slippin_Jimmy
 			}
 			set_country_flag = USA_1948_democratic_primary_stewart			
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 		option = { #提名斯特罗姆·瑟蒙德
 			name = USA.711.f
@@ -22566,6 +22576,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_democratic_primary_thurmond
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.711.g
@@ -22614,6 +22625,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1948_conservative_democratic_primary_thurmond
 			}	
+			set_country_flag = USA_has_nominated_DEM_1948
 		}
 	}
 	country_event = { # 年平民党初选
@@ -22710,6 +22722,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1948_PP_primary_robert
 			}
+			set_country_flag = USA_has_nominated_PP_1948
 		}
 		
 		option = { #提名厄尔·白劳德
@@ -22730,6 +22743,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_PP_primary_browder
+			set_country_flag = USA_has_nominated_PP_1948
 		}
 		
 		option = { #提名山姆·德威特
@@ -22750,6 +22764,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_PP_primary_dewitt
+			set_country_flag = USA_has_nominated_PP_1948
 		}
 		
 		option = { #提名亨利·华莱士。
@@ -22770,6 +22785,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_PP_primary_wallace
+			set_country_flag = USA_has_nominated_PP_1948
 		}
 		
 		option = { #提名小罗伯特·M·拉福莱特
@@ -22790,6 +22806,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1948_PP_primary_robert
+			set_country_flag = USA_has_nominated_PP_1948
 		}
 	}
 	country_event = { # 年国家人民党初选
@@ -22891,6 +22908,7 @@ add_namespace = usanew
 			}
 			name = USA.713.b
 			set_country_flag =USA_1948_NPP_primary_russell
+			set_country_flag = USA_has_nominated_NPP_1948
 		}
 		
 		option = { # Samuel Green
@@ -22907,6 +22925,7 @@ add_namespace = usanew
 			}
 			name = USA.713.c
 			set_country_flag = USA_1948_NPP_primary_green
+			set_country_flag = USA_has_nominated_NPP_1948
 		}
 		
 		option = { #提名斯特罗姆·瑟蒙德。
@@ -22923,6 +22942,7 @@ add_namespace = usanew
 				}
 			}		
 			set_country_flag = USA_1948_NPP_primary_thurmond
+			set_country_flag = USA_has_nominated_NPP_1948
 		}
 		
 		option = { # Charles Lindbergh
@@ -22939,6 +22959,7 @@ add_namespace = usanew
 			}
 			name = USA.713.f
 			set_country_flag = USA_1948_NPP_primary_lindbergh
+			set_country_flag = USA_has_nominated_NPP_1948
 		}
 	}
 	country_event = { # 年总统大选
@@ -22981,6 +23002,7 @@ add_namespace = usanew
 				NOT  = {
 					has_country_flag = USA_deadlock_garner
 				}
+				has_country_flag = USA_has_nominated_PRO_1948
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_PRO_win_1948_election
@@ -23081,6 +23103,7 @@ add_namespace = usanew
 				NOT  = {
 					has_country_flag = USA_deadlock_garner
 				}
+				has_country_flag = USA_has_nominated_GOP_1948
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_GOP_win_1948_election	
@@ -23224,6 +23247,7 @@ add_namespace = usanew
 				NOT  = {
 					has_country_flag = USA_deadlock_norris
 				}
+				has_country_flag = USA_has_nominated_DEM_1948
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_DEM_win_1948_election
@@ -23420,6 +23444,7 @@ add_namespace = usanew
 			trigger = {
 				has_country_flag = USA_deadlock_garner
 				has_global_flag = USA_civil_war_avoided_flag
+				has_country_flag = USA_has_nominated_PP_1948
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_1948_election_PP_victory
@@ -23593,6 +23618,7 @@ add_namespace = usanew
 			trigger = {
 				has_country_flag = USA_deadlock_norris
 				has_global_flag = USA_civil_war_avoided_flag
+				has_country_flag = USA_has_nominated_NPP_1948
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_1948_election_NPP_victory
@@ -23919,6 +23945,7 @@ add_namespace = usanew
 				NOT = { has_country_flag = USA_President_LaFollette_1944_flag }
 			}
 			set_country_flag = USA_1952_progressive_primary_folette
+			set_country_flag = USA_has_nominated_PRO_1952
 		}
 		option = { #提名格伦·H·泰勒
 			name = USA.715.b
@@ -23931,6 +23958,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1952_progressive_primary_taylor			
+			set_country_flag = USA_has_nominated_PRO_1952
 		}
 		option = { #提名阿尔弗雷德·米切尔·宾厄姆
 			name = USA.715.c
@@ -23940,7 +23968,8 @@ add_namespace = usanew
 				}
 				has_country_flag = USA_NPP_dominance
 			}
-			set_country_flag = USA_1952_progressive_primary_bingham			
+			set_country_flag = USA_1952_progressive_primary_bingham		
+			set_country_flag = USA_has_nominated_PRO_1952	
 		}
 		option = { #提名达灵顿·胡普斯
 			name = USA.715.e
@@ -23952,7 +23981,8 @@ add_namespace = usanew
 					has_country_flag = USA_PRO_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_progressive_primary_hoopes			
+			set_country_flag = USA_1952_progressive_primary_hoopes		
+			set_country_flag = USA_has_nominated_PRO_1952	
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.715.f
@@ -23962,7 +23992,8 @@ add_namespace = usanew
 					has_country_flag = USA_PRO_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_progressive_primary_president			
+			set_country_flag = USA_1952_progressive_primary_president	
+			set_country_flag = USA_has_nominated_PRO_1952		
 		}
 		option = { #提名罗纳德·里根
 			name = USA.715.g
@@ -23975,7 +24006,8 @@ add_namespace = usanew
 					has_country_flag = USA_NORRIS_PRES
 				}
 			}
-			set_country_flag = USA_1952_progressive_primary_reagan			
+			set_country_flag = USA_1952_progressive_primary_reagan		
+			set_country_flag = USA_has_nominated_PRO_1952	
 		}
 	}
 	country_event = { # 年共和党初选
@@ -24051,6 +24083,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1952_republican_primary_bricker		
+			set_country_flag = USA_has_nominated_GOP_1952
 		}
 		option = { #提名哈罗德·史塔生
 			name = USA.716.b
@@ -24063,6 +24096,7 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_1952_republican_primary_stassen			
+			set_country_flag = USA_has_nominated_GOP_1952
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.716.c
@@ -24072,7 +24106,8 @@ add_namespace = usanew
 					has_country_flag = USA_GOP_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_republican_primary_president			
+			set_country_flag = USA_1952_republican_primary_president	
+			set_country_flag = USA_has_nominated_GOP_1952		
 		}
 	}
 	country_event = { # 年民主党初选
@@ -24152,7 +24187,8 @@ add_namespace = usanew
 					has_global_flag = TXS_Ike_is_in_Texas
 				}
 			}
-			set_country_flag = USA_1952_liberal_primary_eisenhower			
+			set_country_flag = USA_1952_liberal_primary_eisenhower	
+			set_country_flag = USA_has_nominated_DEM_1952		
 		}
 		option = { #提名阿德莱·史蒂文森
 			name = USA.717.b
@@ -24164,7 +24200,8 @@ add_namespace = usanew
 					has_country_flag = USA_DEM_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_liberal_primary_stevenson			
+			set_country_flag = USA_1952_liberal_primary_stevenson		
+			set_country_flag = USA_has_nominated_DEM_1952	
 		}
 		option = { #提名约翰·斯帕克曼
 			name = USA.717.c
@@ -24176,7 +24213,8 @@ add_namespace = usanew
 					has_country_flag = USA_DEM_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_conservative_primary_sparkman			
+			set_country_flag = USA_1952_conservative_primary_sparkman	
+			set_country_flag = USA_has_nominated_DEM_1952		
 		}
 		option = { #提名詹姆斯·伊斯特兰
 			name = USA.717.e
@@ -24188,7 +24226,8 @@ add_namespace = usanew
 					has_country_flag = USA_DEM_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_conservative_primary_eastland			
+			set_country_flag = USA_1952_conservative_primary_eastland	
+			set_country_flag = USA_has_nominated_DEM_1952		
 		}
 		option = { #再提名[USA.GetLeader]
 			name = USA.717.f
@@ -24198,7 +24237,8 @@ add_namespace = usanew
 					has_country_flag = USA_DEM_win_1944_election
 				}
 			}
-			set_country_flag = USA_1952_liberal_primary_president			
+			set_country_flag = USA_1952_liberal_primary_president	
+			set_country_flag = USA_has_nominated_DEM_1952		
 		}
 	}
 	country_event = { # 年平民党初选
@@ -24346,6 +24386,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1952_PP_primary_philip
 			}
+			set_country_flag = USA_has_nominated_PP_1952
 		}
 		
 		option = { #提名格斯·霍尔
@@ -24362,6 +24403,7 @@ add_namespace = usanew
 					ideology = radsoc_communism_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_PP_1952
 		}
 		
 		option = { #提名达灵顿·胡普斯
@@ -24384,6 +24426,7 @@ add_namespace = usanew
 					ideology = quaker_socialism_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_PP_1952
 		}
 		
 		option = { #提名格伦·泰勒
@@ -24406,6 +24449,7 @@ add_namespace = usanew
 					ideology = socdem_humanistic_capitalism_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_PP_1952
 		}
 		
 		option = { #提名大吉姆·福尔瑟姆
@@ -24422,6 +24466,7 @@ add_namespace = usanew
 					ideology = georgism_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_PP_1952
 		}
 	}
 	country_event = { # 年国家人民党初选
@@ -24585,6 +24630,7 @@ add_namespace = usanew
 				}
 				set_country_flag = USA_1952_NPP_primary_thurmond
 			}
+			set_country_flag = USA_has_nominated_NPP_1952
 		}
 		option = { # Richard Russel Jr.
 			trigger = {
@@ -24609,6 +24655,7 @@ add_namespace = usanew
 					ideology = dixiecrat_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_NPP_1952
 		}
 		
 		option = { #提名弗朗西斯·帕克·约基
@@ -24625,6 +24672,7 @@ add_namespace = usanew
 					ideology = klan_nationalism_subtype
 				}
 			}
+			set_country_flag = USA_has_nominated_NPP_1952
 		}
 		
 		option = { #提名斯特罗姆·瑟蒙德。
@@ -24655,6 +24703,7 @@ add_namespace = usanew
 						name = NPP_authoritarian_democrat_southerner
 				}
 			}
+			set_country_flag = USA_has_nominated_NPP_1952
 		}
 		
 		option = { #提名查尔斯·林德伯格
@@ -24683,6 +24732,7 @@ add_namespace = usanew
 						name = NPP_paternal_autocrat_coalition
 				}
 			}
+			set_country_flag = USA_has_nominated_NPP_1952
 		}
 	}
 	country_event = { # 年总统大选
@@ -24722,38 +24772,14 @@ add_namespace = usanew
 		option = { #进步党
 			name = USA.720.a
 			trigger = {
-				OR = {
-					has_country_flag = USA_progressives_exist
-					has_country_flag = USA_cincinnatus_election_progressive
-					has_country_flag = USA_cincinnatus_election_lib_democrat
-					has_country_flag = USA_cincinnatus_election_lib_republican
-					has_country_flag = USA_cincinnatus_election_con_republican
-					has_country_flag = USA_CAL_president_elected_1940
-					has_country_flag = USA_CAL_president_elected_1944
+				has_country_flag = USA_progressives_exist
+				NOT  = {
+					has_country_flag = USA_deadlock_garner
 				}
-				OR = {
-					has_country_flag = USA_1952_progressive_primary_folette
-					has_country_flag = USA_1952_progressive_primary_taylor
-					has_country_flag = USA_1952_progressive_primary_hoopes
-					has_country_flag = USA_1952_progressive_primary_bingham
-					has_country_flag = USA_1952_progressive_primary_reagan
-					has_country_flag = USA_1952_progressive_primary_president
-				}
+				has_country_flag = USA_has_nominated_PRO_1952
 			}
 			set_country_flag = USA_had_1952_election
-			hidden_effect = {
-				set_country_flag = USA_1952_election_progressive
-				if = {
-					limit = { 
-						OR = {
-							has_government = radical_socialist
-							has_government = social_democrat
-						}
-						NOT = { has_country_flag = CAL_social_democrats_win_twice_flag } 
-					}
-					set_country_flag = CAL_social_democrats_win_twice_flag
-				}
-			}
+			set_country_flag = USA_PRO_win_1952_election
 			hidden_effect = {
 				if = { # Philip La Follette
 					limit = {
@@ -24873,9 +24899,9 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Sam_DeWitt_veep_rso
-					add_ideas = CSA_Max_Eastman_for_rso
-					add_ideas = CSA_John_Gates_eco_rso
-					add_ideas = TEX_Paul_Douglas_sec_rso
+					add_ideas = USA_Max_Eastman_for_rso #马克斯·伊斯门
+					add_ideas = USA_John_Gates_eco_rso  #约翰·盖茨
+					add_ideas = USA_Paul_Douglas_sec_rso #保罗·道格拉斯
 					set_country_flag = USA_1952_election_progressive_hoopes
 				}
 				if = { # Alfred Mitchell Bingham
@@ -24884,9 +24910,9 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Norman_Thomas_veep_rso
-					add_ideas = TEX_Gerald_Nye_for_rso
-					add_ideas = TEX_Alfred_Mitchell_Bingham_eco_rso
-					add_ideas = TEX_Paul_Douglas_sec_rso
+					add_ideas = USA_Gerald_Nye_for_rso #杰拉尔德·奈
+					add_ideas = USA_Alfred_Mitchell_Bingham_eco_rso
+					add_ideas = USA_Paul_Douglas_sec_rso #保罗·道格拉斯
 					set_country_flag = USA_1952_election_progressive_bingham
 				}
 				if = { # Reagan
@@ -24894,7 +24920,7 @@ add_namespace = usanew
 						has_country_flag = USA_1952_progressive_primary_reagan
 					}
 					remove_all_ministers = yes
-					add_ideas = USA_Quentin_Roosevelt_veep_sli
+					add_ideas = USA_Quentin_Roosevelt_veep_sde
 					add_ideas = USA_Hjalmar_Petersen_eco_sde
 					add_ideas = USA_Hjalmar_Petersen_eco_sde
 					add_ideas = USA_Konrad_Knute_Solberg_sec_sde
@@ -24905,20 +24931,17 @@ add_namespace = usanew
 		option = { #共和党
 			name = USA.720.b
 			trigger = {
-				OR = {
-					has_country_flag = USA_1952_republican_primary_bricker
-					has_country_flag = USA_1952_republican_primary_stassen
-					has_country_flag = USA_1952_republican_primary_president
+				has_country_flag = USA_republicans_exist
+				NOT  = {
+					has_country_flag = USA_deadlock_norris
 				}
+				NOT  = {
+					has_country_flag = USA_deadlock_garner
+				}
+				has_country_flag = USA_has_nominated_GOP_1952
 			}
 			set_country_flag = USA_had_1952_election
-			hidden_effect = {
-				set_country_flag = USA_1952_election_republican
-				if = {
-				limit = { has_government = social_liberal NOT = { has_country_flag = CAL_liberals_won_twice_flag } }
-				set_country_flag = CAL_liberals_won_twice_flag
-				}
-			}
+			set_country_flag = USA_GOP_win_1952_election	
 			hidden_effect = {
 				if = { # John W. Bricker
 					limit = {
@@ -24948,15 +24971,6 @@ add_namespace = usanew
 				ideology = social_liberal
 				popularity = 0.20
 			}
-			if = {
-				limit = { has_country_flag = USA_dems_are_soclib }
-				set_party_name = {
-					ideology = social_liberal
-					long_name = USA_social_liberal_party_long
-					name = USA_social_liberal_party 
-				}
-				clr_country_flag = USA_dems_are_soclib
-			}
 			hidden_effect = {
 				if = { # John W. Bricker
 					limit = {
@@ -24980,31 +24994,29 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #[libdem_name]党
+		option = { #民主党
 			name = USA.720.c
 			trigger = {
-				OR = {
-					has_country_flag = USA_1952_liberal_primary_eisenhower
-					has_country_flag = USA_1952_liberal_primary_stevenson
-					has_country_flag = USA_1952_liberal_primary_president
+				has_country_flag = USA_democrats_exist
+				NOT  = {
+					has_country_flag = USA_deadlock_norris
 				}
+				has_country_flag = USA_has_nominated_DEM_1952
 			}
 			set_country_flag = USA_had_1952_election
-			hidden_effect = {
-				set_country_flag = USA_1952_election_liberal
-				if = {
-				limit = { has_government = market_liberal NOT = { has_country_flag = CAL_republicans_win_twice } }
-				set_country_flag = CAL_republicans_win_twice
-				}
-			}
+			set_country_flag = USA_DEM_win_1952_election
 			hidden_effect = {	
 				if = { # Dwight D. Eisenhower
 					limit = {
 						has_country_flag = USA_1952_liberal_primary_eisenhower
 					}
-					promote_character = {
-						character = USA_Dwight_D_Eisenhower
-						ideology = progressive_democracy_subtype
+					USA_Dwight_D_Eisenhower = {
+						add_country_leader_role = {
+							country_leader = {
+								ideology = progressive_democracy_subtype
+							}
+							promote_leader = yes
+						}
 					}
 				}
 				if = { # Adlai Stevenson
@@ -25016,57 +25028,32 @@ add_namespace = usanew
 						ideology = marlib_centrist_subtype
 					}
 				}
+				if = { # John Sparkman
+					limit = {
+						has_country_flag = USA_1952_conservative_primary_sparkman
+					}
+					promote_character = {
+						character = USA_John_Sparkman
+						ideology = dixiecrat_subtype
+					}
+				}
+				if = { # James Eastland
+					limit = {
+						has_country_flag = USA_1952_conservative_primary_eastland
+					}
+					promote_character = {
+						character = USA_James_Eastland
+						ideology = dixiecrat_subtype
+					}
+				}
 			}
 			if = {
 				limit = {
-					AND = {
-						has_government = social_liberal
-						OR = {
-							has_country_flag = USA_1952_liberal_primary_stevenson
-							has_country_flag = USA_1952_liberal_primary_president
-							has_country_leader = {
-								name = "Adlai Stevenson"
-								ruling_only = yes
-							}
-							has_country_leader = {
-								name = "Alben W. Barkley"
-								ruling_only = yes
-							}
-							has_country_leader = {
-								name = "Al Smith"
-								ruling_only = yes
-							}
-							has_country_leader = {
-								name = "Scott W. Lucas"
-								ruling_only = yes
-							}
-						}
-					}
+					OR = {
+						has_country_flag = USA_1952_liberal_primary_stevenson
+						has_country_flag = USA_1952_liberal_primary_eisenhower
+					}					
 				}
-				set_politics = {
-					ruling_party = social_liberal
-					election_frequency = 48
-					elections_allowed = yes
-				}
-				add_popularity = {
-					ideology = social_liberal
-					popularity = 0.20
-				}
-				if = {
-					limit = { NOT = { has_country_flag = USA_dems_are_soclib } }
-					set_party_name = {
-						ideology = social_liberal
-						long_name = USA_social_liberal_dem_party_long
-						name = USA_social_liberal_dem_party 
-					}
-					set_country_flag = USA_dems_are_soclib
-				}
-				if = {
-					limit = { has_government = social_liberal NOT = { has_country_flag = CAL_liberals_won_twice_flag } }
-					set_country_flag = CAL_liberals_won_twice_flag
-				}
-			}
-			else = {
 				set_politics = {
 					ruling_party = market_liberal
 					election_frequency = 48
@@ -25074,6 +25061,23 @@ add_namespace = usanew
 				}
 				add_popularity = {
 					ideology = market_liberal
+					popularity = 0.20
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_country_flag = USA_1952_conservative_primary_sparkman
+						has_country_flag = USA_1952_conservative_primary_eastland
+					}					
+				}
+				set_politics = {
+					ruling_party = social_conservative
+					election_frequency = 48
+					elections_allowed = yes
+				}
+				add_popularity = {
+					ideology = social_conservative
 					popularity = 0.20
 				}
 			}
@@ -25098,54 +25102,6 @@ add_namespace = usanew
 					add_ideas = USA_Daniel_Calhoun_Roper_eco_sco
 					add_ideas = USA_Robert_Ferdinand_Wagner_I_sec_sde
 				}
-			}
-		}
-		option = { #[condem_name]党
-			name = USA.720.e
-			trigger = {
-				OR = {
-					has_country_flag = USA_1952_conservative_primary_sparkman
-					has_country_flag = USA_1952_conservative_primary_eastland
-				}
-			}
-			set_country_flag = USA_had_1952_election
-			hidden_effect = {
-				set_country_flag = USA_1952_election_conservative
-				if = {
-				limit = { has_government = social_conservative NOT = { has_country_flag = CAL_democrats_won_twice_flag } }
-				set_country_flag = CAL_democrats_won_twice_flag
-				}
-			}
-			hidden_effect = {
-				if = { # John Sparkman
-					limit = {
-						has_country_flag = USA_1952_conservative_primary_sparkman
-					}
-					promote_character = {
-						character = USA_John_Sparkman
-						ideology = dixiecrat_subtype
-					}
-				}
-				if = { # James Eastland
-					limit = {
-						has_country_flag = USA_1952_conservative_primary_eastland
-					}
-					promote_character = {
-						character = USA_James_Eastland
-						ideology = dixiecrat_subtype
-					}
-				}
-			}
-			set_politics = {
-				ruling_party = social_conservative
-				election_frequency = 48
-				elections_allowed = yes
-			}
-			add_popularity = {
-				ideology = social_conservative
-				popularity = 0.20
-			}
-			hidden_effect = {
 				if = { # John Sparkman
 					limit = {
 						has_country_flag = USA_1952_conservative_primary_sparkman
@@ -25171,25 +25127,12 @@ add_namespace = usanew
 		option = { #平民党
 			name = USA.720.f
 			trigger = {
-				OR = {
-					has_country_flag = USA_deadlock_garner
-					has_country_flag = USA_PP_dominance
-				}
+				has_country_flag = USA_deadlock_garner
 				has_global_flag = USA_civil_war_avoided_flag
-				OR = {
-					has_country_flag = USA_1952_PP_primary_wallace
-					has_country_flag = USA_1952_PP_primary_philip
-					has_country_flag = USA_1952_PP_primary_taylor
-					has_country_flag = USA_1952_PP_primary_folsom
-					has_country_flag = USA_1952_PP_primary_hoopes
-					has_country_flag = USA_1952_PP_primary_dewitt
-					has_country_flag = USA_1952_PP_primary_browder
-					has_country_flag = USA_1952_PP_primary_hall
-				}
+				has_country_flag = USA_has_nominated_PP_1952
 			}
 			set_country_flag = USA_had_1952_election
 			set_country_flag = USA_1952_election_PP_victory
-			complete_national_focus = USA_by_the_people_for_the_people
 			if = {
 				limit = {
 					OR = { 
@@ -25208,9 +25151,6 @@ add_namespace = usanew
 				add_synd_to_coalition = yes
 				add_radsoc_to_coalition = yes
 				add_soclib_to_coalition = yes 
-				hidden_effect = {
-					set_country_flag = USA_1952_election_soc_dem_PP
-				}
 				add_popularity = {
 					ideology = social_democrat
 					popularity = 0.12
@@ -25229,14 +25169,11 @@ add_namespace = usanew
 					ruling_party = radical_socialist
 					election_frequency = 48
 					elections_allowed = yes
-					}
+				}
 				add_tot_to_coalition = yes
 				add_synd_to_coalition = yes
 				add_socdem_to_coalition = yes
 				add_soclib_to_coalition = yes
-				hidden_effect = {
-					set_country_flag = USA_1952_election_rad_soc_PP
-				}
 				add_popularity = {
 					ideology = radical_socialist
 					popularity = 0.12
@@ -25264,6 +25201,7 @@ add_namespace = usanew
 					add_ideas = USA_Harry_Lloyd_Hopkins_eco_sde
 					add_ideas = USA_Harold_LeClair_Ickes_sec_sde
 					set_country_flag = USA_1952_election_PP_wallace
+					set_country_flag = USA_mid_victory
 				}
 				if = { # Glen H. Taylor
 					limit = {
@@ -25275,6 +25213,7 @@ add_namespace = usanew
 					add_ideas = USA_Hjalmar_Petersen_eco_sde
 					add_ideas = USA_Harold_LeClair_Ickes_sec_sde
 					set_country_flag = USA_1952_election_PP_taylor
+					set_country_flag = USA_mid_victory
 				}
 				if = { # Jim Folsom
 					limit = {
@@ -25286,6 +25225,7 @@ add_namespace = usanew
 					add_ideas = USA_Harry_Lloyd_Hopkins_eco_sde
 					add_ideas = USA_Harold_LeClair_Ickes_sec_sde
 					set_country_flag = USA_1952_election_PP_folsom
+					set_country_flag = USA_mid_victory
 				}
 				if = { # Sam DeWitt
 					limit = {
@@ -25293,10 +25233,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Daniel_Hoan_veep_rso
-					add_ideas = CSA_Max_Eastman_for_rso
-					add_ideas = CSA_John_Gates_eco_rso
-					add_ideas = CSA_Lee_Pressman_sec_syn
+					add_ideas = USA_Max_Eastman_for_rso
+					add_ideas = USA_John_Gates_eco_rso
+					add_ideas = USA_Lee_Pressman_sec_syn
 					set_country_flag = USA_1952_election_PP_dewitt
+					set_country_flag = USA_mid_victory
 				}
 				if = { # Darlington Hoopes
 					limit = {
@@ -25304,10 +25245,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Sam_DeWitt_veep_rso
-					add_ideas = CSA_Max_Eastman_for_rso
-					add_ideas = CSA_John_Gates_eco_rso
-					add_ideas = CSA_Lee_Pressman_sec_syn
+					add_ideas = USA_Max_Eastman_for_rso
+					add_ideas = USA_John_Gates_eco_rso
+					add_ideas = USA_Lee_Pressman_sec_syn
 					set_country_flag = USA_1952_election_PP_hoopes
+					set_country_flag = USA_mid_victory
 				}
 				if = { # Earl Browder
 					limit = {
@@ -25315,10 +25257,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Gus_Hall_veep_tot
-					add_ideas = CSA_Anna_Louise_Strong_for_tot
-					add_ideas = CSA_Gus_Hall_eco_tot
-					add_ideas = CSA_Eugene_Dennis_sec_syn
+					add_ideas = USA_Anna_Louise_Strong_for_tot
+					add_ideas = USA_Gus_Hall_eco_tot
+					add_ideas = USA_Eugene_Dennis_sec_syn
 					set_country_flag = USA_1952_election_PP_browder
+					set_country_flag = USA_reed_victory
 				}
 				if = { # Gus Hall
 					limit = {
@@ -25326,32 +25269,23 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_James_W_Ford_veep_tot
-					add_ideas = CSA_Anna_Louise_Strong_for_tot
-					add_ideas = CSA_Gus_Hall_eco_tot
-					add_ideas = CSA_Eugene_Dennis_sec_syn
+					add_ideas = USA_Anna_Louise_Strong_for_tot
+					add_ideas = USA_Gus_Hall_eco_tot
+					add_ideas = USA_Eugene_Dennis_sec_syn
 					set_country_flag = USA_1952_election_PP_hall
+					set_country_flag = USA_reed_victory
 				}
 			}
 		}		
 		option = { #国家人民党
 			name = USA.720.g
 			trigger = {
-				OR = {
-					has_country_flag = USA_deadlock_norris
-					has_country_flag = USA_NPP_dominance
-				}
+				has_country_flag = USA_deadlock_norris
 				has_global_flag = USA_civil_war_avoided_flag
-				OR = {
-					has_country_flag = USA_1952_NPP_primary_russell
-					has_country_flag = USA_1952_NPP_primary_thurmond
-					has_country_flag = USA_1952_NPP_primary_lindbergh
-					has_country_flag = USA_1952_NPP_primary_green
-					has_country_flag = USA_1952_NPP_primary_yockey
-				}
+				has_country_flag = USA_has_nominated_NPP_1952
 			}
 			set_country_flag = USA_had_1952_election
 			set_country_flag = USA_1952_election_NPP_victory
-			complete_national_focus = USA_return_to_true_americanism
 			if = {
 				limit = {
 					has_country_flag = USA_1952_NPP_primary_russell
@@ -25364,9 +25298,6 @@ add_namespace = usanew
 				add_authdem_to_coalition = yes
 				add_pataut_to_coalition = yes
 				add_natpop_to_coalition = yes
-				hidden_effect = {
-					set_country_flag = USA_1952_election_soc_con_NPP
-				}
 				add_popularity = {
 					ideology = social_conservative
 					popularity = 0.12
@@ -25384,9 +25315,6 @@ add_namespace = usanew
 				add_soccon_to_coalition = yes
 				add_pataut_to_coalition = yes
 				add_natpop_to_coalition = yes
-				hidden_effect = {
-					set_country_flag = USA_1952_election_auth_dem_NPP
-				}
 				add_popularity = {
 					ideology = authoritarian_democrat
 					popularity = 0.12
@@ -25404,9 +25332,6 @@ add_namespace = usanew
 				add_soccon_to_coalition = yes
 				add_authdem_to_coalition = yes
 				add_natpop_to_coalition = yes
-				hidden_effect = {
-					set_country_flag = USA_1952_election_pat_aut_NPP
-				}
 				add_popularity = {
 					ideology = paternal_autocrat
 					popularity = 0.12
@@ -25427,9 +25352,6 @@ add_namespace = usanew
 				add_soccon_to_coalition = yes
 				add_authdem_to_coalition = yes
 				add_pataut_to_coalition = yes
-				hidden_effect = {
-					set_country_flag = USA_1952_election_nat_pop_NPP
-				}
 				add_popularity = {
 					ideology = national_populist
 					popularity = 0.12
@@ -25443,16 +25365,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Strom_Thurmond_veep_sco
-					add_ideas = TEX_Rev_Frank_Buchman_for_ade
-					add_ideas = TEX_Gerald_Prentice_Nye_eco_ade
-					add_ideas = TEX_alvin_o_king_sec_ade
-					if = {
-						limit = {
-							has_country_flag = USA_1948_election_NPP_russell
-						}
-						set_country_flag = USA_NPP_russell_two_terms_1952
-					}
+					add_ideas = USA_Rev_Frank_Buchman_for_ade
+					add_ideas = USA_Gerald_Prentice_Nye_eco_ade
+					add_ideas = USA_alvin_o_king_sec_ade
 					set_country_flag = USA_1952_election_NPP_russell
+					set_country_flag = USA_moderate_victory
 				}
 				if = { # Charles Lindbergh
 					limit = {
@@ -25460,10 +25377,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Henry_Ford_veep_pau
-					add_ideas = COR_James_D_Mooney_for_pau
-					add_ideas = COR_Fred_Chase_Koch_eco_ade
-					add_ideas = COR_D_W_Griffith_sec_pau
+					add_ideas = USA_James_D_Mooney_for_pau
+					add_ideas = USA_Fred_Chase_Koch_eco_ade
+					add_ideas = USA_D_W_Griffith_sec_pau
 					set_country_flag = USA_1952_election_NPP_lindbergh
+					set_country_flag = USA_odp_back
 				}
 				if = { # Strom Thurmond
 					limit = {
@@ -25471,16 +25389,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Fielding_L_Wright_veep_sco
-					add_ideas = TEX_Rev_Frank_Buchman_for_ade
-					add_ideas = TEX_Gerald_Prentice_Nye_eco_ade
-					add_ideas = COR_Clare_Eugene_Hoffman_sec_pau
-					if = {
-						limit = {
-							has_country_flag = USA_1948_election_NPP_thurmond
-						}
-						set_country_flag = USA_NPP_thurmond_two_terms_1952
-					}
+					add_ideas = USA_Rev_Frank_Buchman_for_ade
+					add_ideas = USA_Gerald_Prentice_Nye_eco_ade
+					add_ideas = USA_Clare_Eugene_Hoffman_sec_pau
 					set_country_flag = USA_1952_election_NPP_thurmond
+					set_country_flag = USA_moderate_victory
 				}
 				if = { # Samuel Green
 					limit = {
@@ -25488,10 +25401,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Hiram_W_Evans_veep_npo
-					add_ideas = COR_Revilio_P_Oliver_for_npo
-					add_ideas = COR_Gerald_Burton_Winrod_eco_npo
-					add_ideas = COR_Samuel_Green_sec_npo
+					add_ideas = USA_Revilio_P_Oliver_for_npo
+					add_ideas = USA_Gerald_Burton_Winrod_eco_npo
+					add_ideas = USA_Samuel_Green_sec_npo
 					set_country_flag = USA_1952_election_NPP_green
+					set_country_flag = USA_kkk_victory
 				}
 				if = { # Francis Parker Yockey
 					limit = {
@@ -25499,10 +25413,11 @@ add_namespace = usanew
 					}
 					remove_all_ministers = yes
 					add_ideas = USA_Samuel_Green_veep_npo
-					add_ideas = COR_Revilio_P_Oliver_for_npo
-					add_ideas = COR_Gerald_Burton_Winrod_eco_npo
-					add_ideas = COR_Elizabeth_Eloise_Kirkpatrick_Dilling_sec_npo
+					add_ideas = USA_Revilio_P_Oliver_for_npo
+					add_ideas = USA_Gerald_Burton_Winrod_eco_npo
+					add_ideas = USA_Elizabeth_Eloise_Kirkpatrick_Dilling_sec_npo
 					set_country_flag = USA_1952_election_NPP_yockey
+					set_country_flag = USA_kkk_victory
 				}
 			}
 		}
@@ -38418,40 +38333,40 @@ country_event = { # 美利坚的灭亡
 		}
 	}
 	country_event = { # 索取关岛？
-		id = ustates.3182
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3182"}
-		title = ustates.3182.t
-		desc = ustates.3182.d
+		id = USA.979
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.979"}
+		title = USA.979.t
+		desc = USA.979.d
 		picture = GFX_report_event_USA_guamtake
 
 		is_triggered_only = yes
 
 		option = { #好，提出声索！
-			name = ustates.3182.a
+			name = USA.979.a
 			JAP = {
-			country_event = { id = ustates.3183 days = 3 }
+			country_event = { id = USA.980 days = 3 }
 			}
 			add_political_power = -10
 			add_stability = 0.03
 		}
 		
 		option = { #不值得。
-			name = ustates.3182.b
+			name = USA.979.b
 			add_political_power = 30
 			decrease_ruling_party_popularity_by_5 = yes
 		}
 	}
 	country_event = { # 美国人索取关岛！
-		id = ustates.3183
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3183"}
-		title = ustates.3183.t
-		desc = ustates.3183.d
+		id = USA.980
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.980"}
+		title = USA.980.t
+		desc = USA.980.d
 		picture = GFX_report_event_USA_guamtake
 
 		is_triggered_only = yes
 
 		option = { #不，放弃关岛吧！
-			name = ustates.3183.a		
+			name = USA.980.a		
 			USA = {
 			transfer_state = 645 
 			}
@@ -38460,24 +38375,24 @@ country_event = { # 美利坚的灭亡
 		}
 		
 		option = { #是的，这个岛是我们的！
-			name = ustates.3183.b
+			name = USA.980.b
 			JAP = {
-			country_event = { id = ustates.3184 days = 5 }
+			country_event = { id = USA.981 days = 5 }
 			}
 			add_war_support = 0.05
 		}
 	}
 	country_event = { # 日本人拒绝了我们的请求！
-		id = ustates.3184
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3184"}
-		title = ustates.3184.t
-		desc = ustates.3184.d
+		id = USA.981
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.981"}
+		title = USA.981.t
+		desc = USA.981.d
 		picture = GFX_report_event_USA_guamtake
 
 		is_triggered_only = yes
 
 		option = { #夺取关岛！
-			name = ustates.3184.a		
+			name = USA.981.a		
 			USA = {
 			transfer_state = 645 
 			}
@@ -38496,7 +38411,7 @@ country_event = { # 美利坚的灭亡
 		}
 		
 		option = { #随他们去吧
-			name = ustates.3184.b
+			name = USA.981.b
 			add_war_support = -0.03
 			add_stability = 0.02
 			add_political_power = 10
