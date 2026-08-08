@@ -38656,17 +38656,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #A Return to 'Democracy'?
-		id = ustates.3203
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3203"}
-		title = ustates.3203.t
-		desc = ustates.3203.d
+		id = USA.932
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.932"}
+		title = USA.932.t
+		desc = USA.932.d
 		picture = GFX_event_USA_rockwell_capitol
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3203.a
+			name = USA.932.a
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -38685,7 +38685,7 @@ country_event = { # 美利坚的灭亡
 			}
 		}
 		option = {  #
-			name = ustates.3203.b
+			name = USA.932.b
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -38706,38 +38706,38 @@ country_event = { # 美利坚的灭亡
 				traits = { young_leader_hos command_and_charisma }
 			}
 			complete_national_focus = USA_Triumph_True_Patriots
-			country_event = { id = ustates.3220 days = 35 }
+			country_event = { id = USA.950 days = 35 }
 		}
 	}
 
 	country_event = { #
-		id = ustates.3204
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3204"}
-		title = ustates.3204.t
-		desc = ustates.3204.d
+		id = USA.933
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.933"}
+		title = USA.933.t
+		desc = USA.933.d
 		picture = GFX_event_USA_macarthur_poster
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3204.a
+			name = USA.933.a
 			complete_national_focus = USA_begin_reconstruction
 		}
 	}
 
 	country_event = { #
-		id = ustates.3205
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3205"}
-		title = ustates.3205.t
-		desc = ustates.3205.d
+		id = USA.934
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.934"}
+		title = USA.934.t
+		desc = USA.934.d
 		picture = GFX_event_USA_lemay_stare
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3205.a
+			name = USA.934.a
 			trigger = { WCC = { is_ai = yes } }
 			add_political_power = -90
 			add_manpower = -3000
@@ -38752,12 +38752,12 @@ country_event = { # 美利坚的灭亡
 				producer = USA
 			}
 			WCC = {
-			country_event = { id = ustates.3206 days = 14 }
+			country_event = { id = USA.935 days = 14 }
 			set_country_flag = WCC_lemay_support
 			}
 		}
 		option = {  #
-			name = ustates.3205.b
+			name = USA.934.b
 			trigger = { WCC = { is_ai = yes } }
 			add_political_power = -45
 			add_manpower = -1500
@@ -38771,10 +38771,10 @@ country_event = { # 美利坚的灭亡
 				amount = -100
 				producer = USA
 			}
-			WCC = { country_event = { id = ustates.3206 days = 14 } }
+			WCC = { country_event = { id = USA.935 days = 14 } }
 		}
 		option = {  #
-			name = ustates.3205.c
+			name = USA.934.c
 			add_political_power = 50
 			add_war_support = 0.05
 			WCC = {
@@ -38789,17 +38789,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #
-		id = ustates.3206
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3206"}
-		title = ustates.3206.t
-		desc = ustates.3206.d
+		id = USA.935
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.935"}
+		title = USA.935.t
+		desc = USA.935.d
 		picture = GFX_event_USA_lemay_stare
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3206.a
+			name = USA.935.a
 			trigger = { is_ai = yes }
 			ai_chance = {
 				factor = 30
@@ -38814,7 +38814,7 @@ country_event = { # 美利坚的灭亡
 					target = WCC
 					autonomy_state = kr_default_puppet
 				}
-				country_event = ustates.3223
+				country_event = USA.953
 			}
 			set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
 			create_country_leader = {
@@ -38827,26 +38827,26 @@ country_event = { # 美利坚的灭亡
 			}
 		}
 		option = {  #
-			name = ustates.3206.b
+			name = USA.935.b
 			ai_chance = {
 				factor = 50
 			}
-			USA = { country_event = ustates.3224 }
+			USA = { country_event = USA.954 }
 		}
 	}
 
 	country_event = { #
-		id = ustates.3207
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3207"}
-		title = ustates.3207.t
-		desc = ustates.3207.d
+		id = USA.936
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.936"}
+		title = USA.936.t
+		desc = USA.936.d
 		picture = GFX_event_USA_rockwell_speech
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3207.a
+			name = USA.936.a
 			set_party_name = {
 					ideology = social_conservative
 					long_name = USA_social_conservative_tpp_party_long
@@ -38871,17 +38871,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #
-		id = ustates.3208
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3208"}
-		title = ustates.3208.t
-		desc = ustates.3208.d
+		id = USA.937
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.937"}
+		title = USA.937.t
+		desc = USA.937.d
 		picture = GFX_event_USA_willoughby_german
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3208.a
+			name = USA.937.a
 			trigger = { USA = { is_in_faction = no } }
 			GER = {
 			add_to_faction = USA
@@ -38905,7 +38905,7 @@ country_event = { # 美利坚的灭亡
 			}
 		}
 		option = {  #
-			name = ustates.3208.b
+			name = USA.937.b
 			GER = { 
 			add_opinion_modifier = { target = USA modifier = large_increase }
 				add_manpower = 5000
@@ -38934,17 +38934,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # Fate of the Black Population
-		id = ustates.3209
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3209"}
-		title = ustates.3209.t
-		desc = ustates.3209.d
+		id = USA.938
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.938"}
+		title = USA.938.t
+		desc = USA.938.d
 		picture = GFX_report_event_TEX_southern_farmers
 
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3209.a
+			name = USA.938.a
 			add_timed_idea = {
 				idea = USA_Emigration_Excesses_idea
 				days = 145
@@ -38956,7 +38956,7 @@ country_event = { # 美利坚的灭亡
 			add_command_power = -10
 		}
 		option = { #
-			name = ustates.3209.b
+			name = USA.938.b
 			add_timed_idea = {
 				idea = USA_Emigration_Excesses_idea
 				days = 145
@@ -38985,17 +38985,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # Fighting Subversion
-		id = ustates.3210
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3210"}
-		title = ustates.3210.t
-		desc = ustates.3210.d
+		id = USA.939
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.939"}
+		title = USA.939.t
+		desc = USA.939.d
 		picture = GFX_event_USA_anti_subversion
 
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3210.a
+			name = USA.939.a
 			increase_ruling_party_popularity_by_3 = yes
 			add_stability = 0.03
 			add_manpower = 500
@@ -39004,10 +39004,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # Revolt of the Admirals
-		id = ustates.3211
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3211"}
-		title = ustates.3211.t
-		desc = ustates.3211.d
+		id = USA.940
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.940"}
+		title = USA.940.t
+		desc = USA.940.d
 		picture = GFX_report_event_USA_revolt_of_the_admirals
 
 		fire_only_once = yes
@@ -39021,7 +39021,7 @@ country_event = { # 美利坚的灭亡
 		}
 
 		option = { #King stays
-			name = ustates.3211.a
+			name = USA.940.a
 			add_political_power = 50
 			add_stability = -0.005
 			swap_ruler_traits = {
@@ -39032,7 +39032,7 @@ country_event = { # 美利坚的灭亡
 			complete_national_focus = USA_admiral_of_navy
 		}
 		option = { #Halsey assumes command
-			name = ustates.3211.b
+			name = USA.940.b
 			create_country_leader = { #Bull Halsey
 				name = "William Halsey Jr."
 				desc = "POLITICS_WILLIAM_HALSEY_DESC"
@@ -39045,7 +39045,7 @@ country_event = { # 美利坚的灭亡
 			complete_national_focus = USA_anchoring_our_rule
 		}
 		option = { #Spruance assumes control
-			name = ustates.3211.c
+			name = USA.940.c
 			create_country_leader = { #Spruance
 				name = "Raymond A. Spruance"
 				desc = "POLITICS_RAYMOND_SPRUANCE_DESC"
@@ -39058,7 +39058,7 @@ country_event = { # 美利坚的灭亡
 			complete_national_focus = USA_anchoring_our_rule
 		}
 		option = { #Triumvirate
-			name = ustates.3211.e
+			name = USA.940.e
 			set_country_flag = USA_admiral_triumvirate
 			swap_ruler_traits = {
 				remove = admiral_dictator
@@ -39076,7 +39076,7 @@ country_event = { # 美利坚的灭亡
 					set_country_flag = USES_CUSTOM_TITLE
 					remove_ideas = USA_William_Leahy_hog_ade
 					add_ideas = USA_William_Halsey_Jr_hog_pau
-					country_event = { id = ustates.3213 days = 360 }
+					country_event = { id = USA.942 days = 360 }
 				}
 				else = {
 					set_country_flag = LEADER_GUI_VISIBLE
@@ -39093,10 +39093,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # World Police Navy
-		id = ustates.3212
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3212"}
-		title = ustates.3212.t
-		desc = ustates.3212.d
+		id = USA.941
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.941"}
+		title = USA.941.t
+		desc = USA.941.d
 		picture = GFX_report_event_USA_washington_naval_treaty
 
 		fire_only_once = yes
@@ -39104,7 +39104,7 @@ country_event = { # 美利坚的灭亡
 		is_triggered_only = yes
 
 		option = { #Washington Naval Treaty
-			name = ustates.3212.a
+			name = USA.941.a
 			ai_chance = {
 				factor = 0
 			}
@@ -39144,12 +39144,12 @@ country_event = { # 美利坚的灭亡
 					}					
 					is_major = yes
 				}
-				country_event = { id = ustates.3218 days = 10 }
+				country_event = { id = USA.947 days = 10 }
 			}
 			add_political_power = -50
 		}
 		option = { #Nah
-			name = ustates.3212.b
+			name = USA.941.b
 			ai_chance = {
 				factor = 100
 			}
@@ -39158,10 +39158,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # pacific fleet autonomy
-		id = ustates.3213
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3213"}
-		title = ustates.3213.t
-		desc = ustates.3213.d
+		id = USA.942
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.942"}
+		title = USA.942.t
+		desc = USA.942.d
 		picture = GFX_event_USA_a_fleet_admiral
 
 		fire_only_once = yes
@@ -39169,7 +39169,7 @@ country_event = { # 美利坚的灭亡
 		is_triggered_only = yes
 
 		option = { #psa puppet
-			name = ustates.3213.a
+			name = USA.942.a
 			set_country_flag = USA_pacific_fleet_puppet
 			custom_effect_tooltip = USA_Pacific_Fleet_tooltip
 			hidden_effect = {
@@ -39262,7 +39262,7 @@ country_event = { # 美利坚的灭亡
 		}
 
 		option = { #psa puppet
-			name = ustates.3213.b
+			name = USA.942.b
 			set_country_flag = USA_pacific_fleet_puppet
 			custom_effect_tooltip = USA_Pacific_Fleet_tooltip
 			hidden_effect = {
@@ -39355,17 +39355,17 @@ country_event = { # 美利坚的灭亡
 		}
 
 		option = { #Nah
-			name = ustates.3213.c
+			name = USA.942.c
 			add_political_power = 50
 			navy_experience = -50
 		}
 	}
 
 	country_event = { # Operation Rainbow
-		id = ustates.3214
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3214"}
-		title = ustates.3214.t
-		desc = ustates.3214.d
+		id = USA.943
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.943"}
+		title = USA.943.t
+		desc = USA.943.d
 		picture = GFX_report_event_USA_uss_eldridge
 
 		fire_only_once = yes
@@ -39373,18 +39373,18 @@ country_event = { # 美利坚的灭亡
 		is_triggered_only = yes
 
 		option = { 
-			name = ustates.3214.a
+			name = USA.943.a
 			add_political_power = -50
 			random_list = {
 				70 = {
 					country_event = { #Failure
-						id = ustates.3215
+						id = USA.944
 						days = 90
 					}
 				}
 				20 = {
 					country_event = { #Partial Success
-						id = ustates.3216
+						id = USA.945
 						days = 90
 					}
 				}
@@ -39399,10 +39399,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Operation Rainbow: failure
-		id = ustates.3215
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3215"}
-		title = ustates.3215.t
-		desc = ustates.3215.d
+		id = USA.944
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.944"}
+		title = USA.944.t
+		desc = USA.944.d
 		picture = GFX_report_event_USA_uss_eldridge
 
 		fire_only_once = yes
@@ -39410,17 +39410,17 @@ country_event = { # 美利坚的灭亡
 		is_triggered_only = yes
 
 		option = { #Darn
-			name = ustates.3215.a
+			name = USA.944.a
 			add_political_power = -100
 			navy_experience = 50
 		}
 	}
 
 	country_event = { #Operation Rainbow: partial success
-		id = ustates.3216
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3216"}
-		title = ustates.3216.t
-		desc = ustates.3216.d
+		id = USA.945
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.945"}
+		title = USA.945.t
+		desc = USA.945.d
 		picture = GFX_report_event_USA_uss_eldridge
 
 		fire_only_once = yes
@@ -39428,7 +39428,7 @@ country_event = { # 美利坚的灭亡
 		is_triggered_only = yes
 
 		option = { #could be worse
-			name = ustates.3216.a
+			name = USA.945.a
 			add_political_power = -50
 			navy_experience = 75
 			add_ideas = USA_rainbow_partial_success_idea
@@ -39455,55 +39455,71 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # The American Demands
-		id = ustates.3218
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3218"}
-		title = ustates.3218.t
-		desc = ustates.3218.d
+		id = USA.947
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.947"}
+		title = USA.947.t
+		desc = USA.947.d
 
 		fire_only_once = yes
 
 		is_triggered_only = yes
 
 		option = { #Washington Naval Treaty
-			name = ustates.3218.a
+			name = USA.947.a
 			ai_chance = {
 				factor = 25
 			}
 			add_ideas = USA_washington_naval_treaty
 			USA = {
-				country_event = { id = ustates.32190 days = 2 }
+				country_event = { id = USA.948 days = 2 }
 			}
 		}
 		option = { #Nah
-			name = ustates.3218.b
+			name = USA.947.b
 			ai_chance = {
 				factor = 25
 			}
 			USA = {
-				country_event = { id = ustates.3219 days = 2 }
+				country_event = { id = USA.949 days = 2 }
 			}
 		}
 	}
 
 	country_event = { # The American Demands
-		id = ustates.3219
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3219"}
-		title = ustates.3219.t
-		desc = ustates.3219.d
+		id = USA.948
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.948"}
+		title = USA.948.t
+		desc = USA.948.d
+
+		fire_only_once = yes
+
+		is_triggered_only = yes
+
+		option = { 
+			name = USA.948.a
+			add_political_power = 25
+		}
+	}
+
+	country_event = { # The American Demands
+		id = USA.949
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.949"}
+		title = USA.949.t
+		desc = USA.949.d
 
 		fire_only_once = yes
 
 		is_triggered_only = yes
 
 		option = { #back down
-			name = ustates.3219.a
+			name = USA.949.a
 			ai_chance = {
 				factor = 25
 			}
 			add_war_support = -0.05
 		}
 		option = { #enforce our will
-			name = ustates.3219.b
+			name = USA.949.b
 			ai_chance = {
 				factor = 25
 			}
@@ -39517,35 +39533,19 @@ country_event = { # 美利坚的灭亡
 		}
 	}
 
-	country_event = { # The American Demands
-		id = ustates.32190
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.32190"}
-		title = ustates.32190.t
-		desc = ustates.32190.d
-
-		fire_only_once = yes
-
-		is_triggered_only = yes
-
-		option = { 
-			name = ustates.32190.a
-			add_political_power = 25
-		}
-	}
-
 	country_event = { #Filling the Vacant Veep
-		id = ustates.3220
+		id = USA.950
 		immediate = {
-		log = "[GetDateText]: [Root.GetName]: event ustates.3220"
+		log = "[GetDateText]: [Root.GetName]: event USA.950"
 		hidden_effect = { remove_ideas = USA_Charles_Willoughby_hog_pau }
 		}
-		title = ustates.3220.t
+		title = USA.950.t
 		desc = {
-			text = ustates.3220.d
+			text = USA.950.d
 			trigger = { NEE = { exists = yes } }
 		}
 		desc = {
-			text = ustates.3220.d.mccormick
+			text = USA.950.d.mccormick
 			trigger = { NEE = { exists = no } }
 		}
 		picture = GFX_event_USA_true_patriots
@@ -39554,7 +39554,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3220.a
+			name = USA.950.a
 			set_politics = { ruling_party = social_conservative elections_allowed = no }
 			add_popularity = { ideology = social_conservative popularity = 0.15 }
 			create_country_leader = {
@@ -39571,18 +39571,18 @@ country_event = { # 美利坚的灭亡
 			add_authdem_to_coalition = yes
 			add_pataut_to_coalition = yes
 			add_natpop_to_coalition = yes
-			country_event = { id = ustates.3246 days = 28 }
+			country_event = { id = USA.976 days = 28 }
 			}
 		}
 		option = {  #
-			name = ustates.3220.b
+			name = USA.950.b
 			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 			add_ideas = USA_Robert_E_Wood_veep_ade
 			custom_effect_tooltip = authdem_washingtonism_subtype_swap_tt
-			hidden_effect = { country_event = { id = ustates.3240 days = 28 } }
+			hidden_effect = { country_event = { id = USA.970 days = 28 } }
 		}
 		option = {  #
-			name = ustates.3220.c
+			name = USA.950.c
 			set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
 			add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
 			create_country_leader = {
@@ -39599,11 +39599,11 @@ country_event = { # 美利坚的灭亡
 			add_soccon_to_coalition = yes
 			add_authdem_to_coalition = yes
 			add_natpop_to_coalition = yes
-			country_event = { id = ustates.3244 days = 28 }
+			country_event = { id = USA.974 days = 28 }
 			}
 		}
 		option = {  #
-			name = ustates.3220.e
+			name = USA.950.e
 			trigger = { NEE = { exists = no } }
 			set_politics = { ruling_party = paternal_autocrat elections_allowed = no }
 			add_popularity = { ideology = paternal_autocrat popularity = 0.15 }
@@ -39621,11 +39621,11 @@ country_event = { # 美利坚的灭亡
 			add_soccon_to_coalition = yes
 			add_authdem_to_coalition = yes
 			add_natpop_to_coalition = yes
-			country_event = { id = ustates.3245 days = 28 }
+			country_event = { id = USA.975 days = 28 }
 			}
 		}
 		option = {  #
-			name = ustates.3220.f
+			name = USA.950.f
 			set_politics = { ruling_party = national_populist elections_allowed = no }
 			add_popularity = { ideology = national_populist popularity = 0.15 }
 			create_country_leader = {
@@ -39642,23 +39642,23 @@ country_event = { # 美利坚的灭亡
 			add_soccon_to_coalition = yes
 			add_authdem_to_coalition = yes
 			add_pataut_to_coalition = yes
-			country_event = { id = ustates.3239 days = 28 }
+			country_event = { id = USA.969 days = 28 }
 			}
 		}
 	}
 
 	country_event = { #Willoughby Alt Leaders
-		id = ustates.3221
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3221"}
-		title = ustates.3221.t
-		desc = ustates.3221.d
+		id = USA.951
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.951"}
+		title = USA.951.t
+		desc = USA.951.d
 		picture = GFX_event_USA_time_magazine
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3221.a
+			name = USA.951.a
 			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 			add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
 			create_country_leader = {
@@ -39683,14 +39683,14 @@ country_event = { # 美利坚的灭亡
 			add_soccon_to_coalition = yes
 			add_pataut_to_coalition = yes
 			add_natpop_to_coalition = yes
-			country_event = { id = ustates.3237 days = 21 }
+			country_event = { id = USA.967 days = 21 }
 			}
 		}
 		option = {  #
-			name = ustates.3221.b
+			name = USA.951.b
 		}
 		option = {  #
-			name = ustates.3221.c
+			name = USA.951.c
 			set_politics = { ruling_party = national_populist elections_allowed = no }
 			add_popularity = { ideology = national_populist popularity = 0.15 }
 			create_country_leader = {
@@ -39716,11 +39716,11 @@ country_event = { # 美利坚的灭亡
 			add_soccon_to_coalition = yes
 			add_authdem_to_coalition = yes
 			add_pataut_to_coalition = yes
-			country_event = { id = ustates.3221 days = 21 }
+			country_event = { id = USA.951 days = 21 }
 			}
 		}
 		option = {  #
-			name = ustates.3221.e
+			name = USA.951.e
 			set_country_flag = USA_flag_Wills_triumvirate
 			set_country_leader_ideology = junta_subtype
 			custom_effect_tooltip = pataut_junta_subtype_swap_tt
@@ -39734,22 +39734,22 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Willoughby Subideology
-		id = ustates.3222
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3222"}
-		title = ustates.3222.t
-		desc = ustates.3222.d
+		id = USA.952
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.952"}
+		title = USA.952.t
+		desc = USA.952.d
 		picture = GFX_event_USA_macarthur_bolivar
 
 		is_triggered_only = yes
 		fire_only_once = yes
 				
 		option = {  #
-			name = ustates.3222.a
+			name = USA.952.a
 			set_country_leader_ideology = caudillo_populism_subtype
 			custom_effect_tooltip = pataut_caudillo_populism_subtype_swap_tt
 		}
 		option = {  #
-			name = ustates.3222.b
+			name = USA.952.b
 			set_politics = { ruling_party = authoritarian_democrat elections_allowed = no }
 			create_country_leader = {
 				name = "Charles A. Willoughby"
@@ -39777,17 +39777,17 @@ country_event = { # 美利坚的灭亡
 			}
 		}
 		option = {  #
-			name = ustates.3222.c
+			name = USA.952.c
 			set_country_leader_ideology = pataut_security_state_subtype
 			custom_effect_tooltip = pataut_pataut_security_state_subtype_swap_tt
 		}
 		option = {  #
-			name = ustates.3222.e
+			name = USA.952.e
 			set_country_leader_ideology = bolivarianism_subtype
 			custom_effect_tooltip = pataut_bolivarianism_subtype_swap_tt
 		}
 		option = {  #
-			name = ustates.3222.f
+			name = USA.952.f
 			set_politics = { ruling_party = national_populist elections_allowed = no }
 			create_country_leader = {
 				name = "Charles A. Willoughby"
@@ -39817,40 +39817,40 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #WCC Coup Success
-		id = ustates.3223
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3223"}
-		title = ustates.3223.t
-		desc = ustates.3223.d
+		id = USA.953
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.953"}
+		title = USA.953.t
+		desc = USA.953.d
 		picture = GFX_report_event_USA_military_trial
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3223.a
+			name = USA.953.a
 		}
 	}
 
 	country_event = { #WCC Coup Fails
-		id = ustates.3224
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3224"}
-		title = ustates.3224.t
-		desc = ustates.3224.d
+		id = USA.954
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.954"}
+		title = USA.954.t
+		desc = USA.954.d
 		picture = GFX_report_event_USA_military_trial
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3224.a
+			name = USA.954.a
 		}
 	}
 
 	country_event = { #USA-WCC Victory Willoughby
-		id = ustates.3225
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3225"}
-		title = ustates.3225.t
-		desc = ustates.3225.d
+		id = USA.955
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.955"}
+		title = USA.955.t
+		desc = USA.955.d
 		
 		picture = GFX_event_USA_lemay_stare
 
@@ -39876,7 +39876,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3225.a
+			name = USA.955.a
 			WCC = {
 				every_unit_leader = {
 					set_nationality = USA
@@ -39902,34 +39902,34 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #DC Conspiracy
-		id = ustates.3226
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3226"}
-		title = ustates.3226.t
-		desc = ustates.3226.d
+		id = USA.956
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.956"}
+		title = USA.956.t
+		desc = USA.956.d
 		picture = GFX_event_USA_dc_conspiracy
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3226.a
+			name = USA.956.a
 			add_political_power = 30
 			increase_ruling_party_popularity_by_3 = yes
 		}
 	}
 
 	country_event = { #Five Laws
-		id = ustates.3227
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3227"}
-		title = ustates.3227.t
-		desc = ustates.3227.d
+		id = USA.957
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.957"}
+		title = USA.957.t
+		desc = USA.957.d
 		picture = GFX_event_USA_stop_larping
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3227.a
+			name = USA.957.a
 			add_political_power = 40
 			add_stability = 0.06
 			add_war_support = 0.06
@@ -39937,10 +39937,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Fate of Liberia
-		id = ustates.3228
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3228"}
-		title = ustates.3228.t
-		desc = ustates.3228.d
+		id = USA.958
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.958"}
+		title = USA.958.t
+		desc = USA.958.d
 		picture = GFX_report_event_LIB_independence_day
 
 		trigger = {
@@ -39952,7 +39952,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3228.a
+			name = USA.958.a
 			hidden_effect = {
 			remove_state_claim = 298
 			remove_state_claim = 966
@@ -39984,10 +39984,10 @@ country_event = { # 美利坚的灭亡
 					}
 				}
 			}
-			country_event = ustates.3229
+			country_event = USA.959
 		}
 		option = {  #
-			name = ustates.3228.b
+			name = USA.958.b
 			hidden_effect = {
 				remove_state_claim = 298
 				remove_state_claim = 966
@@ -40020,10 +40020,10 @@ country_event = { # 美利坚的灭亡
 					}
 				}
 			}
-			country_event = ustates.3229
+			country_event = USA.959
 		}
 		option = {  #
-			name = ustates.3228.c
+			name = USA.958.c
 			hidden_effect = {
 				remove_state_claim = 298
 				remove_state_claim = 966
@@ -40056,28 +40056,28 @@ country_event = { # 美利坚的灭亡
 					}
 				}
 			}
-			country_event = ustates.3229
+			country_event = USA.959
 		}
 		option = {  #
-			name = ustates.3228.e
+			name = USA.958.e
 			add_political_power = -30
 			add_stability = -0.03
-			country_event = ustates.3229
+			country_event = USA.959
 		}
 	}
 
 	country_event = { #Fate of Liberia
-		id = ustates.3229
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3229"}
-		title = ustates.3229.t
-		desc = ustates.3229.d
+		id = USA.959
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.959"}
+		title = USA.959.t
+		desc = USA.959.d
 		picture = GFX_report_event_LIB_independence_day
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3229.a
+			name = USA.959.a
 			ai_chance = {
 				factor = 0
 			}
@@ -40143,7 +40143,7 @@ country_event = { # 美利坚的灭亡
 			create_wargoal = { target = DAH type = annex_everything }
 		}
 		option = {  #
-			name = ustates.3229.b
+			name = USA.959.b
 			ai_chance = {
 				factor = 0
 			}
@@ -40234,7 +40234,7 @@ country_event = { # 美利坚的灭亡
 			create_wargoal = { target = DAH type = annex_everything }
 		}
 		option = {  #
-			name = ustates.3229.c
+			name = USA.959.c
 			ai_chance = {
 				factor = 100
 			}
@@ -40244,10 +40244,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = {
-		id = ustates.3230
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3230"}
-		title = ustates.3230.t
-		desc = ustates.3230.d
+		id = USA.960
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.960"}
+		title = USA.960.t
+		desc = USA.960.d
 		picture = GFX_event_USA_Dumbo_rescue
 
 		fire_only_once = yes
@@ -40259,7 +40259,7 @@ country_event = { # 美利坚的灭亡
 		}
 
 		option = {
-			name = ustates.3230.a
+			name = USA.960.a
 			air_experience = 5
 			navy_experience = 5
 			add_manpower = 12
@@ -40267,17 +40267,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Rockwell Flag
-		id = ustates.3231
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3231"}
-		title = ustates.3231.t
-		desc = ustates.3231.d
+		id = USA.961
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.961"}
+		title = USA.961.t
+		desc = USA.961.d
 		picture = GFX_event_USA_rockwell_flag
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3231.a
+			name = USA.961.a
 			add_command_power = 15
 			add_war_support = 0.01
 			add_popularity = { ideology = paternal_autocrat popularity = 0.01 }
@@ -40285,7 +40285,7 @@ country_event = { # 美利坚的灭亡
 			set_cosmetic_tag = USA_rockwell
 		}
 		option = {  #
-			name = ustates.3231.b
+			name = USA.961.b
 			add_political_power = 15
 			add_stability = 0.01
 			add_popularity = { ideology = social_conservative popularity = 0.01 }
@@ -40293,18 +40293,18 @@ country_event = { # 美利坚的灭亡
 		}
 	}
 
-	country_event = { #Merrill鈥檚 Marauders
-		id = ustates.3232
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3232"}
-		title = ustates.3232.t
-		desc = ustates.3232.d
+	country_event = { #Merrill Marauders
+		id = USA.962
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.962"}
+		title = USA.962.t
+		desc = USA.962.d
 		picture = GFX_event_USA_merrills_marauders
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3232.a
+			name = USA.962.a
 			army_experience = 25
 			add_war_support = 0.05
 			random_unit_leader = {
@@ -40315,34 +40315,34 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Doc Rockwell
-		id = ustates.3233
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3233"}
-		title = ustates.3233.t
-		desc = ustates.3233.d
+		id = USA.963
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.963"}
+		title = USA.963.t
+		desc = USA.963.d
 		picture = GFX_event_USA_doc_rockwell
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3233.a
+			name = USA.963.a
 			add_political_power = -20
 			decrease_ruling_party_popularity_by_2 = yes
 		}
 	}
 
 	country_event = { #
-		id = ustates.3234
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3234"}
-		title = ustates.3234.t
-		desc = ustates.3234.d
+		id = USA.964
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.964"}
+		title = USA.964.t
+		desc = USA.964.d
 		picture = GFX_report_event_USA_skypirate
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3234.a
+			name = USA.964.a
 			air_experience = 10
 			navy_experience = 5
 			add_war_support = 0.007
@@ -40350,10 +40350,10 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #
-		id = ustates.3235
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3235"}
-		title = ustates.3235.t
-		desc = ustates.3235.d
+		id = USA.965
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.965"}
+		title = USA.965.t
+		desc = USA.965.d
 		picture = GFX_report_event_USA_poker
 		trigger = {
 			tag = USA
@@ -40363,27 +40363,27 @@ country_event = { # 美利坚的灭亡
 		}
 		fire_only_once = yes
 		option = {  #
-			name = ustates.3235.a
+			name = USA.965.a
 			navy_experience = -15
 			add_war_support = -0.005
 		}
 		option = {  #
-			name = ustates.3235.b
+			name = USA.965.b
 			add_political_power = 15
 			add_offsite_building = { type = industrial_complex level = 1 }
 		}
 		option = {  #
-			name = ustates.3235.c
+			name = USA.965.c
 			navy_experience = 15
 			add_war_support = 0.005
 		}
 	}
 
 	country_event = { # LeMay Judo
-		id = ustates.3236
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3236"}
-		title = ustates.3236.t
-		desc = ustates.3236.d
+		id = USA.966
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.966"}
+		title = USA.966.t
+		desc = USA.966.d
 		picture = GFX_event_USA_lemay_judo
 
 		trigger = {
@@ -40398,7 +40398,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3236.a
+			name = USA.966.a
 			army_experience = 30
 			add_war_support = 0.04
 			increase_ruling_party_popularity_by_2 = yes
@@ -40410,17 +40410,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # Hatchet Man
-		id = ustates.3237
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3237"}
-		title = ustates.3237.t
-		desc = ustates.3237.d
+		id = USA.967
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.967"}
+		title = USA.967.t
+		desc = USA.967.d
 		picture = GFX_event_USA_sutherland_stare
 
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3237.a
+			name = USA.967.a
 			add_political_power = 60
 			add_war_support = 0.06
 			add_manpower = 1500
@@ -40428,17 +40428,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # The New Caesar
-		id = ustates.3238
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3238"}
-		title = ustates.3238.t
-		desc = ustates.3238.d
+		id = USA.968
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.968"}
+		title = USA.968.t
+		desc = USA.968.d
 		picture = GFX_event_USA_sutherland_mac
 
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3238.a
+			name = USA.968.a
 			add_command_power = 50
 			add_stability = 0.03
 			add_war_support = 0.03
@@ -40447,17 +40447,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # Willis Carto
-		id = ustates.3239
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3239"}
-		title = ustates.3239.t
-		desc = ustates.3239.d
+		id = USA.969
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.969"}
+		title = USA.969.t
+		desc = USA.969.d
 		picture = GFX_event_USA_jeffersonianism
 
 		is_triggered_only = yes
 		fire_only_once = yes
 
 		option = { #
-			name = ustates.3239.a
+			name = USA.969.a
 			add_political_power = 50
 			add_stability = 0.03
 			add_war_support = 0.03
@@ -40466,57 +40466,57 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Wood and Friends
-		id = ustates.3240
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3240"}
-		title = ustates.3240.t
-		desc = ustates.3240.d
+		id = USA.970
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.970"}
+		title = USA.970.t
+		desc = USA.970.d
 		picture = GFX_event_USA_robert_wood
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3240.a
+			name = USA.970.a
 			set_country_leader_ideology = authdem_humanistic_capitalism_subtype
 			custom_effect_tooltip = authdem_authdem_humanistic_capitalism_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = economy_minister }
 			add_ideas = USA_Lessing_J_Rosenwald_eco_ade
 		}
 		option = {  #
-			name = ustates.3240.b
+			name = USA.970.b
 			set_country_leader_ideology = authdem_agrarianism_subtype
 			custom_effect_tooltip = authdem_authdem_agrarianism_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = economy_minister }
 			add_ideas = USA_Gertrude_L_Warren_eco_ade
 		}
 		option = {  #
-			name = ustates.3240.c
+			name = USA.970.c
 			set_country_leader_ideology = authdem_corporatocracy_subtype
 			custom_effect_tooltip = authdem_authdem_corporatocracy_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = economy_minister }
 			add_ideas = USA_Irenee_du_Pont_eco_ade
 		}
 		option = {  #
-			name = ustates.3240.e
+			name = USA.970.e
 			set_country_leader_ideology = oligarchy_subtype
 			custom_effect_tooltip = authdem_oligarchy_subtype_swap_tt
 		}
 		option = {  #
-			name = ustates.3240.f
+			name = USA.970.f
 			set_country_leader_ideology = authdem_libertarian_subtype
 			custom_effect_tooltip = authdem_authdem_libertarian_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = economy_minister }
 			add_ideas = USA_Rose_Wilder_Lane_eco_ade
 		}
 		option = {  #
-			name = ustates.3240.g
+			name = USA.970.g
 			set_country_leader_ideology = authdem_national_conservative_subtype
 			custom_effect_tooltip = authdem_authdem_national_conservative_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = foreign_minister }
 			add_ideas = USA_Clarence_Manion_for_ade
 		}
 		option = {  #
-			name = ustates.3240.h
+			name = USA.970.h
 			set_country_leader_ideology = washingtonism_subtype
 			custom_effect_tooltip = authdem_washingtonism_subtype_swap_tt
 			hidden_effect = { remove_ideas_with_trait = foreign_minister }
@@ -40525,17 +40525,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Hoffa
-		id = ustates.3241
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3241"}
-		title = ustates.3241.t
-		desc = ustates.3241.d
+		id = USA.971
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.971"}
+		title = USA.971.t
+		desc = USA.971.d
 		picture = GFX_event_USA_hoffa
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3241.a
+			name = USA.971.a
 			add_political_power = -30
 			add_popularity = { ideology = social_democrat popularity = 0.05 }
 			add_socdem_to_coalition = yes
@@ -40556,33 +40556,33 @@ country_event = { # 美利坚的灭亡
 			}
 		}
 		option = {  #
-			name = ustates.3241.b
+			name = USA.971.b
 			add_stability = 0.04
 		}
 		option = {  #
-			name = ustates.3241.c
+			name = USA.971.c
 			add_political_power = 30
 			increase_ruling_party_popularity_by_3 = yes
 		}
 		option = {  #
-			name = ustates.3241.e
+			name = USA.971.e
 			add_political_power = 90
 			add_stability = -0.08
 		}
 	}
 
 	country_event = { #Willoughby Larps
-		id = ustates.3242
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3242"}
-		title = ustates.3242.t
-		desc = ustates.3242.d
+		id = USA.972
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.972"}
+		title = USA.972.t
+		desc = USA.972.d
 		picture = GFX_event_USA_willoughby_sly
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3242.a
+			name = USA.972.a
 			add_political_power = -30
 			add_stability = -0.03
 			decrease_ruling_party_popularity_by_3 = yes
@@ -40591,17 +40591,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #MacArthur-Mania
-		id = ustates.3243
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3243"}
-		title = ustates.3243.t
-		desc = ustates.3243.d
+		id = USA.973
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.973"}
+		title = USA.973.t
+		desc = USA.973.d
 		picture = GFX_event_USA_macarthur_relics
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3243.a
+			name = USA.973.a
 			add_political_power = 30
 			add_stability = 0.03
 			add_war_support = 0.03
@@ -40610,17 +40610,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Bushmasters
-		id = ustates.3244
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3244"}
-		title = ustates.3244.t
-		desc = ustates.3244.d
+		id = USA.974
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.974"}
+		title = USA.974.t
+		desc = USA.974.d
 		picture = GFX_event_USA_bushmasters
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3244.a
+			name = USA.974.a
 			add_command_power = 30
 			army_experience = 25
 			add_war_support = 0.03
@@ -40629,17 +40629,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #McCormick
-		id = ustates.3245
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3245"}
-		title = ustates.3245.t
-		desc = ustates.3245.d
+		id = USA.975
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.975"}
+		title = USA.975.t
+		desc = USA.975.d
 		picture = GFX_event_USA_robert_mccormick
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3245.a
+			name = USA.975.a
 			add_political_power = 60
 			add_stability = 0.04
 			increase_ruling_party_popularity_by_5 = yes
@@ -40647,17 +40647,17 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { #Loose Luce
-		id = ustates.3246
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3246"}
-		title = ustates.3246.t
-		desc = ustates.3246.d
+		id = USA.976
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.976"}
+		title = USA.976.t
+		desc = USA.976.d
 		picture = GFX_event_USA_willoughby_luce
 
 		is_triggered_only = yes
 		fire_only_once = yes
 			
 		option = {  #
-			name = ustates.3246.a
+			name = USA.976.a
 			add_political_power = -50
 			add_stability = -0.03
 			decrease_ruling_party_popularity_by_3 = yes
@@ -40665,16 +40665,16 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # XB-35
-		id = ustates.3247
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3247"}
-		title = ustates.3247.t
-		desc = ustates.3247.d
+		id = USA.977
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.977"}
+		title = USA.977.t
+		desc = USA.977.d
 		picture = GFX_event_USA_xb_35
 
 		is_triggered_only = yes
 
 		option = { #
-			name = ustates.3247.a
+			name = USA.977.a
 			air_experience = 25
 			add_tech_bonus = {
 				name = jet_rocket_bonus
@@ -40691,16 +40691,16 @@ country_event = { # 美利坚的灭亡
 	}
 
 	country_event = { # AFCO
-		id = ustates.3248
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.3248"}
-		title = ustates.3248.t
-		desc = ustates.3248.d
+		id = USA.978
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.978"}
+		title = USA.978.t
+		desc = USA.978.d
 		picture = GFX_event_USA_rockwell_speech
 
 		is_triggered_only = yes
 
 		option = { #
-			name = ustates.3248.a
+			name = USA.978.a
 			add_political_power = 40
 			set_party_name = {
 					ideology = social_liberal

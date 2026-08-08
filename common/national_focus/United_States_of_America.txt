@@ -25096,7 +25096,7 @@ focus_tree = {
 					}
 				}
 			}
-		hidden_effect = {  country_event = { id = ustates.3234 days = 150 }  }
+		hidden_effect = {  country_event = { id = USA.964 days = 150 }  }
 		}
 	}
 
@@ -27829,7 +27829,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_philadelphia_experiment"
-			country_event = ustates.3214
+			country_event = USA.943
 			add_breakthrough_points = {
 				specialization = specialization_naval
 				value = 3
@@ -28049,7 +28049,7 @@ focus_tree = {
 				}
 				add_ideas = USA_gunboat_diplomacy
 				hidden_effect = {
-					country_event = { id = ustates.3212 days = 30 }
+					country_event = { id = USA.941 days = 30 }
 				}
 			}
 			else_if = {
@@ -28138,7 +28138,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3205
+		country_event = USA.934
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Denver_Detente"
 		}
 	}
@@ -28277,7 +28277,7 @@ focus_tree = {
 		add_manpower = 6500
 		add_war_support = 0.03
 		add_popularity = { ideology = paternal_autocrat popularity = 0.10 }
-		hidden_effect = { country_event = { id = ustates.3232 days = 21 } }
+		hidden_effect = { country_event = { id = USA.962 days = 21 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Honor_Great_Liberators"
 		}
 	}
@@ -28310,7 +28310,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3204
+		country_event = USA.933
 		hidden_effect = {
 				WCC = {
 					if = { 
@@ -28518,7 +28518,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3207
+		country_event = USA.936
 		custom_effect_tooltip = USA_political_recovery_tooltip
 		USA_political_recovery = yes
 			log = "[GetDateText]: [Root.GetName]: Focus USA_New_Political_Apparatus"
@@ -28542,7 +28542,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3203
+		country_event = USA.932
 			log = "[GetDateText]: [Root.GetName]: Focus USA_New_Political_Apparatus"
 		}
 	}
@@ -28582,7 +28582,7 @@ focus_tree = {
 		army_experience = 30
 		add_stability = 0.06
 		add_ideas = USA_Maintaining_Military_Caste_idea
-		country_event = { id = ustates.3221 days = 21 }
+		country_event = { id = USA.951 days = 21 }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Maintaining_Military_Caste"
 		}
 	}
@@ -28671,8 +28671,8 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3208
-			hidden_effect = { country_event = { id = ustates.3242 days = 14 } }
+		country_event = USA.937
+			hidden_effect = { country_event = { id = USA.972 days = 14 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Eagle_Adler"
 		}
 	}
@@ -28714,13 +28714,13 @@ focus_tree = {
 			add_idea = USA_New_Liberator_idea
 			}
 		if = { limit = { has_country_leader = { ruling_only = yes name = "Charles A. Willoughby" } } 
-		country_event = { id = ustates.3222 days = 14 }
+		country_event = { id = USA.952 days = 14 }
 		}
 		else_if = { limit = { has_country_leader = { ruling_only = yes name = "Richard K. Sutherland" } } 
-		country_event = { id = ustates.3238 days = 14 }
+		country_event = { id = USA.968 days = 14 }
 		}
 		else_if = { limit = { has_country_leader = { ruling_only = yes name = "Curtis LeMay" } } 
-		country_event = { id = ustates.3247 days = 14 }
+		country_event = { id = USA.977 days = 14 }
 		}
 		custom_effect_tooltip = USA_willoughby_liberator_tt
 		effect_tooltip = {
@@ -28776,7 +28776,7 @@ focus_tree = {
 		add_stability = 0.03
 		add_war_support = 0.03
 		add_ideas = USA_Wipe_Memory_Defeat_idea
-		hidden_effect = { country_event = { id = ustates.3226 days = 28 } }
+		hidden_effect = { country_event = { id = USA.956 days = 28 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Wipe_Memory_Defeat"
 		}
 	}
@@ -28801,7 +28801,7 @@ focus_tree = {
 				remove_idea = USA_Wipe_Memory_Defeat_idea
 				add_idea = USA_MacArthur_Martyr_idea
 			}
-			hidden_effect = { country_event = { id = ustates.3244 days = 21 } }
+			hidden_effect = { country_event = { id = USA.974 days = 21 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_MacArthur_Martyr"
 		}
 	}
@@ -28838,7 +28838,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = USA_Speak_Truth_American_Power_idea
-		hidden_effect = { country_event = { id = ustates.3233 days = 28 } }
+		hidden_effect = { country_event = { id = USA.963 days = 28 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Speak_Truth_American_Power"
 		}
 	}
@@ -28888,7 +28888,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				increase_state_category_by_one_level = yes
 		}
-		hidden_effect = { country_event = { id = ustates.3248 days = 42 } }
+		hidden_effect = { country_event = { id = USA.978 days = 42 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Supplant_Southern_Strategies"
 		}
 	}
@@ -28907,7 +28907,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			add_ideas = USA_Promote_Patriotic_Sweepstakes_idea
-			hidden_effect = { country_event = { id = ustates.3241 days = 28 } }
+			hidden_effect = { country_event = { id = USA.971 days = 28 } }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Promote_Patriotic_Sweepstakes"
 		}
 	}
@@ -28928,7 +28928,7 @@ focus_tree = {
 		add_political_power = 90
 		add_stability = 0.075
 		increase_ruling_party_popularity_by_10 = yes
-		country_event = ustates.3210
+		country_event = USA.939
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Swing_Phantom_Subversion"
 		}
 	}
@@ -28947,7 +28947,7 @@ focus_tree = {
 		}
 		completion_reward = {
 		add_ideas = USA_Might_American_Tribe_idea
-		country_event = { id = ustates.3227 days = 14 }
+		country_event = { id = USA.957 days = 14 }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Might_American_Tribe"
 		}
 	}
@@ -28965,7 +28965,7 @@ focus_tree = {
 			factor = 100
 		}
 		completion_reward = {
-		country_event = ustates.3209
+		country_event = USA.938
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Emigration_Excesses"
 		}
 	}
@@ -28990,7 +28990,7 @@ focus_tree = {
 				remove_idea = USA_Might_American_Tribe_idea
 				add_idea = USA_Following_Founders_Footsteps_idea
 			}
-		country_event = { id = ustates.3231 days = 14 }
+		country_event = { id = USA.961 days = 14 }
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Following_Founders_Footsteps"
 		}
 	}
