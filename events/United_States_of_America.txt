@@ -4012,7 +4012,7 @@ add_namespace = usanew
 			end_coalition = yes
 		}
 	}
-	country_event = { # 阿拉斯加成为美国一州？
+	country_event = { # Alaska Statehood
 		id = USA.86
 		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.86"}
 		title = USA.86.t
@@ -4023,6 +4023,9 @@ add_namespace = usanew
 
 		trigger = {
 			owns_state = 463
+			owns_state = 1348
+			owns_state = 1349
+			owns_state = 1350
 			owns_state = 1273
 			NOT = {
 				has_country_flag = USA_fourty_nine_states
@@ -4031,12 +4034,13 @@ add_namespace = usanew
 
 		is_triggered_only = yes
 
-		option = { #阿拉斯加应升格为州
+		option = { # they are a state
 			name = USA.86.a
 				trigger = {
-				USA = {
-					NOT = { has_cosmetic_tag = USA_america_navy1 }
-					NOT = { has_cosmetic_tag = USA_america_navy2 }
+				NOT = {
+					has_cosmetic_tag = USA_america_navy1
+					has_cosmetic_tag = USA_america_navy2
+					has_cosmetic_tag = USA_rockwell
 					}
 				}
 			set_country_flag = USA_fourty_nine_states
@@ -4065,6 +4069,42 @@ add_namespace = usanew
 					add_core_of = ROOT
 				}
 			}	
+			if = {
+				limit = {
+					NOT = {
+						1348 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1348 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1349 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1349 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1350 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1350 = {
+					add_core_of = ROOT
+				}
+			}	
 			if = {	
 				limit = {
 					NOT = {
@@ -4078,12 +4118,10 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #阿拉斯加应升格为州
+		option = { # they are a state
 			name = USA.86.b
 				trigger = {
-				USA = {
 				has_cosmetic_tag = USA_america_navy1
-				}
 			}
 			set_country_flag = USA_fourty_nine_states
 			hidden_effect = {
@@ -4111,37 +4149,39 @@ add_namespace = usanew
 					add_core_of = ROOT
 				}
 			}	
-			if = {	
-				limit = {
-					NOT = {
-						1273 = {
-							is_core_of = ROOT
-						}
-					}
-				}
-				1273 = {
-					add_core_of = ROOT
-				}
-			}
-		}
-		option = { #阿拉斯加应升格为州
-			name = USA.86.c
-				trigger = {
-				USA = {
-				has_cosmetic_tag = USA_america_navy2
-					}
-				}
-			set_country_flag = USA_fourty_nine_states
-			add_political_power = 50
 			if = {
 				limit = {
 					NOT = {
-						463 = {
+						1348 = {
 							is_core_of = ROOT
 						}
 					}
 				}
-				463 = {
+				1348 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1349 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1349 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1350 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1350 = {
 					add_core_of = ROOT
 				}
 			}	
@@ -4158,7 +4198,78 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #阿拉斯加只是个属地
+		option = { # they are a state
+			name = USA.86.c
+				trigger = {
+					OR = {
+						has_cosmetic_tag = USA_america_navy2
+						has_cosmetic_tag = USA_rockwell
+					}
+				}
+			set_country_flag = USA_fourty_nine_states
+			add_political_power = 50
+			if = {
+				limit = {
+					NOT = {
+						463 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				463 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1348 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1348 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1349 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1349 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {
+				limit = {
+					NOT = {
+						1350 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1350 = {
+					add_core_of = ROOT
+				}
+			}	
+			if = {	
+				limit = {
+					NOT = {
+						1273 = {
+							is_core_of = ROOT
+						}
+					}
+				}
+				1273 = {
+					add_core_of = ROOT
+				}
+			}
+		}
+		option = { # they are a territory
 			name = USA.86.e
 			ai_chance = {
 				factor = 0
@@ -4180,12 +4291,13 @@ add_namespace = usanew
 
 		is_triggered_only = yes
 
-		option = { #夏威夷应升格为州
+		option = { # they are a state
 			name = USA.87.a
 				trigger = {
-				USA = {
-					NOT = { has_cosmetic_tag = USA_america_navy1 }
-					NOT = { has_cosmetic_tag = USA_america_navy2 }
+				NOT = {
+					has_cosmetic_tag = USA_america_navy1
+					has_cosmetic_tag = USA_america_navy2
+					has_cosmetic_tag = USA_rockwell
 					}
 				}
 			set_country_flag = USA_fourty_nine_states
@@ -4215,12 +4327,10 @@ add_namespace = usanew
 				}
 			}	
 		}
-		option = { #夏威夷应升格为州
+		option = { # they are a state
 			name = USA.87.b
 				trigger = {
-				USA = {
 				has_cosmetic_tag = USA_america_navy1
-				}
 			}
 			set_country_flag = USA_fourty_nine_states
 			hidden_effect = {
@@ -4239,21 +4349,22 @@ add_namespace = usanew
 			if = {
 				limit = {
 					NOT = {
-						463 = {
+						629 = {
 							is_core_of = ROOT
 						}
 					}
 				}
-				463 = {
+				629 = {
 					add_core_of = ROOT
 				}
 			}
 		}
-		option = { #夏威夷应升格为州
+		option = { # they are a state
 			name = USA.87.c
 				trigger = {
-				USA = {
-				has_cosmetic_tag = USA_america_navy2
+				OR = {
+						has_cosmetic_tag = USA_america_navy2
+						has_cosmetic_tag = USA_rockwell
 					}
 				}
 			set_country_flag = USA_fourty_nine_states
@@ -4271,7 +4382,7 @@ add_namespace = usanew
 				}
 			}		
 		}
-		option = { #夏威夷只是个属地
+		option = { # they are a territory
 			name = USA.87.e
 			ai_chance = {
 				factor = 0
@@ -4293,7 +4404,7 @@ add_namespace = usanew
 
 		is_triggered_only = yes
 
-		option = { #波多黎各应升格为州
+		option = { # Flavor
 			name = USA.88.a
 				trigger = {
 					has_cosmetic_tag = USA_america_50
@@ -4316,7 +4427,7 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #波多黎各应升格为州
+		option = { # Flavor
 			name = USA.88.b
 				trigger = {
 					has_cosmetic_tag = USA_america_navy1_50
@@ -4339,10 +4450,13 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #波多黎各应升格为州
+		option = { # Flavor
 			name = USA.88.b
 				trigger = {
-					has_cosmetic_tag = USA_america_navy2
+					OR = {
+						has_cosmetic_tag = USA_america_navy2
+						has_cosmetic_tag = USA_rockwell
+					}
 			}
 			add_political_power = -50
 			set_country_flag = USA_fifty_one_states
@@ -4359,7 +4473,7 @@ add_namespace = usanew
 				}
 			}
 		}
-		option = { #波多黎各只是个属地
+		option = { # Flavor
 			name = USA.88.e
 			add_political_power = 50
 		}
