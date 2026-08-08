@@ -268,8 +268,8 @@ USA_Trade_in_Alliance_modifier = {
 	
 	production_speed_dockyard_factor = USA_Trade_in_Alliance_speed_dockyard				#海军船坞建造速度
 	repair_speed_factor = USA_Trade_in_Alliance_repair_speed							#舰船修理速度
-	navy_max_range_factor = USA_Trade_in_Alliance_navy_max_range						#海军最大航程参数
-	sortie_efficiency = USA_Trade_in_Alliance_sortie_efficiency							#出击效率
+	navy_max_range_factor = USA_navy_max_range_factor									#海军最大航程参数
+	sortie_efficiency = USA_sortie_efficiency											#出击效率
 }
 
 USA_syndicalist_modifier = {
