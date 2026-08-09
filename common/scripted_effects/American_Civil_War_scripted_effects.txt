@@ -198,7 +198,6 @@ USA_release_CSA = {
 				days = 2
 			}
 		}
-
 		USA = {
 			if = { 
 				limit = { has_idea = USA_syndicalist_strike_idea }
@@ -279,7 +278,7 @@ USA_release_CSA = {
 				to_state_array = owned_controlled_states
 			}
 		}
-
+		
 		every_state = {
 			limit = {
 				is_core_of = USA
@@ -288,7 +287,19 @@ USA_release_CSA = {
 			}
 			add_claim_by = CSA
 		}
-
+		if = {
+			limit = {
+				USA = {
+					has_completed_focus = USA_Make_sure_Northeast_under_control
+				}
+				360 = {
+					is_controlled_by = CSA
+				}
+			}
+			360 = {
+				transfer_state_to = USA
+			}
+		}
 		set_country_flag = Jack_Reed_dead
 		set_country_flag = Eugene_Dennis_dead
 		set_country_flag = Paul_Mattick_dead
@@ -2650,7 +2661,21 @@ USA_civil_war_begins = {
 				id = nic.41 days = 7
 			}
 		}
-
+		USA = {
+			remove_power_balance = {
+				id = USA_Civil_War_bop
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = USA_authoritarian_democrat_junta_long
+				name = USA_authoritarian_democrat_junta
+			}
+			set_party_name = {
+				ideology = national_populist
+				long_name = USA_national_populist_junta_long
+				name = USA_national_populist_junta
+			}
+		}
 		every_state = {
 			limit = {
 				owner = { is_american_tag = yes }

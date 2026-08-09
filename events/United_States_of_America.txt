@@ -2243,20 +2243,20 @@ add_namespace = usanew
 			}
 			hidden_effect = {
 				country_event = { # 进步党脱离共和党
-						id = USA.26
-						days = 30
-					} #Progs Flee to GOP
-				}
+					id = USA.26
+					days = 30
+				} #Progs Flee to GOP
 				country_event = { # 德比莱恩会谈
-						id = nimatron.14
-						days = 15
-					} #Meeting in Derby Line
+					id = nimatron.14
+					days = 15
+				} #Meeting in Derby Line
 				CAN = {
 					country_event = { # 罗克艾兰会谈
 						id = nimatron.15
 						days = 15
 					} #Meeting in Rock Island
-				}
+				}	
+			}
 		}
 	}
 	country_event = { # 进步党脱离共和党
@@ -14887,6 +14887,9 @@ add_namespace = usanew
 					days = 120
 				}
 			}
+			hidden_effect = {
+				complete_national_focus = USA_My_ignorant_colleagues
+			}
 		}
 	}
 	country_event = { # 临时总统？
@@ -15144,7 +15147,7 @@ add_namespace = usanew
 		is_triggered_only = yes
 
 		option = { #对他们承诺政府将会放松对金融市场的监管
-			name = USA.517.a
+			name = 0.a
 			add_to_variable = {
 				USA_ike_power = 1
 			}
