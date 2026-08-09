@@ -22477,21 +22477,18 @@ focus_tree = {
 		cost = 5.00
 		available = {
 			OR = {
-				country_exists = SOV
-				OR = {
-					AND = {
-						country_exists = RUS
-						RUS = {
-							has_socialist_government = no
-							is_subject = no
-						}
+				AND = {
+					country_exists = RUS
+					RUS = {
+						has_socialist_government = no
+						is_subject = no
 					}
-					AND = {
-						country_exists = TRM
-						RUS = {
-							has_socialist_government = no
-							is_subject = no
-						}
+				}
+				AND = {
+					country_exists = TRM
+					RUS = {
+						has_socialist_government = no
+						is_subject = no
 					}
 				}
 			}
