@@ -2807,4 +2807,12 @@ SpriteType = {
 		name = "GFX_WCC_counter_propaganda"
 		texturefile = "gfx/interface/goals/WCC_counter_propaganda.png"
 	}
+	SpriteType = {
+		name = "GFX_USA_admiral_leahy"
+		texturefile = "gfx/interface/goals/USA_admiral_leahy.png"
+	}
+	SpriteType = {
+		name = "GFX_USA_admiral_king"
+		texturefile = "gfx/interface/goals/USA_admiral_king.png"
+	}
 }

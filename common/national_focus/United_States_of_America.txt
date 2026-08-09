@@ -27017,7 +27017,7 @@ focus_tree = {
 
 	focus = {# Chief Admiral Leahy
 		id = USA_admiral_leahy
-		icon = GFX_USA_leahy
+		icon = GFX_USA_admiral_leahy
 		cost = 2.00
 		available = {
 			has_government = authoritarian_democrat
@@ -27220,7 +27220,7 @@ focus_tree = {
 
 	focus = {# Chief Admiral King
 		id = USA_admiral_king
-		icon = GFX_USA_king
+		icon = GFX_USA_admiral_king
 		cost = 2.00
 		available = {
 			has_government = paternal_autocrat
