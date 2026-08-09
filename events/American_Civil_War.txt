@@ -5001,7 +5001,13 @@ country_event = { # USA wins the civil war
 			has_war_with = BBR
 			country_exists = TEX
 			country_exists = CSA
-			#country_exists = WCC
+			AND = {
+				country_exists = WCC
+				OR = {
+					has_country_flag = USA_navy_flag
+					has_country_flag = USA_willoughby_countercoup
+				}
+			}
 			country_exists = COR
 			AND = {
 				NEE = { 

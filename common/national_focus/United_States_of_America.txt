@@ -10635,8 +10635,8 @@ focus_tree = {
 				has_country_flag = USA_deadlock_norris
 			}
 		}
-		x = 100
-		y = 17
+		x = 103
+		y = 16
 		ai_will_do = {
 			factor = 10
 		}
@@ -21652,6 +21652,9 @@ focus_tree = {
 		icon = GFX_USA_Prepare_the_American_backyard
 		cost = 5.00
 		available = {
+			NOT = {
+				has_completed_focus = USA_From_the_New_World
+			}
 		}
 		prerequisite = {
 			focus = USA_Return_to_the_top_of_the_world
@@ -21741,9 +21744,16 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Caribbean_gem_belonging_to_the_United_States"
 			hidden_effect = {
-				country_event = {
-					id = USA.1308
-					days = 5
+				if = {
+					limit = {
+						NOT = {
+							has_country_flag = USA_navy_flag
+						}
+					}
+					country_event = {
+						id = USA.1308
+						days = 5
+					}
 				}
 			}
 			custom_effect_tooltip = USA_The_Caribbean_gem_belonging_to_the_United_States_tt
@@ -22656,6 +22666,10 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_the_fallen_of_the_Sun"
+			create_wargoal = {
+				type = annex_everything
+				target = JAP
+			}
 		}
 	}
 
@@ -22798,6 +22812,9 @@ focus_tree = {
 		icon = GFX_USA_From_the_New_World
 		cost = 5.00
 		available = {
+			NOT = {
+				has_completed_focus = USA_Prepare_the_American_backyard
+			}
 		}
 		prerequisite = {
 			focus = USA_Return_to_the_top_of_the_world
@@ -26967,8 +26984,8 @@ focus_tree = {
 		bypass = {
 			has_country_flag = USA_navy_flag
 		}
-		x = 6
-		y = 14
+		x = 27
+		y = 24
 		ai_will_do = {
 			factor = 100
 		}
@@ -27078,7 +27095,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_supreme_court_trial"
 			custom_effect_tooltip = USA_mac_navy_trial_tooltip
-			country_event = ustates.3191		
+			country_event = USA.563		
 		}
 	}
 
@@ -28033,7 +28050,10 @@ focus_tree = {
 					}
 				}
 			}
-			country_event = ustates.3181
+			country_event = {
+				id = USA.1308
+				days = 2
+			}
 			navy_experience = 50
 		}
 	}
@@ -28063,7 +28083,7 @@ focus_tree = {
 		icon = GFX_goal_USA_Destiny_For_Thalassocratic_America
 		cost = 5.00
 		available = {
-			has_completed_focus = USA_american_imperialism
+			has_completed_focus = USA_Return_to_the_top_of_the_world
 			OR = {
 				has_government = paternal_autocrat
 				has_government = authoritarian_democrat
@@ -28112,8 +28132,8 @@ focus_tree = {
 		cost = 5.00
 		available = { always = no }
 		bypass = {}
-		x = 11
-		y = 21
+		x = 9
+		y = 20
 		ai_will_do = {
 			factor = 100
 		}
