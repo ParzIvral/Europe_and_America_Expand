@@ -1,3 +1,7 @@
+CAN_USA_republic = {
+	color = rgb { 20 133 237 }
+	color_ui = rgb { 87 160 255 }
+}
 KUB_SOV = {
 	color = rgb { 169 32 62 }
 	color_ui = rgb { 169 32 62 }

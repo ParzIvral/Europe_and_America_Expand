@@ -23031,6 +23031,11 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_beauty_of_the_old_and_new_worlds"
+			custom_effect_tooltip = USA_The_beauty_of_the_old_and_new_worlds_tt
+			add_to_variable = { USA_Trade_in_Alliance_research_speed = 0.05 }
+			add_to_variable = { USA_Trade_in_Alliance_trade_opinion_factor = 0.1 }
+			add_to_variable = { USA_Trade_in_Allianc_monthly_population = 0.1 }
+			add_to_variable = { USA_Trade_in_Alliance_efficiency_gain = 0.05 }
 		}
 	}
 

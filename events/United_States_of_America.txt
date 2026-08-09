@@ -42102,3 +42102,171 @@ country_event = { # 美利坚的灭亡
 			add_war_support = 0.01
 		}
 	}
+
+	country_event = { # 合众国治下的加拿大
+		id = ustates.2001
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.2001"}
+		title = ustates.2001.t
+		desc = ustates.2001.d
+		picture = GFX_USA_americas_canada
+
+		fire_only_once = yes
+		
+		trigger = {
+			NOT = { country_exists = CAN }
+			NOT = { country_exists = NFL }
+			controls_state = 739
+			controls_state = 331
+			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
+		}
+		
+		option = { 
+			name = ustates.2001.a
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_core_of = NFL
+				}
+				add_core_of = USA
+			}
+		}
+		option = {
+			name = ustates.2001.b
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = CAN_pcpc_party
+					long_name = CAN_pcpc_party_long
+				}
+				create_country_leader = {
+					name = "Wallace McCutcheon"
+					picture = "gfx/leaders/USA/Portrait_USA_Wallace_McCutcheon.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_colonial_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = ustates.2001.c
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Canada_party
+					long_name = USA_Administration_Canada_party_long
+				}
+				create_country_leader = {
+					name = "Patrick J. Hurley"
+					picture = "gfx/leaders/USA/Portrait_USA_Patrick_Hurley.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = ustates.2001.e
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_GERCanada_party
+					long_name = USA_Administration_GERCanada_party_long
+				}
+				create_country_leader = {
+					name = "Management and Protection Committee"
+					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_gerusa_co_governance
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+	}
