@@ -22358,6 +22358,14 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_New_Colonial_Era"
+			add_ideas = USA_colonial_domination
+			every_country = {
+				limit = {
+					is_subject_of = USA
+				}
+				add_ideas = USA_colonial_domination_col
+			}
+			unlock_decision_tooltip = USA_squeeze_the_colonies_dry
 		}
 	}
 
@@ -22392,14 +22400,26 @@ focus_tree = {
 		}
 	}
 
-	focus = {#世界两级之会
+	focus = {#世界两极之会
 		id = USA_The_World_Two_Pole_Conference
 		icon = GFX_USA_The_World_Two_Pole_Conference
 		cost = 5.00
 		available = {
-			RUS = {
-				has_socialist_government = no
-				is_subject = no
+			OR = {
+				AND = {
+					NOT = { country_exists = TRM }
+					RUS = {
+						has_socialist_government = no
+						is_subject = no
+					}
+				}
+				AND = {
+					NOT = { country_exists = RUS }
+					TRM = {
+						has_socialist_government = no
+						is_subject = no
+					}
+				}
 			}
 		}
 		prerequisite = {
@@ -22416,6 +22436,38 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_World_Two_Pole_Conference"
+			if = {
+				limit = {
+					 country_exists = RUS
+					 NOT = { country_exists = TRM }
+				}
+				RUS = {
+					country_event = {
+						id = USA.1341
+						days = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					 country_exists = TRM
+					 NOT = { country_exists = RUS }
+				}
+				TRM = {
+					country_event = {
+						id = USA.1341
+						days = 1
+					}
+				}
+			}
+			else = {
+				RUS = {
+					country_event = {
+						id = USA.1341
+						days = 1
+					}
+				}
+			}
 		}
 	}
 
@@ -22426,11 +22478,20 @@ focus_tree = {
 		available = {
 			OR = {
 				country_exists = SOV
-				AND = {
-					country_exists = RUS
-					RUS = {
-						has_socialist_government = no
-						is_subject = no
+				OR = {
+					AND = {
+						country_exists = RUS
+						RUS = {
+							has_socialist_government = no
+							is_subject = no
+						}
+					}
+					AND = {
+						country_exists = TRM
+						RUS = {
+							has_socialist_government = no
+							is_subject = no
+						}
 					}
 				}
 			}

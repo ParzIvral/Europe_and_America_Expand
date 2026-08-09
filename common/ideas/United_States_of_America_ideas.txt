@@ -8158,6 +8158,42 @@ ideas = {
 				justify_war_goal_time = -0.75
 			}
 		}
+		USA_colonial_domination = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination"}
+			allowed = { always = no }
+			picture = NOR_strike_down_capitalism
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_nuclear_reactor_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				consumer_goods_factor = -0.25
+			}
+		}
+		USA_colonial_domination_col = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination_col"}
+			allowed = { always = no }
+			picture = NOR_strike_down_capitalism
+			cancel = {
+				NOT = {
+					is_subject_of = USA
+				}
+			}
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.35
+				consumer_goods_expected_value = -0.15
+				industrial_capacity_factory = 0.1
+				monthly_population = -0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.5
+			}
+		}
 		USA_pacific_naval_settlement = { # Pacific naval settlement
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement"}
 			allowed = { always = no }

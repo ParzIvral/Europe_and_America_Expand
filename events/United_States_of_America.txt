@@ -30313,6 +30313,10 @@ add_namespace = usanew
 		option = {
 			name = USA.1336.a
 			add_war_support = 0.05
+			uncomplete_national_focus = {
+				focus = USA_Negotiations_across_the_ocean
+				uncomplete_children = yes
+			}
 			complete_national_focus = USA_Intimidate_the_mad_dog_of_the_military_state
 		}
 	}
@@ -30483,6 +30487,74 @@ add_namespace = usanew
 			JAP = { add_stability = 0.05 }
 		}
 	}
+	
+	country_event = {
+		id = USA.1341
+		immediate = { log = "[GetDateText]: [Root.GetName]: event USA.1341" }
+		title = USA.1341.t
+		desc = USA.1341.d
+		picture = GFX_report_event_generic_diplomacy2
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = USA.1341.a
+			ai_chance = { factor = 75 }
+			USA = {
+				country_event = {
+					id = USA.1342
+					days = 1
+				}
+			}
+		}
+
+		option = {
+			name = USA.1341.b
+			ai_chance = { factor = 25 }
+			USA = {
+				country_event = {
+					id = USA.1343
+					days = 1
+				}
+			}
+		}
+	}
+	
+	country_event = {
+		id = USA.1342
+		immediate = { log = "[GetDateText]: [Root.GetName]: event USA.1342" }
+		title = USA.1342.t
+		desc = USA.1342.d
+		picture = GFX_report_event_generic_diplomacy2
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = USA.1342.a
+		}
+
+	}
+	
+	country_event = {
+		id = USA.1343
+		immediate = { log = "[GetDateText]: [Root.GetName]: event USA.1343" }
+		title = USA.1343.t
+		desc = USA.1343.d
+		picture = GFX_report_event_generic_diplomacy2
+		fire_only_once = yes
+		is_triggered_only = yes
+
+		option = {
+			name = USA.1343.a
+			uncomplete_national_focus = {
+				focus = USA_The_World_Two_Pole_Conference
+				uncomplete_children = yes
+			}
+			complete_national_focus = USA_In_the_vast_expanse_of_ice_and_snow
+		}
+
+	}
+	
 	country_event = { # Peace with Washington?
 		id = USA.1500
 		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.1500"}

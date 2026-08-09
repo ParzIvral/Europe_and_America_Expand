@@ -9525,6 +9525,39 @@ USA_GER_decisions = { #中欧同盟事务
 	}
 }
 political_actions = {
+	USA_squeeze_the_colonies_dry = {
+		
+		icon = give_cash
+	
+		fire_only_once = no
+		
+		available = {
+			is_ai = no
+			has_completed_focus = USA_The_New_Colonial_Era
+		}
+		
+		visible = {
+			is_ai = no
+			has_completed_focus = USA_The_New_Colonial_Era
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove USA_take_new_york"
+			every_country = {
+				limit = {
+					is_subject_of = USA
+					NOT = {
+						has_idea = USA_colonial_domination_col
+					}
+				}
+				add_ideas = USA_colonial_domination_col
+			}
+		}
+    }
    	USA_take_new_york = { #take new york
 		cost = 0
 		fire_only_once = yes
