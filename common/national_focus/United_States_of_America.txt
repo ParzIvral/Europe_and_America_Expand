@@ -23076,6 +23076,26 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus SA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers"
+			custom_effect_tooltip = USA_control_north_america_tt
+			hidden_effect = {
+				create_wargoal = {
+					type = annex_everything
+					target = CAN
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = NFL
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = MEX
+				}
+				create_wargoal = {
+					type = annex_everything
+					target = YUC
+				}
+			}
+			custom_effect_tooltip = USA_north_american_puppet_government_tt
 		}
 	}
 

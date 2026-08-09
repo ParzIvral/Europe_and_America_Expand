@@ -35629,6 +35629,7 @@ country_event = { # 美利坚的灭亡
 			}
 			add_political_power = 50
 			increase_ruling_party_popularity_by_5 = yes
+			set_country_flag = USA_no_patton_tt
 		}
 		option = { #叛徒给老子从美国滚出克！
 			name = ustates.6520.c
@@ -35637,6 +35638,7 @@ country_event = { # 美利坚的灭亡
 			}
 			add_political_power = 100
 			increase_ruling_party_popularity_by_10 = yes
+			set_country_flag = USA_no_patton_tt
 		}
 	}
 	country_event = { # 美国索要格陵兰岛！
@@ -42204,7 +42206,6 @@ country_event = { # 美利坚的灭亡
 			every_owned_state = {
 				limit = {
 					is_core_of = CAN
-					is_core_of = NFL
 					is_not_claim_or_core_of_ROOT = yes
 				}
 
@@ -42249,7 +42250,6 @@ country_event = { # 美利坚的灭亡
 			every_owned_state = {
 				limit = {
 					is_core_of = CAN
-					is_core_of = NFL
 					is_not_claim_or_core_of_ROOT = yes
 				}
 
@@ -42286,6 +42286,172 @@ country_event = { # 美利坚的灭亡
 				set_cosmetic_tag = CAN_USA_republic
 				add_ideas = USA_gerusa_co_governance
 				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+	}
+	
+	country_event = { # 合众国治下的墨西哥
+		id = ustates.2002
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.2002"}
+		title = ustates.2002.t
+		desc = ustates.2002.d
+		picture = GFX_USA_americas_mexican
+
+		fire_only_once = yes
+		
+		trigger = {
+			NOT = { country_exists = MEX }
+			controls_state = 277
+			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
+		}
+		
+		option = { 
+			name = ustates.2002.a
+			every_state = {
+				limit = {
+					is_core_of = MEX
+				}
+				add_core_of = USA
+			}
+		}
+		option = {
+			name = ustates.2002.b
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = MEX_totalist_party
+					long_name = MEX_totalist_party_long
+				}
+				create_country_leader = {
+					name = "Gustavo Díaz Ordaz"
+					picture = "gfx/leaders/USA/Portrait_USA_Gustavo_Diaz_Ordaz.png"
+					expire = "1.1.1"
+					ideology = kleptocracy_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_colonial_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = {
+			name = ustates.2002.c
+			trigger = {
+				NOT = {
+					has_country_flag = USA_no_patton_tt
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Mexican_party
+					long_name = USA_Administration_Mexican_party_long
+				}
+				create_country_leader = {
+					name = "George S. Patton"
+					picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = {
+			name = ustates.2002.e
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Mexican_party
+					long_name = USA_Administration_Mexican_party_long
+				}
+				create_country_leader = {
+					name = "Omar Bradley"
+					picture = "gfx/leaders/WCC/Portrait_WCC_gen_omar_bradley.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = ustates.2002.f
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_GERCanada_party
+					long_name = USA_Administration_GERCanada_party_long
+				}
+				create_country_leader = {
+					name = "Management and Protection Committee"
+					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_gerusa_co_governance
 				clr_country_flag = LEADER_GUI_VISIBLE
 			}
 		}

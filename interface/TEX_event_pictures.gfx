@@ -568,6 +568,10 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/GFX_USA_americas_canada.png"
 	}
 	spriteType  = {
+		name = "GFX_USA_americas_mexican"
+		texturefile = "gfx/event_pictures/GFX_USA_americas_mexican.png"
+	}
+	spriteType  = {
 		name = "GFX_news_event_macarthur_news_event"
 		texturefile = "gfx/event_pictures/North_America/United_States/macarthur_news_event.png"
 	}
