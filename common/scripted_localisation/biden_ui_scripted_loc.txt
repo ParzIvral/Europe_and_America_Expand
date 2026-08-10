@@ -120,7 +120,7 @@
   }
 }
 defined_text = {
-  name = "GetFirstOrSecondLeader"
+  name = GetFirstOrSecondLeader
   text = {
     trigger = {
       has_country_flag = HOG_veiw
@@ -166,7 +166,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetLeaderTrait"
+  name = GetLeaderTrait
   text = {
     trigger = {
       tag = LIB
@@ -307,7 +307,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetHOGTrait"
+  name = GetHOGTrait
   text = {
     trigger = {
       has_idea = NFA_Camille_Chautemps_hog_sli
@@ -352,16 +352,15 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetHOGTitle"
+  name = GetHOGTitle
   text = {
     trigger = {
       AND = {
         tag = CAN
         NOT = {
-          OR = {
-            has_country_flag = CAN_gov_gen
-            has_country_flag = CAN_president
-          }
+          has_country_flag = CAN_gov_gen
+          has_country_flag = CAN_president
+          has_country_flag = DOUBLE_LEADER_GUI_VISIBLE
         }
       }
     }
@@ -384,6 +383,15 @@ defined_text = {
       }
     }
     localization_key = PM_OR_PRES
+  }
+  text = {
+    trigger = {
+      AND = {
+        tag = CAN
+        has_country_flag = DOUBLE_LEADER_GUI_VISIBLE
+      }
+    }
+    localization_key = PM_OR_KING_OR_QUEEN
   }
   text = {
     trigger = {
@@ -422,6 +430,13 @@ defined_text = {
       has_country_flag = EU_COUNCIL_VISIBLE
     }
     localization_key = KZ_OR_COUNCIL_OR_LEADER
+  }
+  text = {
+    trigger = {
+      tag = CSA
+      has_idea = ENG_Oswald_Mosley_hog_tot
+    }
+    localization_key = DR_OR_LEADER
   }
   text = {
     trigger = {
@@ -568,7 +583,10 @@ defined_text = {
   text = {
     trigger = {
       tag = DKB
-      RUS_patriarch_sergius = yes
+      OR = {
+        RUS_patriarch_sergius = yes
+        RUS_patriarch_isaac = yes
+      }
       has_idea = DKB_Sergey_Sokolov_hog_npo
     }
     localization_key = PT_OR_PM
@@ -730,6 +748,20 @@ defined_text = {
       has_government = national_populist
     }
     localization_key = GL_OR_LEADER
+  }
+  text = {
+    trigger = {
+      tag = USA
+      has_country_flag = USA_admiral_triumvirate
+    }
+    localization_key = USA_OR_ADML
+  }
+  text = {
+    trigger = {
+      tag = USA
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = USA_OR_WIL
   }
   text = {
     trigger = {
@@ -974,6 +1006,9 @@ defined_text = {
   text = {
     trigger = {
       tag = BAS
+      NOT = {
+        has_country_flag = BAS_luxembourg_dual_monarchy
+      }
     }
     localization_key = PM_OR_LEADER
   }
@@ -1196,6 +1231,7 @@ defined_text = {
       NOT = {
         has_country_leader_with_trait = RUS_supreme_ruler
         has_idea = RUS_Patriarch_Sergius_hog_pau
+        has_idea = RUS_Patriarch_Isaac_hog_pau
       }
     }
     localization_key = EM_OR_LEADER
@@ -1204,7 +1240,10 @@ defined_text = {
     trigger = {
       tag = RUS
       RUS_russian_monarch = yes
-      has_idea = RUS_Patriarch_Sergius_hog_pau
+      OR = {
+        has_idea = RUS_Patriarch_Sergius_hog_pau
+        has_idea = RUS_Patriarch_Isaac_hog_pau
+      }
     }
     localization_key = EM_OR_PATRIARCH
   }
@@ -1585,9 +1624,22 @@ defined_text = {
     }
     localization_key = PR_OR_GAM
   }
+  text = {
+    trigger = {
+      tag = BAS
+      has_country_flag = BAS_luxembourg_dual_monarchy
+    }
+    localization_key = LUX_OR_BAS_OR_LEH
+  }
+  text = {
+    trigger = {
+      tag = ALA
+    }
+    localization_key = PRN_OR_CEO
+  }
 }
 defined_text = {
-  name = "GetThirdLeaderTitle"
+  name = GetThirdLeaderTitle
   text = {
     trigger = {
       NOT = {
@@ -1604,7 +1656,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetSecondFORHOGTitle"
+  name = GetSecondFORHOGTitle
   text = {
     trigger = {
       has_country_flag = GER_AUS_KAISER_VISIBLE
@@ -1631,6 +1683,20 @@ defined_text = {
   }
   text = {
     trigger = {
+      tag = USA
+      has_country_flag = USA_admiral_triumvirate
+    }
+    localization_key = USA_OR_ADM2
+  }
+  text = {
+    trigger = {
+      tag = USA
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = USA_OR_WIL2
+  }
+  text = {
+    trigger = {
       tag = NOR
       has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
     }
@@ -1646,9 +1712,22 @@ defined_text = {
     }
     localization_key = ERL_OR_PRP2
   }
+  text = {
+    trigger = {
+      tag = BAS
+      has_country_flag = BAS_luxembourg_dual_monarchy
+    }
+    localization_key = BAS_LUX_QN
+  }
+  text = {
+    trigger = {
+      tag = CAN
+    }
+    localization_key = QW_OR_PM2
+  }
 }
 defined_text = {
-  name = "GetFORHOGTitle"
+  name = GetFORHOGTitle
   text = {
     trigger = {
       tag = CAN
@@ -1682,6 +1761,13 @@ defined_text = {
       tag = GER
     }
     localization_key = KZ_OR_LEADER2
+  }
+  text = {
+    trigger = {
+      tag = CSA
+      has_idea = ENG_Oswald_Mosley_hog_tot
+    }
+    localization_key = DR_OR_LEADER2
   }
   text = {
     trigger = {
@@ -1828,7 +1914,10 @@ defined_text = {
   text = {
     trigger = {
       tag = DKB
-      RUS_patriarch_sergius = yes
+      OR = {
+        RUS_patriarch_sergius = yes
+        RUS_patriarch_isaac = yes
+      }
     }
     localization_key = PT_OR_PM2
   }
@@ -2116,10 +2205,28 @@ defined_text = {
     trigger = {
       tag = USA
       NOT = {
-        has_country_flag = USA_triumvirate
+        OR = {
+          has_country_flag = USA_triumvirate
+          has_country_flag = USA_admiral_triumvirate
+          has_country_flag = USA_flag_Wills_triumvirate
+        }
       }
     }
     localization_key = VP_LEADER2
+  }
+  text = {
+    trigger = {
+      tag = USA
+      has_country_flag = USA_admiral_triumvirate
+    }
+    localization_key = USA_OR_ADM
+  }
+  text = {
+    trigger = {
+      tag = USA
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = USA_OR_WIL
   }
   text = {
     trigger = {
@@ -2234,7 +2341,10 @@ defined_text = {
     trigger = {
       tag = RUS
       RUS_russian_monarch = yes
-      has_idea = RUS_Patriarch_Sergius_hog_pau
+      OR = {
+        has_idea = RUS_Patriarch_Sergius_hog_pau
+        has_idea = RUS_Patriarch_Isaac_hog_pau
+      }
     }
     localization_key = EM_OR_PATRIARCH2
   }
@@ -2752,9 +2862,15 @@ defined_text = {
     }
     localization_key = PR_OR_GAM2
   }
+  text = {
+    trigger = {
+      tag = ALA
+    }
+    localization_key = PRN_OR_CEO2
+  }
 }
 defined_text = {
-  name = "GetLeaderDescription"
+  name = GetLeaderDescription
   text = {
     trigger = {
       has_country_leader = {
@@ -3250,7 +3366,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetHeadDescription"
+  name = GetHeadDescription
   text = {
     trigger = {
       has_country_flag = LIB_firestone_puppet
@@ -3668,7 +3784,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetSecondHeadDescription"
+  name = GetSecondHeadDescription
   text = {
     trigger = {
       has_country_flag = GER_AUS_KAISER_VISIBLE
@@ -3687,7 +3803,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetOtherPrimeMinister"
+  name = GetOtherPrimeMinister
   text = {
     trigger = {
       has_country_flag = EU_COUNCIL_VISIBLE
@@ -3724,33 +3840,65 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_country_flag = BAS_luxembourg_dual_monarchy
+    }
+    localization_key = "Charlotte of Luxembourg"
+  }
+  text = {
+    trigger = {
       has_country_flag = NZL_David
     }
-    localization_key = "大卫·卡拉卡瓦"  # David Kalākaua
+    localization_key = "David Kalākaua"
   }
   text = {
     trigger = {
       has_country_flag = NZL_Jonah
     }
-    localization_key = "约拿·库西奥·喀安尼阿纳奥"  # Jonah Kūhiō Kalaniana'ole
+    localization_key = "Jonah Kūhiō Kalaniana'ole"
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_admiral_triumvirate
+      NOT = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = "Chester W. Nimitz"
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_admiral_triumvirate
+      OR = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = "Raymond A. Spruance"
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = "Curtis LeMay"
   }
   text = {
     trigger = {
       has_country_flag = NOR_QUISLING_COUNCILOR_VISIBLE
     }
-    localization_key = "维德孔·吉斯林"  # Vidkun Quisling
+    localization_key = "Vidkun Quisling"
   }
   text = {
     trigger = {
       has_country_flag = NOR_EINES_PROPAGANDA_VISIBLE
     }
-    localization_key = "阿尔宾·艾内斯"  # Albin Eines
+    localization_key = "Albin Eines"
   }
   text = {
     trigger = {
       has_country_flag = NOR_DAMSLETH_PROPAGANDA_VISIBLE
     }
-    localization_key = "哈拉尔·达姆斯莱特"  # Harald Damsleth
+    localization_key = "Harald Damsleth"
   }
   text = {
     trigger = {
@@ -3784,7 +3932,7 @@ defined_text = {
       has_country_flag = AST_NZL_nosworthy_party
       has_country_flag = AST_NZL_reform
     }
-    localization_key = "威廉·诺斯沃西"  # William Nosworthy
+    localization_key = "William Nosworthy"
   }
   text = {
     trigger = {
@@ -3882,9 +4030,15 @@ defined_text = {
     }
     localization_key = CSA_Clyde_Barrow_hog_tot
   }
+  text = {
+    trigger = {
+      has_country_flag = CAN_PLANTAGENET_LARP
+    }
+    localization_key = "Isabella II"
+  }
 }
 defined_text = {
-  name = "GetPrimeMinister"
+  name = GetPrimeMinister
   text = {
     trigger = {
       has_idea = CAN_RB_Bennett_hog_sco
@@ -3896,6 +4050,12 @@ defined_text = {
       has_idea = CAN_Major_James_Coldwell_hog_sde
     }
     localization_key = CAN_Major_James_Coldwell_hog_sde
+  }
+  text = {
+    trigger = {
+      has_idea = CAN_Agnes_Macphail_hog_sde
+    }
+    localization_key = CAN_Agnes_Macphail_hog_sde
   }
   text = {
     trigger = {
@@ -4117,7 +4277,7 @@ defined_text = {
         }
       }
     }
-    localization_key = "职位空缺"  # Vacant Office
+    localization_key = "Vacant Office"
   }
   text = {
     trigger = {
@@ -4450,7 +4610,7 @@ defined_text = {
         tag = GER
       }
     }
-    localization_key = "职位空缺"  # Vacant Office
+    localization_key = "Vacant Office"
   }
   text = {
     trigger = {
@@ -4562,6 +4722,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = AST_Keith_Murdoch_hog_sco
+    }
+    localization_key = AST_Keith_Murdoch_hog_sco
+  }
+  text = {
+    trigger = {
       has_idea = AST_Jock_Garden_hog_rso
     }
     localization_key = AST_Jock_Garden_hog_rso
@@ -4647,7 +4813,7 @@ defined_text = {
         }
       }
     }
-    localization_key = "职位空缺"  # Vacant Office
+    localization_key = "Vacant Office"
   }
   text = {
     trigger = {
@@ -4783,7 +4949,7 @@ defined_text = {
         has_country_flag = LIB_firestone_sr_dead
       }
     }
-    localization_key = "哈维·费尔斯通"  # Harvey Firestone
+    localization_key = "Harvey Firestone"
   }
   text = {
     trigger = {
@@ -4791,28 +4957,28 @@ defined_text = {
       has_government = paternal_autocrat
       has_country_flag = LIB_firestone_sr_dead
     }
-    localization_key = "小哈维·费尔斯通"  # Harvey Firestone Jr.
+    localization_key = "Harvey Firestone Jr."
   }
   text = {
     trigger = {
       has_country_flag = LIB_faulkner_pm
       has_government = radical_socialist
     }
-    localization_key = "托马斯·J·福克纳"  # Thomas J. Faulkner
+    localization_key = "Thomas J. Faulkner"
   }
   text = {
     trigger = {
       has_country_flag = LIB_barclay_pm
       has_government = social_conservative
     }
-    localization_key = "埃德温·巴克利"  # Edwin Barclay
+    localization_key = "Edwin Barclay"
   }
   text = {
     trigger = {
       has_country_flag = LIB_grand_lodge_liberia
       has_government = national_populist
     }
-    localization_key = "利比里亚共济会"  # Grand Lodge of Liberia
+    localization_key = "Grand Lodge of Liberia"
   }
   text = {
     trigger = {
@@ -5611,6 +5777,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = USA_Clare_Boothe_Luce_veep_sco
+    }
+    localization_key = USA_Clare_Boothe_Luce_veep_sco
+  }
+  text = {
+    trigger = {
       has_idea = USA_Happy_Chandler_veep_sco
     }
     localization_key = USA_Happy_Chandler_veep_sco
@@ -5659,6 +5831,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = USA_Robert_E_Wood_veep_ade
+    }
+    localization_key = USA_Robert_E_Wood_veep_ade
+  }
+  text = {
+    trigger = {
       has_idea = USA_William_Lemke_veep_ade
     }
     localization_key = USA_William_Lemke_veep_ade
@@ -5668,6 +5846,12 @@ defined_text = {
       has_idea = USA_John_Rankin_veep_pau
     }
     localization_key = USA_John_Rankin_veep_pau
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Hanford_Macnider_veep_pau
+    }
+    localization_key = USA_Hanford_Macnider_veep_pau
   }
   text = {
     trigger = {
@@ -5683,6 +5867,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = USA_Robert_R_McCormick_veep_pau
+    }
+    localization_key = USA_Robert_R_McCormick_veep_pau
+  }
+  text = {
+    trigger = {
       has_idea = USA_Hiram_W_Evans_veep_npo
     }
     localization_key = USA_Hiram_W_Evans_veep_npo
@@ -5692,6 +5882,91 @@ defined_text = {
       has_idea = USA_Samuel_Green_veep_npo
     }
     localization_key = USA_Samuel_Green_veep_npo
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Willis_Carto_veep_npo
+    }
+    localization_key = USA_Willis_Carto_veep_npo
+  }
+  text = {
+    trigger = {
+      has_idea = USA_William_Halsey_Jr_hog_pau
+    }
+    localization_key = USA_William_Halsey_Jr_hog_pau
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = WCC_Richard_K_Sutherland_sec_npo
+  }
+    #new added
+  text = {
+    trigger = {
+      has_idea = USA_Jack_Reed_pp_veep_syn
+    }
+    localization_key = USA_Jack_Reed_pp_veep_syn
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Norman_Thomas_pp_veep_rso
+    }
+    localization_key = USA_Norman_Thomas_pp_veep_rso
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Philip_La_Follette_pp_veep_sde
+    }
+    localization_key = USA_Philip_La_Follette_pp_veep_sde
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Strom_Thurmond_veep_aut
+    }
+    localization_key = USA_Strom_Thurmond_veep_aut
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Earl_Long_veep_ade
+    }
+    localization_key = USA_Earl_Long_veep_ade
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_John_Rankin_npp_veep_pau
+    }
+    localization_key = USA_John_Rankin_npp_veep_pau
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_willard_kemp_hog_ade
+    }
+    localization_key = USA_willard_kemp_hog_ade
+  }
+  text = {
+    trigger = {
+      has_idea = USA_burton_wheeler_veep_ade
+    }
+    localization_key = USA_burton_wheeler_veep_ade
+  }
+  text = {
+    trigger = {
+      has_idea = USA_James_Noe_hog_pau
+    }
+    localization_key = USA_James_Noe_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Eldon_Edwards_hog_npo
+    }
+    localization_key = USA_Eldon_Edwards_hog_npo
   }
   text = {
     trigger = {
@@ -6108,6 +6383,42 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = ALA_Stephen_Birch_hog_pau
+    }
+    localization_key = ALA_Stephen_Birch_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_George_Denver_Guggenheim_hog_pau
+    }
+    localization_key = ALA_George_Denver_Guggenheim_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_John_Pierpont_Morgan_Jr_hog_pau
+    }
+    localization_key = ALA_John_Pierpont_Morgan_Jr_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Junius_Spencer_Morgan_III_hog_pau
+    }
+    localization_key = ALA_Junius_Spencer_Morgan_III_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Henry_Sturgis_Morgan_hog_pau
+    }
+    localization_key = ALA_Henry_Sturgis_Morgan_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Segundo_Llorente_hog_pau
+    }
+    localization_key = ALA_Segundo_Llorente_hog_pau
+  }
+  text = {
+    trigger = {
       has_idea = IRE_Cathal_Brugha_hog_sde
     }
     localization_key = IRE_Cathal_Brugha_hog_sde
@@ -6501,6 +6812,108 @@ defined_text = {
       has_idea = BAS_Mariano_Zufia_Urrizalqui_hog_rso
     }
     localization_key = BAS_Mariano_Zufia_Urrizalqui_hog_rso
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Tomas_Bilbao_Hospitalet_hog_sde
+    }
+    localization_key = BAS_Tomas_Bilbao_Hospitalet_hog_sde
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Elias_Gallastegi_Uriarte_hog_ade
+    }
+    localization_key = BAS_Elias_Gallastegi_Uriarte_hog_ade
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jose_Antonio_de_Aguirre_y_Lecube_hog_sco
+    }
+    localization_key = BAS_Jose_Antonio_de_Aguirre_y_Lecube_hog_sco
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Manuel_de_Irujo_y_Ollo_hog_sco
+    }
+    localization_key = BAS_Manuel_de_Irujo_y_Ollo_hog_sco
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Santiago_Meabe_hog_syn
+    }
+    localization_key = BAS_Santiago_Meabe_hog_syn
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_santiago_aznar_sarachanga_hog_rso
+    }
+    localization_key = BAS_santiago_aznar_sarachanga_hog_rso
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Maria_Rosa_Urraca_Pastor_hog_pau
+    }
+    localization_key = BAS_Maria_Rosa_Urraca_Pastor_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Rafael_Aizpun_hog_mli
+    }
+    localization_key = BAS_Rafael_Aizpun_hog_mli
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Alfredo_Espinosa_Orive_hog_sli
+    }
+    localization_key = BAS_Alfredo_Espinosa_Orive_hog_sli
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Blas_de_Otero_hog_sli
+    }
+    localization_key = BAS_Blas_de_Otero_hog_sli
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Mariano_Anso_hog_sli
+    }
+    localization_key = BAS_Mariano_Anso_hog_sli
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jesus_Larranaga_hog_tot
+    }
+    localization_key = BAS_Jesus_Larranaga_hog_tot
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Mixel_Labeguerie_hog_ade
+    }
+    localization_key = BAS_Mixel_Labeguerie_hog_ade
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Luis_Arana_Goiri_hog_pau
+    }
+    localization_key = BAS_Luis_Arana_Goiri_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jose_Maria_Arizmendiarrieta_hog_sco
+    }
+    localization_key = BAS_Jose_Maria_Arizmendiarrieta_hog_sco
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Manu_Robles_Arangiz_hog_pau
+    }
+    localization_key = BAS_Manu_Robles_Arangiz_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jean_Ybarnegaray_hog_pau
+    }
+    localization_key = BAS_Jean_Ybarnegaray_hog_pau
   }
   text = {
     trigger = {
@@ -7588,6 +8001,12 @@ defined_text = {
       has_idea = RUS_Patriarch_Sergius_hog_pau
     }
     localization_key = RUS_Patriarch_Sergius_hog_pau
+  }
+  text = {
+    trigger = {
+      has_idea = RUS_Patriarch_Isaac_hog_pau
+    }
+    localization_key = RUS_Patriarch_Isaac_hog_pau
   }
   text = {
     trigger = {
@@ -9529,6 +9948,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = ENG_Oswald_Mosley_hog_tot
+    }
+    localization_key = ENG_Oswald_Mosley_hog_tot
+  }
+  text = {
+    trigger = {
       has_idea = TRM_Alexander_Kazembek_hog_tot
     }
     localization_key = TRM_Alexander_Kazembek_hog_tot
@@ -9813,7 +10238,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "MEXGetLeaderTitle"
+  name = MEXGetLeaderTitle
   text = {
     trigger = {
       OR = {
@@ -9868,7 +10293,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "MEXGetHoGTitle"
+  name = MEXGetHoGTitle
   text = {
     trigger = {
       has_country_leader = {
@@ -9891,7 +10316,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "IREGetLeaderTitle"
+  name = IREGetLeaderTitle
   text = {
     trigger = {
       IRE_has_monarchy = yes
@@ -9906,7 +10331,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "RUSGetLeaderTitle"
+  name = RUSGetLeaderTitle
   text = {
     trigger = {
       RUS_russian_monarch = yes
@@ -9921,7 +10346,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "ROMGetLeaderTitle"
+  name = ROMGetLeaderTitle
   text = {
     trigger = {
       OR = {
@@ -9954,7 +10379,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "FRAGetLeaderTitle"
+  name = FRAGetLeaderTitle
   text = {
     trigger = {
       has_government = radical_socialist
@@ -9969,7 +10394,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "NORGetLeaderTitle"
+  name = NORGetLeaderTitle
   text = {
     trigger = {
       has_country_leader = {
@@ -9990,7 +10415,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "NORGetHoGTitle"
+  name = NORGetHoGTitle
   text = {
     trigger = {
       has_idea = NOR_Vidkun_Quisling_hog_pau
@@ -10020,7 +10445,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "HOLGetLeaderTitle"
+  name = HOLGetLeaderTitle
   text = {
     trigger = {
       OR = {
@@ -10069,7 +10494,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "NFAGetLeaderTitle"
+  name = NFAGetLeaderTitle
   text = {
     trigger = {
       NFA_has_orleans = yes
@@ -10102,7 +10527,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "DEHGetLeaderTitle"
+  name = DEHGetLeaderTitle
   text = {
     trigger = {
       OR = {
@@ -10165,7 +10590,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "SRIGetLeaderTitle"
+  name = SRIGetLeaderTitle
   text = {
     trigger = {
       has_country_flag = SRI_garibaldi_monarchy
@@ -10180,7 +10605,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "SICGetLeaderTitle"
+  name = SICGetLeaderTitle
   text = {
     trigger = {
       has_idea = SIC_Julius_Evola_hog_npo
@@ -10213,7 +10638,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "SICGetPMTitle"
+  name = SICGetPMTitle
   text = {
     trigger = {
       has_idea = SIC_Julius_Evola_hog_npo
@@ -10243,7 +10668,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "PAPGetLeaderTitle"
+  name = PAPGetLeaderTitle
   text = {
     trigger = {
       has_country_leader_with_trait = ITA_the_mfing_pope
@@ -10260,7 +10685,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "PAPGetHoGTitle"
+  name = PAPGetHoGTitle
   text = {
     trigger = {
       OR = {
@@ -10295,7 +10720,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "PRFGetLeaderTitle"
+  name = PRFGetLeaderTitle
   text = {
     trigger = {
       has_idea = PRF_Council_of_Princes_hog_ade
@@ -10312,7 +10737,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "EGYGetHOSTitle"
+  name = EGYGetHOSTitle
   text = {
     trigger = {
       has_country_flag = EGY_became_kingdom
@@ -10324,7 +10749,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "AFGGetLeaderTitle"
+  name = AFGGetLeaderTitle
   text = {
     trigger = {
       has_idea = AFG_Osman_Fuad_hog_pau
@@ -10341,7 +10766,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "AFGGetHOSTitle"
+  name = AFGGetHOSTitle
   text = {
     trigger = {
       has_country_flag = AFG_king
@@ -10353,7 +10778,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "POLGetHOSTitle"
+  name = POLGetHOSTitle
   text = {
     trigger = {
       OR = {
@@ -10371,7 +10796,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "SCAGetLeaderTitle"
+  name = SCAGetLeaderTitle
   text = {
     trigger = {
       OR = {
@@ -10438,7 +10863,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "BATGetLeaderTitle"
+  name = BATGetLeaderTitle
   text = {
     trigger = {
       NOT = {
@@ -10475,7 +10900,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "BATGetHoGTitle"
+  name = BATGetHoGTitle
   text = {
     trigger = {
       NOT = {
@@ -10492,7 +10917,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "ICEGetLeaderTitle"
+  name = ICEGetLeaderTitle
   text = {
     trigger = {
       ICE_has_president = yes
@@ -10507,7 +10932,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "SERGetLeaderTitle"
+  name = SERGetLeaderTitle
   text = {
     trigger = {
       has_country_leader = {
@@ -10528,7 +10953,19 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetCampbellPortrait"
+  name = ALAGetHoGTitle
+  text = {
+    trigger = {
+      has_idea = ALA_Segundo_Llorente_hog_pau
+    }
+    localization_key = "Gouverneur"
+  }
+  text = {
+    localization_key = "Managing Director"
+  }
+}
+defined_text = {
+  name = GetCampbellPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10545,7 +10982,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetDollfussPortrait"
+  name = GetDollfussPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10562,7 +10999,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetSalgadoPortrait"
+  name = GetSalgadoPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10579,7 +11016,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetMerriamPortrait"
+  name = GetMerriamPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10596,7 +11033,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetArnoldPortrait"
+  name = GetArnoldPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10613,7 +11050,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetDelonclePortrait"
+  name = GetDelonclePortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10634,7 +11071,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetRocquePortrait"
+  name = GetRocquePortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10651,7 +11088,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetCalinescuPortrait"
+  name = GetCalinescuPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10668,7 +11105,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetCodreanuPortrait"
+  name = GetCodreanuPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10685,7 +11122,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetSpiridonovaPortrait"
+  name = GetSpiridonovaPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10702,7 +11139,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetPibulsongkramPortrait"
+  name = GetPibulsongkramPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10719,7 +11156,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetLepchaPortrait"
+  name = GetLepchaPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10736,7 +11173,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetVonsyatskyPortrait"
+  name = GetVonsyatskyPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10753,7 +11190,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetLandonPortrait"
+  name = GetLandonPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10770,7 +11207,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetCurtisPortrait"
+  name = GetCurtisPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10787,7 +11224,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetLongPortrait"
+  name = GetLongPortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10804,7 +11241,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetBonniePortrait"
+  name = GetBonniePortrait
   text = {
     trigger = {
       has_global_flag = SPOOKY_PORTRAITS
@@ -10821,7 +11258,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetMaurrasPortrait"
+  name = GetMaurrasPortrait
   text = {
     trigger = {
       NFA_has_monarchy = yes
@@ -10836,7 +11273,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetJoycePortrait"
+  name = GetJoycePortrait
   text = {
     trigger = {
       has_country_flag = IRE_eyepatch_joyce
@@ -10853,7 +11290,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetODuffyPortrait"
+  name = GetODuffyPortrait
   text = {
     trigger = {
       has_country_flag = IRE_oduffy_uses_mil_portrait
@@ -10870,7 +11307,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetWLMKPortrait"
+  name = GetWLMKPortrait
   text = {
     trigger = {
       has_country_flag = CAN_WLMK_coat_portrait
@@ -10894,7 +11331,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetAdrienArcandPortrait"
+  name = GetAdrienArcandPortrait
   text = {
     trigger = {
       has_country_flag = CAN_scary_arcand
@@ -10911,7 +11348,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetPapenPortrait"
+  name = GetPapenPortrait
   text = {
     trigger = {
       has_country_flag = GER_papen_suit_alt_portrait
@@ -10935,7 +11372,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetDegrellePortrait"
+  name = GetDegrellePortrait
   text = {
     trigger = {
       has_country_flag = WLL_degrelle_armor_portrait
@@ -10965,7 +11402,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetMayPechPortrait"
+  name = GetMayPechPortrait
   text = {
     trigger = {
       OR = {
@@ -10992,7 +11429,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetKirovPortrait"
+  name = GetKirovPortrait
   text = {
     trigger = {
       has_country_flag = RUS_kirov_smiling_portrait
@@ -11016,7 +11453,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetDeatheragePortrait"
+  name = GetDeatheragePortrait
   text = {
     trigger = {
       has_country_flag = COR_deatherage_front
@@ -11028,7 +11465,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetDrAtlPortrait"
+  name = GetDrAtlPortrait
   text = {
     trigger = {
       has_country_flag = MEX_atl_pipe
@@ -11040,7 +11477,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetTojoPortrait"
+  name = GetTojoPortrait
   text = {
     trigger = {
       has_country_flag = JAP_Tojo_Portrait_Suit
@@ -11058,7 +11495,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetKonoePortrait"
+  name = GetKonoePortrait
   text = {
     trigger = {
       has_country_flag = JAP_Konoe_Portrait_Suit
@@ -11070,7 +11507,7 @@ defined_text = {
   }
 }
 defined_text = {
-  name = "GetOtherPMPortrait"
+  name = GetOtherPMPortrait
   text = {
     trigger = {
       has_country_flag = EU_COUNCIL_VISIBLE
@@ -11104,6 +11541,12 @@ defined_text = {
       has_country_flag = NZL_Lydia
     }
     localization_key = GFX_Portrait_NZL_Lydia_Liliuokalani
+  }
+  text = {
+    trigger = {
+      has_country_flag = BAS_luxembourg_dual_monarchy
+    }
+    localization_key = GFX_Portrait_BAS_Charlotte
   }
   text = {
     trigger = {
@@ -11265,9 +11708,41 @@ defined_text = {
     }
     localization_key = GFX_Portrait_CSA_Clyde_Barrow
   }
+  text = {
+    trigger = {
+      has_country_flag = USA_admiral_triumvirate
+      NOT = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = GFX_Portrait_USA_Chester_Nimitz_KR
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = GFX_Portrait_WCC_Curtis_LeMay
+  }
+  text = {
+    trigger = {
+      has_country_flag = USA_admiral_triumvirate
+      OR = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = GFX_Portrait_USA_Raymond_Spruance_KR
+  }
+  text = {
+    trigger = {
+      has_country_flag = CAN_PLANTAGENET_LARP
+    }
+    localization_key = GFX_Portrait_NFA_Isabelle_II_Queen
+  }
 }
 defined_text = {
-  name = "GetPMPortrait"
+  name = GetPMPortrait
   text = {
     trigger = {
       has_idea = CAN_RB_Bennett_hog_sco
@@ -11279,6 +11754,12 @@ defined_text = {
       has_idea = CAN_Major_James_Coldwell_hog_sde
     }
     localization_key = GFX_Portrait_Canada_Major_James_Coldwell
+  }
+  text = {
+    trigger = {
+      has_idea = CAN_Agnes_Macphail_hog_sde
+    }
+    localization_key = GFX_Portrait_Canada_Agnes_Macphail
   }
   text = {
     trigger = {
@@ -11332,7 +11813,7 @@ defined_text = {
     trigger = {
       has_idea = CAN_William_Lyon_Mackenzie_King_hog_mli
     }
-    localization_key = "[GetWLMKPortrait]"
+    localization_key = [GetWLMKPortrait]
   }
   text = {
     trigger = {
@@ -11458,7 +11939,7 @@ defined_text = {
     trigger = {
       has_idea = CAN_Adrien_Arcand_hog_npo
     }
-    localization_key = "[GetAdrienArcandPortrait]"
+    localization_key = [GetAdrienArcandPortrait]
   }
   text = {
     trigger = {
@@ -11746,7 +12227,7 @@ defined_text = {
     trigger = {
       has_idea = GER_Franz_von_Papen_hog_ade
     }
-    localization_key = "[GetPapenPortrait]"
+    localization_key = [GetPapenPortrait]
   }
   text = {
     trigger = {
@@ -11948,6 +12429,12 @@ defined_text = {
       has_idea = AST_John_McEwen_hog_sco
     }
     localization_key = GFX_Portrait_AST_John_McEwen
+  }
+  text = {
+    trigger = {
+      has_idea = AST_Keith_Murdoch_hog_sco
+    }
+    localization_key = GFX_Portrait_AST_Keith_Murdoch
   }
   text = {
     trigger = {
@@ -12352,7 +12839,7 @@ defined_text = {
     trigger = {
       has_idea = AUS_Engelbert_Dollfuss_hog_ade
     }
-    localization_key = "[GetDollfussPortrait]"
+    localization_key = [GetDollfussPortrait]
   }
   text = {
     trigger = {
@@ -12388,7 +12875,7 @@ defined_text = {
     trigger = {
       has_idea = MEX_Gerardo_Murillo_Cornado_hog_syn
     }
-    localization_key = "[GetDrAtlPortrait]"
+    localization_key = [GetDrAtlPortrait]
   }
   text = {
     trigger = {
@@ -12580,13 +13067,13 @@ defined_text = {
     trigger = {
       has_idea = NFA_Francois_de_la_Rocque_hog_pau
     }
-    localization_key = "[GetRocquePortrait]"
+    localization_key = [GetRocquePortrait]
   }
   text = {
     trigger = {
       has_idea = NFA_Charles_Maurras_hog_npo
     }
-    localization_key = "[GetMaurrasPortrait]"
+    localization_key = [GetMaurrasPortrait]
   }
   text = {
     trigger = {
@@ -12634,7 +13121,7 @@ defined_text = {
     trigger = {
       has_idea = NFA_Eugene_Deloncle_hog_npo
     }
-    localization_key = "[GetDelonclePortrait]"
+    localization_key = [GetDelonclePortrait]
   }
   text = {
     trigger = {
@@ -12781,13 +13268,13 @@ defined_text = {
     trigger = {
       has_idea = USA_Huey_Long_veep_sde
     }
-    localization_key = "[GetLongPortrait]"
+    localization_key = [GetLongPortrait]
   }
   text = {
     trigger = {
       has_idea = USA_Alf_Landon_veep_sli
     }
-    localization_key = "[GetLandonPortrait]"
+    localization_key = [GetLandonPortrait]
   }
   text = {
     trigger = {
@@ -12853,7 +13340,7 @@ defined_text = {
     trigger = {
       has_idea = USA_Charles_Curtis_veep_mli
     }
-    localization_key = "[GetCurtisPortrait]"
+    localization_key = [GetCurtisPortrait]
   }
   text = {
     trigger = {
@@ -12884,6 +13371,12 @@ defined_text = {
       has_idea = USA_John_W_Bricker_veep_sli
     }
     localization_key = GFX_Portrait_USA_John_W_Bricker
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Clare_Boothe_Luce_veep_sco
+    }
+    localization_key = GFX_Portrait_USA_Clare_Boothe_Luce
   }
   text = {
     trigger = {
@@ -12935,9 +13428,21 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = USA_Robert_E_Wood_veep_ade
+    }
+    localization_key = GFX_Portrait_USA_Robert_E_Wood
+  }
+  text = {
+    trigger = {
       has_idea = USA_William_Lemke_veep_ade
     }
     localization_key = GFX_Portrait_TEX_William_Lemke
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Hanford_Macnider_veep_pau
+    }
+    localization_key = GFX_Portrait_USA_Hanford_MacNider
   }
   text = {
     trigger = {
@@ -12959,6 +13464,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = USA_Robert_R_McCormick_veep_pau
+    }
+    localization_key = GFX_Portrait_NEE_Robert_R_McCormick
+  }
+  text = {
+    trigger = {
       has_idea = USA_Hiram_W_Evans_veep_npo
     }
     localization_key = GFX_Portrait_Hiram_Evans_suit
@@ -12968,6 +13479,55 @@ defined_text = {
       has_idea = USA_Samuel_Green_veep_npo
     }
     localization_key = GFX_Portrait_USA_Samuel_Green
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Willis_Carto_veep_npo
+    }
+    localization_key = GFX_Portrait_COR_Willis_Carto
+  }
+  text = {
+    trigger = {
+      has_idea = USA_William_Halsey_Jr_hog_pau
+      has_country_flag = USA_admiral_triumvirate
+    }
+    localization_key = GFX_Portrait_USA_William_Halsey_Jr_KR
+  }
+  text = {
+    trigger = {
+      has_idea = USA_Charles_Willoughby_hog_pau
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = GFX_Portrait_USA_Richard_Sutherland
+  }
+  text = {
+    trigger = {
+      has_idea = USA_William_Halsey_Jr_hog_pau
+      has_country_flag = USA_admiral_triumvirate
+      NOT = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = GFX_Portrait_USA_Chester_Nimitz_KR
+  }
+  text = {
+    trigger = {
+      has_idea = USA_William_Halsey_Jr_hog_pau
+      has_country_flag = USA_flag_Wills_triumvirate
+    }
+    localization_key = GFX_Portrait_WCC_Curtis_LeMay
+  }
+  text = {
+    trigger = {
+      has_idea = USA_William_Halsey_Jr_hog_pau
+      has_country_flag = USA_admiral_triumvirate
+      OR = {
+        has_country_flag = USA_pacific_fleet_puppet
+        has_country_flag = USA_no_nimitz_triumvirate
+      }
+    }
+    localization_key = GFX_Portrait_USA_Raymond_Spruance_KR
   }
   text = {
     trigger = {
@@ -12983,6 +13543,73 @@ defined_text = {
       }
     }
     localization_key = GFX_Portrait_USA_General_Douglas_MacArthur
+  }
+  #new added
+  text = {
+    trigger = {
+      has_idea = USA_Jack_Reed_pp_veep_syn
+    }
+    localization_key = GFX_Portrait_USA_Jack_Reed
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Norman_Thomas_pp_veep_rso
+    }
+    localization_key = GFX_Portrait_CSA_Norman_Thomas
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Philip_La_Follette_pp_veep_sde
+    }
+    localization_key = GFX_Portrait_USA_Philip_La_Follette
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Strom_Thurmond_veep_aut
+    }
+    localization_key = GFX_Portrait_USA_Strom_Thurmond
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Earl_Long_veep_ade
+    }
+    localization_key = GFX_portrait_Portrait_TEX_Earl_Kemp_Long
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_John_Rankin_npp_veep_pau
+    }
+    localization_key = GFX_Portrait_COR_John_E_Rankin
+  }
+
+  text = {
+    trigger = {
+      has_idea = USA_Eldon_Edwards_hog_npo
+    }
+    localization_key = GFX_portrait_Portrait_USA_Eldon_Edwards
+  }
+  text = {
+    trigger = {
+      has_idea = USA_willard_kemp_hog_ade
+    }
+    localization_key = USA_willard_kemp_hog_ade
+  }
+  text = {
+    trigger = {
+      has_idea = USA_burton_wheeler_veep_ade
+    }
+    localization_key = USA_burton_wheeler_veep_ade
+  }
+  text = {
+    trigger = {
+      has_idea = USA_James_Noe_hog_pau
+    }
+    localization_key = USA_James_Noe_hog_pau
   }
   text = {
     trigger = {
@@ -13192,7 +13819,7 @@ defined_text = {
     trigger = {
       has_idea = CAL_Charles_Curtis_hog_mli
     }
-    localization_key = "[GetCurtisPortrait]"
+    localization_key = [GetCurtisPortrait]
   }
   text = {
     trigger = {
@@ -13240,7 +13867,7 @@ defined_text = {
     trigger = {
       has_idea = CAL_Frank_Merriam_hog_mli
     }
-    localization_key = "[GetMerriamPortrait]"
+    localization_key = [GetMerriamPortrait]
   }
   text = {
     trigger = {
@@ -13348,7 +13975,7 @@ defined_text = {
     trigger = {
       has_idea = CAL_Huey_Long_hog_sde
     }
-    localization_key = "[GetLongPortrait]"
+    localization_key = [GetLongPortrait]
   }
   text = {
     trigger = {
@@ -13370,7 +13997,7 @@ defined_text = {
         ruling_only = yes
       }
     }
-    localization_key = "[GetArnoldPortrait]"
+    localization_key = [GetArnoldPortrait]
   }
   text = {
     trigger = {
@@ -13381,6 +14008,42 @@ defined_text = {
       }
     }
     localization_key = GFX_Portrait_CAL_george_marshall
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Stephen_Birch_hog_pau
+    }
+    localization_key = GFX_Portrait_Alaska_Stephen_Birch
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_George_Denver_Guggenheim_hog_pau
+    }
+    localization_key = GFX_Portrait_Alaska_George_Denver_Guggenheim
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_John_Pierpont_Morgan_Jr_hog_pau
+    }
+    localization_key = GFX_Portrait_NEE_JP_Morgan_JR
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Junius_Spencer_Morgan_III_hog_pau
+    }
+    localization_key = GFX_Portrait_NEE_Junius_Spencer_Morgan_III
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Henry_Sturgis_Morgan_hog_pau
+    }
+    localization_key = GFX_Portrait_NEE_Henry_S_Morgan
+  }
+  text = {
+    trigger = {
+      has_idea = ALA_Segundo_Llorente_hog_pau
+    }
+    localization_key = GFX_Portrait_ALA_Segundo_Llorente
   }
   text = {
     trigger = {
@@ -13476,7 +14139,7 @@ defined_text = {
     trigger = {
       has_idea = "IRE_Eoin_O'Duffy_hog_pau"
     }
-    localization_key = "[GetODuffyPortrait]"
+    localization_key = [GetODuffyPortrait]
   }
   text = {
     trigger = {
@@ -13524,7 +14187,7 @@ defined_text = {
     trigger = {
       has_idea = IRE_James_Joyce_hog_rso
     }
-    localization_key = "[GetJoycePortrait]"
+    localization_key = [GetJoycePortrait]
   }
   text = {
     trigger = {
@@ -13680,7 +14343,7 @@ defined_text = {
     trigger = {
       has_idea = WLL_Leon_Degrelle_hog_npo
     }
-    localization_key = "[GetDegrellePortrait]"
+    localization_key = [GetDegrellePortrait]
   }
   text = {
     trigger = {
@@ -14234,13 +14897,13 @@ defined_text = {
     trigger = {
       has_idea = BRA_Plinio_Salgado_hog_npo
     }
-    localization_key = "[GetSalgadoPortrait]"
+    localization_key = [GetSalgadoPortrait]
   }
   text = {
     trigger = {
       has_idea = ROM_Corneliu_Codreanu_hog_npo
     }
-    localization_key = "[GetCodreanuPortrait]"
+    localization_key = [GetCodreanuPortrait]
   }
   text = {
     trigger = {
@@ -14294,7 +14957,7 @@ defined_text = {
     trigger = {
       has_idea = ROM_Armand_Calinescu_hog_pau
     }
-    localization_key = "[GetCalinescuPortrait]"
+    localization_key = [GetCalinescuPortrait]
   }
   text = {
     trigger = {
@@ -14645,6 +15308,108 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = BAS_Tomas_Bilbao_Hospitalet_hog_sde
+    }
+    localization_key = GFX_Portrait_BAS_Tomas_Bilbao_Hospitalet
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Elias_Gallastegi_Uriarte_hog_ade
+    }
+    localization_key = GFX_Portrait_BAS_Elias_Gallastegi_Uriarte
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jose_Antonio_de_Aguirre_y_Lecube_hog_sco
+    }
+    localization_key = GFX_Portrait_BAS_Jose_Antonio_de_Aguirre_y_Lecube
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Manuel_de_Irujo_y_Ollo_hog_sco
+    }
+    localization_key = GFX_Portrait_BAS_Manuel_de_Irujo_y_Ollo
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Santiago_Meabe_hog_syn
+    }
+    localization_key = GFX_Portrait_BAS_Santiago_Meabe
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_santiago_aznar_sarachanga_hog_rso
+    }
+    localization_key = GFX_Portrait_BAS_santiago_aznar_sarachanga
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Maria_Rosa_Urraca_Pastor_hog_pau
+    }
+    localization_key = GFX_Portrait_BAS_Maria_Rosa_Urraca_Pastor
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Rafael_Aizpun_hog_mli
+    }
+    localization_key = GFX_Portrait_BAS_Rafael_Aizpun
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Alfredo_Espinosa_Orive_hog_sli
+    }
+    localization_key = GFX_Portrait_BAS_Alfredo_Espinosa_Orive
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Blas_de_Otero_hog_sli
+    }
+    localization_key = GFX_Portrait_BAS_Blas_de_Otero
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Mariano_Anso_hog_sli
+    }
+    localization_key = GFX_Portrait_BAS_Mariano_Anso
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jesus_Larranaga_hog_tot
+    }
+    localization_key = GFX_Portrait_BAS_Jesus_Larranaga
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Mixel_Labeguerie_hog_ade
+    }
+    localization_key = GFX_Portrait_BAS_Mixel_Labeguerie
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Luis_Arana_Goiri_hog_pau
+    }
+    localization_key = GFX_Portrait_BAS_Luis_Arana_Goiri
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jose_Maria_Arizmendiarrieta_hog_sco
+    }
+    localization_key = GFX_Portrait_BAS_Jose_Maria_Arizmendiarrieta
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Manu_Robles_Arangiz_hog_pau
+    }
+    localization_key = GFX_Portrait_BAS_Manu_Robles_Arangiz
+  }
+  text = {
+    trigger = {
+      has_idea = BAS_Jean_Ybarnegaray_hog_pau
+    }
+    localization_key = GFX_Portrait_BAS_Jean_Ybarnegaray
+  }
+  text = {
+    trigger = {
       has_idea = CAT_Francesc_Cambo_i_Batlle_hog_sco
     }
     localization_key = GFX_Portrait_CAT_Francesc_Cambo_i_Batlle
@@ -14743,13 +15508,13 @@ defined_text = {
     trigger = {
       has_idea = RUS_Sergey_M_Kirov_hog_rso
     }
-    localization_key = "[GetKirovPortrait]"
+    localization_key = [GetKirovPortrait]
   }
   text = {
     trigger = {
       has_idea = RUS_Maria_A_Spiridonova_hog_syn
     }
-    localization_key = "[GetSpiridonovaPortrait]"
+    localization_key = [GetSpiridonovaPortrait]
   }
   text = {
     trigger = {
@@ -14864,6 +15629,12 @@ defined_text = {
       has_idea = RUS_Patriarch_Sergius_hog_pau
     }
     localization_key = GFX_Sergius_portrait
+  }
+  text = {
+    trigger = {
+      has_idea = RUS_Patriarch_Isaac_hog_pau
+    }
+    localization_key = GFX_Isaac_portrait
   }
   text = {
     trigger = {
@@ -15206,7 +15977,7 @@ defined_text = {
     trigger = {
       has_idea = JAP_Tojo_Hideki_hog_pau
     }
-    localization_key = "[GetTojoPortrait]"
+    localization_key = [GetTojoPortrait]
   }
   text = {
     trigger = {
@@ -15224,7 +15995,7 @@ defined_text = {
     trigger = {
       JAP_has_fumimaro_konoe = yes
     }
-    localization_key = "[GetKonoePortrait]"
+    localization_key = [GetKonoePortrait]
   }
   text = {
     trigger = {
@@ -15490,7 +16261,7 @@ defined_text = {
     trigger = {
       has_idea = SIA_Plaek_Khittasangkha_hog_npo
     }
-    localization_key = "[GetPibulsongkramPortrait]"
+    localization_key = [GetPibulsongkramPortrait]
   }
   text = {
     trigger = {
@@ -15685,7 +16456,7 @@ defined_text = {
     trigger = {
       has_idea = SKM_Tashi_Tshering_hog_rso
     }
-    localization_key = "[GetLepchaPortrait]"
+    localization_key = [GetLepchaPortrait]
   }
   text = {
     trigger = {
@@ -16805,6 +17576,12 @@ defined_text = {
   }
   text = {
     trigger = {
+      has_idea = ENG_Oswald_Mosley_hog_tot
+    }
+    localization_key = GFX_Portrait_England_Oswald_Mosley
+  }
+  text = {
+    trigger = {
       has_idea = TRM_Alexander_Kazembek_hog_tot
     }
     localization_key = GFX_Portrait_TRM_Alexander_Kazembek_regent
@@ -16819,7 +17596,7 @@ defined_text = {
     trigger = {
       has_idea = TRM_Anastasiy_Vonsyatsky_hog_npo
     }
-    localization_key = "[GetVonsyatskyPortrait]"
+    localization_key = [GetVonsyatskyPortrait]
   }
   text = {
     trigger = {
@@ -17094,7 +17871,7 @@ defined_text = {
     trigger = {
       has_country_flag = BONNIE_VISIBLE
     }
-    localization_key = "[GetBonniePortrait]"
+    localization_key = [GetBonniePortrait]
   }
   text = {
     trigger = {
@@ -17112,7 +17889,7 @@ defined_text = {
     trigger = {
       has_country_flag = MAY_PECH_VISIBLE
     }
-    localization_key = "[GetMayPechPortrait]"
+    localization_key = [GetMayPechPortrait]
   }
   text = {
     trigger = {
@@ -17136,7 +17913,7 @@ defined_text = {
     trigger = {
       has_idea = COR_George_Edward_Deatherage_hog_npo
     }
-    localization_key = "[GetDeatheragePortrait]"
+    localization_key = [GetDeatheragePortrait]
   }
   text = {
     trigger = {
@@ -17176,41 +17953,5 @@ defined_text = {
       has_idea = BBR_Charles_Young_hog_ade
     }
     localization_key = GFX_Portrait_BBR_Charles_Young
-  }
-
-#new added
-  text = {
-    trigger = {
-      has_idea = USA_Strom_Thurmond_veep_sco
-    }
-    localization_key = USA_Strom_Thurmond_veep_sco
-  }
-
-  text = {
-    trigger = {
-      has_idea = USA_willard_kemp_hog_ade
-    }
-    localization_key = USA_willard_kemp_hog_ade
-  }
-  
-  text = {
-    trigger = {
-      has_idea = USA_burton_wheeler_veep_ade	
-    }
-    localization_key = USA_burton_wheeler_veep_ade	
-  }
-   
-  text = {
-    trigger = {
-      has_idea = USA_James_Noe_hog_pau
-    }
-    localization_key = USA_James_Noe_hog_pau
-  }
-
-  text = {
-    trigger = {
-      has_idea = USA_Eldon_Edwards_hog_npo	
-    }
-    localization_key = USA_Eldon_Edwards_hog_npo	
   }
 }

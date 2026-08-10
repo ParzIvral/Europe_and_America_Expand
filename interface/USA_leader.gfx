@@ -523,30 +523,30 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_Gus_Hall"
-		texturefile = "gfx/leaders/USA/Portrait_USA_Eldon_Edwards.png"
+		texturefile = "gfx/leaders/CSA/Portrait_CSA_Gus_Hall.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_Darlington_Hoopes"
-		texturefile = "gfx/leaders/USA/Portrait_USA_John_J_McCloy.png"
+		texturefile = "gfx/leaders/CSA/Portrait_CSA_Darlington_Hoopes.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_Jim_Folsom"
-		texturefile = "gfx/leaders/TEX/Portrait_TEX_Russell_Long.png"
+		texturefile = "gfx/leaders/TEX/Portrait_TEX_Big_Jim_Folsom.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_Ronald_Reagan"
-		texturefile = "gfx/leaders/USA/Portrait_USA_Burton_K_Wheeler.png"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Ronald_Reagan.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_Adlai_Stevenson"
-		texturefile = "gfx/leaders/USA/Portrait_USA_Robert_D_Murphy.png"
+		texturefile = "gfx/leaders/USA/Portrait_USA_Adlai_Stevenson.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_John_Sparkman"
-		texturefile = "gfx/leaders/USA/Portrait_USA_John_H_Hilldring.png"
+		texturefile = "gfx/leaders/USA/Portrait_USA_John_Sparkman.png"
 	}
 	spriteType = {
 		name = "GFX_portrait_Portrait_USA_James_Eastland"
-		texturefile = "gfx/leaders/USA/Portrait_USA_James_A_Noe.png"
+		texturefile = "gfx/leaders/USA/Portrait_USA_James_Eastland.png"
 	}
 }

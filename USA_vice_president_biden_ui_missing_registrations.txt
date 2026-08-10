@@ -1,0 +1,200 @@
+﻿USA vice president ideas missing from Biden/VEEP GUI registrations
+
+Checked files:
+- common/ideas/USA_Ministers.txt
+- common/scripted_guis/biden_ui.txt
+- common/scripted_localisation/biden_ui_scripted_loc.txt
+
+Rule used: idea blocks in USA_Ministers.txt that contain trait `vice_president`.
+Missing exact `has_idea` registrations: 7
+
+- USA_Jack_Reed_pp_veep_syn
+- USA_Norman_Thomas_pp_veep_rso
+- USA_Philip_La_Follette_pp_veep_sde
+- USA_Strom_Thurmond_veep_aut
+- USA_Earl_Long_veep_ade
+- USA_John_Rankin_npp_veep_pau
+- USA_Eldon_Edwards_hog_npo
+
+Notes:
+- The first, second, third, fourth, and sixth entries are alternate idea ids for people already present in the GUI. Prefer adding them as OR alternatives to existing visible/text triggers, instead of creating duplicate portrait widgets.
+- USA_Earl_Long_veep_ade is not found in biden_ui.txt and I did not find an `Earl_Long` widget in interface/biden_ui.gui. Adding only the two files below may not display him unless a matching GUI widget is also added.
+- USA_Eldon_Edwards_hog_npo has `vice_president` trait despite the `_hog_` id. interface/biden_ui.gui already has an `Eldon_Edwards` widget and USA_leader.gfx has a portrait sprite, so the two registrations below should connect it.
+
+============================================================
+1) common/scripted_guis/biden_ui.txt
+============================================================
+
+For existing visible blocks, replace the single `has_idea = ...` condition with the corresponding OR block:
+
+Jack_Reed_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		OR = {
+			has_idea = USA_Jack_Reed_veep_syn
+			has_idea = USA_Jack_Reed_pp_veep_syn
+		}
+	}
+}
+
+Norman_Thomas_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		OR = {
+			has_idea = USA_Norman_Thomas_veep_rso
+			has_idea = USA_Norman_Thomas_pp_veep_rso
+		}
+	}
+}
+
+Philip_La_Follette_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		OR = {
+			has_idea = USA_Philip_La_Follette_veep_sde
+			has_idea = USA_Philip_La_Follette_pp_veep_sde
+		}
+	}
+}
+
+Strom_Thurmond_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		OR = {
+			has_idea = USA_Strom_Thurmond_veep_sco
+			has_idea = USA_Strom_Thurmond_veep_aut
+		}
+	}
+}
+
+John_Rankin_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		OR = {
+			has_idea = USA_John_Rankin_veep_pau
+			has_idea = USA_John_Rankin_npp_veep_pau
+		}
+	}
+}
+
+For entries without an existing visible block, add blocks like these in the USA HOG/vice-president visible section:
+
+Earl_Long_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		has_idea = USA_Earl_Long_veep_ade
+	}
+}
+
+Eldon_Edwards_visible = {
+	AND = {
+		has_country_flag = HOG_veiw
+		has_idea = USA_Eldon_Edwards_hog_npo
+	}
+}
+
+============================================================
+2) common/scripted_localisation/biden_ui_scripted_loc.txt
+============================================================
+
+A) Add these to the name/localisation-key section, near the existing USA vice-president text blocks around the `USA_James_W_Ford_veep_tot` sequence:
+
+text = {
+	trigger = {
+		has_idea = USA_Jack_Reed_pp_veep_syn
+	}
+	localization_key = USA_Jack_Reed_pp_veep_syn
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Norman_Thomas_pp_veep_rso
+	}
+	localization_key = USA_Norman_Thomas_pp_veep_rso
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Philip_La_Follette_pp_veep_sde
+	}
+	localization_key = USA_Philip_La_Follette_pp_veep_sde
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Strom_Thurmond_veep_aut
+	}
+	localization_key = USA_Strom_Thurmond_veep_aut
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Earl_Long_veep_ade
+	}
+	localization_key = USA_Earl_Long_veep_ade
+}
+
+text = {
+	trigger = {
+		has_idea = USA_John_Rankin_npp_veep_pau
+	}
+	localization_key = USA_John_Rankin_npp_veep_pau
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Eldon_Edwards_hog_npo
+	}
+	localization_key = USA_Eldon_Edwards_hog_npo
+}
+
+B) Add these to the portrait localisation section, near the existing USA vice-president portrait text blocks around the second USA sequence:
+
+text = {
+	trigger = {
+		has_idea = USA_Jack_Reed_pp_veep_syn
+	}
+	localization_key = GFX_Portrait_USA_Jack_Reed
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Norman_Thomas_pp_veep_rso
+	}
+	localization_key = GFX_Portrait_CSA_Norman_Thomas
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Philip_La_Follette_pp_veep_sde
+	}
+	localization_key = GFX_Portrait_USA_Philip_La_Follette
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Strom_Thurmond_veep_aut
+	}
+	localization_key = GFX_Portrait_USA_Strom_Thurmond
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Earl_Long_veep_ade
+	}
+	localization_key = GFX_portrait_Portrait_TEX_Earl_Kemp_Long
+}
+
+text = {
+	trigger = {
+		has_idea = USA_John_Rankin_npp_veep_pau
+	}
+	localization_key = GFX_Portrait_COR_John_E_Rankin
+}
+
+text = {
+	trigger = {
+		has_idea = USA_Eldon_Edwards_hog_npo
+	}
+	localization_key = GFX_portrait_Portrait_USA_Eldon_Edwards
+}

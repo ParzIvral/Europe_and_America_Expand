@@ -11,13 +11,13 @@ scripted_gui = {
 		}
 		properties = {
 			cal_reconstruction_progress_bar = {
-				frame = USA.USA_cal_reconstruction_progress
+				frame = USA_cal_reconstruction_progress
 			}
 			wcc_reconstruction_progress_bar = {
-				frame = USA.USA_wcc_reconstruction_progress
+				frame = USA_wcc_reconstruction_progress
 			}
 			tex_reconstruction_progress_bar = {
-				frame = USA.USA_tex_reconstruction_progress
+				frame = USA_tex_reconstruction_progress
 			}
 			csa_reconstruction_progress_bar = {
 				frame = USA_csa_reconstruction_progress

@@ -1354,6 +1354,94 @@ add_namespace = usanew
 			}
 		}
 	}
+	country_event = { #赤卫队抵抗被粉碎
+		id = ACW.10
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ACW.10"}
+		title = ACW.10.t
+		desc = ACW.10.d
+	
+		fire_only_once = yes 
+		trigger = {
+			has_global_flag = USA_civil_war_over_flag
+			check_variable = {
+				USA_Syndicalist_Resistance < 0
+			}
+		}
+
+		option = {
+			name = ACW.10.a
+			add_political_power = 20
+			remove_dynamic_modifier = {
+				modifier = USA_syndicalist_modifier
+			}
+		}
+	}
+	country_event = { #一分钟人抵抗被粉碎
+		id = ACW.11
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ACW.11"}
+		title = ACW.11.t
+		desc = ACW.11.d
+	
+		fire_only_once = yes 
+		trigger = {
+			has_global_flag = USA_civil_war_over_flag
+			check_variable = {
+				USA_Minutemen_Resistance < 0
+			}
+		}
+
+		option = {
+			name = ACW.11.a
+			add_political_power = 20
+			remove_dynamic_modifier = {
+				modifier = USA_minutemen_modifier
+			}
+		}
+	}
+	country_event = { #3k党销声匿迹
+		id = ACW.12
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ACW.12"}
+		title = ACW.12.t
+		desc = ACW.12.d
+	
+		fire_only_once = yes 
+		trigger = {
+			has_global_flag = USA_civil_war_over_flag
+			check_variable = {
+				USA_Klan_Resistance < 0
+			}
+		}
+
+		option = {
+			name = ACW.12.a
+			add_political_power = 20
+			remove_dynamic_modifier = {
+				modifier = USA_kkk_modifier
+			}
+		}
+	}
+	country_event = { #黑色军团销声匿迹
+		id = ACW.13
+		immediate = {log = "[GetDateText]: [Root.GetName]: event ACW.13"}
+		title = ACW.13.t
+		desc = ACW.13.d
+	
+		fire_only_once = yes 
+		trigger = {
+			has_global_flag = USA_civil_war_over_flag
+			check_variable = {
+				USA_Black_legion_Resistance < 0
+			}
+		}
+
+		option = {
+			name = ACW.13.a
+			add_political_power = 20
+			remove_dynamic_modifier = {
+				modifier = USA_black_legion_modifier
+			}
+		}
+	}
 #开局到总统选举前
 	country_event = { # 1936年的美利坚合众国
 		id = ustates.1
@@ -8474,6 +8562,8 @@ add_namespace = usanew
 		immediate = {
 			hidden_effect = {
 				set_country_flag = USA_macarthur_coup
+				add_popularity = { ideology = paternal_autocrat popularity = 0.3 }
+				add_popularity = { ideology = authoritarian_democrat popularity = 0.15 }
 				set_party_name = {
 					ideology = paternal_autocrat
 					long_name = USA_paternal_autocrat_military_junta_long
@@ -8510,6 +8600,9 @@ add_namespace = usanew
 				promote_character = {
 					character = USA_Douglas_Macarthur_2
 					ideology = junta_subtype
+				}
+				remove_power_balance = {
+					id = USA_Civil_War_bop
 				}
 				country_event = { id = ACW.1 days = 2 } #比尔·海伍德呼吁人民行动起来
 				country_event = { id = ACW.3 days = 3 } #默里发动叛乱反抗华盛顿！
@@ -28452,19 +28545,25 @@ add_namespace = usanew
 
 		trigger = {
 			check_variable = {
-				USA_total_reconstruction_factor > 20
+				var = USA_total_reconstruction_factor
+				value = 20
+				compare = greater_than_or_equals
 			}
-			has_idea = USA_civil_war_war_aftermath_idea
 			has_global_flag = USA_civil_war_over_flag
 		}
 		fire_only_once = yes
 
 		option = { #
 			name = USA.1100.a
-			swap_ideas = {
-				remove_idea = USA_civil_war_war_aftermath_idea
-				add_idea = USA_civil_war_war_aftermath_idea2
-			}
+			if = {
+				limit = {
+					has_ideas = USA_civil_war_war_aftermath_idea
+				}
+				swap_ideas = {
+					remove_idea = USA_civil_war_war_aftermath_idea
+					add_idea = USA_civil_war_war_aftermath_idea2
+				}
+			}				
 			every_state = {
 				limit = {
 					is_controlled_by = USA
@@ -28486,19 +28585,25 @@ add_namespace = usanew
 
 		trigger = {
 			check_variable = {
-				USA_total_reconstruction_factor > 40
+				var = USA_total_reconstruction_factor
+				value = 40
+				compare = greater_than_or_equals
 			}
-			has_idea = USA_civil_war_war_aftermath_idea2
 			has_global_flag = USA_civil_war_over_flag
 		}
 		fire_only_once = yes
 
 		option = { #
 			name = USA.1101.a
-			swap_ideas = {
-				remove_idea = USA_civil_war_war_aftermath_idea2
-				add_idea = USA_civil_war_war_aftermath_idea3
-			}
+			if = {
+				limit = {
+					has_ideas = USA_civil_war_war_aftermath_idea2
+				}
+				swap_ideas = {
+					remove_idea = USA_civil_war_war_aftermath_idea2
+					add_idea = USA_civil_war_war_aftermath_idea3
+				}
+			}	
 			every_state = {
 				limit = {
 					is_controlled_by = USA
@@ -28520,19 +28625,25 @@ add_namespace = usanew
 
 		trigger = {
 			check_variable = {
-				USA_total_reconstruction_factor > 60
+				var = USA_total_reconstruction_factor
+				value = 60
+				compare = greater_than_or_equals
 			}
-			has_idea = USA_civil_war_war_aftermath_idea3
 			has_global_flag = USA_civil_war_over_flag
 		}
 		fire_only_once = yes
 
 		option = { #
 			name = USA.1102.a
-			swap_ideas = {
-				remove_idea = USA_civil_war_war_aftermath_idea3
-				add_idea = USA_civil_war_war_aftermath_idea4
-			}
+			if = {
+				limit = {
+					has_ideas = USA_civil_war_war_aftermath_idea3
+				}
+				swap_ideas = {
+					remove_idea = USA_civil_war_war_aftermath_idea3
+					add_idea = USA_civil_war_war_aftermath_idea4
+				}
+			}	
 			every_state = {
 				limit = {
 					is_controlled_by = USA
@@ -28554,19 +28665,25 @@ add_namespace = usanew
 
 		trigger = {
 			check_variable = {
-				USA_total_reconstruction_factor > 80
+				var = USA_total_reconstruction_factor
+				value = 80
+				compare = greater_than_or_equals
 			}
-			has_idea = USA_civil_war_war_aftermath_idea4
 			has_global_flag = USA_civil_war_over_flag
 		}
 		fire_only_once = yes
 
 		option = { #
 			name = USA.1103.a
-			swap_ideas = {
-				remove_idea = USA_civil_war_war_aftermath_idea4
-				add_idea = USA_civil_war_war_aftermath_idea5
-			}
+			if = {
+				limit = {
+					has_ideas = USA_civil_war_war_aftermath_idea4
+				}
+				swap_ideas = {
+					remove_idea = USA_civil_war_war_aftermath_idea4
+					add_idea = USA_civil_war_war_aftermath_idea5
+				}
+			}			
 			every_state = {
 				limit = {
 					is_controlled_by = USA
@@ -28581,23 +28698,8 @@ add_namespace = usanew
 
 	country_event = { #閲嶅缓5
 		id = USA.1104
-		immediate = { log = "[GetDateText]: [Root.GetName]: event USA.1104" }
-		title = USA.1104.t
-		desc = USA.1104.d
-		hidden = yes
-
-		trigger = {
-			check_variable = {
-				USA_total_reconstruction_factor > 99
-			}
-			has_idea = USA_civil_war_war_aftermath_idea5
-			has_global_flag = USA_civil_war_over_flag
-		}
-		fire_only_once = yes
-
-		option = { #
-			name = USA.1104.a
-			remove_ideas = USA_civil_war_war_aftermath_idea5
+		immediate = { 
+			log = "[GetDateText]: [Root.GetName]: event USA.1104" 
 			every_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
@@ -28697,8 +28799,98 @@ add_namespace = usanew
 				remove_ACW_cores = yes
 				add_core_of = ROOT
 			}
+		}
+		title = USA.1104.t
+		desc = USA.1104.d
+		hidden = yes
+
+		trigger = {
+			check_variable = {
+				var = USA_total_reconstruction_factor
+				value = 100
+				compare = greater_than_or_equals
+			}
+			has_global_flag = USA_civil_war_over_flag
+		}
+		fire_only_once = yes
+
+		option = { #
+			name = USA.1104.a
+			if = {
+				limit = {
+					has_ideas = USA_civil_war_war_aftermath_idea5
+				}
+				remove_ideas = USA_civil_war_war_aftermath_idea5
+			}
 			add_war_support = 0.1
 			add_stability = 0.1
+		}
+	}
+	country_event = { #
+		id = USA.1105
+		immediate = { log = "[GetDateText]: [Root.GetName]: event USA.1105" }
+		title = USA.1105.t
+		desc = USA.1105.d
+		hidden = yes
+
+		trigger = {
+			has_global_flag = USA_civil_war_over_flag
+			check_variable = {
+				var = USA_total_reconstruction_factor
+				value = 100
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_Klan_Resistance
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = USA_Black_legion_Resistance
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = USA_Minutemen_Resistance
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = USA_Syndicalist_Resistance
+				value = 0
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = USA_wcc_reconstruction_progress
+				value = 100
+				compare = greater_than_or_equals
+			}	
+			check_variable = {
+				var = USA_tex_reconstruction_progress
+				value = 100
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_cal_reconstruction_progress
+				value = 100
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_cor_reconstruction_progress
+				value = 100
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_csa_reconstruction_progress
+				value = 100
+				compare = greater_than_or_equals
+			}
+		}
+		fire_only_once = yes
+
+		option = { #
+			name = USA.1105.a
+			set_country_flag = USA_reconstruction_is_over
 		}
 	}
 #外交
@@ -36746,7 +36938,8 @@ country_event = { # 美利坚的灭亡
 					ideology = authoritarian_democrat
 					long_name = USA_navy_party_long
 					name = USA_navy_party
-				}
+			}
+			complete_national_focus = USA_navy_in_command
 		}
 	}
 	country_event = { # 金控制了华盛顿！
@@ -36791,10 +36984,12 @@ country_event = { # 美利坚的灭亡
 					character = USA_Douglas_MacArthur_2
 				}
 			add_ideas = USA_William_Leahy_hog_ade
-			add_ideas = USA_Robert_Heinlein_for_pau
+			add_ideas = USA_William_Christian_Bullitt_Jr_for_pau
 			add_ideas = USA_Thomas_Kinkaid_eco_pau
 			add_ideas = USA_William_Moffett_sec_ade
+			
 			}
+			add_ideas = USA_army_navy_tensions_idea
 			add_ideas = USA_army_navy_tensions_idea
 			hidden_effect = {
 				country_event = { # 效忠麦克阿瑟的人逃往西方！

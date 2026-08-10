@@ -10,7 +10,6 @@ on_actions = {
 				add_to_variable = { USA_tex_reconstruction_progress = 3 }
 				add_to_variable = { USA_csa_reconstruction_progress = 3 }
 				add_to_variable = { USA_cor_reconstruction_progress = 3 }
-				add_to_variable = { USA_usa_reconstruction_progress = 3 }
 				if = {
 					limit = {
 						owns_state = 796
@@ -41,7 +40,78 @@ on_actions = {
 				set_variable = {
 					USA_total_reconstruction_factor_temp = 0
 				}
-				
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_csa_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_csa_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_cal_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_cal_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_wcc_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_wcc_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_tex_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_tex_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_cor_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_cor_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_nee_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_nee_reconstruction_progress = 100
+					}
+				}
 				# 计算西海岸
 				set_temp_variable = { USA_cal_total_reconstruction_progress = USA_cal_reconstruction_progress }
 				multiply_temp_variable = { USA_cal_total_reconstruction_progress = 15 }
@@ -80,6 +150,66 @@ on_actions = {
 			else = { #未拥有新英格兰
 				set_variable = {
 					USA_total_reconstruction_factor_temp = 0
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_csa_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_csa_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_cal_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_cal_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_wcc_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_wcc_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_tex_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_tex_reconstruction_progress = 100
+					}
+				}
+				if = {
+					limit = {
+						check_variable = {
+							var = USA_cor_reconstruction_progress
+							value = 100
+							compare = greater_than_or_equals
+						}
+					}
+					set_variable = {
+						USA_cor_reconstruction_progress = 100
+					}
 				}
 			#计算西海岸
 				set_temp_variable = { temp_factor = USA_cal_reconstruction_progress }

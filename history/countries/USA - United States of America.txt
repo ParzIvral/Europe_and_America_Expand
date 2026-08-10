@@ -408,10 +408,6 @@ set_variable = { USA_csa_reconstruction_progress = 0 }
 set_variable = { USA_nee_reconstruction_progress = 50 }
 set_variable = { USA_usa_reconstruction_progress = 100 }
 set_variable = { USA_total_reconstruction_factor = 0 }
-set_variable = { USA_Klan_Resistance = 50 }
-set_variable = { USA_Black_legion_Resistance = 50 }
-set_variable = { USA_Syndicalist_Resistance = 50 }
-set_variable = { USA_Minutemen_Resistance = 50 }
 set_variable = { USA_sp_monthly_increase = 0.05 }
 set_variable = { USA_afp_monthly_increase = 0.05 }
 set_variable = { USA_od_monthly_increase = 0.05 }

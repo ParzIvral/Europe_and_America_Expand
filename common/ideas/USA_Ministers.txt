@@ -698,8 +698,28 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_conservative
+				cd_democratic
 				hog_silent_workhorse
+			}
+			cancel_if_invalid = no
+		}
+
+		USA_Clare_Boothe_Luce_veep_sco = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Clare_Boothe_Luce_veep_sco"
+			}
+			traits = {
+				vice_president
+				social_conservative
+				hog_revelatory_speaker
 			}
 			cancel_if_invalid = no
 		}
@@ -939,6 +959,26 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+
+		USA_Robert_E_Wood_veep_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Robert_E_Wood_veep_ade"
+			}
+			traits = {
+				vice_president
+				True_Patriot_ad
+				hog_corporate_suit
+			}
+			cancel_if_invalid = no
+		}
+
 		USA_willard_kemp_hog_ade = { #威拉德·坎普
 			allowed = { original_tag = USA }
 			available = {
@@ -1015,6 +1055,44 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		USA_Hanford_Macnider_veep_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Hanford_Macnider_veep_pau"
+			}
+			traits = {
+				vice_president
+				True_Patriot_pa
+				hog_old_general
+			}
+			cancel_if_invalid = no
+		}
+		USA_Robert_R_McCormick_veep_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Robert_R_McCormick_veep_pau"
+			}
+			traits = {
+				vice_president
+				True_Patriot_pa
+				hog_nationalist_press_baron
+			}
+			cancel_if_invalid = no
+		}
 		
 		USA_Gerald_L_K_Smith_veep_pau = { #杰拉尔德·L·K·史密斯
 			allowed = { original_tag = USA }
@@ -1054,6 +1132,48 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		USA_Charles_Willoughby_hog_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Charles_Willoughby_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Charles_Willoughby_hog_pau"
+			}
+			traits = {
+				head_of_government
+				pa_army
+				hog_political_protege
+			}
+			cancel_if_invalid = no
+		}
+		USA_William_Halsey_Jr_hog_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = William_Halsey_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_William_Halsey_Jr_hog_pau"
+			}
+			traits = {
+				head_of_government
+				pa_navy
+				hog_old_admiral
+			}
+			cancel_if_invalid = no
+		}
 		USA_Hiram_W_Evans_veep_npo = { #希拉姆·韦斯利·埃文斯
 			allowed = { original_tag = USA }
 			available = {
@@ -1072,7 +1192,24 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		
+		USA_Willis_Carto_veep_npo = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Willis_Carto_veep_npo"
+			}
+			traits = {
+				vice_president
+				True_Patriot_np
+				hog_young_guard
+			}
+			cancel_if_invalid = no
+		}
 		USA_Samuel_Green_veep_npo = {
 			allowed = { original_tag = USA }
 			available = {
@@ -1827,7 +1964,50 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		
+		USA_Clarence_Manion_for_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Clarence_Manion_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Clarence_Manion_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Clarence_Manion_for_ade"
+			}
+			traits = {
+				foreign_minister
+				True_Patriot_ad
+				for_ideological_crusader
+			}
+			cancel_if_invalid = no
+		}
+		USA_Frank_T_Hines_for_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Frank_T_Hines_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Frank_T_Hines_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea Frank_T_Hines_for_ade"
+			}
+			traits = {
+				foreign_minister
+				True_Patriot_ad
+				for_staunch_idealist
+			}
+			cancel_if_invalid = no
+		}
 		USA_Raymond_Spruance_for_ade = {
 			allowed = { original_tag = USA }
 			available = {
@@ -1869,6 +2049,28 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		USA_William_Christian_Bullitt_Jr_for_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Robert_Heinlein_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Robert_Heinlein_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_William_Christian_Bullitt_Jr_for_pau"
+			}
+			traits = {
+				foreign_minister
+				pa_navy
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
 		USA_Robert_Heinlein_for_pau = {
 			allowed = { original_tag = USA }
 			available = {
@@ -1887,6 +2089,28 @@ ideas = {
 			traits = {
 				foreign_minister
 				paternal_autocrat
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		USA_Richard_Washburn_Child_for_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Richard_Washburn_Child_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Richard_Washburn_Child_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Richard_Washburn_Child_for_pau"
+			}
+			traits = {
+				foreign_minister
+				True_Patriot_pa
 				for_biased_intellectual
 			}
 			cancel_if_invalid = no
@@ -2607,7 +2831,116 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		
+		USA_Gertrude_L_Warren_eco_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Gertrude_L_Warren_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Gertrude_L_Warren_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Gertrude_L_Warren_eco_ade"
+			}
+			traits = {
+				economy_minister
+				True_Patriot_ad
+				eco_agrarian_expert
+			}
+			cancel_if_invalid = no
+		}
+		USA_Irenee_du_Pont_eco_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Irenee_du_Pont_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Irenee_du_Pont_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Irenee_du_Pont_eco_ade"
+			}
+			traits = {
+				economy_minister
+				ad_dupont
+				eco_construction_magnate
+			}
+			cancel_if_invalid = no
+		}
+		USA_Lessing_J_Rosenwald_eco_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Lessing_J_Rosenwald_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Lessing_J_Rosenwald_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Lessing_J_Rosenwald_eco_ade"
+			}
+			traits = {
+				economy_minister
+				True_Patriot_ad
+				eco_captain_of_industry
+			}
+			cancel_if_invalid = no
+		}
+		USA_Rose_Wilder_Lane_eco_ade = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Rose_Wilder_Lane_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Rose_Wilder_Lane_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Rose_Wilder_Lane_eco_ade"
+			}
+			traits = {
+				economy_minister
+				True_Patriot_ad
+				eco_laissez_faire_capitalist
+			}
+			cancel_if_invalid = no
+		}
+		USA_Merwin_K_Hart_eco_pau = {
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+					NOT = { has_country_flag = Merwin_K_Hart_dead }
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = Merwin_K_Hart_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Merwin_K_Hart_eco_pau"
+			}
+			traits = {
+				economy_minister
+				True_Patriot_pa
+				eco_balanced_budget_economy
+			}
+			cancel_if_invalid = no
+		}
 		USA_Thomas_Kinkaid_eco_pau = {
 			allowed = { original_tag = USA }
 			available = {
@@ -2625,7 +2958,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				paternal_autocrat
+				pa_navy
 				eco_battle_fleet_proponent
 			}
 			cancel_if_invalid = no
@@ -3854,7 +4187,7 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		USA_John_Lesesne_DeWitt_sec_pau = {
+		USA_John_Lesesne_DeWitt_sec_pau = { #约翰·勒塞纳·德威特
 			allowed = { original_tag = USA }
 			available = {
 				custom_trigger_tooltip = {
@@ -3871,7 +4204,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				paternal_autocrat
+				pa_army
 				sec_prince_of_terror
 			}
 			cancel_if_invalid = no
@@ -3937,7 +4270,7 @@ ideas = {
 			cancel_if_invalid = no
 		}
 	}
-		chief_of_staff = { ### Chief of Staff ###
+	chief_of_staff = { ### Chief of Staff ###
 		USA_Douglas_MacArthur_cos = {
 			allowed = { original_tag = USA }
 			available = {
@@ -3989,6 +4322,9 @@ ideas = {
 				custom_trigger_tooltip = {
 					tooltip = military_staff_available
 					NOT = { has_country_flag = Joseph_Lightning_Joe_Lawton_Collins_dead }
+					TEX = {
+					exists = no
+					}
 				}
 			}
 			visible = {
@@ -4068,6 +4404,7 @@ ideas = {
 		}
 
 	}
+
 	chief_of_army = { ### Chief of Army ###
 		USA_Alexander_Vandegrift_carm = {
 			allowed = { original_tag = USA }
@@ -4089,6 +4426,7 @@ ideas = {
 			}
 			cancel_if_invalid = yes
 		}
+
 		USA_Dwight_D_Eisenhower_carm = {
 			allowed = { original_tag = USA }
 			available = {
@@ -4153,6 +4491,7 @@ ideas = {
 		}
 
 	}
+
 	chief_of_navy = { ### Chief of Navy ###
 		USA_Charles_Edison_cnav = {
 			allowed = { original_tag = USA }
@@ -4302,6 +4641,7 @@ ideas = {
 		}
 
 	}
+
 	chief_of_air_force = { ### Chief of Air Force ###
 		USA_Carl_Andrew_Spaatz_cair = {
 			allowed = { original_tag = USA }

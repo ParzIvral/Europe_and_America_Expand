@@ -2549,7 +2549,7 @@ USA_civil_war_begins = {
 		USA = {
 			set_variable = { USA_Klan_Resistance = 90 } #3k党抵抗
 			set_variable = { USA_Minutemen_Resistance = 85 } #一分钟人抵抗
-			set_variable = { USA_Black_legion_Resistance = 85 } #黑色军团
+			set_variable = { USA_Black_legion_Resistance = 85 } #黑色军团 
 			set_variable = { USA_Syndicalist_Resistance = 95 } #工团抵抗
 			set_variable = { USA_syndicalist_stability = -0.0475 }
 			set_variable = { USA_syndicalist_war_support = -0.0475 }
@@ -2662,9 +2662,6 @@ USA_civil_war_begins = {
 			}
 		}
 		USA = {
-			remove_power_balance = {
-				id = USA_Civil_War_bop
-			}
 			set_party_name = {
 				ideology = authoritarian_democrat
 				long_name = USA_authoritarian_democrat_junta_long

@@ -7,6 +7,9 @@ USA_recovery_decisions = {
 	visible = { 
 		has_global_flag = USA_civil_war_over_flag
 		has_completed_focus = USA_start_reconstruction
+		NOT = {
+			has_country_flag = USA_reconstruction_is_over
+		}
 	}
 	visible_when_empty = yes
 	priority = 101
