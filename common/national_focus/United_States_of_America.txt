@@ -22480,14 +22480,12 @@ focus_tree = {
 				AND = {
 					country_exists = RUS
 					RUS = {
-						has_socialist_government = no
 						is_subject = no
 					}
 				}
 				AND = {
 					country_exists = TRM
 					RUS = {
-						has_socialist_government = no
 						is_subject = no
 					}
 				}
