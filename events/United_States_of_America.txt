@@ -30554,6 +30554,338 @@ add_namespace = usanew
 		}
 
 	}
+
+	country_event = { # 合众国治下的加拿大
+		id = USA.1344
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.1344"}
+		title = USA.1344.t
+		desc = USA.1344.d
+		picture = GFX_USA_americas_canada
+
+		fire_only_once = yes
+		
+		trigger = {
+			NOT = { country_exists = CAN }
+			NOT = { country_exists = NFL }
+			controls_state = 739
+			controls_state = 331
+			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
+		}
+		
+		option = { 
+			name = USA.1344.a
+			every_state = {
+				limit = {
+					is_core_of = CAN
+				}
+				add_core_of = USA
+			}
+			every_state = {
+				limit = {
+					is_core_of = NFL
+				}
+				add_core_of = USA
+			}
+		}
+		option = {
+			name = USA.1344.b
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = CAN_pcpc_party
+					long_name = CAN_pcpc_party_long
+				}
+				create_country_leader = {
+					name = "Wallace McCutcheon"
+					picture = "gfx/leaders/USA/Portrait_USA_Wallace_McCutcheon.png"
+					expire = "1.1.1"
+					ideology = corporatocracy_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_colonial_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = USA.1344.c
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Canada_party
+					long_name = USA_Administration_Canada_party_long
+				}
+				create_country_leader = {
+					name = "Patrick J. Hurley"
+					picture = "gfx/leaders/USA/Portrait_USA_Patrick_Hurley.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = USA.1344.e
+			every_owned_state = {
+				limit = {
+					is_core_of = CAN
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = NFL
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				CAN = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = CAN }
+			puppet_released_tag_nocosmetic = yes
+			CAN = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_GERCanada_party
+					long_name = USA_Administration_GERCanada_party_long
+				}
+				create_country_leader = {
+					name = "Management and Protection Committee"
+					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+				set_cosmetic_tag = CAN_USA_republic
+				add_ideas = USA_gerusa_co_governance
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+	}
+	
+	country_event = { # 合众国治下的墨西哥
+		id = USA.1345
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.1345"}
+		title = USA.1345.t
+		desc = USA.1345.d
+		picture = GFX_USA_americas_mexican
+
+		fire_only_once = yes
+		
+		trigger = {
+			NOT = { country_exists = MEX }
+			controls_state = 277
+			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
+		}
+		
+		option = { 
+			name = USA.1345.a
+			every_state = {
+				limit = {
+					is_core_of = MEX
+				}
+				add_core_of = USA
+			}
+		}
+		option = {
+			name = USA.1345.b
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = MEX_totalist_party
+					long_name = MEX_totalist_party_long
+				}
+				create_country_leader = {
+					name = "Gustavo Díaz Ordaz"
+					picture = "gfx/leaders/USA/Portrait_USA_Gustavo_Diaz_Ordaz.png"
+					expire = "1.1.1"
+					ideology = kleptocracy_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_colonial_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = {
+			name = USA.1345.c
+			trigger = {
+				NOT = {
+					has_country_flag = USA_no_patton_tt
+				}
+			}
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Mexican_party
+					long_name = USA_Administration_Mexican_party_long
+				}
+				create_country_leader = {
+					name = "George S. Patton"
+					picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = {
+			name = USA.1345.e
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_Mexican_party
+					long_name = USA_Administration_Mexican_party_long
+				}
+				create_country_leader = {
+					name = "Omar Bradley"
+					picture = "gfx/leaders/WCC/Portrait_WCC_gen_omar_bradley.png"
+					expire = "1.1.1"
+					ideology = junta_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_military_col_government
+				set_country_flag = CAN_pm_is_hos
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+		option = { 
+			name = USA.1345.f
+			every_owned_state = {
+				limit = {
+					is_core_of = MEX
+					is_not_claim_or_core_of_ROOT = yes
+				}
+
+				MEX = {
+					transfer_state = PREV
+				}
+			}
+			set_temp_variable = { tag_to_release = MEX }
+			puppet_released_tag_nocosmetic = yes
+			MEX = {
+				add_popularity = { ideology = paternal_autocrat popularity = 1 }
+				set_politics = {
+					ruling_party = paternal_autocrat
+					elections_allowed = no
+					name = USA_Administration_GERCanada_party
+					long_name = USA_Administration_GERCanada_party_long
+				}
+				create_country_leader = {
+					name = "Management and Protection Committee"
+					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
+					expire = "1.1.1"
+					ideology = autocratic_colonial_govt_subtype
+				}
+				set_cosmetic_tag = MEX_USA_republic
+				add_ideas = USA_gerusa_co_governance
+				clr_country_flag = LEADER_GUI_VISIBLE
+			}
+		}
+	}
 	
 	country_event = { # Peace with Washington?
 		id = USA.1500
@@ -42194,337 +42526,5 @@ country_event = { # 美利坚的灭亡
 		option = { 
 			name = nimatron.33.a 
 			add_war_support = 0.01
-		}
-	}
-
-	country_event = { # 合众国治下的加拿大
-		id = ustates.2001
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.2001"}
-		title = ustates.2001.t
-		desc = ustates.2001.d
-		picture = GFX_USA_americas_canada
-
-		fire_only_once = yes
-		
-		trigger = {
-			NOT = { country_exists = CAN }
-			NOT = { country_exists = NFL }
-			controls_state = 739
-			controls_state = 331
-			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
-		}
-		
-		option = { 
-			name = ustates.2001.a
-			every_state = {
-				limit = {
-					is_core_of = CAN
-				}
-				add_core_of = USA
-			}
-			every_state = {
-				limit = {
-					is_core_of = NFL
-				}
-				add_core_of = USA
-			}
-		}
-		option = {
-			name = ustates.2001.b
-			every_owned_state = {
-				limit = {
-					is_core_of = CAN
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = NFL
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = CAN }
-			puppet_released_tag_nocosmetic = yes
-			CAN = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = CAN_pcpc_party
-					long_name = CAN_pcpc_party_long
-				}
-				create_country_leader = {
-					name = "Wallace McCutcheon"
-					picture = "gfx/leaders/USA/Portrait_USA_Wallace_McCutcheon.png"
-					expire = "1.1.1"
-					ideology = corporatocracy_subtype
-				}
-				set_cosmetic_tag = CAN_USA_republic
-				add_ideas = USA_colonial_government
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-		option = { 
-			name = ustates.2001.c
-			every_owned_state = {
-				limit = {
-					is_core_of = CAN
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = NFL
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = CAN }
-			puppet_released_tag_nocosmetic = yes
-			CAN = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = USA_Administration_Canada_party
-					long_name = USA_Administration_Canada_party_long
-				}
-				create_country_leader = {
-					name = "Patrick J. Hurley"
-					picture = "gfx/leaders/USA/Portrait_USA_Patrick_Hurley.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-				}
-				set_cosmetic_tag = CAN_USA_republic
-				add_ideas = USA_military_col_government
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-		option = { 
-			name = ustates.2001.e
-			every_owned_state = {
-				limit = {
-					is_core_of = CAN
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = NFL
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				CAN = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = CAN }
-			puppet_released_tag_nocosmetic = yes
-			CAN = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = USA_Administration_GERCanada_party
-					long_name = USA_Administration_GERCanada_party_long
-				}
-				create_country_leader = {
-					name = "Management and Protection Committee"
-					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
-					expire = "1.1.1"
-					ideology = autocratic_colonial_govt_subtype
-				}
-				set_cosmetic_tag = CAN_USA_republic
-				add_ideas = USA_gerusa_co_governance
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-	}
-	
-	country_event = { # 合众国治下的墨西哥
-		id = ustates.2002
-		immediate = {log = "[GetDateText]: [Root.GetName]: event ustates.2002"}
-		title = ustates.2002.t
-		desc = ustates.2002.d
-		picture = GFX_USA_americas_mexican
-
-		fire_only_once = yes
-		
-		trigger = {
-			NOT = { country_exists = MEX }
-			controls_state = 277
-			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
-		}
-		
-		option = { 
-			name = ustates.2002.a
-			every_state = {
-				limit = {
-					is_core_of = MEX
-				}
-				add_core_of = USA
-			}
-		}
-		option = {
-			name = ustates.2002.b
-			every_owned_state = {
-				limit = {
-					is_core_of = MEX
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				MEX = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = MEX }
-			puppet_released_tag_nocosmetic = yes
-			MEX = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = MEX_totalist_party
-					long_name = MEX_totalist_party_long
-				}
-				create_country_leader = {
-					name = "Gustavo Díaz Ordaz"
-					picture = "gfx/leaders/USA/Portrait_USA_Gustavo_Diaz_Ordaz.png"
-					expire = "1.1.1"
-					ideology = kleptocracy_subtype
-				}
-				set_cosmetic_tag = MEX_USA_republic
-				add_ideas = USA_colonial_government
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-		option = {
-			name = ustates.2002.c
-			trigger = {
-				NOT = {
-					has_country_flag = USA_no_patton_tt
-				}
-			}
-			every_owned_state = {
-				limit = {
-					is_core_of = MEX
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				MEX = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = MEX }
-			puppet_released_tag_nocosmetic = yes
-			MEX = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = USA_Administration_Mexican_party
-					long_name = USA_Administration_Mexican_party_long
-				}
-				create_country_leader = {
-					name = "George S. Patton"
-					picture = "gfx/leaders/USA/Portrait_USA_George_Patton.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-				}
-				set_cosmetic_tag = MEX_USA_republic
-				add_ideas = USA_military_col_government
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-		option = {
-			name = ustates.2002.e
-			every_owned_state = {
-				limit = {
-					is_core_of = MEX
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				MEX = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = MEX }
-			puppet_released_tag_nocosmetic = yes
-			MEX = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = USA_Administration_Mexican_party
-					long_name = USA_Administration_Mexican_party_long
-				}
-				create_country_leader = {
-					name = "Omar Bradley"
-					picture = "gfx/leaders/WCC/Portrait_WCC_gen_omar_bradley.png"
-					expire = "1.1.1"
-					ideology = junta_subtype
-				}
-				set_cosmetic_tag = MEX_USA_republic
-				add_ideas = USA_military_col_government
-				set_country_flag = CAN_pm_is_hos
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
-		}
-		option = { 
-			name = ustates.2002.f
-			every_owned_state = {
-				limit = {
-					is_core_of = MEX
-					is_not_claim_or_core_of_ROOT = yes
-				}
-
-				MEX = {
-					transfer_state = PREV
-				}
-			}
-			set_temp_variable = { tag_to_release = MEX }
-			puppet_released_tag_nocosmetic = yes
-			MEX = {
-				add_popularity = { ideology = paternal_autocrat popularity = 1 }
-				set_politics = {
-					ruling_party = paternal_autocrat
-					elections_allowed = no
-					name = USA_Administration_GERCanada_party
-					long_name = USA_Administration_GERCanada_party_long
-				}
-				create_country_leader = {
-					name = "Management and Protection Committee"
-					picture = "gfx/leaders/USA/Portrait_USA_Management_and_Protection_Committee.png"
-					expire = "1.1.1"
-					ideology = autocratic_colonial_govt_subtype
-				}
-				set_cosmetic_tag = MEX_USA_republic
-				add_ideas = USA_gerusa_co_governance
-				clr_country_flag = LEADER_GUI_VISIBLE
-			}
 		}
 	}
