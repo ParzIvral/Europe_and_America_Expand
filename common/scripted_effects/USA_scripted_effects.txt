@@ -889,13 +889,6 @@ USA_britain_consolidate_us_puppet_britain = {
 	}
 	if = {
 		limit = {
-			country_exists = GBP
-			GBP = { is_subject_of = USA }
-		}
-		annex_country = { target = GBP transfer_troops = yes }
-	}
-	if = {
-		limit = {
 			country_exists = SCT
 			SCT = { is_subject_of = USA }
 		}

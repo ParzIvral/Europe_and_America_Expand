@@ -7808,6 +7808,9 @@ add_namespace = usanew
 					id = USA.900
 					days = 10
 				}
+				remove_power_balance = {
+					id = USA_Civil_War_bop
+				}
 			}
 		}
 	}
@@ -8275,6 +8278,9 @@ add_namespace = usanew
 					id = USA.900
 					days = 10
 				}
+				remove_power_balance = {
+					id = USA_Civil_War_bop
+				}
 			}
 		}
 	}
@@ -8640,8 +8646,11 @@ add_namespace = usanew
 			}
 			hidden_effect = {
 				country_event = { # 海军的需求！
-				id = USA.900 #海军的需求！
-				days = 10
+					id = USA.900 #海军的需求！
+					days = 10
+				}
+				remove_power_balance = {
+					id = USA_Civil_War_bop
 				}
 			}
 		}
@@ -27022,6 +27031,7 @@ add_namespace = usanew
 			ai_chance = { factor = 60}
 			add_stability = 0.02
 			add_popularity = { ideology = syndicalist popularity = 0.01 }
+			set_country_flag = USA_Jack_reed_dead
 		}
 		
 		option = { #就算她是个寡妇，她也不能肆意泄愤，让她闭嘴
@@ -27029,6 +27039,7 @@ add_namespace = usanew
 			ai_chance = { factor = 40}
 			add_stability = -0.02
 			add_political_power = 40
+			set_country_flag = USA_Jack_reed_dead
 		}
 	}
 
@@ -27955,6 +27966,262 @@ add_namespace = usanew
 			}	
 		}
 	}
+	country_event = { # 终结激进主义
+		id = USA.842
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.842"}
+		title = USA.842.t
+		desc = USA.842.d
+		picture = GFX_report_event_USA_holdrige
+
+		fire_only_once = yes
+		
+		trigger = {
+			has_completed_focus = USA_Put_an_end_to_all_anarchic_threats
+			has_country_flag = USA_Jack_reed_dead
+		}
+		
+		option = { 
+			name = USA.842.a 
+			add_stability = 0.02
+			add_popularity = {
+				ideology = social_democrat
+				popularity = -0.07
+			}
+		}
+		
+		option = { 
+			name = USA.842.b
+			add_stability = -0.08
+			create_country_leader = {
+				name = "Herbert C. Holdridge"
+				desc = "USA_HERBERT_HOLDRIDGE_ARMY_DESC"
+				picture = "gfx/leaders/USA/Portrait_USA_herbert_holdridge.png"
+				expire = "1.1.1"
+				ideology = socdem_junta_subtype
+				traits = {
+					sec_man_of_the_people
+				}
+			}
+			set_party_name = {
+				ideology = social_democrat
+				long_name = USA_social_democrat_holdridge_long
+				name = USA_social_democrat_holdridge 
+			}
+			set_politics = {
+				ruling_party = social_democrat
+				elections_allowed = no
+			}
+			set_country_flag = USA_avoidcw_coup
+			set_cosmetic_tag = USA_Holdridge_Gov
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.25
+			}
+			hidden_effect = {
+				country_event = { # 一波未平一波又起？
+					id = USA.843
+					days = 4
+				}
+				remove_all_ministers = yes
+				add_ideas = USA_Thomas_Banyacya_veep_sli
+				add_ideas = USA_William_Borah_for_sde
+				add_ideas = USA_George_Henry_Dern_eco_sde
+				add_ideas = USA_Bronson_Murray_Cutting_sec_sde
+			}
+		}
+	}
+	country_event = { # 一波未平一波又起？
+		id = USA.843
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.843"}
+		title = USA.843.t
+		desc = USA.843.d
+		picture = GFX_CAR_patton_disgoost
+
+		fire_only_once = yes
+		
+		is_triggered_only = yes
+		
+		option = { 
+			name = USA.843.a 
+			add_stability = 0.01
+			add_popularity = {
+				ideology = social_conservative
+				popularity = -0.04
+			}
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = -0.07
+			}
+			add_popularity = {
+				ideology = paternal_autocrat
+				popularity = -0.09
+			}
+			add_popularity = {
+				ideology = national_populist
+				popularity = -0.03
+			}
+		}
+		
+		option = { 
+			name = USA.843.b
+			custom_effect_tooltip = USA_Peaceful_Patton_CAR_tooltip
+			hidden_effect = {
+				USA = {
+					COR = {
+						transfer_technology = yes
+					}
+				}
+				COR = {
+					annex_country = {
+						target = USA
+						transfer_troops = yes
+					}
+					change_tag_from = USA
+				}
+				USA = {
+					every_unit_leader = {
+						set_nationality = COR
+					}
+				}
+				every_state = {
+					limit = { is_core_of = USA }
+					add_core_of = COR
+				}
+				COR = {
+					create_country_leader = {
+						name = "George Patton"
+						desc = "POLITICS_GEORGE_PATTON_DESC"
+						picture = "gfx/leaders/COR/Portrait_COR_George_Patton.png"
+						expire = "1.1.1"
+						ideology = authdem_junta_subtype
+						traits = { blood_and_guts }
+					}
+					set_politics = {
+						ruling_party = authoritarian_democrat
+						elections_allowed = no
+					}
+					remove_all_ministers = yes
+					add_ideas = {
+						COR_John_Elliott_Rankin_hog_pau
+						COR_William_Bell_Riley_for_pau
+						COR_John_Geraerdt_Crommelin_Jr_eco_npo
+						COR_Theophilus_Eugene_Connor_sec_pau
+					}
+					country_event = { # 劫后重生的美利坚的未来
+						id = USA.844
+						days = 2
+					}
+					set_capital = { state = 361 }
+					add_popularity = { ideology = authoritarian_democrat popularity = 0.3 }
+					set_country_flag = COR_Peaceful_Patton
+					set_global_flag = USA_civil_war_over_flag
+					set_party_name = {
+						ideology = authoritarian_democrat
+						long_name = COR_authoritarian_democrat_patton_party_long
+						name = COR_authoritarian_democrat_patton_party 
+					}
+					set_cosmetic_tag = USA
+				}
+			}
+		}
+	}
+	country_event = { # 劫后重生的美利坚的未来
+		id = USA.844
+		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.844"}
+		title = USA.844.t
+		desc = USA.844.d
+		picture = GFX_CAR_patton_command
+
+		fire_only_once = yes
+		
+		is_triggered_only = yes
+		
+		option = { 
+			name = USA.844.a 
+			add_stability = 0.03
+			
+		}
+		
+		option = { 
+			name = USA.844.b
+			
+			set_politics = {
+				ruling_party = paternal_autocrat
+				elections_allowed = no
+			}
+			
+			add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
+			
+			create_country_leader = {
+				name = "William H. Murray"
+				desc = "POLITICS_WILLIAM_H_MURRAY_DESC"
+				picture = "GFX_Portrait_COR_William_H_Murray_animated"
+				expire = "1.1.1"
+				ideology = jacksonianism_subtype
+				traits = { alfalfa_bill }
+			}
+			
+		}
+		
+		option = { 
+			name = USA.844.c
+			
+			set_politics = {
+				ruling_party = social_conservative
+				elections_allowed = no
+			}
+			
+			add_popularity = { ideology = social_conservative popularity = 0.15 }
+			
+			create_country_leader = {
+				name = "Richard Russell Jr."
+				desc = "POLITICS_RICHARD_RUSSELL_DESC"
+				picture = "gfx/leaders/COR/Portrait_COR_Richard_Russell_Jr.png"
+				expire = "1.1.1"
+				ideology = dixiecrat_subtype
+				traits = { USA_jim_crows_champion }
+			}
+			
+			remove_all_ministers = yes
+			
+			add_ideas = {
+				COR_Richard_Russell_Jr_hog_sco
+				COR_James_Francis_Byrnes_for_sco
+				COR_Joseph_Lister_Hill_eco_sco
+				COR_John_Stennis_sec_sco
+			}
+			
+		}
+		
+		option = { 
+			name = USA.844.e
+			
+			remove_all_ministers = yes
+			add_ideas = COR_Joseph_Boyle_hog_ade
+			add_ideas = COR_Gordon_Weaver_Browning_for_ade
+			add_ideas = COR_Harry_Hill_McAlister_eco_ade
+			add_ideas = COR_N_J_Ford_sec_ade
+			set_country_flag = COR_memphis_commission 
+			
+			create_country_leader = {
+				name = "E.H. Crump"
+				desc = "POLITICS_CRUMP_DESC"
+				picture = "gfx/leaders/COR/Portrait_COR_E_H_Crump.png"
+				expire = "1.1.1"
+				ideology = social_machine_subtype
+				traits = { }
+			}
+			
+			set_cosmetic_tag = COR_UFA
+			
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = COR_authoritarian_democrat_crump_party_long
+				name = COR_authoritarian_democrat_crump_party
+			}
+			
+		}
+	}
 #经济
 	country_event = { # 追思镀金年代的幽灵
 		id = USA.1000
@@ -28557,7 +28824,7 @@ add_namespace = usanew
 			name = USA.1100.a
 			if = {
 				limit = {
-					has_ideas = USA_civil_war_war_aftermath_idea
+					has_idea = USA_civil_war_war_aftermath_idea
 				}
 				swap_ideas = {
 					remove_idea = USA_civil_war_war_aftermath_idea
@@ -28597,7 +28864,7 @@ add_namespace = usanew
 			name = USA.1101.a
 			if = {
 				limit = {
-					has_ideas = USA_civil_war_war_aftermath_idea2
+					has_idea = USA_civil_war_war_aftermath_idea2
 				}
 				swap_ideas = {
 					remove_idea = USA_civil_war_war_aftermath_idea2
@@ -28637,7 +28904,7 @@ add_namespace = usanew
 			name = USA.1102.a
 			if = {
 				limit = {
-					has_ideas = USA_civil_war_war_aftermath_idea3
+					has_idea = USA_civil_war_war_aftermath_idea3
 				}
 				swap_ideas = {
 					remove_idea = USA_civil_war_war_aftermath_idea3
@@ -28677,7 +28944,7 @@ add_namespace = usanew
 			name = USA.1103.a
 			if = {
 				limit = {
-					has_ideas = USA_civil_war_war_aftermath_idea4
+					has_idea = USA_civil_war_war_aftermath_idea4
 				}
 				swap_ideas = {
 					remove_idea = USA_civil_war_war_aftermath_idea4
@@ -28818,7 +29085,7 @@ add_namespace = usanew
 			name = USA.1104.a
 			if = {
 				limit = {
-					has_ideas = USA_civil_war_war_aftermath_idea5
+					has_idea = USA_civil_war_war_aftermath_idea5
 				}
 				remove_ideas = USA_civil_war_war_aftermath_idea5
 			}
@@ -41977,274 +42244,6 @@ country_event = { # 美利坚的灭亡
 		option = { 
 			name = nimatron.18.a 
 			add_stability = 0.02
-		}
-	}
-	country_event = { # 终结激进主义
-		id = nimatron.19
-		immediate = {log = "[GetDateText]: [Root.GetName]: event nimatron.19"}
-		title = nimatron.19.t
-		desc = nimatron.19.d
-		picture = GFX_report_event_USA_holdrige
-
-		fire_only_once = yes
-		
-		is_triggered_only = yes
-		
-		trigger = {
-			NOT = {
-				has_government = social_conservative
-			}
-		}
-		
-		option = { 
-			name = nimatron.19.a 
-			add_stability = 0.02
-			add_popularity = {
-				ideology = social_democrat
-				popularity = -0.07
-			}
-		}
-		
-		option = { 
-			name = nimatron.19.b
-			add_stability = -0.08
-			create_country_leader = {
-				name = "Herbert C. Holdridge"
-				desc = "USA_HERBERT_HOLDRIDGE_ARMY_DESC"
-				picture = "gfx/leaders/USA/Portrait_USA_herbert_holdridge.png"
-				expire = "1.1.1"
-				ideology = socdem_junta_subtype
-				traits = {
-					sec_man_of_the_people
-				}
-			}
-			set_party_name = {
-				ideology = social_democrat
-				long_name = USA_social_democrat_holdridge_long
-				name = USA_social_democrat_holdridge 
-			}
-			set_politics = {
-				ruling_party = social_democrat
-				elections_allowed = no
-			}
-			set_country_flag = USA_avoidcw_coup
-			set_cosmetic_tag = USA_Holdridge_Gov
-			add_popularity = {
-				ideology = social_democrat
-				popularity = 0.25
-			}
-			hidden_effect = {
-				country_event = { # 一波未平一波又起？
-					id = nimatron.20
-					days = 4
-				}
-				complete_national_focus = USA_social_democrats_in_power
-				remove_all_ministers = yes
-				add_ideas = USA_Thomas_Banyacya_veep_sli
-				add_ideas = USA_William_Borah_for_sde
-				add_ideas = USA_George_Henry_Dern_eco_sde
-				add_ideas = USA_Bronson_Murray_Cutting_sec_sde
-			}
-		}
-	}
-	country_event = { # 一波未平一波又起？
-		id = nimatron.20
-		immediate = {log = "[GetDateText]: [Root.GetName]: event nimatron.20"}
-		title = nimatron.20.t
-		desc = nimatron.20.d
-		picture = GFX_CAR_patton_disgoost
-
-		fire_only_once = yes
-		
-		is_triggered_only = yes
-		
-		option = { 
-			name = nimatron.20.a 
-			add_stability = 0.01
-			add_popularity = {
-				ideology = social_conservative
-				popularity = -0.04
-			}
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = -0.07
-			}
-			add_popularity = {
-				ideology = paternal_autocrat
-				popularity = -0.09
-			}
-			add_popularity = {
-				ideology = national_populist
-				popularity = -0.03
-			}
-		}
-		
-		option = { 
-			name = nimatron.20.b
-			
-			custom_effect_tooltip = USA_Peaceful_Patton_CAR_tooltip
-			
-			hidden_effect = {
-			
-				USA = {
-					COR = {
-						transfer_technology = yes
-					}
-				}
-			
-				COR = {
-					annex_country = {
-						target = USA
-						transfer_troops = yes
-					}
-					change_tag_from = USA
-				}
-				
-				USA = {
-					every_unit_leader = {
-						set_nationality = COR
-					}
-				}
-				
-				every_state = {
-					limit = { is_core_of = USA }
-					add_core_of = COR
-				}
-			
-				COR = {
-					create_country_leader = {
-						name = "George Patton"
-						desc = "POLITICS_GEORGE_PATTON_DESC"
-						picture = "gfx/leaders/COR/Portrait_COR_George_Patton.png"
-						expire = "1.1.1"
-						ideology = authdem_junta_subtype
-						traits = { blood_and_guts }
-					}
-					set_politics = {
-						ruling_party = authoritarian_democrat
-						elections_allowed = no
-					}
-					remove_all_ministers = yes
-					add_ideas = {
-						COR_John_Elliott_Rankin_hog_pau
-						COR_William_Bell_Riley_for_pau
-						COR_John_Geraerdt_Crommelin_Jr_eco_npo
-						COR_Theophilus_Eugene_Connor_sec_pau
-					}
-					country_event = { # 劫后重生的美利坚的未来
-						id = nimatron.21
-						days = 2
-					}
-					set_capital = { state = 361 }
-					add_popularity = { ideology = authoritarian_democrat popularity = 0.3 }
-					set_country_flag = COR_Peaceful_Patton
-					set_global_flag = USA_civil_war_over_flag
-					set_party_name = {
-						ideology = authoritarian_democrat
-						long_name = COR_authoritarian_democrat_patton_party_long
-						name = COR_authoritarian_democrat_patton_party 
-					}
-					set_cosmetic_tag = USA
-				}
-			}
-			
-		}
-	}
-	country_event = { # 劫后重生的美利坚的未来
-		id = nimatron.21
-		immediate = {log = "[GetDateText]: [Root.GetName]: event nimatron.21"}
-		title = nimatron.21.t
-		desc = nimatron.21.d
-		picture = GFX_CAR_patton_command
-
-		fire_only_once = yes
-		
-		is_triggered_only = yes
-		
-		option = { 
-			name = nimatron.21.a 
-			add_stability = 0.03
-			
-		}
-		
-		option = { 
-			name = nimatron.21.b
-			
-			set_politics = {
-				ruling_party = paternal_autocrat
-				elections_allowed = no
-			}
-			
-			add_popularity = { ideology = paternal_autocrat popularity = 0.1 }
-			
-			create_country_leader = {
-				name = "William H. Murray"
-				desc = "POLITICS_WILLIAM_H_MURRAY_DESC"
-				picture = "GFX_Portrait_COR_William_H_Murray_animated"
-				expire = "1.1.1"
-				ideology = jacksonianism_subtype
-				traits = { alfalfa_bill }
-			}
-			
-		}
-		
-		option = { 
-			name = nimatron.21.c
-			
-			set_politics = {
-				ruling_party = social_conservative
-				elections_allowed = no
-			}
-			
-			add_popularity = { ideology = social_conservative popularity = 0.15 }
-			
-			create_country_leader = {
-				name = "Richard Russell Jr."
-				desc = "POLITICS_RICHARD_RUSSELL_DESC"
-				picture = "gfx/leaders/COR/Portrait_COR_Richard_Russell_Jr.png"
-				expire = "1.1.1"
-				ideology = dixiecrat_subtype
-				traits = { USA_jim_crows_champion }
-			}
-			
-			remove_all_ministers = yes
-			
-			add_ideas = {
-				COR_Richard_Russell_Jr_hog_sco
-				COR_James_Francis_Byrnes_for_sco
-				COR_Joseph_Lister_Hill_eco_sco
-				COR_John_Stennis_sec_sco
-			}
-			
-		}
-		
-		option = { 
-			name = nimatron.21.e
-			
-			remove_all_ministers = yes
-			add_ideas = COR_Joseph_Boyle_hog_ade
-			add_ideas = COR_Gordon_Weaver_Browning_for_ade
-			add_ideas = COR_Harry_Hill_McAlister_eco_ade
-			add_ideas = COR_N_J_Ford_sec_ade
-			set_country_flag = COR_memphis_commission 
-			
-			create_country_leader = {
-				name = "E.H. Crump"
-				desc = "POLITICS_CRUMP_DESC"
-				picture = "gfx/leaders/COR/Portrait_COR_E_H_Crump.png"
-				expire = "1.1.1"
-				ideology = social_machine_subtype
-				traits = { }
-			}
-			
-			set_cosmetic_tag = COR_UFA
-			
-			set_party_name = {
-				ideology = authoritarian_democrat
-				long_name = COR_authoritarian_democrat_crump_party_long
-				name = COR_authoritarian_democrat_crump_party
-			}
-			
 		}
 	}
 	country_event = { # 勿忘最初的盟友

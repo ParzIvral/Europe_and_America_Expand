@@ -4699,7 +4699,7 @@ ideas = {
 		USA_Go_full_steam_aheadl = { #开足马力
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_Go_full_steam_aheadl"}
 			allowed = { always = no }
-			picture = USA_Go_full_steam_aheadl
+			picture = USA_Go_full_steam_ahead
 			modifier = {
 				production_oil_factor = 0.2
 				repair_speed_industrial_complex_factor = 0.3
@@ -4876,6 +4876,7 @@ ideas = {
 		USA_gerusa_co_governance = { #德美共治殖民地
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_gerusa_co_governance"}
 			allowed = { always = no }
+			picture = USA_gerusa_co_governance
 			modifier = {
 				production_speed_buildings_factor = 0.5
 				production_speed_arms_factory_factor = 0.1
@@ -4894,6 +4895,7 @@ ideas = {
 		USA_colonial_government = { #受美利坚操控的傀儡政府
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_government"}
 			allowed = { always = no }
+			picture = USA_Chains_Reconstruction
 			modifier = {
 				local_building_slots_factor = 0.2
 				production_speed_buildings_factor = 0.1
@@ -4908,6 +4910,7 @@ ideas = {
 		USA_military_col_government = { #合众国军事辖地
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_government"}
 			allowed = { always = no }
+			picture = USA_Baton_Autocracy
 			modifier = {
 				local_building_slots_factor = 0.2
 				production_speed_buildings_factor = 0.1
@@ -5216,7 +5219,7 @@ ideas = {
 		USA_The_legacy_of_the_Monroe_Doctrine_idea_3 = { #属于美洲人的美洲
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_The_legacy_of_the_Monroe_Doctrine_idea_3"}
 			allowed = { always = no }
-			picture = USA_The_legacy_of_the_Monroe_Doctrine
+			picture = USA_The_legacy_of_the_Monroe_Doctrine_idea_3
 			modifier = {
 				defensive_war_stability_factor = 0.2
 				army_core_defence_factor = 0.1
@@ -5239,10 +5242,25 @@ ideas = {
 				navy_max_range_factor = 0.2
 			}
 		}
+		USA_Interference_in_world_affairs_2 = { #干涉世界事务
+			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Interference_in_world_affairs_2"}
+			allowed = { always = no }
+			name = USA_Interference_in_world_affairs
+			picture = USA_Interference_in_world_affairs
+			modifier = {
+				send_volunteer_size = 10
+				mobilization_speed = 0.15
+				air_volunteer_cap= 0.1
+				surrender_limit = 0.05
+				amphibious_invasion = 0.1
+				navy_max_range_factor = 0.2
+				conscription_factor = 0.06
+			}
+		}
 		USA_Democratic_Armory = { #民主兵工厂
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_Democratic_Armory"}
 			allowed = { always = no }
-			picture = USA_Democratic_Armory
+			picture = USA_Bauhaus_Palast
 			modifier = {
 				local_factories = 0.1
 				production_speed_arms_factory_factor = 0.1
@@ -5252,7 +5270,7 @@ ideas = {
 		USA_American_industrial_guidance = { #美国工业指导
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_American_industrial_guidance"}
 			allowed = { always = no }
-			picture = USA_American_industrial_guidance
+			picture = USA_Bauhaus_Palast
 			modifier = {
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_arms_factory_factor = 0.15
@@ -5261,7 +5279,7 @@ ideas = {
 		USA_German_French_trade_agreement = { #德法贸易协议
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_German_French_trade_agreement"}
 			allowed = { always = no }
-			picture = USA_German_French_trade_agreement
+			picture = USA_End_Exile
 
 			modifier = {
 				consumer_goods_factor = 0.1
@@ -5273,7 +5291,7 @@ ideas = {
 		USA_German_French_trade_agreement_2 = { #德法贸易协议
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_German_French_trade_agreement_2"}
 			allowed = { always = no }
-			picture = USA_German_French_trade_agreement
+			picture = USA_End_Exile
 			name = USA_German_French_trade_agreement
 			modifier = {
 				consumer_goods_factor = -0.15
@@ -5286,7 +5304,7 @@ ideas = {
 		USA_outside_support = { #外部援助
 			on_add = {log = "[GetDateText]: [Root.GetName]: add idea USA_outside_support"}
 			allowed = { always = no }
-			picture = USA_outside_support
+			picture = USA_Humanitarian_diplomacy
 			modifier = {
 				army_attack_factor = 0.1
 				army_defence_factor = 0.1
@@ -5294,7 +5312,141 @@ ideas = {
 				
 			}
 		}
-		
+		USA_colonial_domination = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination"}
+			allowed = { always = no }
+			picture = NOR_strike_down_capitalism
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				production_speed_nuclear_reactor_factor = 0.1
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+				consumer_goods_factor = -0.25
+			}
+		}
+		USA_colonial_domination_col = {
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination_col"}
+			allowed = { always = no }
+			picture = NOR_strike_down_capitalism
+			cancel = {
+				NOT = {
+					is_subject_of = USA
+				}
+			}
+			modifier = {
+				local_building_slots_factor = 0.1
+				production_speed_buildings_factor = 0.15
+				consumer_goods_factor = -0.35
+				consumer_goods_expected_value = -0.15
+				industrial_capacity_factory = 0.1
+				monthly_population = -0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.5
+			}
+		}
+		USA_pacific_naval_settlement = { # Pacific naval settlement
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement"}
+			allowed = { always = no }
+			picture = JAP_Reaching_Our_Destiny
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = 0.10
+				industrial_capacity_dockyard = -0.10
+				consumer_goods_factor = -0.05
+			}
+		}
+		USA_pacific_naval_settlement_2 = { # Strengthened Pacific naval settlement
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement_2"}
+			allowed = { always = no }
+			picture = JAP_Reaching_Our_Destiny
+			modifier = {
+				war_support_factor = -0.10
+				stability_factor = 0.10
+				industrial_capacity_dockyard = -0.05
+				consumer_goods_factor = -0.08
+				industrial_capacity_factory = 0.03
+				production_speed_industrial_complex_factor = 0.05
+				production_speed_infrastructure_factor = 0.05
+			}
+		}
+		USA_pacific_naval_settlement_3 = { # Pacific prosperity settlement
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement_3"}
+			allowed = { always = no }
+			picture = JAP_Reaching_Our_Destiny
+			modifier = {
+				war_support_factor = -0.08
+				stability_factor = 0.12
+				industrial_capacity_dockyard = -0.02
+				consumer_goods_factor = -0.10
+				industrial_capacity_factory = 0.05
+				production_speed_industrial_complex_factor = 0.07
+				production_speed_infrastructure_factor = 0.07
+				trade_opinion_factor = 0.10
+			}
+		}
+		USA_asia_pacific_prosperity = { # Asia-Pacific prosperity
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_asia_pacific_prosperity"}
+			allowed = { always = no }
+			picture = CAL_Japanese_architectural_style
+			modifier = {
+				consumer_goods_factor = -0.03
+				industrial_capacity_factory = 0.03
+				production_speed_industrial_complex_factor = 0.03
+				production_speed_infrastructure_factor = 0.03
+				trade_opinion_factor = 0.05
+			}
+		}
+		USA_true_european_peace_subject = { # True European peace
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_true_european_peace_subject"}
+			allowed = { always = no }
+			picture = USA_Electoral_Reform
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.10
+				party_popularity_stability_factor = 0.10
+				conscription = -0.01
+				monthly_population = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.15
+			}
+		}
+		USA_true_european_peace_subject_2 = { # True European peace
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_true_european_peace_subject_2"}
+			allowed = { always = no }
+			name = USA_true_european_peace_subject
+			picture = USA_Electoral_Reform
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.05
+				party_popularity_stability_factor = 0.10
+				conscription = -0.01
+				monthly_population = 0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+			targeted_modifier = {
+				tag = USA
+				cic_to_target_factor = 0.15
+			}
+		}
+		USA_iron_curtain = { # USA_iron_curtain
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_iron_curtain"}
+			allowed = { always = no }
+			picture = USA_iron_curtain
+			modifier = {
+				war_support_factor = 0.2
+				drift_defence_factor = 0.15
+				political_power_gain = 0.02
+				conversion_cost_civ_to_mil_factor = -0.08
+				production_speed_arms_factory_factor = 0.04
+			}
+		}
 	### Civil War Ideas ###
 		amcivwar_idea = { #Fighting for America
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea amcivwar_idea"}
@@ -8158,94 +8310,7 @@ ideas = {
 				justify_war_goal_time = -0.75
 			}
 		}
-		USA_colonial_domination = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination"}
-			allowed = { always = no }
-			picture = NOR_strike_down_capitalism
-			modifier = {
-				local_building_slots_factor = 0.1
-				production_speed_buildings_factor = 0.05
-				production_speed_nuclear_reactor_factor = 0.1
-				production_speed_arms_factory_factor = 0.05
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-				consumer_goods_factor = -0.25
-			}
-		}
-		USA_colonial_domination_col = {
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_colonial_domination_col"}
-			allowed = { always = no }
-			picture = NOR_strike_down_capitalism
-			cancel = {
-				NOT = {
-					is_subject_of = USA
-				}
-			}
-			modifier = {
-				local_building_slots_factor = 0.1
-				production_speed_buildings_factor = 0.15
-				consumer_goods_factor = -0.35
-				consumer_goods_expected_value = -0.15
-				industrial_capacity_factory = 0.1
-				monthly_population = -0.1
-			}
-			targeted_modifier = {
-				tag = USA
-				cic_to_target_factor = 0.5
-			}
-		}
-		USA_pacific_naval_settlement = { # Pacific naval settlement
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement"}
-			allowed = { always = no }
-			picture = generic_foreign_capital
-			modifier = {
-				war_support_factor = -0.10
-				stability_factor = 0.10
-				industrial_capacity_dockyard = -0.10
-				consumer_goods_factor = -0.05
-			}
-		}
-		USA_pacific_naval_settlement_2 = { # Strengthened Pacific naval settlement
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement_2"}
-			allowed = { always = no }
-			picture = generic_foreign_capital
-			modifier = {
-				war_support_factor = -0.10
-				stability_factor = 0.10
-				industrial_capacity_dockyard = -0.05
-				consumer_goods_factor = -0.08
-				industrial_capacity_factory = 0.03
-				production_speed_industrial_complex_factor = 0.05
-				production_speed_infrastructure_factor = 0.05
-			}
-		}
-		USA_pacific_naval_settlement_3 = { # Pacific prosperity settlement
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_pacific_naval_settlement_3"}
-			allowed = { always = no }
-			picture = generic_foreign_capital
-			modifier = {
-				war_support_factor = -0.08
-				stability_factor = 0.12
-				industrial_capacity_dockyard = -0.02
-				consumer_goods_factor = -0.10
-				industrial_capacity_factory = 0.05
-				production_speed_industrial_complex_factor = 0.07
-				production_speed_infrastructure_factor = 0.07
-				trade_opinion_factor = 0.10
-			}
-		}
-		USA_asia_pacific_prosperity = { # Asia-Pacific prosperity
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_asia_pacific_prosperity"}
-			allowed = { always = no }
-			picture = generic_foreign_capital
-			modifier = {
-				consumer_goods_factor = -0.03
-				industrial_capacity_factory = 0.03
-				production_speed_industrial_complex_factor = 0.03
-				production_speed_infrastructure_factor = 0.03
-				trade_opinion_factor = 0.05
-			}
-		}
+
 	}
 	hidden_ideas = {# Hidden Ideas
 		USA_socialist_attack = {

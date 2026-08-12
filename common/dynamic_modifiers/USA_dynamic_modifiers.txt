@@ -228,7 +228,7 @@ USA_NRA_modifier = {
 }
 
 USA_Trade_in_Alliance_modifier = {
-	icon = "USA_Trade_in_Alliance_modifier"
+	icon = "GFX_USA_Trade_in_Alliance_modifier"
 	enable = { always = yes }
 	remove_trigger = { always = no }
 	
@@ -273,7 +273,7 @@ USA_Trade_in_Alliance_modifier = {
 }
 
 USA_syndicalist_modifier = {
-	icon = "army_of_militias"
+	icon = GFX_idea_army_of_militias
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -287,7 +287,7 @@ USA_syndicalist_modifier = {
 }
 
 USA_minutemen_modifier = {
-	icon = "minutemen"
+	icon = GFX_idea_minutemen
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -299,7 +299,7 @@ USA_minutemen_modifier = {
 }
 
 USA_kkk_modifier = {
-	icon = "young_klan_resistance"
+	icon = GFX_idea_young_klan_resistance
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -311,7 +311,7 @@ USA_kkk_modifier = {
 }
 
 USA_black_legion_modifier = {
-	icon = "black_legion"
+	icon = GFX_idea_black_legion_activity
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -350,40 +350,8 @@ USA_junta_modifier = {
 	research_speed_factor = USA_junta_research_speed									#研究速度
 }
 
-
-USA_National_Security_Bureau_modifier = {
-	icon = "GFX_USA_National_Security_Bureau_modifier"
-	enable = { always = yes }
-	remove_trigger = { always = no }
-	
-	defense_impact_on_blueprint_stealing = USA_National_Security_Bureau_defense_impact_on_blueprint_stealing
-	intel_network_gain = USA_National_Security_Bureau_intel_network_gain
-	crypto_strength = USA_National_Security_Bureau_crypto_strength			
-	operation_risk = USA_National_Security_Bureau_operation_risk 										
-}
-USA_Little_Cavalry_Project_modifier = {
-	icon = "GFX_USA_Little_Cavalry_Project_modifier"
-	enable = { always = yes }
-	remove_trigger = { always = no }
-	
-	recon_factor  = USA_Little_Cavalry_Project_recon_factor
-	conscription = USA_Little_Cavalry_Project_conscription
-	org_loss_when_moving = USA_Little_Cavalry_Project_org_loss_when_moving		
-	conscription_factor = USA_Little_Cavalry_Project_conscription_factor										
-}
-USA_Voluntary_military_training_modifier = {
-	icon = "GFX_USA_Voluntary_military_training_modifier"
-	enable = { always = yes }
-	remove_trigger = { always = no }
-	
-	army_morale_factor = USA_Voluntary_military_training_army_morale_factor
-	land_reinforce_rate = USA_Voluntary_military_training_land_reinforce_rate
-	combat_width_factor = USA_Voluntary_military_training_combat_width_factor		
-	terrain_penalty_reduction = USA_Voluntary_military_training_terrain_penalty_reduction										
-}
-
 USA_britain_reconstruction_modifier = {
-	icon = "GFX_USA_britain_reconstruction_modifier"
+	icon = GFX_USA_britain_reconstruction_modifier
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -397,7 +365,7 @@ USA_britain_reconstruction_modifier = {
 }
 
 USA_france_reconstruction_modifier = {
-	icon = "GFX_USA_britain_reconstruction_modifier"
+	icon = GFX_USA_france_reconstruction_modifier
 	enable = { always = yes }
 	remove_trigger = { always = no }
 
@@ -411,7 +379,7 @@ USA_france_reconstruction_modifier = {
 }
 
 USA_germany_reconstruction_modifier = {
-	icon = "GFX_USA_britain_reconstruction_modifier"
+	icon = GFX_USA_germany_reconstruction_modifier
 	enable = { always = yes }
 	remove_trigger = { always = no }
 

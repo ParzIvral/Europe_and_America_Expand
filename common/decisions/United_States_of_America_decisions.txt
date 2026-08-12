@@ -17461,11 +17461,17 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 	}
 	USA_rebuild_ukrainian_grain_and_rail_hubs = { #乌克兰粮仓与铁路枢纽
 		icon = GFX_decision_generic_construction
-		visible = { has_country_flag = USA_european_rebuild_central_europe has_country_flag = USA_show_central_europe_reconstruction_decisions FROM = { NOT = { has_country_flag = USA_rebuilt_ukrainian_grain_and_rail_hubs } } }
+		visible = { 
+			has_country_flag = USA_european_rebuild_central_europe 
+			has_country_flag = USA_show_central_europe_reconstruction_decisions 
+			FROM = { 
+				NOT = { has_country_flag = USA_rebuilt_ukrainian_grain_and_rail_hubs } 
+			} 
+		}
 		targets = { UKR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 30
 		days_remove = 60
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17476,9 +17482,9 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_ukrainian_grain_and_rail_hubs
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
 				}
 			}
 		}
@@ -17501,8 +17507,9 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_ukrainian_donbas_workshops
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 4 instant_build = yes }
 				}
 			}
 		}
@@ -17514,7 +17521,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { UKR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 30
 		days_remove = 65
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17525,9 +17532,9 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_ukrainian_black_sea_ports
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = dockyard level = 1 instant_build = yes }
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = { type = dockyard level = 3 instant_build = yes }
+					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
 				}
 			}
 		}
@@ -17540,17 +17547,21 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 30
-		days_remove = 55
+		days_remove = 50
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_belarusian_railway_grid target: [From.GetName]"
-			add_political_power = -20
+			add_political_power = -10
 			FROM = {
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_belarusian_railway_grid
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
 				}
 			}
@@ -17578,6 +17589,16 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
 				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -17599,8 +17620,13 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_lithuanian_baltic_ports
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = dockyard level = 2 instant_build = yes }
+					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = dockyard level = 2 instant_build = yes }
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 				}
 			}
@@ -17613,7 +17639,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { LIT }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 30
 		days_remove = 65
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17623,6 +17649,14 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_lithuanian_light_industry
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 1
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+				}
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
@@ -17653,23 +17687,49 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 	}
 	USA_rebuild_austrian_alpine_railways = { #奥地利阿尔卑斯铁路
 		icon = GFX_decision_generic_construction
-		visible = { has_country_flag = USA_european_rebuild_danube has_country_flag = USA_show_danube_reconstruction_decisions FROM = { NOT = { has_country_flag = USA_rebuilt_austrian_alpine_railways } } }
+		visible = { 
+			has_country_flag = USA_european_rebuild_danube 
+			has_country_flag = USA_show_danube_reconstruction_decisions 
+			FROM = { NOT = { has_country_flag = USA_rebuilt_austrian_alpine_railways } } 
+		}
 		targets = { AUS }
-		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
-		available = { FROM = { NOT = { has_war_with = ROOT } } }
+		target_trigger = { 
+			FROM = { 
+				exists = yes 
+				NOT = { has_war_with = ROOT } 
+				OR = { 
+					is_subject_of = ROOT 
+					is_in_faction_with = ROOT 
+				} 
+			} 
+		}
+		available = { 
+			FROM = { 
+				NOT = { 
+					has_war_with = ROOT 
+				} 
+			} 
+		}
 		cost = 35
 		days_remove = 60
 		fire_only_once = no
-		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
+		cancel_trigger = { 
+			FROM = { 
+				OR = { 
+					exists = no 
+					has_war_with = ROOT 
+				} 
+			} 
+		}
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_austrian_alpine_railways target: [From.GetName]"
 			add_political_power = -20
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_austrian_alpine_railways
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17681,7 +17741,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { AUS }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 40
+		cost = 25
 		days_remove = 70
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17706,20 +17766,20 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { AUS }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
-		days_remove = 65
+		cost = 30
+		days_remove = 60
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_austrian_hydropower_grid target: [From.GetName]"
-			add_political_power = -20
+			add_political_power = -5
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_austrian_hydropower_grid
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17732,18 +17792,18 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { HUN }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 20
 		days_remove = 60
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_hungarian_plain_railways target: [From.GetName]"
-			add_political_power = -20
+			add_political_power = -5
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_hungarian_plain_railways
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
 				}
 			}
@@ -17757,20 +17817,20 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { HUN }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 40
-		days_remove = 70
+		cost = 30
+		days_remove = 60
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_budapest_industrial_basin target: [From.GetName]"
-			add_political_power = -20
+			add_political_power = -10
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_budapest_industrial_basin
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
-					add_building_construction = { type = arms_factory level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 6
+					add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17783,7 +17843,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { CZE }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 40
+		cost = 15
 		days_remove = 70
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17791,10 +17851,10 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_bohemian_glass_and_steel target: [From.GetName]"
 			add_political_power = -20
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_bohemian_glass_and_steel
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 2
 					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
 				}
 			}
@@ -17808,20 +17868,20 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { CZE }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 30
 		days_remove = 65
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_rebuild_prague_rail_and_power target: [From.GetName]"
-			add_political_power = -20
+			add_political_power = -10
 			FROM = {
-				add_stability = 0.02
+				add_stability = 0.05
 				set_country_flag = USA_rebuilt_prague_rail_and_power
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
-					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					add_building_construction = { type = industrial_complex level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17855,7 +17915,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { SPR SPA CNT CAR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 35
+		cost = 25
 		days_remove = 60
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17864,10 +17924,13 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				set_country_flag = USA_rebuilt_spanish_railway_axes
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = infrastructure level = 2 instant_build = yes }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
+				}
+				random_owned_state = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = infrastructure level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17880,7 +17943,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 		targets = { SPR SPA CNT CAR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
-		cost = 40
+		cost = 30
 		days_remove = 70
 		fire_only_once = no
 		cancel_trigger = { FROM = { OR = { exists = no has_war_with = ROOT } } }
@@ -17889,10 +17952,10 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				set_country_flag = USA_rebuilt_spanish_heavy_industry
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
+					add_extra_state_shared_building_slots = 5
 					add_building_construction = { type = industrial_complex level = 2 instant_build = yes }
+					add_building_construction = { type = arms_factory level = 3 instant_build = yes }
 				}
 			}
 		}
@@ -17901,7 +17964,11 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 
 	USA_rebuild_spanish_mediterranean_ports = { #西班牙地中海港口
 		icon = GFX_decision_generic_construction
-		visible = { has_country_flag = USA_european_rebuild_iberia has_country_flag = USA_show_iberia_reconstruction_decisions FROM = { NOT = { has_country_flag = USA_rebuilt_spanish_mediterranean_ports } } }
+		visible = { 
+			has_country_flag = USA_european_rebuild_iberia 
+			has_country_flag = USA_show_iberia_reconstruction_decisions 
+			FROM = { NOT = { has_country_flag = USA_rebuilt_spanish_mediterranean_ports } } 
+		}
 		targets = { SPR SPA CNT CAR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
@@ -17916,8 +17983,8 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_spanish_mediterranean_ports
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 3
+					add_building_construction = { type = dockyard level = 3 instant_build = yes }
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
 				}
 			}
@@ -17927,7 +17994,11 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 
 	USA_rebuild_portuguese_atlantic_docks = { #葡萄牙大西洋船坞
 		icon = GFX_decision_generic_construction
-		visible = { has_country_flag = USA_european_rebuild_iberia has_country_flag = USA_show_iberia_reconstruction_decisions FROM = { NOT = { has_country_flag = USA_rebuilt_portuguese_atlantic_docks } } }
+		visible = { 
+			has_country_flag = USA_european_rebuild_iberia 
+			has_country_flag = USA_show_iberia_reconstruction_decisions 
+			FROM = { NOT = { has_country_flag = USA_rebuilt_portuguese_atlantic_docks } } 
+		}
 		targets = { POR }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
@@ -17942,8 +18013,8 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				set_country_flag = USA_rebuilt_portuguese_atlantic_docks
 				random_owned_state = {
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = { type = dockyard level = 1 instant_build = yes }
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = { type = dockyard level = 3 instant_build = yes }
 					add_building_construction = { type = industrial_complex level = 1 instant_build = yes }
 				}
 			}

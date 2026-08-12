@@ -26,6 +26,9 @@ focus_tree = {
 			NOT = {
 				has_country_flag = USA_Black_Monday_Here
 			}
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
 		}
 		offset = {
 			x = 6
@@ -384,6 +387,9 @@ focus_tree = {
 		}
 		allow_branch = {
 			has_country_flag = USA_Black_Monday_Here	
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
 		}
 		available = {
 			has_elected_government = yes
@@ -783,6 +789,11 @@ focus_tree = {
 		cost = 1
 		ai_will_do = {
 			factor = 100
+		}
+		allow_branch = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
 		}
 		available = {
 			has_country_flag = USA_president_inaugurated
@@ -2535,6 +2546,11 @@ focus_tree = {
 		x = 42
 		y = 0
 		cost = 1
+		allow_branch = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		ai_will_do = {
 			factor = 100
 		}
@@ -3477,6 +3493,11 @@ focus_tree = {
 	focus = {#混乱将至
 		id = USA_Here_is_chaos
 		icon = GFX_USA_Here_is_chaos
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		x = 9
 		y = 7
 		cost = 1
@@ -3485,7 +3506,10 @@ focus_tree = {
 		}
 		allow_branch = {
 			NOT = {
-				has_global_flag = USA_civil_war_begun_flag
+				OR = {
+					has_global_flag = USA_civil_war_begun_flag
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 			}
 		}
 		available = {
@@ -3509,6 +3533,11 @@ focus_tree = {
 	focus = {#大比尔拔得头筹
 		id = USA_President_Haywood
 		icon = GFX_USA_President_Haywood
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Here_is_chaos
 		}
@@ -3539,6 +3568,11 @@ focus_tree = {
 	focus = {#讨贼戡乱乃救国正路
 		id = USA_President_Macarthur
 		icon = GFX_USA_President_Macarthur
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Here_is_chaos
 		}
@@ -3565,6 +3599,11 @@ focus_tree = {
 	focus = {#人人皆国王！
 		id = USA_President_Long
 		icon = GFX_USA_President_Long
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Here_is_chaos
 		}
@@ -3591,6 +3630,11 @@ focus_tree = {
 	focus = {#自南方而来的呼唤
 		id = USA_President_Murray
 		icon = GFX_USA_President_Murray
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Here_is_chaos
 		}
@@ -3617,6 +3661,11 @@ focus_tree = {
 	focus = {#合法化社会党民兵
 		id = USA_Legalize_the_Socialist_militia
 		icon = GFX_USA_Legalize_the_Socialist_militia
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Haywood
 		}
@@ -3647,6 +3696,11 @@ focus_tree = {
 	focus = {#世界革命的愿景
 		id = USA_The_vision_of_a_world_revolution
 		icon = GFX_USA_The_vision_of_a_world_revolution
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Legalize_the_Socialist_militia
 		}
@@ -3674,6 +3728,11 @@ focus_tree = {
 	focus = {#一分钟人呼啸而起
 		id = USA_Minutemen_roared_up
 		icon = GFX_USA_Minutemen_roared_up
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Long
 		}
@@ -3705,6 +3764,11 @@ focus_tree = {
 	focus = {#确立财富限额
 		id = USA_Establish_wealth_limit
 		icon = GFX_USA_Establish_wealth_limit
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Long
 			focus = USA_Minutemen_roared_up
@@ -3736,6 +3800,11 @@ focus_tree = {
 	focus = {#农民的救主
 		id = USA_The_savior_of_farmers
 		icon = GFX_USA_The_savior_of_farmers
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Minutemen_roared_up
 		}
@@ -3764,6 +3833,11 @@ focus_tree = {
 	focus = {#摇动民粹大旗
 		id = USA_Shake_the_banner_of_populism
 		icon = GFX_USA_Shake_the_banner_of_populism
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_The_savior_of_farmers
 		}
@@ -3794,6 +3868,11 @@ focus_tree = {
 	focus = {#王鱼跃龙门
 		id = USA_KING_FISH
 		icon = GFX_USA_KING_FISH
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Shake_the_banner_of_populism
 		}
@@ -3823,6 +3902,11 @@ focus_tree = {
 	focus = {#消灭金融蛀虫
 		id = USA_Eliminate_financial_parasites
 		icon = GFX_USA_Eliminate_financial_parasites
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Haywood
 			focus = USA_President_Long
@@ -3903,6 +3987,11 @@ focus_tree = {
 	focus = {#彻底镇压赤色匪帮
 		id = USA_NO_MORE_RED_BANDIT
 		icon = GFX_USA_NO_MORE_RED_BANDIT
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Macarthur
 			focus = USA_President_Murray
@@ -3931,6 +4020,11 @@ focus_tree = {
 	focus = {#正如1932重演
 		id = USA_Panzer_marching
 		icon = GFX_USA_Panzer_marching
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Macarthur
 		}
@@ -3956,6 +4050,11 @@ focus_tree = {
 	focus = {#与白袍义士同行
 		id = USA_with_righteous_men_in_white_robes
 		icon = GFX_USA_with_righteous_men_in_white_robes
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Murray
 		}
@@ -3985,6 +4084,11 @@ focus_tree = {
 	focus = {#纪念先贤杰克逊
 		id = USA_In_memory_of_the_great_sage_Jackson
 		icon = GFX_USA_In_memory_of_the_great_sage_Jackson
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_with_righteous_men_in_white_robes
 		}
@@ -4010,6 +4114,11 @@ focus_tree = {
 	focus = {#州长应得之权
 		id = USA_The_powers_due_to_the_governor
 		icon = GFX_USA_The_powers_due_to_the_governor
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_President_Murray
 			focus = USA_with_righteous_men_in_white_robes
@@ -4037,6 +4146,11 @@ focus_tree = {
 	focus = {#复兴美国传统主义
 		id = USA_Revive_traditionalism
 		icon = GFX_USA_Revive_traditionalism
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_The_powers_due_to_the_governor
 		}
@@ -4070,6 +4184,11 @@ focus_tree = {
 	focus = {#邦联精神的回归
 		id = USA_The_return_of_spirit_of_confederation
 		icon = GFX_USA_The_return_of_spirit_of_confederation
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Revive_traditionalism
 		}
@@ -4100,6 +4219,11 @@ focus_tree = {
 	focus = {#动员一切可用之军
 		id = USA_Mobilize_all_available_troops
 		icon = GFX_USA_Mobilize_all_available_troops
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Panzer_marching
 		}
@@ -4136,6 +4260,11 @@ focus_tree = {
 	}
 	focus = {#让喋喋不休的国会闭嘴
 		id = USA_Shut_up_the_chattering_Congress
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		icon = GFX_USA_Shut_up_the_chattering_Congress
 		prerequisite = {
 			focus = USA_Legalize_the_Socialist_militia
@@ -4210,6 +4339,11 @@ focus_tree = {
 	focus = {#确保东北尽在掌握
 		id = USA_Make_sure_Northeast_under_control
 		icon = GFX_USA_Make_sure_Northeast_under_control
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Shut_up_the_chattering_Congress
 		}
@@ -4231,6 +4365,11 @@ focus_tree = {
 	focus = {#震惊世界
 		id = USA_Shock_the_world
 		icon = GFX_USA_Shock_the_world
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Make_sure_Northeast_under_control
 		}
@@ -4263,6 +4402,11 @@ focus_tree = {
 	focus = {#秩序得胜
 		id = USA_ORDER_WE_NEED_ORDER
 		icon = GFX_USA_ORDER_WE_NEED_ORDER
+		available = {
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		prerequisite = {
 			focus = USA_Make_sure_Northeast_under_control
 		}
@@ -4299,6 +4443,17 @@ focus_tree = {
 		id = USA_The_true_era_of_commoners
 		icon = GFX_USA_The_true_era_of_commoners
 		cost = 1
+		allow_branch = {
+			OR = {
+				has_country_flag = USA_1940_election_PP_victory
+				has_country_flag = USA_1944_election_PP_victory
+				has_country_flag = USA_1948_election_PP_victory
+				has_country_flag = USA_1952_election_PP_victory
+			}
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		available = {
 			OR = {
 				has_country_flag = USA_1940_election_PP_victory
@@ -5741,6 +5896,17 @@ focus_tree = {
 		id = USA_The_return_of_the_true_American_spirit
 		icon = GFX_USA_The_return_of_the_true_American_spirit
 		cost = 1
+		allow_branch = {
+			OR = {
+				has_country_flag = USA_1940_election_NPP_victory
+				has_country_flag = USA_1944_election_NPP_victory
+				has_country_flag = USA_1948_election_NPP_victory
+				has_country_flag = USA_1952_election_NPP_victory
+			}
+			NOT = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		available = {
 			OR = {
 				has_country_flag = USA_1940_election_NPP_victory
@@ -13433,28 +13599,18 @@ focus_tree = {
 		id = USA_macauthurs_victory
 		icon = GFX_USA_macauthurs_victory
 		cost = 0.5
+		allow_branch = {
+			has_global_flag = USA_civil_war_begun_flag
+		}
 		available = {
 			has_global_flag = USA_civil_war_over_flag
 			NOT = {
 				country_exists = COR
 				country_exists = CSA
 				country_exists = TEX
-			}
-			NOT = { has_global_flag = PSA_rockies_ceasefire }
-			NOT = {
-				CAL = { has_war_with = WCC } 
+				country_exists = CAL
 			}
 			NOT = {
-				CAL = { has_war_with = USA } 
-			}
-			NOT = {
-				#AND = {
-					#country_exists = NEE
-					#NEE = { 
-						#has_country_flag = NEE_claimed_america
-						#is_ally_of_ROOT = no
-					#}
-				#}
 				AND = {
 					country_exists = TXS
 					TXS = { 
@@ -13462,6 +13618,8 @@ focus_tree = {
 						is_ally_of_ROOT = no
 					}
 				}
+			}
+			NOT = {
 				AND = {
 					country_exists = NYC
 					NYC = { 
@@ -13469,6 +13627,8 @@ focus_tree = {
 						is_ally_of_ROOT = no
 					}
 				}
+			}
+			NOT = {
 				AND = {
 					country_exists = BBR
 					BBR = {	
@@ -13769,6 +13929,18 @@ focus_tree = {
 		cost = 1
 		x = 0
 		y = 1
+		offset = {
+			x = 3
+			y = -6
+			trigger = {
+				NOT = {
+					OR = {
+						has_global_flag = USA_civil_war_begun_flag
+						has_global_flag = USA_civil_war_avoided_flag
+					}
+				}
+			}
+		}
 		relative_position_id = USA_There_is_nothing_else_but_patriotism
 		ai_will_do = {
 			factor = 100
@@ -16696,7 +16868,24 @@ focus_tree = {
 				}
 			}
 		}
-
+		offset = {
+			x = 10
+			y = 0
+			trigger = {
+				NOT = {
+					OR = {
+						has_country_flag = USA_1940_election_PP_victory
+						has_country_flag = USA_1944_election_PP_victory
+						has_country_flag = USA_1948_election_PP_victory
+						has_country_flag = USA_1952_election_PP_victory
+						has_country_flag = USA_1940_election_NPP_victory
+						has_country_flag = USA_1944_election_NPP_victory
+						has_country_flag = USA_1948_election_NPP_victory
+						has_country_flag = USA_1952_election_NPP_victory
+					}
+				}
+			}
+		}
 		x = 54
 		y = 10
 		ai_will_do = {
@@ -18567,7 +18756,9 @@ focus_tree = {
 		id = USA_Technology_facilitates_production
 		icon = GFX_USA_Technology_facilitates_production
 		cost = 5
-		
+		avalible = {
+			has_idea = USA_NDRC
+		}
 		prerequisite = {
 			focus = USA_The_wisdom_of_the_new_era
 		}
@@ -22163,13 +22354,19 @@ focus_tree = {
 		x = 2
 		y = 1
 		completion_reward = {
-			log = "[GetDateText]: [Root.GetName]: Focus USA_Remnants_of_the_Portuguese_colonial_empire"
-			every_allied_country = {
+			log = "[GetDateText]: [Root.GetName]: Focus USA_The_New_America_Order_belonging_to_the_United_States"
+			every_state = {
 				limit = {
-					is_american_tag = yes
-					is_subject_of = USA
+					owner = {
+						OR = {
+							is_in_north_america = yes
+							is_in_central_america = yes
+							is_in_south_america = yes
+						}
+					}
+					is_claim_or_core_of_ROOT = no
 				}
-				
+				add_claim_by = ROOT
 			}
 		}
 	}
@@ -22485,7 +22682,7 @@ focus_tree = {
 				}
 				AND = {
 					country_exists = TRM
-					RUS = {
+					TRM = {
 						is_subject = no
 					}
 				}
@@ -22503,6 +22700,22 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_iron_curtain_fell"
+			if = {
+				limit = {
+					country_exists = RUS
+				}
+				RUS = {
+					add_ideas = USA_iron_curtain
+				}
+			}
+			else_if = {
+				limit = {
+					country_exists = TRM
+				}
+				TRM = {
+					add_ideas = USA_iron_curtain
+				}
+			}
 		}
 	}
 
@@ -22691,6 +22904,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Trapped_in_an_endless_quagmire"
+			custom_effect_tooltip = USA_Trapped_in_an_endless_quagmire_tt
 			every_country = {
 				limit = {
 					has_war_with = JAP
@@ -23639,6 +23853,15 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_old_face_new_order"
+			every_country = {
+				limit = {
+					is_in_faction_with = ENT
+				}
+				add_political_power = 100
+				add_stability = 0.1
+				add_war_support = 0.1
+				increase_ruling_party_popularity_by_5 = yes
+			}
 		}
 	}
 
@@ -23729,7 +23952,7 @@ focus_tree = {
 	focus = {#擦亮神圣罗马的黄金之心
 		id = USA_Polish_golden_heart_of_Holy_Roman_Empire
 		icon = GFX_USA_Polish_golden_heart_of_Holy_Roman_Empire
-		cost = 5.00
+		cost = 2
 		available = {
 			#has_completed_focus = USA_trade_window_with_Central_European_Union
 		}
@@ -23745,13 +23968,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Polish_golden_heart_of_Holy_Roman_Empire"
 			set_country_flag = USA_european_rebuild_central_europe
+			custom_effect_tooltip = USA_Polish_golden_heart_of_Holy_Roman_Empire_tt
 		}
 	}
 
 	focus = {#保卫多瑙明珠
 		id = USA_Protecting_the_Pearl_of_the_Danube
 		icon = GFX_USA_Protecting_the_Pearl_of_the_Danube
-		cost = 5.00
+		cost = 2
 		prerequisite = {
 			focus = USA_Polish_golden_heart_of_Holy_Roman_Empire
 		}
@@ -23769,6 +23993,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Protecting_the_Pearl_of_the_Danube"
 			set_country_flag = USA_european_rebuild_danube
+			custom_effect_tooltip = USA_Protecting_the_Pearl_of_the_Danube_tt
 		}
 	}
 
@@ -23834,6 +24059,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Directly_reaching_the_border_of_Europa"
 			set_country_flag = USA_european_rebuild_russia
+			custom_effect_tooltip = USA_Directly_reaching_the_border_of_Europa_tt
 		}
 	}
 
@@ -23857,6 +24083,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Healing_the_wounds_of_1898"
 			set_country_flag = USA_european_rebuild_iberia
+			custom_effect_tooltip = USA_Healing_the_wounds_of_1898_tt
 		}
 	}
 
@@ -23865,6 +24092,24 @@ focus_tree = {
 		icon = GFX_USA_The_necessary_evil_for_defending_the_free_world
 		cost = 1
 		available = {
+			AND = {
+				country_exists = GBP
+				GBP = {
+					is_subject_of = ROOT
+				}
+			}
+			AND = {
+				country_exists = FRP
+				FRP = {
+					is_subject_of = ROOT
+				}
+			}
+			AND = {
+				country_exists = GER
+				GER = {
+					is_subject_of = ROOT
+				}
+			}
 		}
 		prerequisite = {
 			focus = USA_European_Conquest
@@ -23878,13 +24123,14 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_necessary_evil_for_defending_the_free_world"
 			add_political_power = 10
+			add_war_support = 0.05
 		}
 	}
 
 	focus = {#受指导之义务
 		id = USA_The_necessity_of_being_guided
 		icon = GFX_USA_The_necessity_of_being_guided
-		cost = 5.00
+		cost = 3
 		available = {
 		}
 		prerequisite = {
@@ -23901,6 +24147,7 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_necessity_of_being_guided"
+			custom_effect_tooltip = USA_The_necessity_of_being_guided_tt
 			if = {
 				limit = {
 					country_exists = GBP
@@ -23922,7 +24169,7 @@ focus_tree = {
 	focus = {#我们的忠诚代理人
 		id = USA_Our_loyal_agent
 		icon = GFX_USA_Our_loyal_agent
-		cost = 5.00
+		cost = 3
 		available = {
 		}
 		prerequisite = {
@@ -23990,7 +24237,7 @@ focus_tree = {
 	focus = {#迈向真正的“欧洲和平”
 		id = USA_Towards_true_European_peace
 		icon = GFX_USA_Towards_true_European_peace
-		cost = 5.00
+		cost = 3
 		available = {
 		}
 		prerequisite = {
@@ -24005,13 +24252,22 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Towards_true_European_peace"
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				add_ideas = USA_true_european_peace_subject
+			}
 		}
 	}
 
 	focus = {#游子归乡？
 		id = USA_The_traveler_returns_home
 		icon = GFX_USA_The_traveler_returns_home
-		cost = 5.00
+		cost = 3
 		available = {
 		}
 		prerequisite = {
@@ -24025,6 +24281,27 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_traveler_returns_home"
+			if = {
+				limit = {
+					has_idea = USA_Interference_in_world_affairs
+				}
+				swap_ideas = {
+					remove_idea = USA_Interference_in_world_affairs
+					add_idea = USA_Interference_in_world_affairs_2
+				}
+			}
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					capital_scope = {
+						is_on_continent = europe
+					}
+				}
+				swap_ideas = {
+					remove_idea = USA_true_european_peace_subject
+					add_idea = USA_true_european_peace_subject_2
+				}
+			}
 		}
 	}
 
@@ -24082,7 +24359,7 @@ focus_tree = {
 				uses = 1
 				category = naval_doctrine
 			}
-			country_event = ustates.601
+			country_event = USA.2001
 		}
 	}
 
@@ -27054,6 +27331,16 @@ focus_tree = {
 		id = USA_navy_in_command
 		icon = GFX_goal_USA_navy_rule
 		cost = 2.00
+		allow_branch = {
+			has_global_flag = USA_civil_war_begun_flag
+		}
+		offset = {
+			x = 3
+			y = -24
+			trigger = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		available = {
 			has_country_flag = USA_navy_flag
 		}
@@ -28207,6 +28494,16 @@ focus_tree = {
 		icon = GFX_goal_USA_court_weidenbach
 		cost = 5.00
 		available = { always = no }
+		allow_branch = {
+			has_global_flag = USA_civil_war_begun_flag
+		}
+		offset = {
+			x = 33
+			y = -20
+			trigger = {
+				has_global_flag = USA_civil_war_begun_flag
+			}
+		}
 		bypass = {}
 		x = 9
 		y = 20

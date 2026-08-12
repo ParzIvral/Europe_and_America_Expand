@@ -489,4 +489,84 @@ SpriteTypes = {
 		name = "GFX_USA_Future_design"
 		texturefile = "gfx/interface/ideas/usa/USA_Future_design.png"
 	}
+	spriteType = {
+		name = "GFX_USA_Trade_in_Alliance_modifier"
+		texturefile = "gfx/interface/ideas/usa/USA_Decadence_Endless_Versailles.png"
+	}
+	spriteType = {
+		name = "GFX_USA_britain_reconstruction_modifier"
+		texturefile = "gfx/interface/ideas/usa/USA_Finis_Britanniae.png"
+	}
+	spriteType = {
+		name = "GFX_USA_france_reconstruction_modifier"
+		texturefile = "gfx/interface/ideas/usa/USA_Finis_Franciae.png"
+	}
+	spriteType = {
+		name = "GFX_USA_germany_reconstruction_modifier"
+		texturefile = "gfx/interface/ideas/usa/USA_Clamped_Industrialist_Excess.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Go_full_steam_ahead"
+		texturefile = "gfx/interface/ideas/usa/USA_Go_full_steam_ahead.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Surging_waves"
+		texturefile = "gfx/interface/ideas/usa/USA_Surging_waves.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Modern_Steel_Knight"
+		texturefile = "gfx/interface/ideas/usa/USA_Modern_Steel_Knight.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_dust_to_dust"
+		texturefile = "gfx/interface/ideas/usa/USA_dust_to_dust.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Traverse_the_foggy_path"
+		texturefile = "gfx/interface/ideas/usa/USA_Traverse_the_foggy_path.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_The_knife_to_break_through_the_tidal_flats"
+		texturefile = "gfx/interface/ideas/usa/USA_The_knife_to_break_through_the_tidal_flats.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_End_Exile"
+		texturefile = "gfx/interface/ideas/usa/USA_End_Exile.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_The_knife_to_break_through_the_tidal_flats"
+		texturefile = "gfx/interface/ideas/usa/USA_The_knife_to_break_through_the_tidal_flats.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Baton_Autocracy"
+		texturefile = "gfx/interface/ideas/usa/USA_Baton_Autocracy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_gerusa_co_governance"
+		texturefile = "gfx/interface/ideas/usa/USA_gerusa_co_governance.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Chains_Reconstruction"
+		texturefile = "gfx/interface/ideas/usa/USA_Chains_Reconstruction.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Far_East_Military_Police"
+		texturefile = "gfx/interface/ideas/usa/USA_Far_East_Military_Police.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_The_legacy_of_the_Monroe_Doctrine_idea_3"
+		texturefile = "gfx/interface/ideas/usa/USA_The_legacy_of_the_Monroe_Doctrine_idea_3.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Interference_in_world_affairs"
+		texturefile = "gfx/interface/ideas/usa/USA_Interference_in_world_affairs.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Electoral_Reform"
+		texturefile = "gfx/interface/ideas/usa/USA_Electoral_Reform.png"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_iron_curtain"
+		texturefile = "gfx/interface/ideas/usa/USA_iron_curtain.png"
+	}
 }
