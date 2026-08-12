@@ -33153,6 +33153,7 @@ add_namespace = usanew
 		option = { #终于搞定了！这本书将引领我们走向胜利！
 			name = USA.2010.a
 			add_mastery_bonus = {
+				name = USA_2010_mastery_bonus
 				bonus = 0.05
 				days = 365
 				track = combat_support
@@ -33177,6 +33178,7 @@ add_namespace = usanew
 		option = { #向德国人学习是值得的
 			name = USA.2011.a
 			add_mastery_bonus = {
+				name = USA_2011_mastery_bonus
 				bonus = 0.05
 				days = 365
 				track = armor
@@ -34784,7 +34786,6 @@ country_event = { # 美利坚的灭亡
 
 		trigger = {
 			tag = USA
-			has_completed_focus = USA_defensive_navy
 			OR = {
 				AND = {
 					NOT = {
@@ -35557,7 +35558,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 		
 		trigger = {
-			has_completed_focus = USA_air_force_debate
+			has_completed_focus = USA_Reorganize_the_Air_Force_Command
 			USA = {
 				has_war = yes
 			}
@@ -35592,7 +35593,7 @@ country_event = { # 美利坚的灭亡
 		
 		trigger = {
 			tag = USA
-			has_completed_focus = USA_strategic_bombing_doctrine
+			has_completed_focus = USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters
 			USA = {
 				has_war = yes
 			}

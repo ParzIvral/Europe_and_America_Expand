@@ -18756,7 +18756,7 @@ focus_tree = {
 		id = USA_Technology_facilitates_production
 		icon = GFX_USA_Technology_facilitates_production
 		cost = 5
-		availble = {
+		available = {
 			has_idea = USA_NDRC
 		}
 		prerequisite = {
@@ -21103,6 +21103,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = USA_Supporters_coming_from_the_air
+			focus = USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters
 		}
 		relative_position_id = USA_Reorganize_the_Air_Force_Command
 		x = -2
@@ -21333,6 +21334,7 @@ focus_tree = {
 		}
 		mutually_exclusive = {
 			focus = USA_Elegant_air_fighter
+			focus = USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters
 		}
 		relative_position_id = USA_Reorganize_the_Air_Force_Command
 		x = 3
@@ -21571,6 +21573,10 @@ focus_tree = {
 		}
 		prerequisite = {
 			focus = USA_Reorganize_the_Air_Force_Command
+		}
+		mutually_exclusive = {
+			focus = USA_Supporters_coming_from_the_air
+			focus = USA_Elegant_air_fighter
 		}
 		relative_position_id = USA_Reorganize_the_Air_Force_Command
 		x = 8
@@ -24345,8 +24351,6 @@ focus_tree = {
 					country_exists = TEX
 					has_global_flag = USA_civil_war_begun_flag
 					has_country_flag = USA_macarthur_coup
-					has_completed_focus = USA_fight_anarchists
-					has_completed_focus = USA_focus_on_odp
 				}
 			}
 		}

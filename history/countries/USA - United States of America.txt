@@ -499,7 +499,6 @@ recruit_character = USA_Fiorello_La_Guardia_2
 recruit_character = USA_Nelson_Rockefeller
 recruit_character = USA_Cordell_Hull
 recruit_character = USA_Harry_Truman
-recruit_character = USA_Sam_DeWitt
 recruit_character = USA_Glen_Taylor
 recruit_character = USA_Jim_Folsom
 recruit_character = USA_Robert_La_Follette
