@@ -169,13 +169,41 @@ ideas = {
 					always = no
 				}
 			}
+			visible = {
+				NOT = {
+					has_country_flag = USA_deadlock_garner
+				}
+			}
 			cancel_if_invalid = no
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea USA_Sam_DeWitt_veep_rso"
 			}
 			traits = {
 				vice_president
-				radical_socialist
+				rs_pp
+				hog_ambitious_union_boss
+			}
+		}
+
+		USA_Sam_DeWitt_veep_rso_PP = {
+			allowed = { original_tag = USA }
+			picture = USA_Sam_DeWitt_veep_rso
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			visible = {
+				has_country_flag = USA_deadlock_garner	
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Sam_DeWitt_veep_rso_PP"
+			}
+			traits = {
+				vice_president
+				rs_pp_2
 				hog_ambitious_union_boss
 			}
 		}
@@ -420,7 +448,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_liberal
+				sl_republic
 				hog_liberal_jurisprudence
 			}
 			cancel_if_invalid = no
@@ -440,7 +468,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_liberal
+				sl_republic
 				hog_silent_workhorse
 			}
 			cancel_if_invalid = no
@@ -560,7 +588,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_liberal
+				sl_pp
 				hog_spiritual_leader
 			}
 			cancel_if_invalid = no
@@ -618,7 +646,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				market_liberal
+				ml_republic
 				hog_respected_war_hero
 			}
 			cancel_if_invalid = no
@@ -638,7 +666,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				market_liberal
+				ml_republic
 				hog_flamboyant_tough_guy
 			}
 			cancel_if_invalid = no
@@ -718,7 +746,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_conservative
+				True_Patriot_sc
 				hog_revelatory_speaker
 			}
 			cancel_if_invalid = no
@@ -874,7 +902,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				social_conservative
+				cd_democratic
 				hog_gentleman_politician
 			}
 			cancel_if_invalid = no
@@ -1223,7 +1251,7 @@ ideas = {
 			}
 			traits = {
 				vice_president
-				paternal_autocrat
+				np_npp
 				hog_backroom_backstabber
 			}
 			cancel_if_invalid = no
@@ -1266,7 +1294,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
-				authoritarian_democrat
+				ad_navy
 				hog_old_admiral
 			}
 			cancel_if_invalid = no
@@ -1310,7 +1338,7 @@ ideas = {
 			}
 			traits = {
 				head_of_government
-				paternal_autocrat
+				pa_navy
 				hog_old_admiral
 			}
 			cancel_if_invalid = no
@@ -1421,28 +1449,6 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		USA_George_Sylvester_Viereck_for_pau = { #乔治·西尔维斯特·维雷克
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			picture = COR_George_Sylvester_Viereck_for_pau
-			visible = {
-				NOT = { has_country_flag = George_Sylvester_Viereck_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_George_Sylvester_Viereck_for_pau"
-			}
-			traits = {
-				foreign_minister
-				pa_npp
-				for_ideological_crusader
-			}
-			cancel_if_invalid = no
-		}
 		USA_Gerald_Nye_for_rso_2 = {
 			allowed = { original_tag = USA }
 			available = {
@@ -1526,7 +1532,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				social_democrat
+				sd_independent
 				for_the_cloak_n_dagger_schemer
 			}
 			cancel_if_invalid = no
@@ -1572,7 +1578,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				social_democrat
+				sd_pp
 				for_ideological_crusader
 			}
 			cancel_if_invalid = no
@@ -1641,7 +1647,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				social_liberal
+				sl_democratic
 				for_apologetic_clerk
 			}
 			cancel_if_invalid = no
@@ -1710,7 +1716,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				social_liberal
+				sl_republic
 				for_biased_intellectual
 			}
 			cancel_if_invalid = no
@@ -1756,7 +1762,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				market_liberal
+				ml_republic
 				for_ideological_crusader
 			}
 			cancel_if_invalid = no
@@ -1918,7 +1924,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				social_conservative
+				cd_democratic
 				for_apologetic_clerk
 			}
 			cancel_if_invalid = no
@@ -2025,7 +2031,7 @@ ideas = {
 			}
 			traits = {
 				foreign_minister
-				authoritarian_democrat
+				ad_navy
 				for_great_compromiser
 			}
 			cancel_if_invalid = no
@@ -2071,28 +2077,6 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
-		USA_Robert_Heinlein_for_pau = {
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-					NOT = { has_country_flag = Robert_Heinlein_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = Robert_Heinlein_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_Robert_Heinlein_for_pau"
-			}
-			traits = {
-				foreign_minister
-				paternal_autocrat
-				for_biased_intellectual
-			}
-			cancel_if_invalid = no
-		}
 		USA_Richard_Washburn_Child_for_pau = {
 			allowed = { original_tag = USA }
 			available = {
@@ -2112,6 +2096,28 @@ ideas = {
 				foreign_minister
 				True_Patriot_pa
 				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		USA_George_Sylvester_Viereck_for_pau = { #乔治·西尔维斯特·维雷克
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			picture = COR_George_Sylvester_Viereck_for_pau
+			visible = {
+				NOT = { has_country_flag = George_Sylvester_Viereck_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_George_Sylvester_Viereck_for_pau"
+			}
+			traits = {
+				foreign_minister
+				pa_npp
+				for_ideological_crusader
 			}
 			cancel_if_invalid = no
 		}
@@ -2349,7 +2355,7 @@ ideas = {
 					always = no
 				}
 			}
-			picture = USA_Alfred_Mitchell_Bingham_eco_rso
+			picture = TEX_Alfred_Mitchell_Bingham_eco_rso
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea USA_Alfred_Mitchell_Bingham_eco_rso"
 			}
@@ -2368,7 +2374,7 @@ ideas = {
 					always = no
 				}
 			}
-			picture = CSA_John_Gates_eco_rso
+			picture = CSA_John_Gates_hog_tot
 			cancel_if_invalid = no
 			on_add = {
 				log = "[GetDateText]: [Root.GetName]: add idea USA_John_Gates_eco_rso"
@@ -2416,7 +2422,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				social_democrat
+				sd_army
 				eco_infantry_proponent
 			}
 			cancel_if_invalid = no
@@ -2439,7 +2445,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				social_democrat
+				sd_pp
 				eco_industrialiser
 			}
 			cancel_if_invalid = no
@@ -2669,7 +2675,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				social_conservative
+				cd_democratic
 				eco_battle_fleet_proponent
 			}
 			cancel_if_invalid = no
@@ -2761,7 +2767,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				social_conservative
+				cd_democratic
 				eco_carrier_proponent
 			}
 			cancel_if_invalid = no
@@ -2919,6 +2925,25 @@ ideas = {
 			}
 			cancel_if_invalid = no
 		}
+		USA_Fred_Chase_Koch_eco_ade = { #弗雷德·科克
+			allowed = { original_tag = USA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			picture = COR_Fred_Chase_Koch_eco_ade
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea USA_Fred_Chase_Koch_eco_ade"
+			}
+			traits = {
+				economy_minister
+				ad_npp
+				eco_oil_baron
+			}
+			cancel_if_invalid = no
+		}
 		USA_Merwin_K_Hart_eco_pau = {
 			allowed = { original_tag = USA }
 			available = {
@@ -2977,49 +3002,8 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				ad_npp
+				pa_npp
 				eco_administrative_genius
-			}
-			cancel_if_invalid = no
-		}
-		USA_Charles_Francis_Adams_III_eco_pau = {
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-					NOT = { has_country_flag = Charles_Francis_Adams_III_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = Charles_Francis_Adams_III_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_Charles_Francis_Adams_III_eco_pau"
-			}
-			traits = {
-				economy_minister
-				paternal_autocrat
-				eco_resource_industrialist
-			}
-			cancel_if_invalid = no
-		}
-		USA_Fred_Chase_Koch_eco_ade = { #弗雷德·科克
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-				}
-			}
-			picture = COR_Fred_Chase_Koch_eco_ade
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_Fred_Chase_Koch_eco_ade"
-			}
-			traits = {
-				economy_minister
-				ad_npp
-				eco_oil_baron
 			}
 			cancel_if_invalid = no
 		}
@@ -3059,7 +3043,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				paternal_autocrat
+				pa_navy
 				eco_construction_magnate
 			}
 			cancel_if_invalid = no
@@ -3151,7 +3135,7 @@ ideas = {
 			}
 			traits = {
 				economy_minister
-				paternal_autocrat
+				pa_democratic 
 				eco_infantry_proponent
 			}
 			cancel_if_invalid = no
@@ -3589,7 +3573,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				social_liberal
+				sl_democratic
 				sec_crooked_kleptocrat
 			}
 			cancel_if_invalid = no
@@ -3612,31 +3596,8 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				social_liberal
+				sl_democratic
 				sec_silent_lawyer
-			}
-			cancel_if_invalid = no
-		}
-		
-		USA_Frederick_'Fred'_Moore_Vinson_sec_sli = {
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-					NOT = { has_country_flag = Frederick_'Fred'_Moore_Vinson_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = Frederick_'Fred'_Moore_Vinson_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_Frederick_'Fred'_Moore_Vinson_sec_mli"
-			}
-			traits = {
-				security_minister
-				social_liberal
-				sec_compassionate_gentleman
 			}
 			cancel_if_invalid = no
 		}
@@ -3658,7 +3619,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				social_liberal
+				sl_democratic
 				sec_media_magnate
 			}
 			cancel_if_invalid = no
@@ -3728,7 +3689,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				market_liberal
+				ml_republic
 				sec_efficient_sociopath
 			}
 			cancel_if_invalid = no
@@ -3751,31 +3712,8 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				market_liberal
+				ml_democratic
 				sec_secret_police_chief
-			}
-			cancel_if_invalid = no
-		}
-
-		USA_William_Francis_'Frank'_Murphy_sec_mli = {
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-					NOT = { has_country_flag = William_Francis_'Frank'_Murphy_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = William_Francis_'Frank'_Murphy_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_William_Francis_'Frank'_Murphy_sec_mli"
-			}
-			traits = {
-				security_minister
-				market_liberal
-				sec_crime_fighter
 			}
 			cancel_if_invalid = no
 		}
@@ -3803,30 +3741,6 @@ ideas = {
 			cancel_if_invalid = no
 		}
 
-
-		USA_Henry_John_Kaiser_sec_sco = {
-			allowed = { original_tag = USA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = minister_available
-					always = no
-					NOT = { has_country_flag = Henry_John_Kaiser_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = Henry_John_Kaiser_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea USA_Henry_John_Kaiser_sec_sco"
-			}
-			traits = {
-				security_minister
-				social_conservative
-				sec_health_and_safety
-			}
-			cancel_if_invalid = no
-		}
-
 		USA_James_E_Ferguson_sec_sco = {
 			allowed = { original_tag = USA }
 			available = {
@@ -3844,7 +3758,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				social_conservative
+				cd_democratic
 				sec_compassionate_gentleman
 			}
 			cancel_if_invalid = no
@@ -3933,7 +3847,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				authoritarian_democrat
+				ad_navy
 				sec_crime_fighter
 			}
 			cancel_if_invalid = no
@@ -4016,7 +3930,7 @@ ideas = {
 			}
 			traits = {
 				security_minister
-				paternal_autocrat
+				pa_democratic
 				sec_health_and_safety
 			}
 			cancel_if_invalid = no

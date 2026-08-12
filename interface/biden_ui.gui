@@ -5921,12 +5921,6 @@ guiTypes = {
 #new added
 
 		iconType = { #
-			name = "Strom_Thurmond"
-			position = { x = 8 y = 10 }
-			spriteType = "GFX_portrait_Portrait_USA_Strom_Thurmond"
-		}
-
-		iconType = { #
 			name = "Willard_Kemp"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_portrait_Portrait_TEX_Willard_Kemp"

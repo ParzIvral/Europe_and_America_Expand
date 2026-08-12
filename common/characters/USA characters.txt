@@ -1307,21 +1307,6 @@ characters = {
 			}
 		}
 	}
-	USA_Sam_DeWitt = { #山姆·德威特
-		name = USA_Sam_DeWitt
-		portraits = {
-			civilian = {
-				large = GFX_portrait_Portrait_USA_Sam_DeWitt
-			}
-		}
-		country_leader = {
-			desc = POLITICS_SAM_DEWITT_DESC
-			ideology = moderate_socialist_subtype
-			traits = {
-				author
-			}
-		}
-	}
 	USA_Jimmy_Stewart = { #詹姆斯·斯图尔特
 		name = USA_Jimmy_Stewart
 		portraits = {

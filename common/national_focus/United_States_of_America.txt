@@ -18756,7 +18756,7 @@ focus_tree = {
 		id = USA_Technology_facilitates_production
 		icon = GFX_USA_Technology_facilitates_production
 		cost = 5
-		avalible = {
+		availble = {
 			has_idea = USA_NDRC
 		}
 		prerequisite = {
@@ -20688,7 +20688,7 @@ focus_tree = {
 				category = support_tech
 			}
 			add_equipment_to_stockpile = {
-				type = train
+				type = train_equipment_1
 				amount = 10
 			}
 			if = {
@@ -27534,24 +27534,24 @@ focus_tree = {
 						NOT = {
 							has_country_flag = USA_republicans_exist
 						}
-						set_country_flag = USA_republicans_exist
 					}
+					set_country_flag = USA_republicans_exist
 				}
 				if = {
 					limit = {
 						NOT = {
 							has_country_flag = USA_progressives_exist	
 						}
-						set_country_flag = USA_progressives_exist	
 					}
+					set_country_flag = USA_progressives_exist	
 				}
 				if = {
 					limit = {
 						NOT = {
 							has_country_flag = USA_democrats_exist
 						}
-						set_country_flag = USA_democrats_exist
 					}
+					set_country_flag = USA_democrats_exist
 				}
 				country_event = { id = USA.600 days = 3 }
 				country_event = { id = USA.601 days = 6 }	

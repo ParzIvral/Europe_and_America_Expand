@@ -115,25 +115,6 @@ CAL_Hughes_category = {#休斯bop
 			CAL_increase_council_influence_5 = yes
 		}
     }
-
-    CAL_Avoid_Hughes_coming_out_in_public = { #
-		icon = political1
-		cost = 20
-		days_remove = 7
-		days_re_enable = 30
-
-		modifier = {
-			political_power_gain = -0.01
-		}
-		visible = {
-			has_completed_focus = CAL_Our_marionettes
-		}
-		remove_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision remove CAL_Avoid_Hughes_coming_out_in_public"
-			increase_ruling_party_popularity_by_3 = yes
-			CAL_increase_council_influence_5 = yes
-		}
-    }
 }
 
 CAL_asio_decision_category = {

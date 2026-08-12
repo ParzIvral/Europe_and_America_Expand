@@ -441,7 +441,6 @@ on_actions = {
 				limit = {
 					ROOT = {
 						tag = USA
-						has_completed_focus = USA_defensive_navy
 						OR = {
 							AND = {
 								NOT = {

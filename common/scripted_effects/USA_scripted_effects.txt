@@ -1039,7 +1039,7 @@ USA_france_install_murphy_administration = {
 	USA_Robert_D_Murphy = {
 		add_country_leader_role = {
 			country_leader = {
-				ideology = authdem_progressive_conservatism_subtype
+				ideology = autdem_progressive_conservatism_subtype
 				traits = { }
 			}
 			promote_leader = yes

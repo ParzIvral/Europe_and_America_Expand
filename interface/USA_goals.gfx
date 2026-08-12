@@ -497,14 +497,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/USA_Salute_to_chief.png"
 	}
 	SpriteType = {
-		name = "GFX_USA_order_first"
-		texturefile = "gfx/interface/goals/USA_order_first.png"
-	}
-	SpriteType = {
-		name = "GFX_USA_suppress_the_rebels_and_quell_the_chaos"
-		texturefile = "gfx/interface/goals/USA_suppress_the_rebels_and_quell_the_chaos.png"
-	}
-	SpriteType = {
 		name = "GFX_USA_with_naval_comrades"
 		texturefile = "gfx/interface/goals/USA_with_naval_comrades.png"
 	}

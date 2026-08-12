@@ -154,7 +154,6 @@ USA_rainbow_war_plans_decisions = {
 	icon = military_operation
 	allowed = {
 		OR = {
-			tag = USA
 			tag = CAL
 			tag = TEX
 			tag = WCC

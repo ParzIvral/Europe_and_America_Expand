@@ -4847,7 +4847,7 @@ add_namespace = usanew
 			set_country_flag = USA_democrats_exist
 			set_country_flag = USA_President_Curtis_1936_flag
 			hidden_effect = {
-				add_ideas = USA_Alf_Landon_veep_sli #闃垮皵澶峰叞鐧?
+				add_ideas = USA_Alf_Landon_veep_sli #
 				add_ideas = USA_Patrick_Jay_Hurley_for_sli #帕特里克·杰伊·赫尔利
 				add_ideas = USA_Ray_Lyman_Wilbur_Sr_eco_mli #老雷·莱曼·威尔伯
 				add_ideas = USA_Charles_Douglas_Jackson_sec_mli #查尔斯·道格拉斯·杰克逊
@@ -7286,7 +7286,6 @@ add_namespace = usanew
 			name = USA.150.a
 			add_political_power = 20
 			set_country_flag = USA_president_inaugurated
-			activate_mission = USA_long_act_quickly
 			hidden_effect = {
 				country_event = { id = USA.151 days = 5  } #第7037号行政命令：农业援助法案
 				complete_national_focus = USA_Here_is_chaos
@@ -7848,7 +7847,6 @@ add_namespace = usanew
 				}
 			}
 			set_country_flag = USA_president_inaugurated
-			activate_mission = USA_murray_act_quickly
 		}
 	}
 
@@ -25463,7 +25461,7 @@ add_namespace = usanew
 						has_country_flag = USA_1952_PP_primary_hoopes
 					}
 					remove_all_ministers = yes
-					add_ideas = USA_Sam_DeWitt_veep_rso
+					add_ideas = USA_Sam_DeWitt_veep_rso_PP
 					add_ideas = USA_Max_Eastman_for_rso
 					add_ideas = USA_John_Gates_eco_rso
 					add_ideas = USA_Lee_Pressman_sec_syn
@@ -27532,8 +27530,10 @@ add_namespace = usanew
 			add_political_power = 50
 			add_popularity = { ideology = radical_socialist popularity = 0.02 }
 			hidden_effect = {
-				country_event = USA.837
-				days = 7
+				country_event = {
+					id = USA.837
+					days = 7
+				}
 			}
 		}
 	}
@@ -33048,7 +33048,7 @@ add_namespace = usanew
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
-				category = anti_tank
+				category = cat_anti_tank
 			}
 		}
 		option = { #防空炮更为重要
@@ -33059,7 +33059,7 @@ add_namespace = usanew
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
-				category = anti_air
+				category = cat_anti_air
 			}
 		}
 	}
@@ -37185,12 +37185,6 @@ country_event = { # 美利坚的灭亡
 			hidden_effect = {
 				retire_character = USA_Douglas_MacArthur
 				retire_character = USA_Douglas_MacArthur_2
-				remove_country_leader_role = {
-					character = USA_Douglas_MacArthur
-				}
-				remove_country_leader_role = {
-					character = USA_Douglas_MacArthur_2
-				}
 				add_ideas = USA_Ernest_King_hog_pau
 				add_ideas = USA_Raymond_Spruance_for_ade
 				add_ideas = USA_William_Harrison_Standley_eco_pau
@@ -37244,12 +37238,6 @@ country_event = { # 美利坚的灭亡
 			hidden_effect = {
 				retire_character = USA_Douglas_MacArthur
 				retire_character = USA_Douglas_MacArthur_2
-				remove_country_leader_role = {
-					character = USA_Douglas_MacArthur
-				}
-				remove_country_leader_role = {
-					character = USA_Douglas_MacArthur_2
-				}
 			add_ideas = USA_William_Leahy_hog_ade
 			add_ideas = USA_William_Christian_Bullitt_Jr_for_pau
 			add_ideas = USA_Thomas_Kinkaid_eco_pau
