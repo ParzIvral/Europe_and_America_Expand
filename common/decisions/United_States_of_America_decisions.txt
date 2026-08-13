@@ -3681,6 +3681,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
 				has_country_flag = USA_President_Landon_1936_flag
 				has_country_flag = USA_President_Curtis_1936_flag
 				has_country_flag = USA_President_Garner_1936_flag
+				has_country_flag = USA_President_Hoover_1936_flag
 			}
 			has_country_flag = USA_president_inaugurated
 			NOT = {
@@ -3954,7 +3955,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
     }
    	USA_Pacify_the_people = { #安抚民众
 		icon = generic_political_discourse
-		cost = 20
+		cost = 10
 		days_remove = 7
 		days_re_enable = 30
 
@@ -3965,12 +3966,12 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Pacify_the_people"
 			add_stability = 0.01
-			est_power_2_up_effect = yes
+			est_power_3_up_effect = yes
 		}
     }	
 	USA_Give_public_speech = { #进行公众讲话
 		icon = generic_political_address
-		cost = 20
+		cost = 15
 		days_remove = 7
 		days_re_enable = 30
 
@@ -3981,12 +3982,11 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Give_public_speech"
 			add_stability = 0.01
-			est_power_2_up_effect = yes
+			est_power_3_up_effect = yes
 		}
     }	
 	USA_Demand_further_support_from_the_military = { #要求军方进一步支持
 		icon = political1
-		cost = 5
 		days_remove = 7
 		days_re_enable = 50
 		
@@ -3996,10 +3996,10 @@ USA_Civil_War_bop_category = { #挽救美利坚
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Demand_further_support_from_the_military"
-			add_political_power = 50
+			add_political_power = 55
 			mil_power_5_up_effect = yes
-			est_power_5_down_effect = yes
-			add_command_power = 20
+			est_power_2_down_effect = yes
+			add_command_power = -10
 		}
     }
 	USA_Dispatch_soldiers_to_suppress_the_riot = { #调拨军人镇压暴动
@@ -4664,9 +4664,9 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_est_power_larger_than_50
+				tooltip = USA_est_power_larger_than_40
 				check_variable = {
-					USA_est_power_value > 0.5
+					USA_est_power_value > 0.4
 				}
 			}
 		}
@@ -4744,9 +4744,9 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_est_power_larger_than_50
+				tooltip = USA_est_power_larger_than_40
 				check_variable = {
-					USA_est_power_value > 0.5
+					USA_est_power_value > 0.4
 				}
 			}
 		}
@@ -5522,8 +5522,8 @@ USA_Civil_War_bop_category = { #挽救美利坚
 	#社会救济与新政
 	USA_FERA = { #成立临时紧急救济署
 		icon = generic_consumer_goods
-		cost = 50
-		days_remove = 30
+		cost = 30
+		days_remove = 35
 		fire_only_once = yes
 		
 		visible = {
@@ -5569,7 +5569,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
     }
 	USA_Social_Security_and_Housing_Act = { #住房与社会保障法案
 		icon = generic_factory
-		cost = 50
+		cost = 30
 		days_remove = 30
 		fire_only_once = yes
 		
@@ -5602,7 +5602,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
     }
 	USA_Establish_Revival_Finance_Company = { #成立复兴金融公司
 		icon = gre_paying_ifc_debt
-		cost = 50
+		cost = 20
 		days_remove = 30
 		fire_only_once = yes
 		
@@ -5674,9 +5674,9 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_est_power_larger_than_50
+				tooltip = USA_est_power_larger_than_40
 				check_variable = {
-					USA_est_power_value > 0.5
+					USA_est_power_value > 0.4
 				}
 			}
 		}
@@ -5771,19 +5771,6 @@ USA_Civil_War_bop_category = { #挽救美利坚
 			add_to_variable = {
 				USA_has_investigate_spa_times = 1
 			}
-			if = {
-				limit = {
-					check_variable = {
-						USA_has_investigate_spa_times = 3
-					}
-				}
-				hidden_effect = {
-					country_event = {
-						id = nimatron.3 #威廉·“大比尔”·海伍德之死
-						days = 30  
-					}
-				}
-			}
 		}
     }
 	USA_Hoover_investigate_foster = { #调查福斯特
@@ -5825,19 +5812,6 @@ USA_Civil_War_bop_category = { #挽救美利坚
 			add_to_variable = {
 				USA_has_investigate_spa_times = 1
 			}
-			if = {
-				limit = {
-					check_variable = {
-						USA_has_investigate_spa_times = 3
-					}
-				}
-				hidden_effect = {
-					country_event = {
-						id = nimatron.3 #威廉·“大比尔”·海伍德之死
-						days = 30  
-					}
-				}
-			}
 		}
     }
  	USA_Hoover_investigate_lovestone = { #调查洛夫斯通
@@ -5878,19 +5852,6 @@ USA_Civil_War_bop_category = { #挽救美利坚
 			}
 			add_to_variable = {
 				USA_has_investigate_spa_times = 1
-			}
-			if = {
-				limit = {
-					check_variable = {
-						USA_has_investigate_spa_times = 3
-					}
-				}
-				hidden_effect = {
-					country_event = {
-						id = nimatron.3 #威廉·“大比尔”·海伍德之死
-						days = 30  
-					}
-				}
 			}
 		}
     }
@@ -6210,7 +6171,10 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 
 		visible = {
-			has_idea = USA_SECRET_POLICE
+			OR = {
+				has_idea = USA_SECRET_POLICE
+				has_idea = USA_SECRET_POLICE_2
+			}
 			has_country_flag = USA_HUAC_formed
 			NOT = {
 				has_country_flag = USA_hoover_made_decision
@@ -6241,9 +6205,9 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_est_power_larger_than_50
+				tooltip = USA_est_power_larger_than_40
 				check_variable = {
-					USA_est_power_value > 0.5
+					USA_est_power_value > 0.4
 				}
 			}
 			has_country_flag = USA_completed_afp_investigate
@@ -6267,9 +6231,9 @@ USA_Civil_War_bop_category = { #挽救美利坚
 		}
 		available = {
 			custom_trigger_tooltip = {
-				tooltip = USA_est_power_larger_than_50
+				tooltip = USA_est_power_larger_than_40
 				check_variable = {
-					USA_est_power_value > 0.5
+					USA_est_power_value > 0.4
 				}
 			}
 			has_country_flag = USA_completed_afp_investigate

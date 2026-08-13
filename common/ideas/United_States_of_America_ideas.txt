@@ -1219,6 +1219,7 @@ ideas = {
 		}
 		USA_SECRET_POLICE_2 = { #FBI
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_SECRET_POLICE_2"}
+			name = USA_SECRET_POLICE
 			available = {
 				NOT = {
 					has_country_flag = USA_macarthur_coup

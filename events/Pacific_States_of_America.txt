@@ -5666,6 +5666,9 @@ country_event = { # Formation of HUAC
 			has_government = market_liberal
 			has_government = social_liberal
 		}
+		NOT = {
+			has_country_flag = USA_President_Hoover_1936_flag
+		}
 	}
 
 	mean_time_to_happen = {

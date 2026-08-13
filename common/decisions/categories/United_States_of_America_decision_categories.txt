@@ -25,6 +25,7 @@ USA_Civil_War_bop_category = {
 			has_country_flag = USA_President_Landon_1936_flag
 			has_country_flag = USA_President_Curtis_1936_flag
 			has_country_flag = USA_President_Garner_1936_flag
+			has_country_flag = USA_President_Hoover_1936_flag
 		}
 		has_country_flag = USA_president_inaugurated
 		NOT = {

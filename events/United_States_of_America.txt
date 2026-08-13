@@ -4793,11 +4793,13 @@ add_namespace = usanew
 					id = USA.451
 					days = 4
 				}
+				sp_power_effect = yes
+				od_power_effect = yes
+				afp_power_effect = yes
 				country_event = { id = USA.65 days = 5 }
 				country_event = { id = USA.70 days = 8 }
 				country_event = { id = USA.71 days = 54 }
 				country_event = { id = USA.450 days = 73 }
-
 				#next primaries
 				country_event = { id = nimatron.18 days = 1272 }
 				country_event = { id = USA.600 days = 1283  } #[GetYear]年进步党初选
@@ -4887,7 +4889,7 @@ add_namespace = usanew
 				add_stability = 0.08
 				add_political_power = 20
 			}
-			if = { #娌￠€氳繃鍥㈢粨鍗忚
+			if = { #
 				limit = { NOT = { has_country_flag = USA_coalition_party } }
 				add_popularity = {
 					ideology = market_liberal
@@ -9713,7 +9715,19 @@ add_namespace = usanew
 			add_political_power = 20
 			add_stability = 0.03
 			set_country_flag = USA_president_inaugurated
-
+			complete_national_focus = USA_it_begins
+			if = {
+				limit = {
+					has_country_flag = USA_President_Curtis_1936_flag
+				}
+				complete_national_focus = USA_President_Curtis_1936
+			}
+			if = {
+				limit = {
+					has_country_flag = USA_President_Landon_1936_flag
+				}
+				complete_national_focus = USA_President_Landon_1936
+			}
 		}
 	}
 
@@ -11413,6 +11427,8 @@ add_namespace = usanew
 			hidden_effect = {
 				country_event = { id = USA.401 days = 6  } #总统宣布强硬路线
 			}
+			complete_national_focus = USA_it_begins
+			complete_national_focus = USA_President_Garner_1936
 		}
 	}
 
@@ -12410,7 +12426,6 @@ add_namespace = usanew
 		option = {
 			name = USA.451.a
 			add_stability = -0.10
-			add_political_power = -25
 			add_popularity = {
 				ideology = paternal_autocrat
 				popularity = 0.03
@@ -12603,7 +12618,7 @@ add_namespace = usanew
 		option = {
 			name = USA.455.a
 			add_stability = -0.05
-			add_war_support = -0.05
+			add_war_support = -0.1
 			decrease_ruling_party_popularity_by_5 = yes
 		}
 	}
@@ -12619,8 +12634,9 @@ add_namespace = usanew
 
 		option = {
 			name = USA.456.a
-			add_political_power = 50
+			add_political_power = 100
 			add_stability = 0.05
+			est_power_5_up_effect = yes
 			set_country_flag = USA_HUAC_formed			
 			add_ideas = USA_HUAC	
 		}
@@ -12641,6 +12657,10 @@ add_namespace = usanew
 			}
 			add_stability = 0.06
 			add_ideas = USA_SECRET_POLICE
+			afp_power_5_down_effect = yes
+			sp_power_5_down_effect = yes
+			od_power_5_down_effect = yes
+			est_power_10_up_effect = yes
 			add_popularity = { ideology = market_liberal popularity = -0.03 }
 			add_popularity = { ideology = paternal_autocrat popularity = 0.03 }			
 		}
@@ -12649,6 +12669,9 @@ add_namespace = usanew
 			ai_chance = {
 				factor = 0
 			}
+			afp_power_3_up_effect = yes
+			sp_power_3_up_effect = yes
+			od_power_3_up_effect = yes
 			add_popularity = { ideology = market_liberal popularity = -0.05 }
 		}
 	}
@@ -12671,6 +12694,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.458.a
+			add_political_power = 30
 			add_stability = -0.01
 			sp_power_3_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -12695,6 +12719,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.459.a
+			add_political_power = 30
 			add_stability = -0.01
 			sp_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -12719,6 +12744,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.460.a
+			add_political_power = 30
 			add_stability = -0.01
 			sp_power_5_down_effect = yes
 
@@ -12876,10 +12902,42 @@ add_namespace = usanew
 			}
 			custom_effect_tooltip = USA_sp_monthly_power_decreases_10_tt
 			custom_effect_tooltip = USA_CSA_WILL_NEVER_APPEAR
+			USA_CSA_Central_Committee = {
+				add_country_leader_role = {
+					country_leader = {
+						desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
+						ideology = moderate_socialist_subtype
+						traits = {
+							our_right_to_survive
+						}
+					}
+					promote_leader = yes
+				}
+			}
 			hidden_effect = {
-				country_event = { # 威廉·“大比尔”·海伍德之死
-					id = USA.464
-					days = 7
+				USA_CSA_Central_Committee = {
+					add_country_leader_role = {
+						country_leader = {
+							desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
+							ideology = syndicalist_subtype
+							traits = {
+								our_right_to_survive
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				USA_CSA_Central_Committee = {
+					add_country_leader_role = {
+						country_leader = {
+							desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
+							ideology = totalist_subtype
+							traits = {
+								our_right_to_survive
+							}
+						}
+						promote_leader = yes
+					}
 				}
 			}
 		}
@@ -12932,44 +12990,7 @@ add_namespace = usanew
 				USA_sp_monthly_increase = -0.1
 			}
 			custom_effect_tooltip = USA_sp_monthly_power_decreases_10_tt
-			USA_CSA_Central_Committee = {
-				add_country_leader_role = {
-					country_leader = {
-						desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
-						ideology = moderate_socialist_subtype
-						traits = {
-							our_right_to_survive
-						}
-					}
-					promote_leader = yes
-				}
-			}
-			hidden_effect = {
-				USA_CSA_Central_Committee = {
-					add_country_leader_role = {
-						country_leader = {
-							desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
-							ideology = syndicalist_subtype
-							traits = {
-								our_right_to_survive
-							}
-						}
-						promote_leader = yes
-					}
-				}
-				USA_CSA_Central_Committee = {
-					add_country_leader_role = {
-						country_leader = {
-							desc = POLITICS_CSA_CENTRAL_COMITTEE_DESC
-							ideology = totalist_subtype
-							traits = {
-								our_right_to_survive
-							}
-						}
-						promote_leader = yes
-					}
-				}
-			}
+			
 		}
 	}
 	country_event = { # 调查厄尔·朗
@@ -12991,6 +13012,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.465.a
+			add_political_power = 20
 			add_stability = -0.01
 			afp_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -13015,6 +13037,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.466.a
+			add_political_power = 20
 			add_stability = -0.01
 			afp_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -13039,6 +13062,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.467.a
+			add_political_power = 20
 			add_stability = -0.01
 			afp_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -13063,6 +13087,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.468.a
+			add_political_power = 20
 			add_stability = -0.01
 			od_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -13087,6 +13112,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.469.a
+			add_political_power = 20
 			add_stability = -0.01
 			od_power_5_down_effect = yes
 			clr_country_flag = USA_has_investigate_one
@@ -13111,7 +13137,9 @@ add_namespace = usanew
 
 		option = {
 			name = USA.470.a
+			add_political_power = 10
 			od_power_10_down_effect = yes
+			clr_country_flag = USA_has_investigate_one
 		}
 	}
 	country_event = { # 胡佛突袭

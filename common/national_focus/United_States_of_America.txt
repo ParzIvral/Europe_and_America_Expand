@@ -2619,6 +2619,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
+			has_country_flag = USA_president_inaugurated
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Embrace_Knox_Economics"
@@ -2647,6 +2648,7 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
+			has_country_flag = USA_president_inaugurated
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Necessary_relief"
@@ -2680,6 +2682,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_true_savior_of_farmers"
 			add_stability = 0.04	
+			add_political_power = 20
 			est_power_5_up_effect = yes
 			unlock_decision_tooltip = USA_Uniformly_purchase_surplus_agricultural_products
 			unlock_decision_tooltip = USA_Implement_agricultural_relief
@@ -2759,9 +2762,11 @@ focus_tree = {
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
+			has_country_flag = USA_president_inaugurated
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Nonamerican_Activities_Investigation_Committee"
+			add_political_power = 15
 			country_event = {
 				id = USA.456
 				days = 2
@@ -2800,6 +2805,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Hoover_Raid"
+			add_political_power = 75
 			if = {
 				limit = {
 					has_idea = USA_SECRET_POLICE
@@ -2837,6 +2843,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Choice_of_Unity"
 			add_stability = 0.04
+			add_political_power = 50
 			add_socdem_to_coalition = yes
 			add_soclib_to_coalition = yes
 			add_soccon_to_coalition = yes
@@ -2865,6 +2872,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Necessary_cross_border_authorization"
 			custom_effect_tooltip = USA_Necessary_cross_border_authorization_tt
+			add_political_power = 30
 			add_command_power = 30
 			add_ideas = USA_Special_Authorization
 		}
