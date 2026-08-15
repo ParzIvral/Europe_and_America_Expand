@@ -2143,6 +2143,13 @@ focus_tree = {
 		cost = 4
 		ai_will_do = {
 			factor = 1000
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		select_effect = {
 			hidden_effect = {
@@ -2180,6 +2187,13 @@ focus_tree = {
 		cost = 4
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Put_an_end_to_anti-government_organizations"
@@ -2211,6 +2225,13 @@ focus_tree = {
 		cost = 4
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Encourage_private_enterprises_to_thrive"
@@ -2277,6 +2298,13 @@ focus_tree = {
 		cost = 4
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Win_over_moderate_trade_unions"
@@ -2306,6 +2334,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2332,6 +2367,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2358,6 +2400,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2417,6 +2466,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2441,6 +2497,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2471,6 +2534,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Landon_1936_flag
@@ -2518,6 +2588,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_leader_of_the_country"
@@ -2551,6 +2628,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2577,6 +2661,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2602,6 +2693,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2626,6 +2724,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2652,6 +2757,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2677,6 +2789,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Curtis_1936_flag
@@ -2706,6 +2825,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CURDON
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_avoid_civil_war_gop
