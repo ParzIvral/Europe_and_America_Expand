@@ -5603,6 +5603,25 @@ country_event = { # 1951 Election
 	id = TXS.57
 	immediate = {log = "[GetDateText]: [Root.GetName]: event TXS.14"
 		hidden_effect = {
+			if = {
+				limit = { has_country_flag = TXS_1956_primary_shivers }
+				create_country_leader = {
+					name = "Allan Shivers"
+					desc = "POLITICS_ALLAN_SHIVERS_DESC"
+					picture = "gfx/leaders/TXS/Portrait_Texas_Allan_Shivers.png"
+					expire = "1.1.1"
+					ideology = liberal_conservative_subtype
+					traits = {  }
+				}
+				create_country_leader = {
+					name = "Allan Shivers"
+					desc = "POLITICS_ALLAN_SHIVERS_DESC"
+					picture = "gfx/leaders/TXS/Portrait_Texas_Allan_Shivers.png"
+					expire = "1.1.1"
+					ideology = social_conservative_subtype
+					traits = {  }
+				}
+			}
 			if = {	
 				limit = { has_country_flag = TXS_1956_primary_daniel }
 				create_country_leader = {
@@ -7837,7 +7856,7 @@ country_event = { #Independence Primary - 1946
 	
 	option = { #Allred
 		name = TXS.97.b
-		set_country_flag = TXS_1946_primary_rogers
+		set_country_flag = TXS_1946_primary_allred
 	}
 	
 	option = { #Eisenhower
@@ -7921,7 +7940,7 @@ country_event = { #Democratic Primary - 1946
 	}
 	option = { #Price Daniel
 		name = TXS.101.c
-		set_country_flag = TXS_1951_primary_daniel
+		set_country_flag = TXS_1946_primary_daniel
 		set_country_flag = TXS_dem_primary_liberal
 		if = { 
 			limit = { has_country_flag = TXS_dem_primary_conservative }
@@ -8123,7 +8142,7 @@ country_event = { #Democratic Primary - 1956
 	 
 	option = { #Allan Shivers
 		name = TXS.105.c
-		set_country_flag = TXS_1946_primary_shivers
+		set_country_flag = TXS_1956_primary_shivers
 		set_country_flag = TXS_dem_primary_liberal
 		if = { 
 			limit = { has_country_flag = TXS_dem_primary_conservative }
@@ -11055,20 +11074,6 @@ country_event = { #CZ-Colt
 	}
 }
 
-country_event = { #Moravian Church
-	id = TXSKING.32
-	immediate = {log = "[GetDateText]: [Root.GetName]: event TXSKING.32"}
-	title = TXSKING.32.t
-	desc = TXSKING.32.d
-	picture = GFX_CZE_hussite_church
-	is_triggered_only = yes
-
-	option = { #BRUCE
-		name = TXSKING.32.a
-		add_stability = 0.03
-		add_political_power = -5
-	}
-}
 
 country_event = { #Moravian Church
 	id = TXSKING.32
