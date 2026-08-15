@@ -432,7 +432,7 @@ USA_kr_dorris_organisation = { #Dorris
 		FROM = {
 			owns_state = 373
 		}
-		#USA_mio_is_junior_partner_of_merger = no
+		USA_mio_is_junior_partner_of_merger = no
 	}
 }
 USA_kr_stutz_organisation = { #Stutz
@@ -580,7 +580,7 @@ USA_kr_pacific_car_and_foundry_organisation = { #Pacific Car and Foundry
 		FROM = {
 			owns_state = 386
 		}
-		#USA_mio_is_junior_partner_of_merger = no
+		USA_mio_is_junior_partner_of_merger = no
 	}
 }
 #福特 USA
@@ -670,8 +670,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 10
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 1
+				}
 			}
 		}
 		available = { 
@@ -700,8 +702,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.81
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.81
+				}
 			}
 		}
 		available = { 
@@ -730,8 +734,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.61
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.61
+				}
 			}
 		}
 		available = { 
@@ -760,8 +766,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.4
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.4
+				}
 			}
 		}
 		available = { 
@@ -790,8 +798,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.21
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.21
+				}
 			}
 		}
 		available = { 
@@ -837,8 +847,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 11
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 1
+				}
 			}
 		}
 
@@ -869,8 +881,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.81
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.81
+				}
 			}
 		}
 
@@ -901,8 +915,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.61
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.61
+				}
 			}
 		}
 
@@ -933,8 +949,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.41
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.41
+				}
 			}
 		}
 
@@ -965,8 +983,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_efficiency_cap
 
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.21
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.21
+				}
 			}
 		}
 
@@ -1006,8 +1026,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 1
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 1
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1046,8 +1068,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.9
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.9
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1086,8 +1110,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.8
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.8
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1126,8 +1152,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.7
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.7
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1166,8 +1194,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.6
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.6
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1206,8 +1236,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.5
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.5
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1246,8 +1278,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.4
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.4
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1286,8 +1320,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.3
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.3
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1326,8 +1362,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.2
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.2
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1366,8 +1404,10 @@ USA_ford_organisation = { #Ford
 			}
 		}
 		visible = {
-			check_variable = {
-				USA_Ford_mio_research_bonus_var < 0.1
+			FROM = {
+				check_variable = {
+					USA_Ford_mio_research_bonus_var < 0.1
+				}
 			}
 			NOT = {
 				FROM = {
@@ -1540,8 +1580,10 @@ USA_ford_organisation = { #Ford
 			USA = { has_idea = USA_Henry_Ford_eco_pau }
 			custom_trigger_tooltip = {
 				tooltip = USA_ford_mio_tooltip
-				check_variable = {
-					USA_has_choose_political < 4
+				FROM = {
+					check_variable = {
+						USA_has_choose_political < 4
+					}
 				}
 			}
 		}
@@ -1570,8 +1612,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_has_choose_political = 1
+			FROM = {
+				check_variable = {
+					USA_has_choose_political = 1
+				}
 			}
 		}
 		available = { 
@@ -1579,8 +1623,10 @@ USA_ford_organisation = { #Ford
 			USA = { has_idea = USA_Henry_Ford_eco_pau }
 			custom_trigger_tooltip = {
 				tooltip = USA_ford_mio_tooltip
-				check_variable = {
-					USA_has_choose_political < 4
+				FROM = {
+					check_variable = {
+						USA_has_choose_political < 4
+					}
 				}
 			}
 		}
@@ -1609,8 +1655,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_generic_mio_trait_icon_production_capacity
 
 		visible = {
-			check_variable = {
-				USA_has_choose_political = 0
+			FROM = {
+				check_variable = {
+					USA_has_choose_political = 0
+				}
 			}
 		}
 		available = { 
@@ -1618,8 +1666,10 @@ USA_ford_organisation = { #Ford
 			USA = { has_idea = USA_Henry_Ford_eco_pau }
 			custom_trigger_tooltip = {
 				tooltip = USA_ford_mio_tooltip
-				check_variable = {
-					USA_has_choose_political < 4
+				FROM = {
+					check_variable = {
+						USA_has_choose_political < 4
+					}
 				}
 			}
 		}
@@ -1648,8 +1698,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
 
 		visible = {
-			check_variable = {
-				USA_count_build_times = 0
+			FROM = {
+				check_variable = {
+					USA_count_build_times = 0
+				}
 			}
 		}
 		available = {
@@ -1667,7 +1719,7 @@ USA_ford_organisation = { #Ford
 
 		on_complete = {
 			FROM = {
-				393 = {
+				365 = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = {
 						type = arms_factory
@@ -1678,8 +1730,10 @@ USA_ford_organisation = { #Ford
 				
 			}
 			add_mio_funds = -400
-			add_to_variable = {
-				USA_count_build_times = 1
+			FROM = {
+				add_to_variable = {
+					USA_count_build_times = 1
+				}
 			}
 		}
 	}
@@ -1690,8 +1744,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
 
 		visible = {
-			check_variable = {
-				USA_count_build_times = 1
+			FROM = {
+				check_variable = {
+					USA_count_build_times = 1
+				}
 			}
 		}
 		available = {
@@ -1709,7 +1765,7 @@ USA_ford_organisation = { #Ford
 
 		on_complete = {
 			FROM = {
-				393 = {
+				365 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -1720,8 +1776,10 @@ USA_ford_organisation = { #Ford
 				
 			}
 			add_mio_funds = -400
-			add_to_variable = {
-				USA_count_build_times = 1
+			FROM = {
+				add_to_variable = {
+					USA_count_build_times = 1
+				}
 			}
 		}
 	}
@@ -1732,8 +1790,10 @@ USA_ford_organisation = { #Ford
 		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
 
 		visible = {
-			check_variable = {
-				USA_count_build_times = 2
+			FROM = {
+				check_variable = {
+					USA_count_build_times = 2
+				}
 			}
 		}
 		available = {
@@ -1751,49 +1811,7 @@ USA_ford_organisation = { #Ford
 
 		on_complete = {
 			FROM = {
-				393 = {
-					add_extra_state_shared_building_slots = 2
-					add_building_construction = {
-						type = arms_factory
-						level = 12
-						instant_build = yes
-					}
-				}
-				
-			}
-			add_mio_funds = -400
-			add_to_variable = {
-				USA_count_build_times = 1
-			}
-		}
-	}
-
-	trait = { #着重新工厂建设
-		token = ford_upgrade_16_4
-		name = KR_MIO_Trait_The_factory_rebuilt
-		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
-
-		visible = {
-			check_variable = {
-				USA_count_build_times = 3
-			}
-		}
-		available = {
-			365 = { is_fully_controlled_by = FROM }		
-			custom_override_tooltip = {
-				tooltip = {
-					localization_key = MIO_more_than_X_funds
-					FUNDS = "400"
-				}
-				check_variable = { funds > 400 }
-			}
-		}
-
-		position = { x = 4 y = 1 }
-
-		on_complete = {
-			FROM = {
-				393 = {
+				365 = {
 					add_extra_state_shared_building_slots = 2
 					add_building_construction = {
 						type = arms_factory
@@ -1804,20 +1822,24 @@ USA_ford_organisation = { #Ford
 				
 			}
 			add_mio_funds = -400
-			add_to_variable = {
-				USA_count_build_times = 1
+			FROM = {
+				add_to_variable = {
+					USA_count_build_times = 1
+				}
 			}
 		}
 	}
 
 	trait = { #着重新工厂建设
-		token = ford_upgrade_16_5
+		token = ford_upgrade_16_4
 		name = KR_MIO_Trait_The_factory_rebuilt
 		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
 
 		visible = {
-			check_variable = {
-				USA_count_build_times > 4
+			FROM = {
+				check_variable = {
+					USA_count_build_times = 3
+				}
 			}
 		}
 		available = {
@@ -1835,7 +1857,53 @@ USA_ford_organisation = { #Ford
 
 		on_complete = {
 			FROM = {
-				393 = {
+				365 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+						instant_build = yes
+					}
+				}
+				
+			}
+			add_mio_funds = -400
+			FROM = {
+				add_to_variable = {
+					USA_count_build_times = 1
+				}
+			}
+		}
+	}
+
+	trait = { #着重新工厂建设
+		token = ford_upgrade_16_5
+		name = KR_MIO_Trait_The_factory_rebuilt
+		icon = GFX_KR_generic_mio_trait_icon_civilian_factory
+
+		visible = {
+			FROM = {
+				check_variable = {
+					USA_count_build_times = 4
+				}
+			}
+		}
+		available = {
+			365 = { is_fully_controlled_by = FROM }		
+			custom_override_tooltip = {
+				tooltip = {
+					localization_key = MIO_more_than_X_funds
+					FUNDS = "400"
+				}
+				check_variable = { funds > 400 }
+			}
+		}
+
+		position = { x = 4 y = 1 }
+
+		on_complete = {
+			FROM = {
+				365 = {
 					add_extra_state_shared_building_slots = 3
 					add_building_construction = {
 						type = arms_factory
@@ -1846,8 +1914,10 @@ USA_ford_organisation = { #Ford
 				
 			}
 			add_mio_funds = -400
-			add_to_variable = {
-				USA_count_build_times = 1
+			FROM = {
+				add_to_variable = {
+					USA_count_build_times = 1
+				}
 			}
 		}
 	}
@@ -2068,9 +2138,6 @@ USA_general_motors_organisation = { #通用汽车
 
 		on_complete = {
 			custom_effect_tooltip = USA_add_one_integrated
-			add_to_variable = {
-				USA_add_one_variable = 1
-			}
 			set_mio_flag = upgraded_one
 		}
 
@@ -2235,7 +2302,7 @@ USA_baldwin_organisation = { #Baldwin
 
 	available = {
 		360 = { is_owned_and_controlled_by = FROM } #Michigan
-		#USA_mio_is_junior_partner_of_merger = no
+		USA_mio_is_junior_partner_of_merger = no
 	}
 
 	equipment_type = { armor }
@@ -2464,7 +2531,7 @@ USA_fisher_body_organisation = { #Fisher Body
 	allowed = { tag = USA }
 	available = {
 		393 = { is_owned_and_controlled_by = FROM } #Michigan
-		#USA_mio_is_junior_partner_of_merger = no
+		USA_mio_is_junior_partner_of_merger = no
 	}
 
 	equipment_type = { armor }
@@ -3290,7 +3357,7 @@ USA_armour_merge_organisation = {
 		available = {
 			FROM = {
 				set_temp_variable = { MIO_target = mio:USA_fisher_body_organisation }
-				#USA_mio_has_decided_on_merger_or_independence = no
+				USA_mio_has_decided_on_merger_or_independence = no
 			}
 			custom_override_tooltip = {
 				tooltip = USA_has_arrived_limit
@@ -3320,8 +3387,21 @@ USA_armour_merge_organisation = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			set_mio_name_key = USA_MIO_Merger_MOTORS_FISHER
+			if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = upgraded_one
+				}
+				clr_mio_flag = upgraded_one
+			}
+			else_if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = another_integrated
+				}
+				clr_mio_flag = another_integrated
+			}
 			set_mio_flag = integrated_once
-			clr_mio_flag = another_integrated
 		}
 	}
 
@@ -3332,8 +3412,8 @@ USA_armour_merge_organisation = {
 
 		available = {
 			FROM = {
-				set_temp_variable = { MIO_target = mio:USA_pacific_car_and_foundry_organisation }
-				#USA_mio_has_decided_on_merger_or_independence = no
+				set_temp_variable = { MIO_target = mio:USA_kr_pacific_car_and_foundry_organisation }
+				USA_mio_has_decided_on_merger_or_independence = no
 			}
 			custom_override_tooltip = {
 				tooltip = USA_has_arrived_limit
@@ -3354,7 +3434,7 @@ USA_armour_merge_organisation = {
 		}
 
 		on_complete = {
-			FROM = { set_temp_variable = { MIO_target = mio:USA_pacific_car_and_foundry_organisation } }
+			FROM = { set_temp_variable = { MIO_target = mio:USA_kr_pacific_car_and_foundry_organisation } }
 			USA_mio_merger_effect = yes
 			custom_effect_tooltip = {
 				localization_key = KR_unavailable_mio_tt
@@ -3362,8 +3442,21 @@ USA_armour_merge_organisation = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			set_mio_name_key = USA_MIO_Merger_MOTORS_PACIFIC
+			if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = upgraded_one
+				}
+				clr_mio_flag = upgraded_one
+			}
+			else_if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = another_integrated
+				}
+				clr_mio_flag = another_integrated
+			}
 			set_mio_flag = integrated_once
-			clr_mio_flag = another_integrated
 		}
 	}
 
@@ -3375,7 +3468,7 @@ USA_armour_merge_organisation = {
 		available = {
 			FROM = {
 				set_temp_variable = { MIO_target = mio:USA_kr_dorris_organisation }
-				#USA_mio_has_decided_on_merger_or_independence = no
+				USA_mio_has_decided_on_merger_or_independence = no
 			}
 			custom_override_tooltip = {
 				tooltip = USA_has_arrived_limit
@@ -3404,8 +3497,21 @@ USA_armour_merge_organisation = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			set_mio_name_key = USA_MIO_Merger_MOTORS_DORRIS
+			if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = upgraded_one
+				}
+				clr_mio_flag = upgraded_one
+			}
+			else_if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = another_integrated
+				}
+				clr_mio_flag = another_integrated
+			}
 			set_mio_flag = integrated_once
-			clr_mio_flag = another_integrated
 		}
 	}
 
@@ -3417,7 +3523,7 @@ USA_armour_merge_organisation = {
 		available = {
 			FROM = {
 				set_temp_variable = { MIO_target = mio:USA_baldwin_organisation }
-				#USA_mio_has_decided_on_merger_or_independence = no
+				USA_mio_has_decided_on_merger_or_independence = no
 			}
 			custom_override_tooltip = {
 				tooltip = USA_has_arrived_limit
@@ -3446,8 +3552,21 @@ USA_armour_merge_organisation = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			set_mio_name_key = USA_MIO_Merger_MOTORS_BALDWIN
+			if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = upgraded_one
+				}
+				clr_mio_flag = upgraded_one
+			}
+			else_if = {
+				limit = {
+					has_mio_flag = integrated_once
+					has_mio_flag = another_integrated
+				}
+				clr_mio_flag = another_integrated
+			}
 			set_mio_flag = integrated_once
-			clr_mio_flag = another_integrated
 		}
 	}
 }

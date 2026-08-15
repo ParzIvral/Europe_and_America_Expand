@@ -866,6 +866,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Support_our_farmer"
@@ -889,6 +896,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Fiscal_austerity_policy"
@@ -916,6 +930,13 @@ focus_tree = {
 		cost = 2
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_no_place_for_extremists"
@@ -946,6 +967,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Beheading_the_southern_dragon"
@@ -975,6 +1003,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Strike_the_heart_of_anarchism"
@@ -1018,6 +1053,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Control_the_army"
@@ -1045,6 +1087,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_End_chaos_in_Great_Lakes_Region"
@@ -1073,6 +1122,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Unearth_the_wealth_of_the_countryside"
@@ -1104,6 +1160,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Re_plan_the_finances"
@@ -1133,6 +1196,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Business_and_newspaper_tycoons"
@@ -1160,6 +1230,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_conservative_new_deal"
@@ -1192,6 +1269,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Lead_the_conservative_Democrats"
@@ -1246,6 +1330,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Build_the_concept_of_New_South"
@@ -1298,6 +1389,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Tough_cactus_Jack"
@@ -1392,6 +1490,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 5
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_intervening_hand_of_the_state"
@@ -1421,6 +1526,13 @@ focus_tree = {
 		cost = 2
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		select_effect = {
 			hidden_effect = {
@@ -1447,13 +1559,11 @@ focus_tree = {
 	focus = {#处理民粹煽动者
 		id = USA_Deal_with_populist_agitators
 		icon = GFX_USA_Deal_with_populist_agitators
-		available = {
-			has_country_flag = USA_peace_with_SPA_AFP
-		}
 		prerequisite = {
 			focus = USA_The_final_battle_against_the_Ku_Klux_Klan
 		}
 		available = {
+			has_country_flag = USA_peace_with_SPA_AFP
 			has_country_flag = USA_President_Norris_1936_flag
 		}
 		relative_position_id = USA_The_final_battle_against_the_Ku_Klux_Klan
@@ -1462,6 +1572,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Deal_with_populist_agitators"
@@ -1492,6 +1609,13 @@ focus_tree = {
 		cost = 3	
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Jefferson_concept_of_land_rights"
@@ -1520,6 +1644,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Stabilize_the_south"
@@ -1552,6 +1683,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_no_place_for_selfless_punishment"
@@ -1578,6 +1716,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_conception_of_Masle_Sholes"
@@ -1634,6 +1779,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 60
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_A_supporter_of_Georgianism"
@@ -1689,6 +1841,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 80
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Workers_should_speak_out"			
@@ -1716,6 +1875,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 60
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Promote_the_Laguardia_Act"
@@ -1760,6 +1926,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Universal_suffrage_rather_than_the_Electoral_College"
@@ -1817,6 +1990,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Model_legislative_body"
@@ -1850,6 +2030,13 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 3
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_NORRIS
+				}
+			}
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_perfect_knight_of_progressive_ideals"
@@ -2732,6 +2919,13 @@ focus_tree = {
 		cost = 2
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
@@ -2759,6 +2953,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
@@ -2799,6 +3000,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_President_Hoover_1936_flag
@@ -2835,6 +3043,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_president_inaugurated
@@ -2864,6 +3079,13 @@ focus_tree = {
 		cost = 3
 		ai_will_do = {
 			factor = 100
+			modifier = {
+				factor = 10
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
 		}
 		available = {
 			has_country_flag = USA_president_inaugurated
@@ -2929,20 +3151,25 @@ focus_tree = {
 			focus = USA_Necessary_cross_border_authorization
 		}
 		relative_position_id = USA_Necessary_cross_border_authorization
+		x = -3
+		y = 1
+		cost = 2
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 20
+				has_game_rule = {
+					rule = USA_civil_war
+					option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+				}
+			}
+		}
 		available = {
 			NOT = {
 				has_country_flag = USA_SPA_was_defeated
 				has_country_flag = USA_AFP_was_defeated
 				has_country_flag = USA_ODP_was_defeated
 			}
-		}
-		x = -3
-		y = 1
-		cost = 2
-		ai_will_do = {
-			factor = 10
-		}
-		available = {
 			has_country_flag = USA_president_inaugurated
 			has_country_flag = USA_President_Hoover_1936_flag
 		}
@@ -4444,7 +4671,6 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
 	}
-
 
 #平民党
 	focus = {#真正平民时代
@@ -17031,6 +17257,16 @@ focus_tree = {
 				USA_GM_mio_research_bonus_var = 0.1
 			}
 			if = {
+				limit = {
+					has_dlc_aat = yes
+					check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+				}
+				country_event = {
+					id = USA.1025
+					days = 1
+				}
+			}
+			if = {
 				limit = { has_dlc_aat = yes }
 				mio:USA_general_motors_organisation= {
 					add_mio_size = 2
@@ -17101,6 +17337,16 @@ focus_tree = {
 			add_to_variable = {
 				USA_GM_mio_research_bonus_var = 0.1
 			}
+			if = {
+				limit = {
+					has_dlc_aat = yes
+					check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+				}
+				country_event = {
+					id = USA.1025
+					days = 1
+				}
+			}
 			custom_effect_tooltip = USA_unlock_mio_traits
 			add_to_variable = { USA_NRA_consumer_goods = 0.05 }
 			add_to_variable = { USA_NRA_efficiency_gain = 0.025 }
@@ -17130,6 +17376,16 @@ focus_tree = {
 			custom_effect_tooltip = USA_gm_influence_incerease
 			add_to_variable = {
 				USA_GM_mio_research_bonus_var = 0.1
+			}
+			if = {
+				limit = {
+					has_dlc_aat = yes
+					check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+				}
+				country_event = {
+					id = USA.1025
+					days = 1
+				}
 			}
 			increase_ruling_party_popularity_by_3 = yes
 			add_equipment_to_stockpile = {
@@ -17191,8 +17447,7 @@ focus_tree = {
 				USA_Ford_mio_research_bonus_var = 0.1
 			}
 			add_political_power = 30
-			add_to_variable = { USA_NRA_civilian_speed = 0.15 }
-			add_to_variable = { USA_NRA_efficiency_max = 0.05 }
+			add_to_variable = { USA_NRA_civilian_speed = 0.10 }
 			add_to_variable = { USA_NRA_consumer_goods = 0.10 }
 			add_to_variable = { USA_NRA_start_efficiency = 0.10 }
 			custom_effect_tooltip = USA_Luxurious_choice_tt
@@ -17221,7 +17476,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_unlock_some_mio_traits
 			add_to_variable = { USA_NRA_local_resources = 0.05 }
 			add_to_variable = { USA_NRA_lack_resource_penalty = -0.15 }
-			add_to_variable = { USA_NRA_political_power = -0.05 }
+			add_to_variable = { USA_NRA_political_power = -0.1 }
 			custom_effect_tooltip = USA_A_big_leap_in_vertical_integration_tt
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -17249,7 +17504,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_production_capacity_on_assembly_line_has_exploded"
 			custom_effect_tooltip = USA_unlock_some_mio_traits
-			add_to_variable = { USA_NRA_factory_output = 0.15 }
+			add_to_variable = { USA_NRA_factory_output = 0.10 }
 			add_to_variable = { USA_NRA_building_slots = 0.05 }
 			add_to_variable = { USA_NRA_political_power = -0.05 }
 			custom_effect_tooltip = USA_production_capacity_on_assembly_line_has_exploded_tt
@@ -17803,7 +18058,6 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_A_steady_stream_flows_on_drawing_from_the_outside"
 			add_to_variable = { USA_NRA_efficiency_retention = 0.075 }
 			add_to_variable = { USA_NRA_local_resources = 0.05 }
-			add_to_variable = { USA_NRA_stability = 0.05 }
 			custom_effect_tooltip = USA_A_steady_stream_flows_on_drawing_from_the_outside_tt
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -19315,8 +19569,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Three_dimensional_modern_warfare"
-			add_to_variable = { USA_army_breakthrough_factor = 0.05 }
-			add_to_variable = {	USA_army_army_infantry_attack_factor = 0.10 }
+			add_to_variable = { USA_army_breakthrough_factor = 0.1 }
 			add_to_variable = { USA_army_attrition = -0.05 }
 			add_to_variable = { USA_army_max_planning = 0.05 }
 			custom_effect_tooltip = USA_Three_dimensional_modern_warfare_tt
@@ -19515,7 +19768,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Flexible_organizational_system"
-			add_to_variable = { USA_army_planning_speed = 0.15 }
+			add_to_variable = { USA_army_planning_speed = 0.10 }
 			add_to_variable = { USA_army_recon_factor = 0.075 }
 			add_to_variable = { USA_army_army_org_factor = 0.10 }
 			add_to_variable = { USA_army_army_attack_factor = 0.05 }

@@ -8811,6 +8811,13 @@ add_namespace = usanew
 			ai_chance = {
 				factor = 25
 				modifier = {
+					factor = 10
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
+				modifier = {
 					factor = 0
 					OR = {
 					has_game_rule = {
@@ -8848,6 +8855,13 @@ add_namespace = usanew
 			name = USA.304.b
 			ai_chance = {
 				factor = 75
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
 				modifier = {
 					factor = 0
 					OR = {
@@ -8929,6 +8943,16 @@ add_namespace = usanew
 
 		option = {
 			name = USA.307.a
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 100
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
+			}
 			add_manpower = -3000
 			add_command_power = -50
 			mil_power_5_up_effect = yes
@@ -8940,6 +8964,16 @@ add_namespace = usanew
 
 		option = {
 			name = USA.307.b
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
+			}
 			hidden_effect = {
 				country_event = { id = USA.308 days = 4  } #行动失败
 			}
@@ -9111,7 +9145,7 @@ add_namespace = usanew
 			NOT = { has_country_flag = USA_ODP_was_defeated }
 		}
 
-		option = { # 閬靛惊楹﹀厠闃跨憻鐨勫缓璁?
+		option = { #遵循麦克阿瑟的建议
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -9135,7 +9169,7 @@ add_namespace = usanew
 				country_event = { id = USA.315 days = 15  } #白人联盟发动袭击！
 			}
 		}
-		option = { #杩欐槸涓潖涓绘剰锛屾挙閫€
+		option = { #这是个坏主意，撤退
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -9299,6 +9333,16 @@ add_namespace = usanew
 
 		option = {
 			name = USA.317.a
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 100
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
+			}
 			add_stability = -100
 			if = {
 				limit = {
@@ -9331,6 +9375,16 @@ add_namespace = usanew
 
 		option = {
 			name = USA.317.b
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_NORRIS
+					}
+				}
+			}
 			add_war_support = -0.05
 			mil_power_10_up_effect = yes
 			est_power_10_down_effect = yes
@@ -11458,7 +11512,7 @@ add_namespace = usanew
 
 		is_triggered_only = yes
 
-		option = { #涓嶈皟鏌?
+		option = { #我们没有足够的预算
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -11477,7 +11531,7 @@ add_namespace = usanew
 				od_power_20_up_effect = yes
 			}
 		}
-		option = { #璋冩煡
+		option = { #该把这些反政府分子查个底掉了
 			ai_chance = {
 				factor = 1
 				modifier = {
@@ -11598,6 +11652,7 @@ add_namespace = usanew
 			name = USA.406.a
 			add_political_power = -20
 			sp_power_10_down_effect = yes
+			clr_country_flag = USA_has_investigate_one
 			add_to_variable = {
 				USA_sp_monthly_increase = -0.03
 			}
@@ -11623,6 +11678,7 @@ add_namespace = usanew
 			name = USA.407.a
 			add_political_power = -20
 			sp_power_10_down_effect = yes
+			clr_country_flag = USA_has_investigate_one
 			
 			hidden_effect = {
 				country_event = { # 斩断蛇头
@@ -11711,8 +11767,16 @@ add_namespace = usanew
 		}
 
 		option = {
+			name = USA.410.b
 			ai_chance = {
 				factor = 50
+				modifier = {
+					factor = 100
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+				}
 				modifier = {
 					factor = 0
 					OR = {
@@ -11727,7 +11791,6 @@ add_namespace = usanew
 					}
 				}
 			}
-			name = USA.410.b
 			add_war_support = -0.02
 			est_power_3_down_effect = yes
 			sp_power_3_down_effect = yes
@@ -11838,6 +11901,16 @@ add_namespace = usanew
 
 		option = { #命令麦克阿瑟进驻钢带
 			name = USA.415.a
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+				}
+			}
 			add_manpower = -4000
 			add_stability = 0.03
 			add_popularity = { ideology = syndicalist popularity = -0.05 }
@@ -11847,6 +11920,16 @@ add_namespace = usanew
 		}
 		option = { #遵循马歇尔的建议
 			name = USA.415.b
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 100
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+				}
+			}
 			add_manpower = -2000
 			add_popularity = { ideology = syndicalist popularity = -0.03 }
 			est_power_10_down_effect = yes
@@ -11854,6 +11937,17 @@ add_namespace = usanew
 		}
 		option = { #联络休伊·朗，征调他的人手
 			name = USA.415.c
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 200
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+					has_country_flag = USA_cooprate_with_long
+				}
+			}
 			trigger = {
 				has_country_flag = USA_cooprate_with_long
 			}
@@ -11880,6 +11974,16 @@ add_namespace = usanew
 
 		option = { #听话的好狗
 			name = USA.416.a
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 100
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+				}
+			}
 			add_stability = 0.05
 			add_political_power = -50
 			army_experience = 20
@@ -11888,6 +11992,16 @@ add_namespace = usanew
 
 		option = { #彻查他，让他滚蛋
 			name = USA.416.b
+			ai_chance = {
+				factor = 1
+				modifier = {
+					factor = 0
+					has_game_rule = {
+						rule = USA_civil_war
+						option = USA_CIVIL_WAR_AVOIDED_CACTUS_SMACK
+					}
+				}
+			}
 			add_war_support = -0.06
 			set_country_flag = USA_mac_is_banned
 			set_country_flag = USA_military_is_soothed
@@ -12187,6 +12301,9 @@ add_namespace = usanew
 			}
 			else = {
 				est_power_10_up_effect = yes
+				afp_power_5_down_effect = yes
+				sp_power_5_down_effect = yes
+				od_power_5_down_effect = yes
 				add_popularity = { ideology = social_democrat popularity = 0.05 }
 				add_popularity = { ideology = social_liberal popularity = 0.05 }
 				add_popularity = { ideology = market_liberal popularity = 0.05 }
@@ -12755,7 +12872,7 @@ add_namespace = usanew
 		id = USA.461
 		title = USA.461.t
 		desc = USA.461.d
-		picture = GFX_CSA_ralph_capone
+		picture = GFX_report_event_CSA_ralph_capone
 
 		is_triggered_only = yes
 
@@ -12771,7 +12888,7 @@ add_namespace = usanew
 		option = {
 			name = USA.461.a
 			ai_chance = {
-				factor = 0
+				factor = 1
 				modifier = {
 					factor = 100
 					OR = {
@@ -12782,6 +12899,29 @@ add_namespace = usanew
 						has_game_rule = {
 							rule = USA_civil_war
 							option = USA_CIVIL_WAR_1937_ESTABLISHMENT
+						}
+						has_game_rule = {
+							rule = USA_civil_war
+							option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+						}
+					}
+				}
+				modifier = {
+					factor = 0
+					NOT = {
+						OR = {
+							has_game_rule = {
+								rule = USA_civil_war
+								option = USA_CIVIL_WAR_1937
+							}
+							has_game_rule = {
+								rule = USA_civil_war
+								option = USA_CIVIL_WAR_1937_ESTABLISHMENT
+							}
+							has_game_rule = {
+								rule = USA_civil_war
+								option = USA_CIVIL_WAR_AVOIDED_HOOVER_HARDLINE
+							}
 						}
 					}
 				}
@@ -13498,6 +13638,7 @@ add_namespace = usanew
 			add_popularity = { ideology = paternal_autocrat popularity = 0.08 }
 			set_country_flag = USA_mac_is_supported
 			set_country_flag = USA_military_is_soothed	
+			retire_character = USA_Smedley_Butler
 		}
 		option = { #迫使麦克阿瑟和巴特勒退休
 			name = USA.478.b
@@ -13506,6 +13647,11 @@ add_namespace = usanew
 			set_country_flag = USA_mac_is_banned
 			set_country_flag = USA_military_is_soothed	
 			set_country_flag = Crazy_Parnall_Military
+			retire_character = USA_Smedley_Butler
+			retire_character = USA_Douglas_Macarthur_1
+			hidden_effect = {
+				retire_character = USA_Douglas_Macarthur_2
+			}
 		}
 	}
 	country_event = { # 托马斯委员会调查好莱坞？
@@ -14345,7 +14491,7 @@ add_namespace = usanew
 		title = USA.499.t
 		desc = USA.499.d
 
-		picture = USA_hoover_legacy
+		picture = GFX_USA_hoover3
 
 		fire_only_once = yes
 		trigger = {
@@ -28816,8 +28962,9 @@ add_namespace = usanew
 		picture = GFX_USA_gm
 
 		trigger = {
+			has_dlc_aat = yes
 			check_variable = {
-				USA_GM_mio_research_bonus_var = 1
+				USA_GM_mio_research_bonus_var > 0.29
 			}
 		}
 		fire_only_once = yes
@@ -28826,7 +28973,9 @@ add_namespace = usanew
 			name = USA.1025.a
 			add_political_power = 5
 			custom_effect_tooltip = USA_unlock_another_integrated
-			set_mio_flag = another_integrated
+			mio:USA_general_motors_organisation = {
+				set_mio_flag = another_integrated
+			}
 		}
 
 	}
