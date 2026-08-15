@@ -330,6 +330,13 @@ characters = {
 				USA_jim_crows_champion
 			}
 		}
+		country_leader = {
+			desc = POLITICS_RICHARD_RUSSELL_DESC
+			ideology = jacksonianism_subtype
+			traits = {
+				USA_jim_crows_champion
+			}
+		}
 	}
 	USA_NSC = { #国安委
 		name = USA_NSC

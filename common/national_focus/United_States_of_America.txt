@@ -3101,7 +3101,7 @@ focus_tree = {
 			hidden_effect = {
 				country_event = {
 					id = USA.479 #托马斯委员会调查好莱坞？
-					days = 65
+					days = 35
 				}
 			}
 		}

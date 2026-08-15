@@ -6148,7 +6148,7 @@ defined_text = {
 		}
 		localization_key = natpop_christian_crusade_subtype
 	}
-	text = {
+text = {
 		trigger = {
 			has_country_leader_ideology = sorelian_marketism_subtype
 		}
@@ -6204,9 +6204,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = radsoc_lu_xun_thought_subtype
+			has_country_leader_ideology = tot_lu_xun_thought_subtype
 		}
-		localization_key = radsoc_lu_xun_thought_subtype
+		localization_key = tot_lu_xun_thought_subtype
 	}
 	text = {
 		trigger = {
@@ -6252,6 +6252,12 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			has_country_leader_ideology = soccon_datong_shu_thought_subtype
+		}
+		localization_key = soccon_datong_shu_thought_subtype
+	}	
+	text = {
+		trigger = {
 			has_country_leader_ideology = subtype_tangtangtang_subtype
 		}
 		localization_key = subtype_tangtangtang_subtype
@@ -6294,9 +6300,9 @@ defined_text = {
 	}
 	text = {
 		trigger = {
-			has_country_leader_ideology = radsoc_new_democracy_subtype
+			has_country_leader_ideology = syn_new_democracy_subtype
 		}
-		localization_key = radsoc_new_democracy_subtype
+		localization_key = syn_new_democracy_subtype
 	}
 	text = {
 		trigger = {
@@ -6352,6 +6358,12 @@ defined_text = {
 		}
 		localization_key = lixing_group_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = young_tridemism_subtype
+		}
+		localization_key = young_tridemism_subtype
+	}	
 	text = {
 		trigger = {
 			has_country_leader_ideology = traditional_tridemism_subtype
