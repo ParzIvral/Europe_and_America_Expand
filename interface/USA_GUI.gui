@@ -280,8 +280,8 @@ guiTypes = {
 			orientation = center
 			position = { x = -20 y = 5 }
 			spriteType = "establishment"
-			pdx_tooltip = "afp_usa"
-			pdx_tooltip_delayed = "afp_usa_DESC"
+			pdx_tooltip = "establishment"
+			pdx_tooltip_delayed = "establishment_DESC"
 			scale = 0.7
 		}
 

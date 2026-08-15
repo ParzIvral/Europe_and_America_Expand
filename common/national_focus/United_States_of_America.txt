@@ -383,7 +383,7 @@ focus_tree = {
 		x = 9
 		y = 0
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 		allow_branch = {
 			has_country_flag = USA_Black_Monday_Here	
@@ -17249,7 +17249,7 @@ focus_tree = {
 		x = 54
 		y = 10
 		ai_will_do = {
-			factor = 100
+			factor = 1000
 		}
 		available_if_capitulated = yes
 		completion_reward = {
@@ -17326,7 +17326,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17373,7 +17373,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17420,7 +17420,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17454,7 +17454,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17494,7 +17494,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17563,7 +17563,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17594,7 +17594,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17624,7 +17624,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -17658,7 +17658,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18004,7 +18004,7 @@ focus_tree = {
 		x = 7
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18037,7 +18037,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18105,7 +18105,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18131,7 +18131,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18177,7 +18177,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18202,7 +18202,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18251,7 +18251,7 @@ focus_tree = {
 		x = 3
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 800
 		}
 
 		completion_reward = {
@@ -18273,7 +18273,7 @@ focus_tree = {
 		x = 20
 		y = 0
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 		available = {
 			has_completed_focus = USA_start_reconstruction
@@ -18302,7 +18302,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18325,7 +18325,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18375,7 +18375,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18411,7 +18411,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18438,7 +18438,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18473,7 +18473,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18524,7 +18524,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18558,7 +18558,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18591,7 +18591,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18647,7 +18647,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 500
 		}
 
 		completion_reward = {
@@ -18689,7 +18689,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		ai_will_do = {
-			factor = 100
+			factor = 800
 		}
 
 		completion_reward = {

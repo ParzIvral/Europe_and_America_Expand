@@ -1547,6 +1547,7 @@ add_namespace = usanew
 
 		option = {
 			name = USA.4.a
+			#activate_shine_on_focus = USA_reintroduce_gwbill
 			hidden_effect = {
 				country_event = { id = USA.6 days = 4  } #国家团结协定
 				country_event = { id = USA.5 days = 10  } #休伊、默里与海伍德要求调整法案
@@ -9630,18 +9631,9 @@ add_namespace = usanew
 				country_event = { id = USA.88 days = 700 random_days = 10  } #波多黎各成为美国一州？
 				country_event = { id = USA.89 days = 205 random_days = 10  } #顽石坝竣工
 			}
-			USA_George_Norris_2 = {
-				add_country_leader_role = {
-					country_leader = {
-						desc = POLITICS_GEORGE_NORRIS_DESC
-						ideology = socdem_radical_progressivism_subtype
-						traits = {
-							the_fighting_liberal 
-							savior_of_america
-						}
-					}
-					promote_leader = yes
-				}
+			promote_character = {
+				character = USA_George_Norris_2
+				ideology = socdem_radical_progressivism_subtype
 			}
 			hidden_effect = {
 				if = {
@@ -33083,12 +33075,71 @@ add_namespace = usanew
 
 		option = { #东部城市区决定了国家的经济
 			name = USA.1001.a
-			
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 358
+						state = 357
+						state = 796
+						state = 934
+						state = 933
+						state = 932
+						state = 931
+						state = 935
+						state = 361
+						state = 930
+						state = 929
+						state = 362
+						state = 363
+						state = 364
+						state = 365
+						state = 366
+						state = 1159
+						state = 1160
+						state = 1155
+						state = 1158
+						state = 1170
+						state = 1169
+						state = 1171
+						state = 1172
+						state = 394
+						state = 395
+						state = 396
+						state = 393
+						state = 261
+						state = 360
+						state = 359
+						state = 1162
+						state = 1152
+						state = 1154
+						state = 1151
+						state = 1153
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = USA_priority_reconstruction_zone
+				}
+			}
 		}
 
 		option = { #为了保卫太平洋，优先重建西海岸！
 			name = USA.1001.b
-			
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 386
+						state = 385
+						state = 378
+						state = 797
+						state = 829
+						state = 798
+						state = 1165
+					}
+				}
+				add_dynamic_modifier = {
+					modifier = USA_priority_reconstruction_zone
+				}
+			}
 		}
 	}
 
@@ -33802,6 +33853,11 @@ add_namespace = usanew
 		id = USA.1104
 		immediate = { 
 			log = "[GetDateText]: [Root.GetName]: event USA.1104" 
+			every_state = {
+				remove_dynamic_modifier = {
+					modifier = USA_priority_reconstruction_zone
+				}
+			}
 			every_state = {
 				limit = {
 					NOT = { is_core_of = ROOT }
