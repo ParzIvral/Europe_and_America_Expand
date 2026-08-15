@@ -4902,8 +4902,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
 				ideology = national_populist
 				popularity = -0.03
 			}
-			est_power_2_down_effect = yes
-			od_power_3_down_effect = yes
+			od_power_5_down_effect = yes
 		}
     }
 	USA_Strike_the_Silver_Legion = { #调查银衫军
@@ -4937,8 +4936,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
 				ideology = authoritarian_democrat
 				popularity = -0.02
 			}
-			est_power_2_down_effect = yes
-			afp_power_3_down_effect = yes
+			afp_power_5_down_effect = yes
 		}
     }
 	USA_Investigate_Father_Coughlin = { #调查库林格神父
