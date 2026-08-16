@@ -1358,7 +1358,9 @@ add_namespace = usanew
 		trigger = {
 			has_global_flag = USA_civil_war_over_flag
 			check_variable = {
-				USA_Syndicalist_Resistance < 0
+				var = USA_Syndicalist_Resistance
+				value = 0
+				compare = less_than_or_equals
 			}
 		}
 
@@ -1380,7 +1382,9 @@ add_namespace = usanew
 		trigger = {
 			has_global_flag = USA_civil_war_over_flag
 			check_variable = {
-				USA_Minutemen_Resistance < 0
+				var = USA_Minutemen_Resistance
+				value = 0
+				compare = less_than_or_equals
 			}
 		}
 
@@ -1402,7 +1406,9 @@ add_namespace = usanew
 		trigger = {
 			has_global_flag = USA_civil_war_over_flag
 			check_variable = {
-				USA_Klan_Resistance < 0
+				var = USA_Klan_Resistance
+				value = 0
+				compare = less_than_or_equals
 			}
 		}
 
@@ -1424,7 +1430,9 @@ add_namespace = usanew
 		trigger = {
 			has_global_flag = USA_civil_war_over_flag
 			check_variable = {
-				USA_Black_legion_Resistance < 0
+				var = USA_Black_legion_Resistance
+				value = 0
+				compare = less_than_or_equals
 			}
 		}
 
@@ -35474,8 +35482,8 @@ add_namespace = usanew
 		trigger = {
 			original_tag = USA
 			has_completed_focus = USA_Our_loyal_agent
-			country_exists = GER
-			GER = {
+			country_exists = GRU
+			GRU = {
 				is_subject_of = ROOT
 				controls_state = 64
 			}

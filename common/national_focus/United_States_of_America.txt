@@ -24498,8 +24498,8 @@ focus_tree = {
 				}
 			}
 			AND = {
-				country_exists = GER
-				GER = {
+				country_exists = GRU
+				GRU = {
 					is_subject_of = ROOT
 				}
 			}
@@ -24611,8 +24611,8 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					country_exists = GER
-					GER = {
+					country_exists = GRU
+					GRU = {
 						is_subject_of = ROOT
 						controls_state = 64
 					}

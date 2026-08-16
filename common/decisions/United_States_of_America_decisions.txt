@@ -1,6 +1,819 @@
 ##
 USA_recovery_decisions = { #自废墟中崛起
 	#内战后重建地区总开关
+	USA_rebuild_alaska_2 = { #重建阿拉斯加
+		name = USA_rebuild_alaska
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				is_acw_tag = yes
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			NOT = { has_country_flag = USA_currently_rebuilding }
+			463 = { is_owned_and_controlled_by = ROOT }
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			NOT = {
+				AND = {
+					463 = { is_core_of = ROOT }
+					1273 = { is_core_of = ROOT }
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 30
+		ai_will_do = { factor = 100 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove USA_rebuild_alaska_2"
+			clr_country_flag = USA_currently_rebuilding
+			every_owned_state = {
+				limit = {
+					NOT = { is_core_of = ROOT }
+					OR = {
+						state = 463
+						state = 1273
+					}
+				}
+				remove_ACW_cores = yes
+				add_core_of = ROOT
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_rebuild_alaska_2"
+			set_country_flag = USA_currently_rebuilding
+		}
+	}
+
+	USA_rebuild_hawaii_2 = { #重建太平洋诸岛
+		name = USA_rebuild_hawaii
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				is_acw_tag = yes
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			NOT = { has_country_flag = USA_currently_rebuilding }
+			629 = { is_owned_and_controlled_by = ROOT }
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			NOT = {
+				629 = { is_core_of = ROOT }
+			}
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 30
+		ai_will_do = { factor = 100 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove USA_rebuild_hawaii_2"
+			clr_country_flag = USA_currently_rebuilding
+			every_state = {
+				limit = {
+					OR = {
+						state = 629
+						state = 632
+						state = 631
+						state = 642
+						state = 630
+						state = 726
+						state = 727
+					}
+				}
+				remove_ACW_cores = yes
+				if = {
+					limit = {
+						is_core_of = HAW
+						NOT = { country_exists = HAW }
+					}
+					remove_core_of = HAW
+				}
+				add_core_of = ROOT
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_rebuild_hawaii_2"
+			set_country_flag = USA_currently_rebuilding
+		}
+	}
+
+	USA_rebuild_puerto_rico_2 = { #重建波多黎各
+		name = USA_rebuild_puerto_rico
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				is_acw_tag = yes
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			NOT = { has_country_flag = USA_currently_rebuilding }
+			686 = { is_owned_and_controlled_by = ROOT }
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			NOT = {
+				686 = { is_core_of = ROOT }
+				1312 = { is_core_of = ROOT }
+			}
+		}
+		fire_only_once = yes
+		cost = 10
+		days_remove = 30
+		ai_will_do = { factor = 100 }
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove USA_rebuild_puerto_rico_2"
+			clr_country_flag = USA_currently_rebuilding
+			686 = {
+				remove_ACW_cores = yes
+				add_core_of = ROOT
+			}
+			1312 = {
+				remove_ACW_cores = yes
+				add_core_of = ROOT
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_rebuild_puerto_rico_2"
+			set_country_flag = USA_currently_rebuilding
+		}
+	}
+
+	USA_reclaim_new_england_decision_2 = { #收复新英格兰
+		name = USA_reclaim_new_england_decision
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				is_acw_tag = yes
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			is_subject = no
+			controls_all_owned_states = yes
+			if = {
+				limit = { country_exists = NEE }
+				NEE = {
+					controls_all_owned_states = yes
+					is_neighbor_of = ROOT
+				}
+			}
+			if = {
+				limit = {
+					CAN = {
+						OR = {
+							owns_state = 357 #Maine
+							owns_state = 934 #New Hampshire
+							owns_state = 933 #Vermont
+							owns_state = 932 #Massachusetts
+							owns_state = 935 #Rhode Island
+							owns_state = 931 #Connecticut
+							owns_state = 796 #Upstate New York
+						}
+					}
+				}
+				CAN = {
+					controls_all_owned_states = yes
+					is_neighbor_of = ROOT
+				}
+			}
+		}
+		visible = {
+			932 = {
+				is_claim_or_core_of_ROOT = yes
+			}
+			NOT = {
+				has_war_with = CAN
+				has_war_with = NEE
+				count_triggers = {
+					amount = 2
+					country_exists = USA
+					country_exists = CAL
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = COR
+					country_exists = WCC
+					AND = {
+						country_exists = NEE
+						NEE = { 
+							has_country_flag = NEE_claimed_america
+							is_ally_of_ROOT = no
+						}
+					}
+					AND = {
+						country_exists = TXS
+						TXS = { 
+							has_country_flag = TXS_claimed_america
+							is_ally_of_ROOT = no
+						}
+					}
+					AND = {
+						country_exists = NYC
+						NYC = {
+							has_country_flag = NYC_can_invade_america
+							is_ally_of_ROOT = no
+						}
+					}
+					AND = {
+						country_exists = BBR
+						BBR = {	
+							has_country_flag = BBR_claimed_america
+							is_ally_of_ROOT = no
+						}
+					}
+				}
+			}
+			OR = {
+				NEE = {
+					exists = yes
+					is_subject_of = CAN
+				}
+				CAN = {
+					OR = {
+						owns_state = 357 #Maine
+						owns_state = 934 #New Hampshire
+						owns_state = 933 #Vermont
+						owns_state = 932 #Massachusetts
+						owns_state = 935 #Rhode Island
+						owns_state = 931 #Connecticut
+						owns_state = 796 #Upstate New York
+					}
+				}
+			}
+			has_global_flag = USA_civil_war_over_flag
+			OR = {
+				is_acw_minor = no
+				acw_minor_claimed_america = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 80
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				can_declare_war_on = CAN
+				ROOT_is_threatened = yes
+			}
+			modifier = {
+				factor = 0
+				can_declare_war_on = CAN
+				CAN = { default_attack_AI_trigger_FROM = yes }
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_new_england_decision_2"
+			CAN = {
+				country_event = USA.1505
+			}
+		}
+	}
+	USA_reclaim_new_england_decision2_2 = { #与新英格兰统一
+		name = USA_reclaim_new_england_decision2
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = USA
+				tag = CAL
+				tag = COR
+				tag = TEX
+				tag = WCC
+				tag = NYC
+				tag = BBR
+			}
+		}
+		available = {
+			is_subject = no
+			controls_all_owned_states = yes
+			can_declare_war_on = NEE
+			NEE = {
+				is_neighbor_of = ROOT
+				controls_all_owned_states = yes
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			932 = {
+				is_claim_or_core_of_ROOT = yes
+			}
+			NEE = {
+				exists = yes
+				is_subject = no
+				NOT = { has_war_with = ROOT }
+			}
+			NOT = {
+				count_triggers = {
+					amount = 3
+					country_exists = USA
+					country_exists = CAL
+					country_exists = COR
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = WCC
+					any_other_country = {
+						is_acw_minor = yes
+						exists = yes
+						ACW_minor_claimed_america = yes
+					}
+				}
+			}
+			has_global_flag = USA_civil_war_over_flag
+			OR = {
+				is_acw_minor = no
+				acw_minor_claimed_america = yes
+			}
+		}
+
+		fire_only_once = yes
+		cost = 80
+
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				can_declare_war_on = NEE
+				ROOT_is_threatened = yes
+			}
+			modifier = {
+				factor = 0
+				can_declare_war_on = NEE
+				NEE = { default_attack_AI_trigger_FROM = yes }
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_new_england_decision2_2"
+			NEE = {
+				country_event = newengland.90
+			}
+		}
+	}
+
+	USA_reclaim_alaska_decision_2 = { #收复阿拉斯加
+		name = USA_reclaim_alaska_decision
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = USA
+				tag = CAL
+				tag = COR
+				tag = TEX
+				tag = WCC
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			is_subject = no
+			OR = {
+				463 = { is_owned_and_controlled_by = CAN }
+				463 = { is_owned_and_controlled_by = ALA }
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			OR = {
+				AND = {
+					463 = {
+						is_owned_by = CAN
+						is_claim_or_core_of_ROOT = yes
+					}
+				}
+				AND = {
+					ALA = {
+						is_subject_of = CAN
+					}
+					463 = {
+						is_claim_or_core_of_ROOT = yes
+					}
+				}
+			}
+				
+			NOT = {
+				has_war_with = CAN
+				count_triggers = {
+					amount = 3
+					country_exists = USA
+					country_exists = CAL
+					country_exists = COR
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = WCC
+					any_other_country = {
+						is_acw_minor = yes
+						exists = yes
+						ACW_minor_claimed_america = yes
+					}
+				}
+			}
+			has_global_flag = USA_civil_war_over_flag
+			OR = {
+				is_acw_minor = no
+				acw_minor_claimed_america = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 80
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				can_declare_war_on = CAN
+				NOT = { is_in_faction_with = CAN }
+				strength_ratio = { tag = CAN ratio < 1 }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_alaska_decision_2"
+			set_country_flag = asked_alaska_@CAN
+			CAN = {	country_event = USA.1508 }
+		}
+	}
+	
+	USA_reclaim_independent_alaska_decision_2 = { #与阿拉斯加统一
+		name = USA_reclaim_independent_alaska_decision
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = USA
+				tag = CAL
+				tag = COR
+				tag = CSA
+				tag = TEX
+				tag = WCC
+				is_acw_minor = yes
+			}
+		}
+		available = {
+			is_subject = no
+			463 = { is_owned_and_controlled_by = ALA }
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			ALA = { 
+				exists = yes
+				is_subject = no
+			}
+			OR = {
+				ALA = {
+					has_socialist_government = no
+					NOT = { has_government = national_populist }
+				}
+				AND = {
+					ALA = {
+						has_socialist_government = yes
+						has_country_flag = ALA_WICKERSHAM
+					}
+				}
+			}
+			NOT = {
+				has_war_with = ALA
+				count_triggers = {
+					amount = 3
+					country_exists = USA
+					country_exists = CAL
+					country_exists = COR
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = WCC
+					any_other_country = {
+						is_acw_minor = yes
+						exists = yes
+						ACW_minor_claimed_america = yes
+					}
+				}
+			}
+			has_global_flag = USA_civil_war_over_flag
+			OR = {
+				is_acw_minor = no
+				acw_minor_claimed_america = yes
+			}
+		}
+		fire_only_once = yes
+		cost = 80
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				can_declare_war_on = ALA
+				ROOT_is_threatened = yes
+			}
+			modifier = {
+				factor = 0
+				can_declare_war_on = ALA
+				ALA = { default_attack_AI_trigger_FROM = yes }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_independent_alaska_decision_2"
+			set_country_flag = asked_alaska_@ALA
+			ALA = {	country_event = Alaska.100 }
+		}
+	}
+
+	USA_reclaim_texas_decision_2 = { #宣称德克萨斯
+		name = USA_reclaim_texas_decision
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = USA
+				tag = WCC
+				tag = CAL
+				tag = COR
+				tag = CSA
+				tag = NYC
+				tag = NEE
+				tag = BBR
+			}
+		}
+		available = {
+			is_subject = no
+			controls_all_owned_states = yes
+			TXS = { is_neighbor_of = ROOT }
+			OR = {
+				AND = {
+					can_declare_war_on = TXS
+					TXS = { is_subject = no	}
+				}
+				TXS = { is_subject_of = ROOT }
+			}
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			country_exists = TXS
+			has_global_flag = USA_civil_war_over_flag
+			NOT = {
+				count_triggers = {
+					amount = 3
+					country_exists = USA
+					country_exists = CAL
+					country_exists = COR
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = WCC
+					any_other_country = {
+						is_acw_minor = yes
+						exists = yes
+						ACW_minor_claimed_america = yes
+					}
+				}
+			}
+			NOT = {
+				TXS = { is_subject_of = CSA }
+				TXS = {
+					is_subject_of = TEX
+					has_country_flag = TXS_AFP
+				}
+			}
+			OR = {
+				AND = {
+					tag = USA
+					has_democratic_government = yes
+					TXS = { has_democratic_government = yes }
+				}
+				AND = {
+					tag = USA
+					has_global_flag = TXS_ACW_USA
+				}
+				AND = {
+					tag = WCC
+					USA = { exists = no }
+					has_global_flag = TXS_ACW_USA
+				}
+				AND = {
+					tag = CAL
+					has_democratic_government = yes
+					TXS = { has_democratic_government = yes }
+				}
+				AND = {
+					tag = CAL
+					has_global_flag = TXS_ACW_CAL
+				}
+				AND = {
+					tag = TEX
+					has_democratic_government = yes
+					TXS = { has_democratic_government = yes }
+				}
+				AND = {
+					tag = TEX
+					has_global_flag = TXS_ACW_TEX
+				}
+				AND = {
+					tag = COR
+					has_global_flag = TXS_ACW_COR
+				}
+				AND = {
+					tag = CSA
+					has_global_flag = TXS_ACW_CSA
+				}
+				AND = {
+					tag = CSA
+					TXS = { has_socialist_government = yes }
+				}
+				OR = {
+					is_acw_minor = no
+					acw_minor_claimed_america = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 80
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_army_manpower = { size < 250000 }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_texas_decision_2"
+			TXS = {	country_event = USA.1514 }
+		}
+	}
+	
+	USA_reclaim_hawaii_decision_2 = { #收复夏威夷
+		name = USA_reclaim_hawaii_decision
+		icon = generic_political_discourse
+		allowed = {
+			OR = {
+				tag = USA
+				tag = WCC
+				tag = CAL
+				tag = NEE
+			}
+		}
+		available = {
+			is_subject = no
+			HAW = { is_subject = no }
+			797 = { is_owned_and_controlled_by = ROOT } #San Francisco
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			country_exists = HAW
+			has_global_flag = USA_civil_war_over_flag
+			NOT = {
+				count_triggers = {
+					amount = 3
+					country_exists = USA
+					country_exists = CAL
+					country_exists = COR
+					country_exists = TEX
+					country_exists = CSA
+					country_exists = WCC
+					any_other_country = {
+						is_acw_minor = yes
+						exists = yes
+						ACW_minor_claimed_america = yes
+					}
+				}
+			}
+			OR = {
+				is_acw_tag = yes
+				AND = {
+					tag = NEE
+					has_democratic_government = yes
+				}
+			}
+		}
+		fire_only_once = yes
+		cost = 80
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				has_army_manpower = { size < 250000 }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_reclaim_hawaii_decision_2"
+			HAW = {	country_event = USA.1511 }
+		}
+	}
+
+	USA_capital_returns_to_dc_2 = { #将首都迁回华盛顿哥伦比亚特区
+		name = USA_capital_returns_to_dc
+		icon = generic_political_discourse
+		allowed = { original_tag = USA }
+		available = {
+			361 = { is_owned_and_controlled_by = USA }
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = USA_open_csa_decision	
+					has_country_flag = USA_open_cor_decision	
+					has_country_flag = USA_open_nee_decision	
+					has_country_flag = USA_open_tex_decision	
+					has_country_flag = USA_open_wcc_decision	
+					has_country_flag = USA_open_cal_decision	
+				}	
+			}
+			has_country_flag = USA_relocate_capital_flag
+			has_global_flag = USA_civil_war_over_flag
+			capital_scope = {
+				NOT = { state = 361 }
+			}
+		}
+		fire_only_once = yes
+		cost = 5
+		ai_will_do = { factor = 100 }
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_capital_returns_to_dc_2"
+			set_capital = { state = 361 }
+		}
+	}
 	USA_Anti_kkk_Act = { #反3k党法案
 		icon = GFX_decision_generic_factory
 		cost = 20
@@ -13658,8 +14471,10 @@ USA_reconstruction_decisions = { #重建美利坚
 					NOT = { has_government = national_populist }
 				}
 				AND = {
-					has_socialist_government = yes
-					ALA = { has_country_flag = ALA_WICKERSHAM }
+					ALA = {
+						has_socialist_government = yes
+						has_country_flag = ALA_WICKERSHAM
+					}
 				}
 			}
 			NOT = {
@@ -13889,7 +14704,6 @@ USA_reconstruction_decisions = { #重建美利坚
 			HAW = {	country_event = USA.1511 }
 		}
 	}
-
 	COR_reclaim_hawaii_decision = {# Patton Reclaims Hawaii
 		icon = generic_political_discourse
 		allowed = {
@@ -14003,28 +14817,6 @@ USA_reconstruction_decisions = { #重建美利坚
 			log = "[GetDateText]: [Root.GetName]: Decision CSA_protect_philippines"
 			effect_tooltip = { give_guarantee = "PHI" }
 			"PHI" = { country_event = { id = csa.104 days = 1 } }
-		}
-	}
-
-	USA_capital_returns_to_dc = { #将首都迁回华盛顿哥伦比亚特区
-		icon = generic_political_discourse
-		allowed = { original_tag = USA }
-		available = {
-			361 = { is_owned_and_controlled_by = USA }
-		}
-		visible = {
-			has_country_flag = USA_relocate_capital_flag
-			has_global_flag = USA_civil_war_over_flag
-			capital_scope = {
-				NOT = { state = 361 }
-			}
-		}
-		fire_only_once = yes
-		cost = 80
-		ai_will_do = { factor = 100 }
-		complete_effect = {
-			log = "[GetDateText]: [Root.GetName]: Decision USA_capital_returns_to_dc"
-			set_capital = { state = 361 }
 		}
 	}
 }
@@ -17458,7 +18250,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_european_rebuild_central_europe
 			NOT = { has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = {
 			FROM = {
 				exists = yes
@@ -17497,7 +18289,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { check_variable = { USA_germany_food_relief_and_denazification_count > 1 } }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 25
@@ -17529,7 +18321,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { check_variable = { USA_germany_disarm_freikorps_cells_count > 1 } }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 20
@@ -17561,7 +18353,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { check_variable = { USA_germany_repair_rhine_and_railways_count > 1 } }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 30
@@ -17596,7 +18388,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { check_variable = { USA_germany_restore_ruhr_industry_count > 1 } }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 35
@@ -17630,7 +18422,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { has_country_flag = USA_germany_reopened_lander_administration }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 35
@@ -17663,7 +18455,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				NOT = { has_country_flag = USA_germany_credit_and_currency_board }
 			}
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 45
@@ -17696,7 +18488,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mcnarney_military_government has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 35
@@ -17723,7 +18515,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mcnarney_military_government has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 40
@@ -17752,7 +18544,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mcnarney_military_government has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 45
@@ -17784,7 +18576,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mccloy_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 35
@@ -17811,7 +18603,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mccloy_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 45
@@ -17840,7 +18632,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_mccloy_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 40
@@ -17868,7 +18660,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_goerdeler_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 35
@@ -17897,7 +18689,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_goerdeler_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 40
@@ -17925,7 +18717,7 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			has_country_flag = USA_show_germany_reconstruction_decisions
 			FROM = { has_country_flag = USA_germany_goerdeler_administration has_country_flag = USA_show_germany_reconstruction_decisions }
 		}
-		targets = { GER }
+		targets = { GRU }
 		target_trigger = { FROM = { exists = yes NOT = { has_war_with = ROOT } OR = { is_subject_of = ROOT is_in_faction_with = ROOT } } }
 		available = { FROM = { NOT = { has_war_with = ROOT } } }
 		cost = 40

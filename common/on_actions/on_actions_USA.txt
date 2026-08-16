@@ -10,6 +10,10 @@ on_actions = {
 				add_to_variable = { USA_tex_reconstruction_progress = 3 }
 				add_to_variable = { USA_csa_reconstruction_progress = 3 }
 				add_to_variable = { USA_cor_reconstruction_progress = 3 }
+				add_to_variable = { USA_Syndicalist_Resistance = -3 }
+				add_to_variable = { USA_Minutemen_Resistance = -3 }
+				add_to_variable = { USA_Klan_Resistance = -3 }
+				add_to_variable = { USA_Black_legion_Resistance = -3 }
 				if = {
 					limit = {
 						owns_state = 796

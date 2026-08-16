@@ -1199,21 +1199,21 @@ USA_germany_install_goerdeler_administration = {
 
 USA_germany_install_mcnarney_on_subject = {
 	if = {
-		limit = { country_exists = GER GER = { is_subject_of = ROOT controls_state = 64 } }
-		GER = { USA_germany_install_mcnarney_military_government = yes }
+		limit = { country_exists = GRU GRU = { is_subject_of = ROOT controls_state = 64 } }
+		GRU = { USA_germany_install_mcnarney_military_government = yes }
 	}
 }
 
 USA_germany_install_mccloy_on_subject = {
 	if = {
-		limit = { country_exists = GER GER = { is_subject_of = ROOT controls_state = 64 } }
-		GER = { USA_germany_install_mccloy_administration = yes }
+		limit = { country_exists = GRU GRU = { is_subject_of = ROOT controls_state = 64 } }
+		GRU = { USA_germany_install_mccloy_administration = yes }
 	}
 }
 
 USA_germany_install_goerdeler_on_subject = {
 	if = {
-		limit = { country_exists = GER GER = { is_subject_of = ROOT controls_state = 64 } }
-		GER = { USA_germany_install_goerdeler_administration = yes }
+		limit = { country_exists = GRU GRU = { is_subject_of = ROOT controls_state = 64 } }
+		GRU = { USA_germany_install_goerdeler_administration = yes }
 	}
 }
