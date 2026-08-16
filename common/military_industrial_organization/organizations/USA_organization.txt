@@ -637,7 +637,7 @@ USA_ford_organisation = { #Ford
 		position = { x = 3 y = 0 }
 
 		organization_modifier = {
-			military_industrial_organization_research_bonus = -0.1
+			military_industrial_organization_research_bonus = 0.1
 		}
 
 		production_bonus = {
@@ -1049,7 +1049,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.2
-			military_industrial_organization_research_bonus = -0.5	
+			military_industrial_organization_research_bonus = 0.5
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1091,7 +1091,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.18
-			military_industrial_organization_research_bonus = -0.45	
+			military_industrial_organization_research_bonus = 0.45
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1133,7 +1133,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.16
-			military_industrial_organization_research_bonus = -0.4		
+			military_industrial_organization_research_bonus = 0.4
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1175,7 +1175,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.14
-			military_industrial_organization_research_bonus = -0.35		
+			military_industrial_organization_research_bonus = 0.35
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1217,7 +1217,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.12
-			military_industrial_organization_research_bonus = -0.3		
+			military_industrial_organization_research_bonus = 0.3
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1259,7 +1259,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.1
-			military_industrial_organization_research_bonus = -0.25			
+			military_industrial_organization_research_bonus = 0.25
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1301,7 +1301,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.08
-			military_industrial_organization_research_bonus = -0.2			
+			military_industrial_organization_research_bonus = 0.2
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1343,7 +1343,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.06
-			military_industrial_organization_research_bonus = -0.15			
+			military_industrial_organization_research_bonus = 0.15
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1385,7 +1385,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.04
-			military_industrial_organization_research_bonus = -0.1			
+			military_industrial_organization_research_bonus = 0.1
 		}
 	}
 	trait = { #迈向大托拉斯之路
@@ -1427,7 +1427,7 @@ USA_ford_organisation = { #Ford
 
 		organization_modifier = {		
 			military_industrial_organization_design_team_assign_cost = -0.02
-			military_industrial_organization_research_bonus = -0.05			
+			military_industrial_organization_research_bonus = 0.05
 		}
 	}
 	trait = { #高马力发动机设计
