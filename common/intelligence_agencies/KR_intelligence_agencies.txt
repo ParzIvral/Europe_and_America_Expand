@@ -199,6 +199,15 @@ intelligence_agency = {
 
 intelligence_agency = {
 
+	picture = GFX_intelligence_agency_logo_kr_rus
+	names = { "Donotos" }
+
+	default = { tag = DKB }
+	available = { original_tag = DKB }
+}
+
+intelligence_agency = {
+
 	picture = GFX_intelligence_agency_logo_kr_den
 	names = { "Generalstabens Efterretningssektion" }
 
@@ -343,7 +352,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_kr_ger
-	names = { "Abteilung III b" }
+	names = { "Abwehr" }
 
 	default = { tag = GER }
 	available = { original_tag = GER }
@@ -615,7 +624,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_kr_rus
-	names = { "Okhrannoye Otdeleniye" }
+	names = { "Gosokhrana" }
 
 	default = {
 		OR = {
@@ -639,7 +648,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_KX_russia_2
-	names = { "Okhrannoye Otdeleniye" }
+	names = { "Gosokhrana" }
 
 	default = {
 		OR = {
@@ -1286,7 +1295,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_KX_transamur
-	names = { "Militsiya" }
+	names = { "Gosokhrana" }
 
 	default = {
 			tag = TRM
@@ -1299,7 +1308,7 @@ intelligence_agency = {
 intelligence_agency = {
 
 	picture = GFX_intelligence_agency_logo_KX_transamur_2
-	names = { "Militsiya" }
+	names = { "Gosokhrana" }
 
 	default = {
 			tag = TRM
@@ -1355,9 +1364,25 @@ intelligence_agency = {
 
 	default = {
 			tag = LEC
+			NOT = { has_country_flag = LEC_Shuntian_Power }
 	}
 	available = {
 			original_tag = LEC
+	}
+}
+
+intelligence_agency = {
+
+	picture = GFX_intelligence_agency_logo_KX_fengtien_4
+	names = { "Jinyīwèi" }
+
+	default = {
+		tag = LEC
+		has_country_flag = LEC_Shuntian_Power
+	}
+	available = {
+		original_tag = LEC
+		has_country_flag = LEC_Shuntian_Power
 	}
 }
 

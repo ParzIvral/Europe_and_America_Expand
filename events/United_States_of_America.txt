@@ -199,16 +199,13 @@ add_namespace = usanew
 						long_name = USA_paternal_autocrat_military_junta_long
 						name = USA_paternal_autocrat_military_junta
 					}
-					add_country_leader_role = {
+					promote_character = {
 						character = USA_Douglas_Macarthur_1
-						country_leader = {
-							desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-							ideology = authdem_junta_subtype
-							traits = {
-								american_caesar
-							}
-						}
-						promote_leader = yes
+						ideology = junta_subtype
+					}
+					promote_character = {
+						character = USA_Douglas_Macarthur_2
+						ideology = junta_subtype
 					}
 					country_event = { id = ACW.3 days = 2 } #默里发动叛乱反抗华盛顿！
 					country_event = { id = ACW.2 days = 3  } #休伊·朗谴责政府
@@ -727,16 +724,9 @@ add_namespace = usanew
 					long_name = USA_paternal_autocrat_military_junta_long
 					name = USA_paternal_autocrat_military_junta
 				}
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_Douglas_Macarthur_1
-					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-						ideology = authdem_junta_subtype
-						traits = {
-							american_caesar
-						}
-					}
-					promote_leader = yes
+					ideology = junta_subtype
 				}
 				promote_character = {
 					character = USA_Douglas_Macarthur_2
@@ -7207,16 +7197,9 @@ add_namespace = usanew
 					long_name = USA_paternal_autocrat_military_junta_long
 					name = USA_paternal_autocrat_military_junta
 				}
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_Douglas_Macarthur_1
-					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-						ideology = authdem_junta_subtype
-						traits = {
-							american_caesar
-						}
-					}
-					promote_leader = yes
+					ideology = junta_subtype
 				}
 				promote_character = {
 					character = USA_Douglas_Macarthur_2
@@ -8200,16 +8183,9 @@ add_namespace = usanew
 					long_name = USA_paternal_autocrat_military_junta_long
 					name = USA_paternal_autocrat_military_junta
 				}
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_Douglas_Macarthur_1
-					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-						ideology = authdem_junta_subtype
-						traits = {
-							american_caesar
-						}
-					}
-					promote_leader = yes
+					ideology = junta_subtype
 				}
 				promote_character = {
 					character = USA_Douglas_Macarthur_2
@@ -8283,6 +8259,7 @@ add_namespace = usanew
 			set_country_flag = USA_president_inaugurated
 			add_country_leader_role = {
 				character = USA_Douglas_Macarthur_1
+				promote_leader = yes
 				country_leader = {
 					desc = POLITICS_DOUGLAS_MACARTHUR_DESC
 					ideology = junta_subtype
@@ -8290,7 +8267,6 @@ add_namespace = usanew
 						american_caesar
 					}
 				}
-				promote_leader = yes
 			}
 			hidden_effect = {
 				complete_national_focus = USA_Here_is_chaos
@@ -8558,30 +8534,14 @@ add_namespace = usanew
 					name = USA_paternal_autocrat_military_junta
 				}
 				add_country_leader_role = {
-					character = USA_Douglas_Macarthur_2
+					character = USA_Douglas_Macarthur_2  # Must be recruited
+					promote_leader = yes  # Makes the character be promoted to leader of the party
 					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
 						ideology = authdem_junta_subtype
 						traits = {
 							american_caesar
 						}
 					}
-					promote_leader = yes
-				}
-				add_country_leader_role = {
-					character = USA_Douglas_Macarthur_2
-					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-						ideology = junta_subtype
-						traits = {
-							american_caesar
-						}
-					}
-					promote_leader = yes
-				}
-				promote_character = {
-					character = USA_Douglas_Macarthur_1
-					ideology = authdem_junta_subtype
 				}
 				promote_character = {
 					character = USA_Douglas_Macarthur_2

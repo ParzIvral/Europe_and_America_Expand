@@ -15040,6 +15040,7 @@ country_event = {
 			has_capitulated = yes
 			has_war_with = USA
 		}
+		382 = { is_controlled_by = USA } # Colorado / Denver
 	}
 	fire_only_once = yes
 	hidden = yes

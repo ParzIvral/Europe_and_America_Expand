@@ -482,11 +482,11 @@ SpriteTypes = {
 		texturefile = "gfx/interface/ideas/usa/USA_NRA_modifier.png"
 	}
 	spriteType = {
-		name = "GFX_USA_Inject_capital_into_General_Motors"
+		name = "GFX_idea_USA_Inject_capital_into_General_Motors"
 		texturefile = "gfx/interface/ideas/usa/USA_Inject_capital_into_General_Motors.png"
 	}
 	spriteType = {
-		name = "GFX_USA_Future_design"
+		name = "GFX_idea_USA_Future_design"
 		texturefile = "gfx/interface/ideas/usa/USA_Future_design.png"
 	}
 	spriteType = {

@@ -4255,7 +4255,7 @@ focus_tree = {
 			}
 			add_power_balance_value = {
 				id = USA_Civil_War_bop
-				value = 0.20
+				value = 0.4
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4572,7 +4572,7 @@ focus_tree = {
 			}
 			add_power_balance_value = {
 				id = USA_Civil_War_bop
-				value = 0.2
+				value = 0.4
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -4751,7 +4751,7 @@ focus_tree = {
 			increase_ruling_party_popularity_by_10 = yes
 			add_power_balance_value = {
 				id = USA_Civil_War_bop
-				value = 0.2
+				value = 0.4
 			}
 			custom_effect_tooltip = USA_SPA_gains_strength2
 			hidden_effect = {
@@ -4788,7 +4788,7 @@ focus_tree = {
 			increase_ruling_party_popularity_by_10 = yes
 			add_power_balance_value = {
 				id = USA_Civil_War_bop
-				value = 0.2
+				value = 0.4
 			}
 			custom_effect_tooltip = USA_MIL_gains_strength2
 			hidden_effect = {

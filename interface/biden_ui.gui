@@ -5979,6 +5979,144 @@ guiTypes = {
 			position = { x = 155 y = 205 }
 			pdx_tooltip = "HOS_OR_NZL"
 		}
+
+		### KX dual-leader sync 2026-08 ###
+iconType = {
+			name = "Agnes_Macphail" 
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Canada_Agnes_Macphail"
+		}
+iconType = { 
+			name = "Alexander_Douala_Manga_Bell"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Mittelafrika_Alexander_Duala_Manga_Bell"
+		}
+iconType = { 
+			name = "Alfred_Hugenberg"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Alfred_Hugenberg"
+		}
+iconType = {
+			name = "Carl_Friedrich_Goerdeler"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Carl_Friedrich_Goerdeler"
+		}
+iconType = {
+			name = "Carl_Schmitt"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Carl_Schmitt"
+		}
+iconType = {
+			name = "Erich_Ludendorff"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Erich_Ludendorff"
+		}
+iconType = {
+			name = "Friedrich_Meinecke"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Friedrich_Meinecke"
+		}
+iconType = {
+			name = "Gustav_Noske"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Gustav_Noske"
+		}
+iconType = {
+			name = "Gustav_Stresemann"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Gustav_Stresemann"
+		}
+iconType = { 
+			name = "Hans_Frank"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Mittelafrika_Hans_Frank_Suit"
+		}
+iconType = {
+			name = "Hans_Schlange_Schoningen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Hans_Schlange_Schoningen"
+		}	
+iconType = { 
+			name = "Hermann_Goring"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Mittelafrika_Hermann_Goering_Kanzler"
+		}
+iconType = {
+			name = "Keith_Murdoch"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_AST_Keith_Murdoch"
+		}
+iconType = {
+			name = "Konrad_Adenauer"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Konrad_Adenauer"
+		}	
+iconType = {
+			name = "Kuno_von_Westarp"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Kuno_von_Westarp"
+		}	
+iconType = {
+			name = "Kurt_von_Schleicher_double"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Kurt_von_Schleicher_Military"
+		}
+iconType = {
+			name = "Ludwig_Kaas"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Ludwig_Kaas"
+		}
+iconType = {
+			name = "Manfred_Freiherr_von_Richthofen"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Manfred_von_Richthofen_Baron"
+		}
+iconType = {
+			name = "Marianne_Weber"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Marianne_Weber"
+		}
+iconType = {
+			name = "Mathilde_Ludendorff"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Mathilde_Ludendorff"
+		}
+iconType = {
+			name = "Matthias_Erzberger"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Matthias_Erzberger"
+		}	
+iconType = {
+			name = "Max_Weber"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Max_Weber"
+		}
+iconType = {
+			name = "Moeller_van_den_Bruck"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Moeller_van_den_Bruck"
+		}
+iconType = {
+			name = "Moeller_van_den_Bruck_double"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Moeller_van_den_Bruck"
+		}
+iconType = {
+			name = "Paul_Lensch"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Paul_Lensch"
+		}
+iconType = {
+			name = "Thomas_Mann"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Thomas_Mann"
+		}
+iconType = {
+			name = "Walther_Rathenau"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Germany_Walther_Rathenau"
+		}
+
 		
 		instantTextboxType = {
 			name = "pm_name"
