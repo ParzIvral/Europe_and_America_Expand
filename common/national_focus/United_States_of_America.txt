@@ -410,7 +410,7 @@ focus_tree = {
 						}
 						country_event = USA.12 #《加纳-瓦格纳法案》在国会胜利通过！
 					}
-					else_if = {
+					else = {
 						limit = { 
 							has_global_flag = USA_the_bill_failed
 						}

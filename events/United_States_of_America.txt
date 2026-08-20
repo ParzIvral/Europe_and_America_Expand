@@ -4717,6 +4717,10 @@ add_namespace = usanew
 			hidden_effect = {
 				set_country_flag = USA_Herb_36_Victory
 				set_country_flag = USA_President_Hoover_1936_flag
+				promote_character = {
+					character = USA_Herbert_Hoover_1
+					ideology = humanistic_capitalism_subtype
+				}
 			}
 			set_politics = {
 				ruling_party = market_liberal
@@ -5120,6 +5124,10 @@ add_namespace = usanew
 				add_ideas = USA_Paul_Mattick_eco_syn #保罗·马蒂克
 				add_ideas = USA_John_Abt_sec_syn #绾︾堪路闃垮竷鐗?
 				promote_character = {
+					character = USA_William_Haywood_2
+					ideology = syndicalist_subtype
+				}
+				promote_character = {
 					character = USA_Alf_Landon
 					ideology = soclib_humanistic_capitalism_subtype
 				}
@@ -5276,6 +5284,10 @@ add_namespace = usanew
 				add_ideas = USA_Charles_Coughlin_for_ade #查尔斯·库格林
 				add_ideas = USA_William_Frederick_Lemke_eco_ade #威廉·弗雷德里克·莱姆基
 				add_ideas = USA_Gerald_K_Smith_sec_pau #杰拉尔德·K·史密斯
+				promote_character = {
+					character = USA_Huey_Long
+					ideology = longism_subtype
+				}
 				promote_character = {
 					character = USA_Alf_Landon
 					ideology = soclib_humanistic_capitalism_subtype
@@ -5757,6 +5769,10 @@ add_namespace = usanew
 				add_ideas = USA_Claude_Augustus_Swanson_eco_sco #克劳德·奥古斯都·斯旺森
 				add_ideas = USA_Kenneth_Claiborne_Royall_Sr_sec_sco #鑰佽偗灏兼€澛峰厠鑾辨湰路缃椾簹灏?
 				promote_character = {
+					character = USA_John_Nance_Garner
+					ideology = american_conservatism_subtype
+				}
+				promote_character = {
 					character = USA_Alf_Landon
 					ideology = soclib_humanistic_capitalism_subtype
 				}
@@ -6121,6 +6137,10 @@ add_namespace = usanew
 				add_ideas = USA_Dean_Gooderham_Acheson_for_sco #迪安·古德哈姆·艾奇逊
 				add_ideas = USA_James_Francis_Byrnes_eco_sco #詹姆斯·弗朗西斯·伯恩斯
 				add_ideas = USA_Martin_Dies_Jr_sec_sco #小马丁·戴斯
+				promote_character = {
+					character = USA_John_Nance_Garner
+					ideology = american_conservatism_subtype
+				}
 				promote_character = {
 					character = USA_Alf_Landon
 					ideology = soclib_humanistic_capitalism_subtype
@@ -16529,6 +16549,10 @@ add_namespace = usanew
 						id = USA.602
 						days = 35
 					}
+					country_event = { # 年总统大选
+						id = USA.603
+						days = 55
+					}
 				}
 				else_if = {
 					limit = {
@@ -17240,8 +17264,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Norris_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Norris_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17253,8 +17279,10 @@ add_namespace = usanew
 			name = USA.600.b
 			trigger = {
 				NOT = {
-					has_country_flag = USA_President_Norris_1936_flag
-					has_global_flag = USA_civil_war_avoided_flag
+					AND = {
+						has_country_flag = USA_President_Norris_1936_flag
+						has_global_flag = USA_civil_war_avoided_flag
+					}
 				}
 				NOT = {
 					has_global_flag = USA_civil_war_over_flag
@@ -17280,8 +17308,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Norris_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Norris_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17294,8 +17324,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Norris_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Norris_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17307,8 +17339,10 @@ add_namespace = usanew
 			name = USA.600.g
 			trigger = {
 				NOT = {
-					has_country_flag = USA_President_Norris_1936_flag
-					has_global_flag = USA_civil_war_avoided_flag
+					AND = {
+						has_country_flag = USA_President_Norris_1936_flag
+						has_global_flag = USA_civil_war_avoided_flag
+					}
 				}
 				NOT = {
 					has_country_flag = USA_President_Hoover_1936_flag
@@ -17416,8 +17450,10 @@ add_namespace = usanew
 				OR = {
 					AND = {
 						NOT = {
-							has_country_flag = USA_President_Landon_1936_flag
-							has_global_flag = USA_civil_war_avoided_flag
+							AND = {
+								has_country_flag = USA_President_Landon_1936_flag
+								has_global_flag = USA_civil_war_avoided_flag
+							}
 						}
 						NOT = {
 							AND = {
@@ -17450,8 +17486,10 @@ add_namespace = usanew
 				OR = {
 					AND = {
 						NOT = {
-							has_country_flag = USA_President_Landon_1936_flag
-							has_global_flag = USA_civil_war_avoided_flag
+							AND = {
+								has_country_flag = USA_President_Landon_1936_flag
+								has_global_flag = USA_civil_war_avoided_flag
+							}
 						}
 						NOT = {
 							AND = {
@@ -17474,8 +17512,10 @@ add_namespace = usanew
 			trigger = {
 				AND = {
 					NOT = {
-						has_country_flag = USA_President_Landon_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Landon_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					NOT = {
 						AND = {
@@ -17509,8 +17549,10 @@ add_namespace = usanew
 				OR = {
 					AND = {
 						NOT = {
-							has_country_flag = USA_President_Landon_1936_flag
-							has_global_flag = USA_civil_war_avoided_flag
+							AND = {
+								has_country_flag = USA_President_Landon_1936_flag
+								has_global_flag = USA_civil_war_avoided_flag
+							}
 						}
 						NOT = {
 							AND = {
@@ -17607,8 +17649,10 @@ add_namespace = usanew
 			name = USA.602.a
 			trigger = {
 				NOT = {
-					has_country_flag = USA_President_Garner_1936_flag
-					has_global_flag = USA_civil_war_avoided_flag
+					AND = {
+						has_country_flag = USA_President_Garner_1936_flag
+						has_global_flag = USA_civil_war_avoided_flag
+					}
 				}
 			}
 			set_country_flag = USA_1940_democratic_primary_smith
@@ -17639,8 +17683,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Garner_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Garner_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17653,8 +17699,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Garner_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Garner_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17667,8 +17715,10 @@ add_namespace = usanew
 			trigger = {
 				OR = {
 					NOT = {
-						has_country_flag = USA_President_Garner_1936_flag
-						has_global_flag = USA_civil_war_avoided_flag
+						AND = {
+							has_country_flag = USA_President_Garner_1936_flag
+							has_global_flag = USA_civil_war_avoided_flag
+						}
 					}
 					has_country_leader = { ruling_only = yes name = "William D. Leahy" }
 				}
@@ -17680,8 +17730,10 @@ add_namespace = usanew
 			name = USA.602.h
 			trigger = {
 				NOT = {
-					has_country_flag = USA_President_Garner_1936_flag
-					has_global_flag = USA_civil_war_avoided_flag
+					AND = {
+						has_country_flag = USA_President_Garner_1936_flag
+						has_global_flag = USA_civil_war_avoided_flag
+					}
 				}
 			}
 			hidden_effect = {
@@ -22518,12 +22570,16 @@ add_namespace = usanew
 				has_country_flag = USA_had_1948_election
 			}
 			NOT = {
-				has_country_flag = USA_deadlock_garner
-				has_global_flag = USA_civil_war_avoided_flag
+				AND = {
+					has_country_flag = USA_deadlock_garner
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 			}
 			NOT = {
-				has_country_flag = USA_deadlock_norris
-				has_global_flag = USA_civil_war_avoided_flag
+				AND = {
+					has_country_flag = USA_deadlock_norris
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 			}
 			NOT = {
 				has_country_flag = USA_avoidcw_coup
@@ -24312,12 +24368,16 @@ add_namespace = usanew
 				has_country_flag = USA_had_1952_election
 			}
 			NOT = {
-				has_country_flag = USA_deadlock_garner
-				has_global_flag = USA_civil_war_avoided_flag
+				AND = {
+					has_country_flag = USA_deadlock_garner
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 			}
 			NOT = {
-				has_country_flag = USA_deadlock_norris
-				has_global_flag = USA_civil_war_avoided_flag
+				AND = {
+					has_country_flag = USA_deadlock_norris
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 			}
 			NOT = {
 				has_country_flag = USA_avoidcw_coup
