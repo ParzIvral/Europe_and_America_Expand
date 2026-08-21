@@ -8196,9 +8196,9 @@ ideas = {
 			}
 		}
 		kr_westinghouse_2 = { #Westinghouse
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_westinghouse"}
+			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_westinghouse_2"}
 			allowed = { is_american_tag = yes }
-			picture = GFX_idea_kr_westinghouse
+			picture = kr_westinghouse
 			visible = {
 				has_completed_focus = USA_Westinghouse_Electric_is_in_the_right_time
 			}
@@ -8278,9 +8278,8 @@ ideas = {
 		}
 		kr_dupont_2 = { #DuPont
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea kr_dupont_2"}
-			picture = GFX_idea_kr_dupont
+			picture = kr_dupont
 			allowed = { is_american_tag = yes }
-			picture = GFX_idea_kr_dupont
 			visible = {
 				has_completed_focus = USA_Dupont_Group_turns_everything_into_gold
 			}

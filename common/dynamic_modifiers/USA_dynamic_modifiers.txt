@@ -328,7 +328,7 @@ USA_black_legion_modifier = {
 }
 
 USA_Tourism_in_New_England = {
-	icon = "GFX_USA_Tourism_in_New_England"
+	icon = "GFX_idea_USA_Tourism_in_New_England_2"
 	enable = { always = yes }
 	remove_trigger = { always = no }
 	

@@ -569,4 +569,8 @@ SpriteTypes = {
 		name = "GFX_idea_USA_iron_curtain"
 		texturefile = "gfx/interface/ideas/usa/USA_iron_curtain.png"
 	}
+	spriteType = {
+		name = "GFX_idea_USA_Tourism_in_New_England_2"
+		texturefile = "gfx/interface/ideas/usa/GFX_idea_USA_Tourism_in_New_England_2.png"
+	}
 }
