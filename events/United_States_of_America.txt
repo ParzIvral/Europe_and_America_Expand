@@ -9423,10 +9423,7 @@ add_namespace = usanew
 			name = USA.320.a #棒极了！
 			add_political_power = 50
 			add_stability = 0.02
-			od_power_10_up_effect = yes
-			hidden_effect = {
-				subtract_from_variable = { var = ACW_klan_resistance value = 2 }
-			}
+			od_power_10_down_effect = yes
 			hidden_effect = {
 				country_event = { id = USA.321 days = 4  } #斯蒂芬森的协议
 			}
@@ -10537,6 +10534,19 @@ add_namespace = usanew
 			sp_power_20_down_effect = yes
 			custom_effect_tooltip = USA_sp_monthly_power_decreases_5_tt
 			set_variable = { USA_sp_monthly_increase = -0.05 }
+			if = {
+				limit = {
+					has_idea = USA_new_year_strike_idea_2
+				}
+				swap_ideas = {
+					remove_idea = USA_new_year_strike_idea_2
+					add_idea = USA_new_year_strike_idea
+				}
+			}
+			else = {
+				remove_ideas = USA_new_year_strike_idea
+			}
+			remove_ideas = USA_syndicalist_strike_idea
 			if = {
 				limit = {
 					NOT = {
