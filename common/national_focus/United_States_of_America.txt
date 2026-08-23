@@ -14063,6 +14063,9 @@ focus_tree = {
 		}
 		bypass = {
 			OR = {
+				NOT = {
+					country_exists = WCC
+				}
 				has_country_flag = macarthur_gives_up_power
 				has_country_flag = USA_mac_retreat
 				has_country_flag = USA_Military_committee_established
