@@ -577,6 +577,39 @@ USA_recovery_decisions = { #自废墟中崛起
 		}
 	}
 
+	USA_crush_californian_separatists_decision = { #平定加州分离主义者
+		icon = generic_political_discourse
+		allowed = {
+			tag = USA
+		}
+		available = {
+			country_exists = CAL
+			NOT = { has_war_with = CAL }
+		}
+		visible = {
+			country_exists = CAL
+			NOT = { has_war_with = CAL }
+		}
+		fire_only_once = yes
+		cost = 80
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 0
+				has_war = yes
+			}
+			modifier = {
+				factor = 0
+				can_declare_war_on = CAL
+				CAL = { default_attack_AI_trigger_FROM = yes }
+			}
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision USA_crush_californian_separatists_decision"
+			create_wargoal = { type = annex_everything target = CAL }
+		}
+	}
+
 	USA_reclaim_texas_decision_2 = { #宣称德克萨斯
 		name = USA_reclaim_texas_decision
 		icon = generic_political_discourse

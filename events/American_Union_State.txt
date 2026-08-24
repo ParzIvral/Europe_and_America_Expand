@@ -2215,10 +2215,6 @@ add_namespace = TEX
 			add_stability = -0.01
 			hidden_effect = {
 				country_event = {
-					id = unionstate.2300
-					days = 29
-					}
-				country_event = {
 					id = unionstate.24
 					days = 30
 					}

@@ -6208,7 +6208,7 @@ focus_tree = {
 
 	focus = {
 		id = TEX_Maintain_populist_platform
-		icon = GFX_TTEX_Maintain_populist_platform
+		icon = GFX_TEX_Maintain_populist_platform
 		cost = 5
 		prerequisite = {
 			focus = TEX_Sliver_Shirts_support
