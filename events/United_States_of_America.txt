@@ -9556,7 +9556,7 @@ add_namespace = usanew
 					country_leader = {
 						desc = POLITICS_RICHARD_RUSSELL_DESC
 						ideology = authdem_dixiecrat_subtype
-					traits = {
+						traits = {
 							USA_jim_crows_champion
 						}
 					}
@@ -13471,17 +13471,12 @@ add_namespace = usanew
 			afp_power_30_up_effect = yes
 			od_power_30_up_effect = yes
 			hidden_effect = {
-				add_country_leader_role = {
+				sp_power_30_up_effect = yes
+				afp_power_30_up_effect = yes
+				od_power_30_up_effect = yes
+				promote_character = {
 					character = USA_Frank_Knox
-					country_leader = {
-						desc = POLITICS_FRANK_KNOX_DESC
-						ideology = marlib_national_liberalism_subtype
-						traits = {
-							unpopular_president
-							eco_balanced_budget_economy
-						}
-					}
-					promote_leader = yes
+					ideology = marlib_national_liberalism_subtype
 				}
 				remove_ideas = USA_Frank_Knox_veep_mli
 				add_ideas = USA_Charles_Curtis_veep_mli
@@ -15422,16 +15417,9 @@ add_namespace = usanew
 
 		option = { #一波三折的民主命运
 			name = USA.520.a
-			add_country_leader_role = {
+			promote_character = {
 				character = USA_Omar_Bradley
-				country_leader = {
-					desc = USA_OMAR_BRADLEY_POLITICS_DESC
-					ideology = authdem_junta_subtype
-					traits = {
-						american_pompey
-					}
-				}
-				promote_leader = yes
+				ideology = authdem_junta_subtype
 			}
 			remove_ideas_with_trait = head_of_government
 			add_ideas = USA_Dwight_D_Eisenhower_hog_ade
@@ -15453,14 +15441,9 @@ add_namespace = usanew
 				ruling_party = authoritarian_democrat
 				elections_allowed = no
 			}
-			add_country_leader_role = {
+			promote_character = {
 				character = USA_NSC
-				country_leader = {
-					ideology = authdem_junta_subtype
-					traits = {
-					}
-				}
-				promote_leader = yes
+				ideology = authdem_junta_subtype
 			}
 			increase_ruling_party_popularity_by_10 = yes
 		}

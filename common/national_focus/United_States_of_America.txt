@@ -24314,6 +24314,7 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_European_Conquest"
 			set_country_flag = USA_european_conquest_decisions_unlocked
+			unlock_decision_category_tooltip = USA_european_conquest_decisions
 		}
 	}
 

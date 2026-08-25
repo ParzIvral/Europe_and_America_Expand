@@ -922,14 +922,9 @@ USA_britain_install_lee_government = {
 			character = USA_John_C_H_Lee
 		}
 	}
-	USA_John_C_H_Lee = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = junta_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_John_C_H_Lee
+		ideology = junta_subtype
 	}
 	USA_britain_apply_initial_reconstruction_modifier = yes
 }
@@ -947,15 +942,11 @@ USA_britain_install_halifax_government = {
 		long_name = USA_Administration_Britain_party_long
 		name = USA_Administration_Britain_party
 	}
-	USA_Edward_Wood = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = authdem_toryism_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_Edward_Wood
+		ideology = authdem_toryism_subtype
 	}
+
 	USA_britain_apply_initial_reconstruction_modifier = yes
 }
 
@@ -1004,14 +995,9 @@ USA_france_install_hilldring_military_government = {
 			character = USA_John_H_Hilldring
 		}
 	}
-	USA_John_H_Hilldring = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = junta_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_John_H_Hilldring
+		ideology = junta_subtype
 	}
 	USA_france_apply_initial_reconstruction_modifier = yes
 }
@@ -1036,14 +1022,9 @@ USA_france_install_murphy_administration = {
 			character = USA_Robert_D_Murphy
 		}
 	}
-	USA_Robert_D_Murphy = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = autdem_progressive_conservatism_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_Robert_D_Murphy
+		ideology = autdem_progressive_conservatism_subtype
 	}
 	USA_france_apply_initial_reconstruction_modifier = yes
 }
@@ -1068,14 +1049,9 @@ USA_france_install_la_rocque_administration = {
 			character = USA_Francois_de_La_Rocque
 		}
 	}
-	USA_Francois_de_La_Rocque = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = authdem_toryism_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_Francois_de_La_Rocque
+		ideology = authdem_rocquisme_group
 	}
 	USA_france_apply_initial_reconstruction_modifier = yes
 }
@@ -1121,14 +1097,9 @@ USA_germany_install_mcnarney_military_government = {
 			character = USA_Joseph_T_McNarney
 		}
 	}
-	USA_Joseph_T_McNarney = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = junta_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_Joseph_T_McNarney
+		ideology = junta_subtype
 	}
 	USA_germany_apply_initial_reconstruction_modifier = yes
 }
@@ -1153,14 +1124,9 @@ USA_germany_install_mccloy_administration = {
 			character = USA_John_J_McCloy
 		}
 	}
-	USA_John_J_McCloy = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = authoritarian_liberalism_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_John_J_McCloy
+		ideology = authoritarian_liberalism_subtype
 	}
 	USA_germany_apply_initial_reconstruction_modifier = yes
 }
@@ -1185,14 +1151,9 @@ USA_germany_install_goerdeler_administration = {
 			character = USA_Carl_Friedrich_Goerdeler
 		}
 	}
-	USA_Carl_Friedrich_Goerdeler = {
-		add_country_leader_role = {
-			country_leader = {
-				ideology = authdem_toryism_subtype
-				traits = { }
-			}
-			promote_leader = yes
-		}
+	promote_character = {
+		character = USA_Carl_Friedrich_Goerdeler
+		ideology = authoritarian_liberalism_subtype
 	}
 	USA_germany_apply_initial_reconstruction_modifier = yes
 }

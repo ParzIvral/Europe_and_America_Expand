@@ -1421,7 +1421,7 @@ characters = {
 			}
 		}
 		country_leader = {
-			ideology = authdem_toryism_subtype
+			ideology = authoritarian_liberalism_subtype
 			traits = {
 
 			}
