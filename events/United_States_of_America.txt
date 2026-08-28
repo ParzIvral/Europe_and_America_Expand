@@ -13105,7 +13105,30 @@ add_namespace = usanew
 				USA_sp_monthly_increase = -0.1
 			}
 			custom_effect_tooltip = USA_sp_monthly_power_decreases_10_tt
-
+			if = {
+				limit = {
+					has_ideas = USA_syndicalist_strike_idea
+				}
+				remove_ideas = USA_syndicalist_strike_idea
+			}
+			if = {
+				limit = {
+					has_ideas = USA_new_year_strike_idea
+				}
+				remove_ideas = USA_new_year_strike_idea
+			}
+			if = {
+				limit = {
+					has_ideas = USA_new_year_strike_idea_2
+				}
+				remove_ideas = USA_new_year_strike_idea_2
+			}
+			if = {
+				limit = {
+					has_ideas = USA_new_year_strike_idea_3
+				}
+				remove_ideas = USA_new_year_strike_idea_3
+			}
 		}
 	}
 	country_event = { # 调查厄尔·朗
