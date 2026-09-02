@@ -2656,6 +2656,15 @@ USA_civil_war_begins = {
 			}
 		}
 		set_global_flag = USA_civil_war_begun_flag
+		if = {
+			limit = {
+				has_global_flag = USA_mac_deadlock
+				has_country_flag = USA_macarthur_coup
+				has_country_flag = TXS_WANT_TO_LEAVE
+				NOT = { country_exists = TXS }
+			}
+			country_event = { id = TXS.0 hours = 12 }
+		}
 		NIC = {
 			country_event = {
 				id = nic.41 days = 7
