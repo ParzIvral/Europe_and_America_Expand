@@ -907,7 +907,7 @@ country_event = { # Reach out
 
 	trigger = {
 		tag = CAL
-		has_global_flag = USA_president_reed
+		USA = { has_country_flag = USA_President_Haywood_1936 }
 		NOT = { has_war_with = CSA }
 		CSA = { exists = yes }
 	}
@@ -3390,7 +3390,7 @@ country_event = { # Reach out to the Victor
 
 	trigger = {
 	tag = CAL
-	has_global_flag = USA_long_is_president
+	USA = { has_country_flag = USA_President_Long_1936 }
 	NOT = { has_war_with = TEX }
 	TEX = { exists = yes }
 	}
@@ -3544,7 +3544,7 @@ country_event = { # Reach out to the Victor (Murray)
 
 	trigger = {
 	tag = CAL
-	has_global_flag = USA_murray_is_president
+	USA = { has_country_flag = USA_President_Murray_1936 }
 	NOT = { has_war_with = COR }
 	COR = { exists = yes }
 	}
@@ -4565,7 +4565,7 @@ country_event = {
 		set_global_flag = CAL_confederate_legit_pres
 		if = {
 		limit = {
-			has_global_flag = USA_garner_is_president
+			USA = { has_country_flag = USA_President_Garner_1936_flag }
 			}
 		create_country_leader = {# John Nance Garner
 			name = "John Nance Garner"
@@ -12308,12 +12308,12 @@ country_event = {
 		modifier = {
 			factor = 0.75
 			tag = CSA
-			USA = { has_global_flag = USA_reed_was_president }
+			USA = { has_country_flag = USA_reed_was_president }
 		}
 		modifier = {
 			factor = 0.75
 			tag = TEX
-			USA = { has_global_flag = USA_long_is_president }
+			USA = { has_country_flag = USA_President_Long_1936 }
 		}
 		modifier = {
 			factor = 0.75

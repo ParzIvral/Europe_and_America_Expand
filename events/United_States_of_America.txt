@@ -24207,7 +24207,7 @@ add_namespace = usanew
 				}
 				has_country_flag = USA_Radio_Reagan
 				NOT = {
-					has_country_flag = USA_NORRIS_PRES
+					has_country_flag = USA_President_Norris_1936_flag
 				}
 			}
 		}
@@ -24333,7 +24333,7 @@ add_namespace = usanew
 				}
 				has_country_flag = USA_Radio_Reagan
 				NOT = {
-					has_country_flag = USA_NORRIS_PRES
+					has_country_flag = USA_President_Norris_1936_flag
 				}
 			}
 			set_country_flag = USA_1952_progressive_primary_reagan
@@ -36770,6 +36770,39 @@ add_namespace = usanew
 			if = {
 				limit = {
 					FROM = {
+						owns_state = 1348
+					}
+				}
+				ROOT = {
+					transfer_state = 1348
+					add_state_core = 1348
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 1349
+					}
+				}
+				ROOT = {
+					transfer_state = 1349
+					add_state_core = 1349
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						owns_state = 1350
+					}
+				}
+				ROOT = {
+					transfer_state = 1350
+					add_state_core = 1350
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
 						owns_state = 1273
 					}
 				}
@@ -36778,15 +36811,18 @@ add_namespace = usanew
 					add_state_core = 1273
 				}
 			}
-			if = {
-				limit = {
-					FROM = {
-						owns_state = 650
+			ROOT = {
+				every_owned_state = {
+					limit = {
+						OR = {
+							state = 463
+							state = 1348
+							state = 1349
+							state = 1350
+							state = 1273
+						}
 					}
-				}
-				ROOT = {
-					transfer_state = 650
-					add_state_core = 650
+					add_core_of = ROOT
 				}
 			}
 		}

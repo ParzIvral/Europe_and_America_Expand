@@ -18,11 +18,8 @@ country_event = { # Elections in Texas
 
 	trigger = {
 		OR = {
-			has_country_leader = {
-				name = "Huey Long"
-				ruling_only = yes
-			}
-			has_global_flag = USA_garner_is_president
+			has_country_flag = USA_President_Long_1936
+			has_country_flag = USA_President_Garner_1936_flag
 		}
 		tag = USA
 		NOT = {
@@ -307,19 +304,19 @@ country_event = { # Support for Independedce
 	desc = {
 		text = texas_prewar.8.d.long
 		trigger = {
-			has_global_flag = USA_long_is_president
+			has_country_flag = USA_President_Long_1936
 		}
 	}
 	desc = {
 		text = texas_prewar.8.d.garner
 		trigger = {
-			has_global_flag = USA_garner_is_president
+			has_country_flag = USA_President_Garner_1936_flag
 		}
 	}
 	desc = {
 		text = texas_prewar.8.d.murray
 		trigger = {
-			has_global_flag = USA_murray_is_president
+			has_country_flag = USA_President_Murray_1936
 		}
 	}
 	desc = {
@@ -645,7 +642,7 @@ country_event = { # Murray is Petty
 	fire_only_once = yes
 	
 	trigger = {
-		has_global_flag = USA_murray_is_president
+		has_country_flag = USA_President_Murray_1936
 		has_country_flag = USA_president_inaugurated
 		tag = USA
 	}
@@ -1188,8 +1185,8 @@ country_event = { # Economic Intervention Backfires
 		tag = USA
 		has_country_flag = USA_president_inaugurated
 		OR = {
-			has_global_flag = USA_NORRIS_PRES
-			has_global_flag = USA_president_reed
+			has_country_flag = USA_President_Norris_1936_flag
+			has_country_flag = USA_President_Haywood_1936
 		}
 	}
 	 

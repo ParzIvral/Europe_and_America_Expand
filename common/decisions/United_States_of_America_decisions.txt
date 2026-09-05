@@ -29,6 +29,9 @@ USA_recovery_decisions = { #自废墟中崛起
 				AND = {
 					463 = { is_core_of = ROOT }
 					1273 = { is_core_of = ROOT }
+					1348 = { is_core_of = ROOT }
+					1349 = { is_core_of = ROOT }
+					1350 = { is_core_of = ROOT }
 				}
 			}
 		}
@@ -45,6 +48,9 @@ USA_recovery_decisions = { #自废墟中崛起
 					OR = {
 						state = 463
 						state = 1273
+						state = 1348
+						state = 1349
+						state = 1350
 					}
 				}
 				remove_ACW_cores = yes
@@ -13346,6 +13352,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = COR_begin_reconstruction
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
@@ -13430,6 +13437,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13528,6 +13536,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13627,6 +13636,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13715,6 +13725,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13804,6 +13815,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13898,6 +13910,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13968,6 +13981,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -13977,10 +13991,13 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = COR_begin_reconstruction
 			}
 			NOT = {
-							AND = {
-				463 = { is_core_of = ROOT }
-								1273 = { is_core_of = ROOT }
-							}
+				AND = {
+					463 = { is_core_of = ROOT }
+					1273 = { is_core_of = ROOT }
+					1348 = { is_core_of = ROOT }
+					1349 = { is_core_of = ROOT }
+					1350 = { is_core_of = ROOT }
+				}
 			}
 		}
 		fire_only_once = yes
@@ -13996,6 +14013,9 @@ USA_reconstruction_decisions = { #重建美利坚
 					OR = {
 						state = 463
 						state = 1273
+						state = 1348
+						state = 1349
+						state = 1350
 					}
 				}
 				remove_ACW_cores = yes
@@ -14026,6 +14046,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {
 					is_acw_minor = yes
@@ -14092,6 +14113,7 @@ USA_reconstruction_decisions = { #重建美利坚
 				has_completed_focus = BBR_a_new_america
 				has_completed_focus = CSA_reconstruction
 				has_completed_focus = TEX_begin_reconstruction
+				has_completed_focus = TEX_catholic_america
 				has_completed_focus = COR_begin_reconstruction
 				has_completed_focus = WCC_military_industrial_complex
 				AND = {

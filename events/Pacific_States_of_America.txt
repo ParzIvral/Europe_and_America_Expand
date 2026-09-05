@@ -420,7 +420,7 @@ country_event = { # 1937 Democrat Primary
 		trigger = {	
 			OR = {
 				has_country_leader = { ruling_only = yes name = "John Nance Garner" }
-				has_global_flag = USA_garner_is_president
+				USA = { has_country_flag = USA_President_Garner_1936_flag }
 			}
 		}
 		add_political_power = -30
@@ -13143,7 +13143,7 @@ country_event = { # The Provisional Government
 		set_country_flag = PSA_1937_election_occured
 		if = {
 			limit = {
-				has_global_flag = USA_garner_is_president
+				USA = { has_country_flag = USA_President_Garner_1936_flag }
 			}
 			set_country_flag = PSA_1937_democratic_primary_garner
 			create_country_leader = {# John Nance Garner
@@ -14074,7 +14074,7 @@ country_event = {
 		set_country_flag = PSA_1937_election_occured
 		if = {
 			limit = {
-				has_global_flag = USA_garner_is_president
+				USA = { has_country_flag = USA_President_Garner_1936_flag }
 			}
 			set_country_flag = PSA_1937_democratic_primary_garner
 			create_country_leader = {# John Nance Garner

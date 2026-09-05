@@ -107,7 +107,7 @@ COR_initial_events = {
 	COR = {
 		if = {
 			limit = {
-				USA = { has_global_flag = USA_murray_is_president }
+				USA = { has_country_flag = USA_President_Murray_1936 }
 			}
 			add_timed_idea = {
 				idea = COR_righteous_nation
