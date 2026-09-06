@@ -7272,24 +7272,21 @@ country_event = { # Chief of Navy
 			has_global_flag = USA_civil_war_over_flag
 		}
 		NOT = {
-			has_idea = TEX_Arthur_Lee_Willard_cnav
-			has_idea = TEX_William_Frederick_Halsey_Jr_cnav
+			has_idea = TEX_James_O_Richardson_cnav
+			has_idea = TEX_Lynne_C_Quiggle_cnav
 		}
 	}
 
-	option = { # Arthur_Lee_Willard
+	option = { # James O. Richardson
 		name = amcivwar.52.a
-		add_ideas = TEX_Arthur_Lee_Willard_cnav
+		add_ideas = TEX_James_O_Richardson_cnav
 	}
 	option = { # Lynne Quiggle
 		name = amcivwar.52.b
 		add_ideas = TEX_Lynne_C_Quiggle_cnav
 	}
-	option = { # William_Frederick_Halsey_Jr
-		name = amcivwar.52.c
-		add_ideas = TEX_William_Frederick_Halsey_Jr_cnav
-	}
 }
+
 
 country_event = { # Chief of Air Force
 	id = amcivwar.53
