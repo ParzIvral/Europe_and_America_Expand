@@ -10534,17 +10534,10 @@ add_namespace = usanew
 			sp_power_20_down_effect = yes
 			custom_effect_tooltip = USA_sp_monthly_power_decreases_5_tt
 			set_variable = { USA_sp_monthly_increase = -0.05 }
-			if = {
-				limit = {
-					has_idea = USA_new_year_strike_idea_2
-				}
-				swap_ideas = {
-					remove_idea = USA_new_year_strike_idea_2
-					add_idea = USA_new_year_strike_idea
-				}
-			}
-			else = {
+			hidden_effect = {
 				remove_ideas = USA_new_year_strike_idea
+				remove_ideas = USA_new_year_strike_idea_2
+				remove_ideas = USA_new_year_strike_idea_3
 			}
 			remove_ideas = USA_syndicalist_strike_idea
 			if = {
@@ -10652,11 +10645,10 @@ add_namespace = usanew
 				USA_od_monthly_increase = -0.05
 			}
 			remove_ideas = USA_syndicalist_strike_idea
-			if = {
-				limit = {
-					has_idea = USA_new_year_strike_idea
-				}
+			hidden_effect = {
 				remove_ideas = USA_new_year_strike_idea
+				remove_ideas = USA_new_year_strike_idea_2
+				remove_ideas = USA_new_year_strike_idea_3
 			}
 		}
 	}

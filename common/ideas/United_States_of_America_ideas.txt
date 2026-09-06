@@ -105,20 +105,6 @@ ideas = {
 			}
 			picture = USA_syndicalist_strike_idea
 		}	
-		USA_great_depression2 = { #经济复苏
-			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_great_depression2"}
-			allowed = { always = no }
-			picture = USA_great_depression
-			modifier = {
-				production_factory_max_efficiency_factor = -0.1
-				industrial_capacity_factory = -0.2
-				stability_factor = -0.05
-				production_speed_buildings_factor = -0.15
-				consumer_goods_factor = 0.60
-				production_factory_efficiency_gain_factor = -0.2
-				research_speed_factor = -0.05
-			}
-		}
 	#36年通用
 		USA_political_crisis_2 = { #流血的美利坚
 			on_add = { log = "[GetDateText]: [Root.GetName]: add idea USA_political_crisis_2 "}

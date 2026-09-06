@@ -5198,7 +5198,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
 			if = {
 				limit = {
 					check_variable = {
-						USA_count_fight_kkk > 3
+						USA_count_fight_kkk > 2
 					}
 				}
 				country_event = { id = USA.319 days = 7  } #胡佛的妙招

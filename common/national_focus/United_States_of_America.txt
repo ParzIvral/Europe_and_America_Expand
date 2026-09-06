@@ -370,7 +370,7 @@ focus_tree = {
 			add_political_power = 100
 			swap_ideas = {
 				remove_idea = USA_great_depression
-				add_idea = USA_great_depression2
+				add_idea = USA_great_depression_2
 			}
 		}
 		search_filters = { FOCUS_FILTER_POLITICAL }
@@ -17224,7 +17224,16 @@ focus_tree = {
 		cost = 1
 		available = {
 			OR = {
-				has_global_flag = USA_civil_war_avoided_flag
+				AND = {
+					OR = {
+						has_completed_focus = USA_The_perfect_knight_of_progressive_ideals
+						has_completed_focus = USA_The_leader_of_the_country
+						has_completed_focus = USA_good_times_are_just_around_the_corner
+						has_completed_focus = USA_Tough_cactus_Jack
+						has_completed_focus = USA_President_Hoover_will_always_lead_us
+					}
+					has_global_flag = USA_civil_war_avoided_flag
+				}
 				AND = {
 					has_global_flag = USA_civil_war_over_flag
 					NOT = { has_global_flag = PSA_rockies_ceasefire }
@@ -21250,7 +21259,7 @@ focus_tree = {
 			}
 			add_to_variable = { USA_army_special_forces_attack_factor = 0.1 }
 			add_to_variable = { USA_army_special_forces_defence_factor = 0.1 }
-			add_to_variable = { USA_army_land_night_attack = 0.75 }
+			add_to_variable = { USA_army_land_night_attack = 0.25 }
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
