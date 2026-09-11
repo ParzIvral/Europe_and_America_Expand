@@ -99223,7 +99223,7 @@ ideas = {
   ################################################################################################################################################################################################
 
 	head_of_government = { ### Head of Government ###
-		GEA_Augustin_Henninghaus_hog_sde = {
+		GEA_Lim_Yew_Hock_hog_sde = {
 			allowed = { original_tag = GEA }
 			available = {
 				custom_trigger_tooltip = {
@@ -99233,16 +99233,16 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Augustin_Henninghaus_hog_sde"
+				log = "[GetDateText]: [Root.GetName]: add idea GEA_Lim_Yew_Hock_hog_sde"
 			}
 			traits = {
 				head_of_government
 				social_democrat
-				hog_local_tyrant
+				hog_political_protege
 			}
 		}
 
-		GEA_Georg_Weig_hog_sde = {
+		GEA_Paul_Estebe_hog_sli = {
 			allowed = { original_tag = GEA }
 			available = {
 				custom_trigger_tooltip = {
@@ -99252,54 +99252,16 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Georg_Weig_hog_sde"
-			}
-			traits = {
-				head_of_government
-				social_democrat
-				hog_spiritual_leader
-			}
-		}
-
-		GEA_Heinrich_Coerper_hog_sde = {
-			allowed = { original_tag = GEA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Heinrich_Coerper_hog_sde"
-			}
-			traits = {
-				head_of_government
-				social_democrat
-				hog_naive_optimist
-			}
-		}
-
-		GEA_Kurt_Schirmer_hog_sli = {
-			allowed = { original_tag = GEA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Kurt_Schirmer_hog_sli"
+				log = "[GetDateText]: [Root.GetName]: add idea GEA_Paul_Estebe_hog_sli"
 			}
 			traits = {
 				head_of_government
 				social_liberal
-				hog_pragmatic_statesman
+				hog_pacifist_patriot
 			}
 		}
 
-		GEA_Wilhelm_Schrameier_hog_sli = {
+		GEA_Le_Phat_An_hog_mli = {
 			allowed = { original_tag = GEA }
 			available = {
 				custom_trigger_tooltip = {
@@ -99309,31 +99271,31 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Wilhelm_Schrameier_hog_sli"
-			}
-			traits = {
-				head_of_government
-				social_liberal
-				hog_flamboyant_tough_guy
-			}
-		}
-
-		GEA_Oskar_Trautmann_hog_mli = {
-			allowed = { original_tag = GEA }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = head_of_gov_available
-					always = no
-				}
-			}
-			cancel_if_invalid = no
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea GEA_Oskar_Trautmann_hog_mli"
+				log = "[GetDateText]: [Root.GetName]: add idea GEA_Le_Phat_An_hog_mli"
 			}
 			traits = {
 				head_of_government
 				market_liberal
-				hog_political_protege
+				hog_humanitarian
+			}
+		}
+
+		GEA_Ibrahim_of_Johor_hog_sco = {
+			allowed = { original_tag = GEA }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea GEA_Ibrahim_of_Johor_hog_sco"
+			}
+			traits = {
+				head_of_government
+				social_conservative
+				hog_popular_nobleman
 			}
 		}
 
@@ -99394,25 +99356,6 @@ ideas = {
 				hog_old_admiral
 			}
 		}
-
-		# GEA_Wilhelm_Heinrich_Solf_hog_pau = {
-			# allowed = { original_tag = GEA }
-			# available = {
-				# custom_trigger_tooltip = {
-					# tooltip = head_of_gov_available
-					# always = no
-				# }
-			# }
-			# cancel_if_invalid = no
-			# on_add = {
-				# log = "[GetDateText]: [Root.GetName]: add idea GEA_Wilhelm_Heinrich_Solf_hog_pau"
-			# }
-			# traits = {
-				# head_of_government
-				# paternal_autocrat
-				# hog_corporate_suit
-			# }
-		# }
 
 		GEA_Julius_Dorpmueller_hog_npo = {
 			allowed = { original_tag = GEA }
@@ -139243,7 +139186,7 @@ ideas = {
 			}
 		}
 
-		LIB_George_S_Padmore_for_sco = {
+		LIB_George_Arthur_Padmore_for_sco = {
 			allowed = { original_tag = LIB }
 			available = {
 				custom_trigger_tooltip = {
@@ -139253,12 +139196,12 @@ ideas = {
 			}
 			cancel_if_invalid = no
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea LIB_George_S_Padmore_for_sco"
+				log = "[GetDateText]: [Root.GetName]: add idea LIB_George_Arthur_Padmore_for_sco"
 			}
 			traits = {
 				foreign_minister
 				social_conservative
-				for_ideological_crusader
+				for_great_compromiser
 			}
 		}
 
@@ -191745,6 +191688,25 @@ head_of_government = { ### Head of Government ###
 				hog_pragmatic_statesman
 			}
 		}
+
+		SIC_Giovanni_Antonio_Colonna_di_Cesaro_hog_sde = {
+			allowed = { original_tag = SIC }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = head_of_gov_available
+					always = no
+				}
+			}
+			cancel_if_invalid = no
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea SIC_Giovanni_Antonio_Colonna_di_Cesaro_hog_sde" 
+			}
+			traits = {
+				head_of_government
+				social_democrat
+				hog_the_minister
+			}
+		}
 		
 		SIC_Francesco_Saverio_Nitti_hog_sli = {
 			allowed = { original_tag = SIC }
@@ -213188,27 +213150,6 @@ head_of_government = { ### Head of Government ###
 			}
 			cancel_if_invalid = yes
 		}
-
-		TEX_Frank_Maxwell_Andrews_carm = {
-			allowed = { original_tag = TEX }
-			available = {
-				custom_trigger_tooltip = {
-					tooltip = military_staff_available
-					NOT = { has_country_flag = Frank_Maxwell_Andrews_dead }
-				}
-			}
-			visible = {
-				NOT = { has_country_flag = Frank_Maxwell_Andrews_dead }
-			}
-			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea TEX_Frank_Maxwell_Andrews_carm"
-			}
-			traits = {
-				chief_of_army
-				carm_elastic_defence_doctrine
-			}
-			cancel_if_invalid = yes
-		}
 		TEX_Fox_Conner_carm = {
 			allowed = { original_tag = TEX }
 			available = {
@@ -213252,7 +213193,7 @@ head_of_government = { ### Head of Government ###
 	}
 
 	chief_of_navy = { ### Chief of Navy ###
-		TEX_Arthur_Lee_Willard_cnav = {
+		TEX_James_O_Richardson_cnav = {
 			allowed = { original_tag = TEX }
 			available = {
 				custom_trigger_tooltip = {
@@ -213264,7 +213205,7 @@ head_of_government = { ### Head of Government ###
 				NOT = { has_country_flag = Arthur_Lee_Willard_dead }
 			}
 			on_add = {
-				log = "[GetDateText]: [Root.GetName]: add idea TEX_Arthur_Lee_Willard_cnav"
+				log = "[GetDateText]: [Root.GetName]: add idea TEX_James_O_Richardson_cnav"
 			}
 			traits = {
 				chief_of_navy
@@ -238441,6 +238382,48 @@ head_of_government = { ### Head of Government ###
 				foreign_minister
 				national_populist
 				for_apologetic_clerk
+			}
+			cancel_if_invalid = no
+		}
+		BBR_David_de_Sola_Pool_for_npo = {
+			allowed = { original_tag = BBR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = willie_muhammad_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BBR_David_de_Sola_Pool_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_biased_intellectual
+			}
+			cancel_if_invalid = no
+		}
+		BBR_Frank_Cherry_for_npo = {
+			allowed = { original_tag = BBR }
+			available = {
+				custom_trigger_tooltip = {
+					tooltip = minister_available
+					always = no
+				}
+			}
+			visible = {
+				NOT = { has_country_flag = willie_muhammad_dead }
+			}
+			on_add = {
+				log = "[GetDateText]: [Root.GetName]: add idea BBR_Frank_Cherry_for_npo"
+			}
+			traits = {
+				foreign_minister
+				national_populist
+				for_ideological_crusader
 			}
 			cancel_if_invalid = no
 		}

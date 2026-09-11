@@ -2186,7 +2186,7 @@ TXS_texan_government_total_control_range:0 "Texan Government in Control of Polit
 TXS_increase_texaco_influence:0 "The Influence of Texaco will §RIncrease§!"
 TXS_decrease_texaco_influence:0 "The Influence of Texaco will §GDecrease§!"
 
-TXS_texaco_coup_start_tt:0 "§RThis can allow Texaco to Overthrow the Government§!"§
+TXS_texaco_coup_start_tt:0 "§RThis can allow Texaco to Overthrow the Government§!"
 TXS_bribe_cops_to_coup:0 "Bribe the Police to get the §YTexaco Coup§!"
 TXS_bribe_army_to_coup:0 "Bribe the Army to get the §YTexaco Coup§!"
 
