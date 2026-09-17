@@ -13078,51 +13078,6 @@ add_namespace = usanew
 			custom_effect_tooltip = USA_sp_monthly_power_grows_10_tt
 		}
 	}
-	country_event = { # 威廉·“大比尔”·海伍德之死
-		id = USA.464
-		immediate = {log = "[GetDateText]: [Root.GetName]: event USA.464"}
-		title = USA.464.t
-		desc = USA.464.d
-		picture = GFX_CSA_haywood
-
-		fire_only_once = yes
-
-		is_triggered_only = yes
-
-		option = {
-			name = USA.464.a
-			add_stability = 0.1
-			sp_power_20_down_effect = yes
-			add_to_variable = {
-				USA_sp_monthly_increase = -0.1
-			}
-			custom_effect_tooltip = USA_sp_monthly_power_decreases_10_tt
-			if = {
-				limit = {
-					has_ideas = USA_syndicalist_strike_idea
-				}
-				remove_ideas = USA_syndicalist_strike_idea
-			}
-			if = {
-				limit = {
-					has_ideas = USA_new_year_strike_idea
-				}
-				remove_ideas = USA_new_year_strike_idea
-			}
-			if = {
-				limit = {
-					has_ideas = USA_new_year_strike_idea_2
-				}
-				remove_ideas = USA_new_year_strike_idea_2
-			}
-			if = {
-				limit = {
-					has_ideas = USA_new_year_strike_idea_3
-				}
-				remove_ideas = USA_new_year_strike_idea_3
-			}
-		}
-	}
 	country_event = { # 调查厄尔·朗
 		id = USA.465
 		title = USA.465.t
@@ -13900,7 +13855,7 @@ add_namespace = usanew
 			}
 			add_socdem_to_coalition = yes
 			add_country_leader_role = {
-				character = USA_Herbert_Hoover_3
+				character = USA_Herbert_Hoover_1
 				promote_leader = yes
 				country_leader = {
 					desc = POLITICS_HERBERT_HOOVER_3_DESC
@@ -13913,7 +13868,7 @@ add_namespace = usanew
 				}
 			}
 			add_country_leader_role = {
-				character = USA_Herbert_Hoover_3
+				character = USA_Herbert_Hoover_1
 				promote_leader = yes
 				country_leader = {
 					desc = POLITICS_HERBERT_HOOVER_3_DESC
@@ -13925,29 +13880,11 @@ add_namespace = usanew
 					}
 				}
 			}
-			add_country_leader_role = {
-				character = USA_Herbert_Hoover_3
-				promote_leader = yes
-				country_leader = {
-					desc = POLITICS_HERBERT_HOOVER_3_DESC
-					ideology = marlib_radical_progressivism_subtype
-					traits = {
-						beloved_president
-						the_old_man
-						savior_of_america
-					}
-				}
-			}
+			set_country_leader_ideology = marlib_radical_progressivism_subtype
 			hidden_effect = {
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_James_Cannon
-					promote_leader = yes
-					country_leader = {
-						desc = POLITICS_JAMES_CANNON_DESC
-						ideology = de_leonism_subtype
-						traits = {
-						}
-					}
+					ideology = de_leonism_subtype
 				}
 				add_country_leader_role = {
 					character = USA_George_Norris
@@ -13994,21 +13931,9 @@ add_namespace = usanew
 			}
 			clr_country_flag = USA_democrats_exist
 			add_soccon_to_coalition = yes
+			set_country_leader_ideology = marlib_authoritarian_liberalism_subtype
 			add_country_leader_role = {
-				character = USA_Herbert_Hoover_3
-				promote_leader = yes
-				country_leader = {
-					desc = POLITICS_HERBERT_HOOVER_3_DESC
-					ideology = marlib_authoritarian_liberalism_subtype
-					traits = {
-						beloved_president
-						the_old_man
-						savior_of_america
-					}
-				}
-			}
-			add_country_leader_role = {
-				character = USA_Herbert_Hoover_3
+				character = USA_Herbert_Hoover_1
 				promote_leader = yes
 				country_leader = {
 					desc = POLITICS_HERBERT_HOOVER_3_DESC
@@ -14071,7 +13996,7 @@ add_namespace = usanew
 			clr_country_flag = USA_progressives_exist
 			hidden_effect = {
 				add_country_leader_role = {
-					character = USA_Herbert_Hoover_3
+					character = USA_Herbert_Hoover_1
 					promote_leader = yes
 					country_leader = {
 						desc = POLITICS_HERBERT_HOOVER_3_DESC
@@ -14084,7 +14009,7 @@ add_namespace = usanew
 					}
 				}
 				add_country_leader_role = {
-					character = USA_Herbert_Hoover_3
+					character = USA_Herbert_Hoover_1
 					promote_leader = yes
 					country_leader = {
 						desc = POLITICS_HERBERT_HOOVER_3_DESC
@@ -14096,15 +14021,9 @@ add_namespace = usanew
 						}
 					}
 				}
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_James_Cannon
-					promote_leader = yes
-					country_leader = {
-						desc = POLITICS_JAMES_CANNON_DESC
-						ideology = de_leonism_subtype
-						traits = {
-						}
-					}
+					ideology = de_leonism_subtype
 				}
 				add_country_leader_role = {
 					character = USA_George_Norris
@@ -14289,6 +14208,7 @@ add_namespace = usanew
 		title = {
 			text = USA.498.t.SHIFT
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				OR = {
 					has_country_flag = USA_GOP_SHIFT_LEFT
 					has_country_flag = USA_GOP_SHIFT_RIGHT
@@ -14298,6 +14218,7 @@ add_namespace = usanew
 		title = {
 			text = USA.498.t.GOP
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				AND = {
 					has_country_flag = USA_GOP_WITH_LEFT
 					has_country_flag = USA_GOP_WITH_RIGHT
@@ -14313,6 +14234,7 @@ add_namespace = usanew
 		desc = { #所谓的善意时代可以追溯到1817年，这个时代起于联邦党的垮台，整个时代中，不管是政党本身，还是民众之中，党争内斗的意识都较薄弱。现在很多人都在想，当胡佛总统在他
 			text = USA.498.d.GOP
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				AND = {
 					has_country_flag = USA_GOP_WITH_LEFT
 					has_country_flag = USA_GOP_WITH_RIGHT
@@ -14334,12 +14256,14 @@ add_namespace = usanew
 		desc = { #随着胡佛在1932年和1936年的选举中获胜，美国政治的转变是显而易见的。进步党已经慢慢地重新融入了共和党的阵营，许多人将此归因于胡佛使用了1936年进步党所提
 			text = USA.498.d.left
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				has_country_flag = USA_GOP_SHIFT_LEFT
 			}
 		}
 		desc = { #随着胡佛在1932年和1936年的选举中获胜，美国政治的转变是显而易见的。安德鲁·杰克逊时代以来幸存下来的民主党逐渐被共和党所吸收，许多人将此归因于胡佛对全国各
 			text = USA.498.d.right
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				has_country_flag = USA_GOP_SHIFT_RIGHT
 			}
 		}
@@ -14358,6 +14282,7 @@ add_namespace = usanew
 		option = { #政党政治的新时代已经开始
 			name = USA.498.b
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				OR = {
 					has_country_flag = USA_GOP_SHIFT_LEFT
 					has_country_flag = USA_GOP_SHIFT_RIGHT
@@ -14380,6 +14305,7 @@ add_namespace = usanew
 		option = { #的确，我们现在必须把国家放在政党之上！
 			name = USA.498.c
 			trigger = {
+				NOT = { has_country_flag = USA_GOP_STILL }
 				AND = {
 					has_country_flag = USA_GOP_WITH_LEFT
 					has_country_flag = USA_GOP_WITH_RIGHT
@@ -14459,6 +14385,13 @@ add_namespace = usanew
 			hidden_effect = {
 				set_global_flag = USA_civil_war_avoided_flag
 				set_country_flag = USA_avoid_civil_war_hoover
+				remove_ideas = {
+					USA_syndicalist_strike_idea
+					USA_syndicalist_strike_idea2
+					USA_new_year_strike_idea
+					USA_new_year_strike_idea_2
+					USA_new_year_strike_idea_3
+				}
 				if = {
 					limit = { has_dlc = "La Resistance" }
 					create_operative_leader = {
@@ -14495,31 +14428,17 @@ add_namespace = usanew
 						days = 150
 					}
 				}
-				add_country_leader_role = {
-					character = USA_Herbert_Hoover_3
-					country_leader = {
-						desc = POLITICS_HERBERT_HOOVER_3_DESC
-						ideology = humanistic_capitalism_subtype
-						traits = {
-							beloved_president
-							the_old_man
-							savior_of_america
-						}
-					}
-					promote_leader = yes
+				remove_country_leader_trait = indecisive
+				remove_country_leader_trait = unpopular_president
+				remove_country_leader_trait = failed_humanitarian
+				add_country_leader_trait = beloved_president
+				add_country_leader_trait = the_old_man
+				add_country_leader_trait = savior_of_america
+				set_country_leader_description = {
+					desc = POLITICS_HERBERT_HOOVER_3_DESC
 				}
-				add_country_leader_role = {
-					character = USA_Herbert_Hoover_3
-					country_leader = {
-						desc = POLITICS_HERBERT_HOOVER_3_DESC
-						ideology = soclib_humanistic_capitalism_subtype
-						traits = {
-							beloved_president
-							the_old_man
-							savior_of_america
-						}
-					}
-					promote_leader = yes
+				set_country_leader_portrait = {
+					portrait = GFX_portrait_Portrait_USA_Herbert_Hoover_3
 				}
 				country_event = { # 美利坚社会党的命运
 					id = USA.495
@@ -41932,6 +41851,18 @@ country_event = { # 美利坚的灭亡
 
 		option = {
 			name = nimatron.3.a
+			hidden_effect = {
+				if = {
+					limit = { has_country_flag = USA_President_Hoover_1936_flag }
+					remove_ideas = {
+						USA_syndicalist_strike_idea
+						USA_syndicalist_strike_idea2
+						USA_new_year_strike_idea
+						USA_new_year_strike_idea_2
+						USA_new_year_strike_idea_3
+					}
+				}
+			}
 			promote_character = {
 				character = USA_CSA_Central_Committee
 				ideology = moderate_socialist_subtype

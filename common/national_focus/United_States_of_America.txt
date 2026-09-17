@@ -17611,6 +17611,23 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_A_big_leap_in_vertical_integration"
+			if = {
+				limit = { has_completed_focus = USA_Support_Hnery_Ford }
+				custom_effect_tooltip = USA_ford_influence_incerease
+				add_to_variable = { USA_Ford_mio_research_bonus_var = 0.1 }
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_Support_General_Motors }
+				custom_effect_tooltip = USA_gm_influence_incerease
+				add_to_variable = { USA_GM_mio_research_bonus_var = 0.1 }
+				if = {
+					limit = {
+						has_dlc_aat = yes
+						check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+					}
+					country_event = { id = USA.1025 days = 1 }
+				}
+			}
 			custom_effect_tooltip = USA_unlock_some_mio_traits
 			add_to_variable = { USA_NRA_local_resources = 0.05 }
 			add_to_variable = { USA_NRA_lack_resource_penalty = -0.15 }
@@ -17641,6 +17658,23 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_production_capacity_on_assembly_line_has_exploded"
+			if = {
+				limit = { has_completed_focus = USA_Support_Hnery_Ford }
+				custom_effect_tooltip = USA_ford_influence_incerease
+				add_to_variable = { USA_Ford_mio_research_bonus_var = 0.1 }
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_Support_General_Motors }
+				custom_effect_tooltip = USA_gm_influence_incerease
+				add_to_variable = { USA_GM_mio_research_bonus_var = 0.1 }
+				if = {
+					limit = {
+						has_dlc_aat = yes
+						check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+					}
+					country_event = { id = USA.1025 days = 1 }
+				}
+			}
 			custom_effect_tooltip = USA_unlock_some_mio_traits
 			add_to_variable = { USA_NRA_factory_output = 0.10 }
 			add_to_variable = { USA_NRA_building_slots = 0.05 }
@@ -17675,6 +17709,23 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Contribute_to_technological_progress"
+			if = {
+				limit = { has_completed_focus = USA_Support_Hnery_Ford }
+				custom_effect_tooltip = USA_ford_influence_incerease
+				add_to_variable = { USA_Ford_mio_research_bonus_var = 0.1 }
+			}
+			else_if = {
+				limit = { has_completed_focus = USA_Support_General_Motors }
+				custom_effect_tooltip = USA_gm_influence_incerease
+				add_to_variable = { USA_GM_mio_research_bonus_var = 0.1 }
+				if = {
+					limit = {
+						has_dlc_aat = yes
+						check_variable = { USA_GM_mio_research_bonus_var > 0.29 }
+					}
+					country_event = { id = USA.1025 days = 1 }
+				}
+			}
 			add_tech_bonus = {
 				name = industrial_bonus
 				bonus = 1

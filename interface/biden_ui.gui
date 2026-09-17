@@ -1385,6 +1385,28 @@ guiTypes = {
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Luxemburg_Michel_Rasquin"
 		}
+
+		### GEA ###
+		iconType = { #
+			name = "Ibrahim_of_Johor"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_Malaya_Ibrahim_I_Johor"
+		}
+		iconType = { #
+			name = "Le_Phat_An"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEA_Le_Phat_An"
+		}
+		iconType = { #
+			name = "Paul_Estebe"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEA_Paul_Estebe"
+		}
+		iconType = { #
+			name = "Lim_Yew_Hock"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEA_Lim_Yew_Hock"
+		}
 		
 		### Austrian Chancellors ###
 		iconType = { #
@@ -3062,9 +3084,21 @@ guiTypes = {
 		}
 
 		iconType = { #
+			name = "Erik_Testrup"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SWE_Erik_Testrup"
+		}
+
+		iconType = { #
 			name = "Helge_Jung"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SWE_Helge_jung_kx"
+		}
+
+		iconType = { #
+			name = "Sven_Hedin"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SWE_Sven_Hedin"
 		}
 
 		iconType = { #
@@ -3077,6 +3111,18 @@ guiTypes = {
 			name = "Carl_August_Ehrensvard"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SWE_Carl_August_Ehrensvard_kx"
+		}
+
+		iconType = { #
+			name = "Viking_Tamm"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SWE_Viking_Tamm"
+		}
+
+		iconType = { #
+			name = "Frans_G_Bengtsson"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SWE_Frans_G_Bengtsson"
 		}
 
 		iconType = { #
@@ -3119,6 +3165,12 @@ guiTypes = {
 			name = "Ernst_Wigforss"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SWE_Ernst_Wigforss_kx"
+		}
+
+		iconType = { #
+			name = "Eric_Von_Rosen_count"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SWE_Eric_von_Rosen"
 		}
 		
 		iconType = { #
@@ -4771,6 +4823,12 @@ guiTypes = {
 		### Vietnamese PMs ###
 		
 		iconType = { #
+			name = "John_Steinbeck"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_NYC_John_Steinbeck"
+		}
+
+		iconType = { #
 			name = "Nguyen_Tuong_Long"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_Vietnam_Nguyen_Tuong_Long"
@@ -4824,6 +4882,12 @@ guiTypes = {
 			spriteType = "GFX_Portrait_Vietnam_Nguyen_Phan_Long"
 		}
 		
+		iconType = { #
+			name = "Franz_Joseph"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_GEA_Franz_Joseph"
+		}
+
 		iconType = { #
 			name = "Nguyen_Phuc_Buu_Dinh"
 			position = { x = 8 y = 10 }
@@ -5104,6 +5168,12 @@ guiTypes = {
 			name = "Virgilio_Nasi"
 			position = { x = 8 y = 10 }
 			spriteType = "GFX_Portrait_SIC_Virgilio_Nasi"
+		}
+
+		iconType = { #
+			name = "Giovanni_Antonio_Colonna_di_Cesaro"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_SIC_Giovanni_Antonio_Colonna_di_Cesaro"
 		}
 		
 		iconType = { #

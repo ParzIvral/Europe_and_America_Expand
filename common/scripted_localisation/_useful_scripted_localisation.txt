@@ -9,7 +9,6 @@ defined_text = {
 		localization_key = no_faction_name_override
 	}
 }
-
 defined_text = {
 	name = GetYearBefore
 	text = {
@@ -2577,6 +2576,12 @@ defined_text = {
 		}
 		localization_key = socdem_municipalism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = socdem_anthroposophy_subtype
+		}
+		localization_key = socdem_anthroposophy_subtype
+	}
 
 	text = {
 		trigger = {
@@ -3437,7 +3442,12 @@ defined_text = {
 		}
 		localization_key = costismo_subtype
 	}
-
+	text = {
+		trigger = {
+			has_country_leader_ideology = marlib_theodemocracy_subtype
+		}
+		localization_key = marlib_theodemocracy_subtype
+	}
 
 	text = {
 		trigger = {
@@ -3894,6 +3904,12 @@ defined_text = {
 			has_country_leader_ideology = soccon_costismo_subtype
 		}
 		localization_key = soccon_costismo_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = soccon_theodemocracy_subtype
+		}
+		localization_key = soccon_theodemocracy_subtype
 	}
 
 	text = {
@@ -4502,6 +4518,12 @@ defined_text = {
 		}
 		localization_key = authdem_centrist_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = theodemocracy_subtype
+		}
+		localization_key = theodemocracy_subtype
+	}
 
 	text = {
 		trigger = {
@@ -4754,12 +4776,6 @@ defined_text = {
 			has_country_leader_ideology = pirate_republic_subtype
 		}
 		localization_key = pirate_republic_subtype
-	}
-	text = {
-		trigger = {
-			has_country_leader_ideology = pataut_diemism_subtype
-		}
-		localization_key = pataut_diemism_subtype
 	}
 	text = {
 		trigger = {
@@ -5168,6 +5184,18 @@ defined_text = {
 			has_country_leader_ideology = pataut_whiggism_subtype
 		}
 		localization_key = pataut_whiggism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_anthroposophy_subtype
+		}
+		localization_key = pataut_anthroposophy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = pataut_theodemocracy_subtype
+		}
+		localization_key = pataut_theodemocracy_subtype
 	}
 
 	text = {
@@ -6087,6 +6115,18 @@ defined_text = {
 			has_country_leader_ideology = natpop_rocquisme_subtype
 		}
 		localization_key = natpop_rocquisme_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = anthroposophy_subtype
+		}
+		localization_key = anthroposophy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_theodemocracy_subtype
+		}
+		localization_key = natpop_theodemocracy_subtype
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###
