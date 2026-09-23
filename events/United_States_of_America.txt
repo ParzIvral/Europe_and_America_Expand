@@ -16500,22 +16500,27 @@ add_namespace = usanew
 						id = USA.705
 						days = 217
 					}
+					country_event = {
+						id = USA.708
+						days = 237
+					}
 				}
 				else = {
-					clr_country_flag = USA_had_1944_election
-					clr_country_flag = USA_had_1948_election
-					clr_country_flag = USA_had_1952_election
 					country_event = { # 年进步党初选
-						id = USA.703
+						id = USA.709
 						days = 203
 					}
 					country_event = { # 年共和党初选
-						id = USA.704
+						id = USA.710
 						days = 210
 					}
 					country_event = { # 年民主党初选
-						id = USA.705
+						id = USA.711
 						days = 217
+					}
+					country_event = {
+						id = USA.714
+						days = 237
 					}
 				}
 			}
