@@ -109,6 +109,7 @@ ideologies = {
 			tot_egoism_subtype = {can_be_randomly_selected = no color = { 2 114 111 } } #Egoism
 			jangali_thought_subtype = {can_be_randomly_selected = no} #Jangali Thought
 			crab_communalism_subtype = {can_be_randomly_selected = no} #Crab Communalism
+			bourguibism_subtype = {can_be_randomly_selected = no} #Bourguibism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_TOTALIST_1"
@@ -1340,6 +1341,8 @@ ideologies = {
 			natpop_rocquisme_subtype = {can_be_randomly_selected = no} #Rocquisme
 			anthroposophy_subtype = {can_be_randomly_selected = no} #Anthroposophy
 			natpop_theodemocracy_subtype = {can_be_randomly_selected = no} #Theodemocracy
+			natpop_toryism_subtype = {can_be_randomly_selected = no} #Toryism
+			ilminism_subtype = {can_be_randomly_selected = no} #Ilminism
 		}
 		dynamic_faction_names = {
 			"FACTION_NAME_NATIONAL_POPULIST_1"

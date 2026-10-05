@@ -809,6 +809,12 @@ defined_text = {
 		}
 		localization_key = crab_communalism_subtype
 	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = bourguibism_subtype
+		}
+		localization_key = bourguibism_subtype
+	}
 	
 	text = {
 		trigger = {
@@ -6127,6 +6133,18 @@ defined_text = {
 			has_country_leader_ideology = natpop_theodemocracy_subtype
 		}
 		localization_key = natpop_theodemocracy_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_toryism_subtype
+		}
+		localization_key = natpop_toryism_subtype
+	}
+	text = {
+		trigger = {
+			has_country_leader_ideology = ilminism_subtype
+		}
+		localization_key = ilminism_subtype
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###
