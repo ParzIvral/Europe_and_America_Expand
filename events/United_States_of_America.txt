@@ -6046,16 +6046,9 @@ add_namespace = usanew
 					long_name = USA_paternal_autocrat_military_junta_long
 					name = USA_paternal_autocrat_military_junta
 				}
-				add_country_leader_role = {
+				promote_character = {
 					character = USA_Douglas_Macarthur_2
-					country_leader = {
-						desc = POLITICS_DOUGLAS_MACARTHUR_DESC
-						ideology = junta_subtype
-						traits = {
-							american_caesar
-						}
-					}
-					promote_leader = yes
+					ideology = junta_subtype
 				}
 				promote_character = {
 					character = USA_Alf_Landon
@@ -38829,11 +38822,12 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			OR = {
-				check_variable = { infantry_milestone_var > 0 }
-				check_variable = { support_milestone_var > 0 }
-				check_variable = { armor_milestone_var > 0 }
-				check_variable = { operations_milestone_var > 0 }
+				has_completed_track = infantry
+				has_completed_track = combat_support
+				has_completed_track = armor
+				has_completed_track = operations
 			}
 		}
 

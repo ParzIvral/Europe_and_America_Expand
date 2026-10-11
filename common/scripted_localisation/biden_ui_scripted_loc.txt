@@ -673,6 +673,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = CGL
+			has_country_flag = is_wonderland
+		}
+		localization_key = JKW_OR_RPW
+	}
+
+	text = {
+		trigger = {
 			tag = CSA
 			has_idea = ENG_Oswald_Mosley_hog_tot 
 			}
@@ -1998,6 +2006,14 @@ defined_text = {
 	}
 	text = {
 		trigger = {
+			tag = CGL
+			has_country_flag = is_wonderland
+		}
+		localization_key = JKW_OR_RPW3
+	}
+
+	text = {
+		trigger = {
 			tag = BAT
 		}
 		localization_key = LAMA_OR_DUK
@@ -2102,6 +2118,14 @@ defined_text = {
 		}
 		localization_key = KZ_OR_LEADER2
 	}
+	text = {
+		trigger = {
+			tag = CGL
+			has_country_flag = is_wonderland
+		}
+		localization_key = JKW_OR_RPW2
+	}
+
 	text = {
 		trigger = {
 			tag = CSA
@@ -4699,6 +4723,20 @@ defined_text = {
 		localization_key = "Gunnar Hallström"
 	}
 	
+	text = {
+		trigger = {
+			has_idea = WLD_Felix_Kranken_for_mli
+		}
+		localization_key = "Felix Kranken"
+	}
+
+	text = {
+		trigger = {
+			has_idea = WLD_Felix_Kranken_Founder_for_pau
+		}
+		localization_key = "Shadow Man"
+	}
+
 	text = { #Not by Minister Ideas
 		trigger = {
 			has_country_flag = NZL_Lydia
@@ -11637,6 +11675,27 @@ defined_text = {
 	
 	### MSF People ###
 	
+	text = {
+		trigger = {
+			has_idea = EGY_Friedrich_Wilhelm_von_Bissing_hog_pau
+		}
+		localization_key = EGY_Friedrich_Wilhelm_von_Bissing_hog_pau
+	}
+
+	text = {
+		trigger = {
+			has_idea = EGY_R_A_Schwaller_de_Lubicz_hog_pau
+		}
+		localization_key = EGY_R_A_Schwaller_de_Lubicz_hog_pau
+	}
+
+	text = {
+		trigger = {
+			has_idea = EGY_Ernesto_Bellandi_Bey_hog_pau
+		}
+		localization_key = EGY_Ernesto_Bellandi_Bey_hog_pau
+	}
+
 	text = { 
 		trigger = {
 			has_idea = MSF_Ivor_Thord_Gray_hog_npo
@@ -12567,6 +12626,20 @@ defined_text = {
 	
 	text = { #Not by Minister Ideas
 		trigger = {
+			has_idea = WLD_Rosemary_Walten_hog_mli
+		}
+		localization_key = "Rosemary Walten"
+	}
+
+	text = { #Not by Minister Ideas
+		trigger = {
+			has_idea = WLD_Sha_the_Sheep_hog_pau
+		}
+		localization_key = "The Sheep"
+	}
+
+	text = { #Not by Minister Ideas
+		trigger = {
 			has_country_flag = BONNIE_VISIBLE
 		}
 		localization_key = "Bonnie Parker"
@@ -13378,6 +13451,31 @@ defined_text = {
 	}
 	text = {
 		localization_key = "Sultan"
+	}
+}
+
+defined_text = {
+	name = EGYGetHOGTitle
+	text = {
+		trigger = {
+			has_idea = EGY_Friedrich_Wilhelm_von_Bissing_hog_pau
+		}
+		localization_key = "Governor"
+	}
+	text = {
+		trigger = {
+			has_idea = EGY_R_A_Schwaller_de_Lubicz_hog_pau
+		}
+		localization_key = "Light of the Higher Mind"
+	}
+	text = {
+		trigger = {
+			has_idea = EGY_Ernesto_Bellandi_Bey_hog_pau
+		}
+		localization_key = "Prefect"
+	}
+	text = {
+		localization_key = "Prime Minister"
 	}
 }
 
@@ -14257,6 +14355,20 @@ defined_text = {
 		}
 		localization_key = GFX_MSF_Gunnar_Hallstrom
 	}
+	text = {
+		trigger = {
+			has_idea = WLD_Felix_Kranken_for_mli
+		}
+		localization_key = GFX_Portrait_WLD_Felix_Kranken
+	}
+
+	text = {
+		trigger = {
+			has_idea = WLD_Felix_Kranken_Founder_for_pau
+		}
+		localization_key = GFX_Portrait_WLD_Shadow_Man
+	}
+
 	text = { #Not by Minister Ideas
 		trigger = {
 			has_country_flag = NZL_Lydia
@@ -16300,67 +16412,67 @@ text = {
 		trigger = {
 		has_idea = USA_Jack_Reed_pp_veep_syn
 		}
-		localization_key = USA_Jack_Reed_pp_veep_syn
+		localization_key = GFX_Portrait_USA_Jack_Reed
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_Norman_Thomas_pp_veep_rso
 		}
-		localization_key = USA_Norman_Thomas_pp_veep_rso
+		localization_key = GFX_Portrait_CSA_Norman_Thomas
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_Philip_La_Follette_pp_veep_sde
 		}
-		localization_key = USA_Philip_La_Follette_pp_veep_sde
+		localization_key = GFX_Portrait_USA_Philip_La_Follette
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_Strom_Thurmond_veep_aut
 		}
-		localization_key = USA_Strom_Thurmond_veep_aut
+		localization_key = GFX_Portrait_USA_Strom_Thurmond
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_Earl_Long_veep_ade
 		}
-		localization_key = USA_Earl_Long_veep_ade
+		localization_key = GFX_portrait_Portrait_TEX_Earl_Kemp_Long
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_John_Rankin_npp_veep_pau
 		}
-		localization_key = USA_John_Rankin_npp_veep_pau
+		localization_key = GFX_Portrait_COR_John_E_Rankin
 	}
 
 	text = {
 		trigger = {
 		has_idea = USA_willard_kemp_hog_ade
 		}
-		localization_key = USA_willard_kemp_hog_ade
+		localization_key = GFX_portrait_Portrait_TEX_Willard_Kemp
 	}
 	text = {
 		trigger = {
 		has_idea = USA_burton_wheeler_veep_ade
 		}
-		localization_key = USA_burton_wheeler_veep_ade
+		localization_key = GFX_portrait_Portrait_USA_Burton_K_Wheeler
 	}
 	text = {
 		trigger = {
 		has_idea = USA_James_Noe_hog_pau
 		}
-		localization_key = USA_James_Noe_hog_pau
+		localization_key = GFX_portrait_Portrait_USA_James_A_Noe
 	}
 	text = {
 		trigger = {
 		has_idea = USA_Eldon_Edwards_hog_npo
 		}
-		localization_key = USA_Eldon_Edwards_hog_npo
+		localization_key = GFX_portrait_Portrait_USA_Eldon_Edwards
 	}	
 	
 	text = {
@@ -21110,6 +21222,27 @@ text = {
 	
 	### MSF People ###
 	
+	text = {
+		trigger = {
+			has_idea = EGY_Friedrich_Wilhelm_von_Bissing_hog_pau
+		}
+		localization_key = GFX_Portrait_EGY_Friedrich_Wilhelm_von_Bissing
+	}
+
+	text = {
+		trigger = {
+			has_idea = EGY_R_A_Schwaller_de_Lubicz_hog_pau
+		}
+		localization_key = GFX_Portrait_EGY_R_A_Schwaller_de_Lubicz
+	}
+
+	text = {
+		trigger = {
+			has_idea = EGY_Ernesto_Bellandi_Bey_hog_pau
+		}
+		localization_key = GFX_Portrait_EGY_Ernesto_Bellandi_Bey
+	}
+
 	text = { 
 		trigger = {
 			has_idea = MSF_Ivor_Thord_Gray_hog_npo
@@ -22164,6 +22297,20 @@ text = {
 			has_idea = BDN_Barry_O_Bama_hog_sde
 		}
 		localization_key = GFX_Portrait_Barry_O_Bama
+	}
+
+	text = { #Not by Minister Ideas
+		trigger = {
+			has_idea = WLD_Rosemary_Walten_hog_mli
+		}
+		localization_key = GFX_Portrait_WLD_Rosemary_Walten
+	}
+
+	text = { #Not by Minister Ideas
+		trigger = {
+			has_idea = WLD_Sha_the_Sheep_hog_pau
+		}
+		localization_key = GFX_Portrait_WLD_The_Sheep
 	}
 
 	text = { #Not by Minister Ideas
