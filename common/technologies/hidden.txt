@@ -109,7 +109,7 @@ technologies = {
 		}
 	}
 	
-	flamethrower = {
+	EAE_flamethrower_tech = {
 
 		research_cost = 1
 		allow = {
