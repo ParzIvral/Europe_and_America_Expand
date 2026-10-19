@@ -1346,7 +1346,10 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_global_flag = USA_civil_war_over_flag
+			has_variable = USA_Syndicalist_Resistance
+			NOT = { has_dynamic_modifier = USA_syndicalist_modifier }
 			check_variable = {
 				var = USA_Syndicalist_Resistance
 				value = 0
@@ -1357,9 +1360,6 @@ add_namespace = usanew
 		option = {
 			name = ACW.10.a
 			add_political_power = 20
-			remove_dynamic_modifier = {
-				modifier = USA_syndicalist_modifier
-			}
 		}
 	}
 	country_event = { #一分钟人抵抗被粉碎
@@ -1370,7 +1370,10 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_global_flag = USA_civil_war_over_flag
+			has_variable = USA_Minutemen_Resistance
+			NOT = { has_dynamic_modifier = USA_minutemen_modifier }
 			check_variable = {
 				var = USA_Minutemen_Resistance
 				value = 0
@@ -1381,9 +1384,6 @@ add_namespace = usanew
 		option = {
 			name = ACW.11.a
 			add_political_power = 20
-			remove_dynamic_modifier = {
-				modifier = USA_minutemen_modifier
-			}
 		}
 	}
 	country_event = { #3k党销声匿迹
@@ -1394,7 +1394,10 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_global_flag = USA_civil_war_over_flag
+			has_variable = USA_Klan_Resistance
+			NOT = { has_dynamic_modifier = USA_kkk_modifier }
 			check_variable = {
 				var = USA_Klan_Resistance
 				value = 0
@@ -1405,9 +1408,6 @@ add_namespace = usanew
 		option = {
 			name = ACW.12.a
 			add_political_power = 20
-			remove_dynamic_modifier = {
-				modifier = USA_kkk_modifier
-			}
 		}
 	}
 	country_event = { #黑色军团销声匿迹
@@ -1418,7 +1418,10 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_global_flag = USA_civil_war_over_flag
+			has_variable = USA_Black_legion_Resistance
+			NOT = { has_dynamic_modifier = USA_black_legion_modifier }
 			check_variable = {
 				var = USA_Black_legion_Resistance
 				value = 0
@@ -1429,9 +1432,6 @@ add_namespace = usanew
 		option = {
 			name = ACW.13.a
 			add_political_power = 20
-			remove_dynamic_modifier = {
-				modifier = USA_black_legion_modifier
-			}
 		}
 	}
 #开局到总统选举前
@@ -7002,6 +7002,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			has_country_flag = USA_President_Haywood_1936
 			NOT = { has_country_flag = USA_macarthur_coup }
 			power_balance_value = {
@@ -7326,6 +7327,7 @@ add_namespace = usanew
 		picture = GFX_report_event_USA_capitol_hill
 
 		trigger = {
+			tag = USA
 			NOT = { has_country_flag = USA_macarthur_coup }
 		}
 
@@ -8989,6 +8991,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			NOT = { has_country_flag = USA_macarthur_coup }
 			NOT = { has_global_flag = USA_civil_war_begun_flag }
 			NOT = { has_country_flag = USA_SPA_was_defeated }
@@ -9271,6 +9274,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			NOT = {
 				has_country_flag = USA_macarthur_coup
 			}
@@ -9352,6 +9356,7 @@ add_namespace = usanew
 		picture = GFX_report_event_generic_run_on_the_banks
 
 		trigger = {
+			tag = USA
 			NOT = { has_country_flag = USA_macarthur_coup }
 			has_idea = USA_Relief_Bill
 			has_idea = USA_Basic_labor_security
@@ -9510,6 +9515,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_country_flag = USA_President_Norris_1936_flag
 			has_country_flag = USA_SPA_was_defeated
 			has_country_flag = USA_AFP_was_defeated
@@ -9524,6 +9530,7 @@ add_namespace = usanew
 			add_political_power = 100
 			add_stability = 0.15
 			set_global_flag = USA_civil_war_avoided_flag
+			mark_focus_tree_layout_dirty = yes
 			set_country_flag = USA_avoid_civil_war
 			if = {
 				limit = { has_idea = USA_black_monday }
@@ -9672,6 +9679,7 @@ add_namespace = usanew
 		picture = GFX_report_event_USA_haywood
 
 		trigger = {
+			tag = USA
 			has_country_flag = USA_peace_with_SPA_AFP
 			check_variable = {
 				USA_iww_power_value < 0.5
@@ -10184,6 +10192,7 @@ add_namespace = usanew
 		picture = GFX_report_event_USA_huey_long
 
 		trigger = {
+			tag = USA
 			OR = {
 				has_country_flag = USA_President_Curtis_1936_flag
 				has_country_flag = USA_President_Landon_1936_flag
@@ -10215,6 +10224,7 @@ add_namespace = usanew
 		picture = GFX_USA_murray
 
 		trigger = {
+			tag = USA
 			OR = {
 				has_country_flag = USA_President_Curtis_1936_flag
 				has_country_flag = USA_President_Landon_1936_flag
@@ -10905,6 +10915,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			OR = {
 				has_country_flag = USA_President_Curtis_1936_flag
 				has_country_flag = USA_President_Landon_1936_flag
@@ -11308,6 +11319,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			OR = {
 				has_country_flag = USA_President_Curtis_1936_flag
 				has_country_flag = USA_President_Landon_1936_flag
@@ -11325,6 +11337,7 @@ add_namespace = usanew
 			add_political_power = 100
 			add_stability = 0.15
 			set_global_flag = USA_civil_war_avoided_flag
+			mark_focus_tree_layout_dirty = yes
 			set_country_flag = USA_avoid_civil_war_gop
 			if = {
 				limit = { has_idea = USA_black_monday }
@@ -12115,6 +12128,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				USA_iww_power_value > 0.9
 			}
@@ -12189,6 +12203,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				USA_od_power_value > 0.9
 			}
@@ -12366,6 +12381,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_country_flag = USA_President_Garner_1936_flag
 			has_country_flag = USA_SPA_was_defeated
 			has_country_flag = USA_AFP_was_defeated
@@ -12380,6 +12396,7 @@ add_namespace = usanew
 			add_political_power = 100
 			add_stability = 0.15
 			set_global_flag = USA_civil_war_avoided_flag
+			mark_focus_tree_layout_dirty = yes
 			set_country_flag = USA_avoid_civil_war_dp
 			if = {
 				limit = { has_idea = USA_black_monday }
@@ -13334,6 +13351,7 @@ add_namespace = usanew
 		picture = fbi_expansion_approved-25024
 
 		trigger = {
+			tag = USA
 			NOT = {
 				has_country_flag = USA_macarthur_coup
 			}
@@ -13360,6 +13378,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			has_country_flag = USA_President_Hoover_1936_flag
 			NOT = {
 				has_country_flag = USA_macarthur_coup
@@ -13633,6 +13652,7 @@ add_namespace = usanew
 		picture = GFX_report_event_USA_congress
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_country_flag = USA_HUAC_formed
 			has_country_flag = Crazy_Parnall_Hollywood
 			has_country_flag = Crazy_Parnall_Military
@@ -14326,6 +14346,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_country_flag = USA_President_Hoover_1936_flag
 			has_country_flag = USA_SPA_was_defeated
 			has_country_flag = USA_AFP_was_defeated
@@ -14377,6 +14398,7 @@ add_namespace = usanew
 			}
 			hidden_effect = {
 				set_global_flag = USA_civil_war_avoided_flag
+				mark_focus_tree_layout_dirty = yes
 				set_country_flag = USA_avoid_civil_war_hoover
 				remove_ideas = {
 					USA_syndicalist_strike_idea
@@ -18315,6 +18337,7 @@ add_namespace = usanew
 
 			set_country_flag = USA_had_1940_election
 			set_country_flag = USA_1940_election_PP_victory
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = USA_The_true_era_of_commoners
 
 			if = {
@@ -18501,6 +18524,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1940_election
 			set_country_flag = USA_1940_election_NPP_victory
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = USA_The_return_of_the_true_American_spirit
 			if = {
 				limit = {
@@ -21924,6 +21948,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1944_election
 			set_country_flag = USA_1944_election_PP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					OR = {
@@ -22097,6 +22122,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1944_election
 			set_country_flag = USA_1944_election_NPP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					has_country_flag = USA_1944_NPP_primary_pelley
@@ -23687,6 +23713,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_1948_election_PP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					OR = {
@@ -23861,6 +23888,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1948_election
 			set_country_flag = USA_1948_election_NPP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					has_country_flag = USA_1948_NPP_primary_russell
@@ -25375,6 +25403,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1952_election
 			set_country_flag = USA_1952_election_PP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					OR = {
@@ -25528,6 +25557,7 @@ add_namespace = usanew
 			}
 			set_country_flag = USA_had_1952_election
 			set_country_flag = USA_1952_election_NPP_victory
+			mark_focus_tree_layout_dirty = yes
 			if = {
 				limit = {
 					has_country_flag = USA_1952_NPP_primary_russell
@@ -26775,6 +26805,7 @@ add_namespace = usanew
 			name = USA.811.a
 			set_country_flag = USA_has_nominated_PP
 			set_country_flag = USA_Thomas_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -26782,6 +26813,7 @@ add_namespace = usanew
 			name = USA.811.b
 			set_country_flag = USA_has_nominated_PP
 			set_country_flag = USA_Cutting_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = social_democrat popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -26789,6 +26821,7 @@ add_namespace = usanew
 			name = USA.811.c
 			set_country_flag = USA_has_nominated_PP
 			set_country_flag = USA_Aiken_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = social_democrat popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -26796,6 +26829,7 @@ add_namespace = usanew
 			name = USA.811.e
 			set_country_flag = USA_has_nominated_PP
 			set_country_flag = USA_Sinclair_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = radical_socialist popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -26815,6 +26849,7 @@ add_namespace = usanew
 			name = USA.812.a
 			set_country_flag = USA_has_nominated_NPP
 			set_country_flag = USA_Murray_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -26822,6 +26857,7 @@ add_namespace = usanew
 			name = USA.812.b
 			set_country_flag = USA_has_nominated_NPP
 			set_country_flag = USA_Lindbergh_has_been_nominated
+			mark_focus_tree_layout_dirty = yes
 			add_popularity = { ideology = paternal_autocrat popularity = 0.03 }
 			USA_refresh_gui_variable_effect = yes
 		}
@@ -27573,6 +27609,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			has_country_flag = PP_demolishes_wall_street
 			has_country_flag = PP_politicized_supreme_court
 			has_country_flag = PP_abolished_electoral_college
@@ -28001,6 +28038,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			has_completed_focus = USA_Put_an_end_to_all_anarchic_threats
 			has_country_flag = USA_Jack_reed_dead
 		}
@@ -31185,6 +31223,7 @@ add_namespace = usanew
 			}
 			complete_national_focus = USA_anchoring_our_rule
 			complete_national_focus = USA_admiral_of_navy
+			mark_focus_tree_layout_dirty = yes
 		}
 		option = { #Halsey assumes command
 			name = USA.940.b
@@ -31197,6 +31236,7 @@ add_namespace = usanew
 				traits = { admiral_halsey_trait }
 			}
 			complete_national_focus = USA_admiral_of_navy
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = USA_anchoring_our_rule
 		}
 		option = { #Spruance assumes control
@@ -31210,6 +31250,7 @@ add_namespace = usanew
 				traits = { admiral_spruance_trait }
 			}
 			complete_national_focus = USA_admiral_of_navy
+			mark_focus_tree_layout_dirty = yes
 			complete_national_focus = USA_anchoring_our_rule
 		}
 		option = { #Triumvirate
@@ -31244,6 +31285,7 @@ add_namespace = usanew
 			}
 			complete_national_focus = USA_anchoring_our_rule
 			complete_national_focus = USA_admiral_of_navy
+			mark_focus_tree_layout_dirty = yes
 		}
 	}
 
@@ -33498,6 +33540,7 @@ add_namespace = usanew
 		picture = GFX_USA_gm
 
 		trigger = {
+			tag = USA
 			has_dlc_aat = yes
 			check_variable = {
 				USA_GM_mio_research_bonus_var > 0.29
@@ -33524,6 +33567,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				var = USA_total_reconstruction_factor
 				value = 20
@@ -33564,6 +33608,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				var = USA_total_reconstruction_factor
 				value = 40
@@ -33604,6 +33649,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				var = USA_total_reconstruction_factor
 				value = 60
@@ -33644,6 +33690,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				var = USA_total_reconstruction_factor
 				value = 80
@@ -33790,6 +33837,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			check_variable = {
 				var = USA_total_reconstruction_factor
 				value = 100
@@ -33842,6 +33890,10 @@ add_namespace = usanew
 
 		option = { #
 			name = USA.1104.a
+			set_variable = { USA_Syndicalist_Resistance = 0 }
+			set_variable = { USA_Minutemen_Resistance = 0 }
+			set_variable = { USA_Klan_Resistance = 0 }
+			set_variable = { USA_Black_legion_Resistance = 0 }
 			if = {
 				limit = {
 					has_idea = USA_civil_war_war_aftermath_idea5
@@ -33860,6 +33912,7 @@ add_namespace = usanew
 		hidden = yes
 
 		trigger = {
+			tag = USA
 			has_global_flag = USA_civil_war_over_flag
 			check_variable = {
 				var = USA_total_reconstruction_factor
@@ -35166,6 +35219,7 @@ add_namespace = usanew
 
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_global_flag = USA_GER_AGREE
 			has_global_flag = USA_NFA_AGREE
 		}
@@ -35782,6 +35836,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			NOT = { country_exists = CAN }
 			NOT = { country_exists = NFL }
 			controls_state = 739
@@ -35948,6 +36003,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			NOT = { country_exists = MEX }
 			controls_state = 277
 			has_completed_focus = USA_The_New_World_Empire_governed_jointly_with_true_blood-related_brothers
@@ -37808,6 +37864,7 @@ add_namespace = usanew
 		#picture = GFX_report_event_USA_Riots
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_completed_focus = USA_Pioneer_of_mobility_and_armor
 			has_war = yes
 		}
@@ -38139,6 +38196,7 @@ add_namespace = usanew
 		picture = GFX_report_event_USA_DOD_interior
 		fire_only_once = yes
 		trigger = {
+			tag = USA
 			has_completed_focus = USA_The_Continental_Army_of_our_time
 			has_global_flag = USA_civil_war_begun_flag
 		}
@@ -38174,6 +38232,11 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			OR = {
+				tag = USA
+				tag = WCC
+				tag = TEX
+			}
 			has_completed_focus = USA_Reorganize_the_Air_Force_Command
 			USA = {
 				has_war = yes
@@ -38503,6 +38566,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			USA = {
 				controls_state = 360
 			}
@@ -38533,6 +38597,7 @@ add_namespace = usanew
 		fire_only_once = yes
 
 		trigger = {
+			tag = USA
 			has_government = paternal_autocrat
 			has_global_flag = USA_civil_war_begun_flag
 			TEX = {
@@ -40353,6 +40418,12 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 
 		trigger = {
+			OR = {
+				tag = USA
+				tag = WCC
+				tag = TEX
+				tag = COR
+			}
 			has_completed_focus = USA_Reorganize_the_Air_Force_Command
 			USA = {
 				has_war = yes
@@ -41971,6 +42042,7 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 
 		trigger = {
+			is_american_tag = yes
 			date > 1942.05.12
 			owns_state = 377
 		}
@@ -42063,6 +42135,12 @@ country_event = { # 美利坚的灭亡
 		fire_only_once = yes
 
 		trigger = {
+			OR = {
+				tag = USA
+				tag = CAL
+				tag = NEE
+				tag = HAW
+			}
 			OR = {
 				has_completed_focus = USA_Reorganize_the_Air_Force_Command
 				has_completed_focus = CAL_expand_wasps
@@ -42888,3 +42966,121 @@ country_event = { # 美利坚的灭亡
 			add_war_support = 0.01
 		}
 	}
+
+country_event = {
+	id = USA.2300
+	title = portrait_picker.19.t
+	desc = portrait_picker.19.d
+	picture = GFX_report_event_TXS_garner_picker
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		OR = {
+			has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+			has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.a
+		ai_chance = { factor = 0 }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner.png"
+			}
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.b
+		ai_chance = { factor = 0 }
+		trigger = { has_global_flag = USA_civil_war_avoided_flag }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner_Hawk.png"
+			}
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.c
+		ai_chance = { factor = 0 }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/TXS/Portrait_Texas_John_Nance_Garner_Authoritarian.png"
+			}
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.e
+		ai_chance = { factor = 0 }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/TXS/Portrait_Texas_John_Nance_Garner.png"
+			}
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.f
+		ai_chance = { factor = 0 }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/CAL/Portrait_CAL_John_Nance_Garner.png"
+			}
+		}
+	}
+
+	option = {
+		name = portrait_picker.19.g
+		ai_chance = { factor = 0 }
+		# Recheck the ruler in case leadership changed while the event was open.
+		if = {
+			limit = {
+				OR = {
+					has_country_leader = { character = USA_John_Nance_Garner ruling_only = yes }
+					has_country_leader = { character = USA_John_Nance_Garner_2 ruling_only = yes }
+				}
+			}
+			set_country_leader_portrait = {
+				portrait = "gfx/leaders/USA/Portrait_USA_John_Nance_Garner_Alt.png"
+			}
+		}
+	}
+}

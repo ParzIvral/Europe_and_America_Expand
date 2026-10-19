@@ -3920,6 +3920,13 @@ defined_text = {
 
 	text = {
 		trigger = {
+			has_country_leader_ideology = soccon_austropopulism_subtype
+		}
+		localization_key = soccon_austropopulism_subtype
+	}
+
+	text = {
+		trigger = {
 			has_country_leader_ideology = authoritarian_democrat_subtype
 		}
 		localization_key = authoritarian_democrat_subtype
@@ -6151,6 +6158,13 @@ defined_text = {
 			has_country_leader_ideology = ilminism_subtype
 		}
 		localization_key = ilminism_subtype
+	}
+
+	text = {
+		trigger = {
+			has_country_leader_ideology = natpop_cossack_subtype
+		}
+		localization_key = natpop_cossack_subtype
 	}
 	
 	### YOU GO IN THE CORNER OF SHAME ###

@@ -280,7 +280,15 @@ USA_Trade_in_Alliance_modifier = {
 USA_syndicalist_modifier = {
 	icon = GFX_idea_army_of_militias
 	enable = { always = yes }
-	remove_trigger = { always = no }
+	remove_trigger = {
+		has_global_flag = USA_civil_war_over_flag
+		has_variable = USA_Syndicalist_Resistance
+		check_variable = {
+			var = USA_Syndicalist_Resistance
+			value = 0
+			compare = less_than_or_equals
+		}
+	}
 
 	stability_factor = USA_syndicalist_stability										#稳定度
 	war_support_factor = USA_syndicalist_war_support									#战争支持度	
@@ -294,7 +302,15 @@ USA_syndicalist_modifier = {
 USA_minutemen_modifier = {
 	icon = GFX_idea_minutemen
 	enable = { always = yes }
-	remove_trigger = { always = no }
+	remove_trigger = {
+		has_global_flag = USA_civil_war_over_flag
+		has_variable = USA_Minutemen_Resistance
+		check_variable = {
+			var = USA_Minutemen_Resistance
+			value = 0
+			compare = less_than_or_equals
+		}
+	}
 
 	stability_factor = USA_minutemen_stability										#稳定度
 	war_support_factor = USA_minutemen_war_support									#战争支持度	
@@ -306,7 +322,15 @@ USA_minutemen_modifier = {
 USA_kkk_modifier = {
 	icon = GFX_idea_young_klan_resistance
 	enable = { always = yes }
-	remove_trigger = { always = no }
+	remove_trigger = {
+		has_global_flag = USA_civil_war_over_flag
+		has_variable = USA_Klan_Resistance
+		check_variable = {
+			var = USA_Klan_Resistance
+			value = 0
+			compare = less_than_or_equals
+		}
+	}
 
 	stability_factor = USA_kkk_stability										#稳定度
 	war_support_factor = USA_kkk_war_support									#战争支持度	
@@ -318,7 +342,15 @@ USA_kkk_modifier = {
 USA_black_legion_modifier = {
 	icon = GFX_idea_black_legion_activity
 	enable = { always = yes }
-	remove_trigger = { always = no }
+	remove_trigger = {
+		has_global_flag = USA_civil_war_over_flag
+		has_variable = USA_Black_legion_Resistance
+		check_variable = {
+			var = USA_Black_legion_Resistance
+			value = 0
+			compare = less_than_or_equals
+		}
+	}
 
 	stability_factor = USA_black_legion_stability										#稳定度
 	war_support_factor = USA_black_legion_war_support									#战争支持度	

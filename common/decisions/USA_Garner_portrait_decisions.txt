@@ -15,7 +15,7 @@ political_actions = {
 		days_re_enable = 1
 		ai_will_do = { factor = 0 }
 		complete_effect = {
-			country_event = eae_garner_portrait.1
+			country_event = USA.2300
 		}
 	}
 }

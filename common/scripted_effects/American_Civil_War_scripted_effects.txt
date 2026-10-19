@@ -2656,6 +2656,7 @@ USA_civil_war_begins = {
 			}
 		}
 		set_global_flag = USA_civil_war_begun_flag
+		USA = { mark_focus_tree_layout_dirty = yes }
 		if = {
 			limit = {
 				has_global_flag = USA_mac_deadlock
