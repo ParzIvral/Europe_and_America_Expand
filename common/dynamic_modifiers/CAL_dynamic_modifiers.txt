@@ -8,7 +8,7 @@ CAL_Council_of_Buisnessmen_idea = {
 	army_org_factor = CAL_company_council_army_org_factor
 	research_speed_factor = CAL_hughes_research_speed_factor
 	political_power_factor = CAL_hughes_political_power_factor
-	local_building_slots_factor = CAL_hughes_local_building_slots_factor
+	global_building_slots_factor = CAL_hughes_local_building_slots_factor
 	production_factory_max_efficiency_factor = CAL_hughes_production_factory_max_efficiency_factor
 }
 CAL_Military_control = {
@@ -64,7 +64,7 @@ CAL_economic_miracle = {
 	political_power_gain = CAL_asio_political_power_gain
 	production_factory_max_efficiency_factor = CAL_asio_production_factory_max_efficiency_factor
 	production_factory_efficiency_gain_factor = CAL_asio_production_factory_efficiency_gain_factor
-	local_building_slots_factor = CAL_asio_local_building_slots_factor
+	global_building_slots_factor = CAL_asio_local_building_slots_factor
 	industrial_capacity_factory = CAL_asio_industrial_capacity_factory
 	consumer_goods_factor = CAL_asio_consumer_goods_factor
 	local_resources_factor = CAL_asio_local_resources_factor
