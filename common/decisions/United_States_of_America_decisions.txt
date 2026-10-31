@@ -15912,7 +15912,13 @@ USA_MacArthur_policies = { #麦克阿瑟政策
 	USA_mac_retreats = { #撤退到西部军指挥中心
 		icon = GFX_decision_generic_independence
 		allowed = { original_tag = USA }
-		available = { has_government = paternal_autocrat 
+		available = {
+		OR = {
+			has_country_leader = { ruling_only = yes character = USA_Douglas_Macarthur_1 }
+			has_country_leader = { ruling_only = yes character = USA_Douglas_Macarthur_2 }
+			has_country_leader = { ruling_only = yes name = "Douglas MacArthur" }
+		}
+		has_government = paternal_autocrat
 		surrender_progress > 0.90
 		NOT = {
 		WCC = {
@@ -15939,33 +15945,7 @@ USA_MacArthur_policies = { #麦克阿瑟政策
 				add_manpower = 20000
 				country_event = {
 					id = wcc.11
-					days = 7
-				}
-				country_event = {
-					id = wcc.1101
-					days = 10
-				}
-			}
-			USA = { #美利坚合众国国策树
-				every_unit_leader = {
-					limit = {
-						OR = {
-							has_id = 1408
-							has_id = 2202
-						}
-					}
-					set_nationality = WCC
-				}
-				every_navy_leader = {
-					set_nationality = WCC
-				}
-				if = {
-					else = {
-						annex_country = {
-							target = USA
-							transfer_troops = no
-						}
-					}
+					days = 1
 				}
 			}
 			

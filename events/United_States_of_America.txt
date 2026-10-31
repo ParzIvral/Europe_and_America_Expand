@@ -14917,14 +14917,16 @@ add_namespace = usanew
 			add_political_power = -50
 			if = {
 				limit = { WCC = { exists = yes } }
-				annex_country = {
-					target = WCC
-					transfer_troops = yes
-				}
 				WCC = {
 					every_unit_leader = {
 						set_nationality = USA
 					}
+					every_scientist = { set_nationality = USA }
+				}
+				USA = { change_tag_from = WCC }
+				annex_country = {
+					target = WCC
+					transfer_troops = yes
 				}
 			}
 			set_party_name = {
