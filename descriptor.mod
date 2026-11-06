@@ -15,5 +15,5 @@ dependencies={
 	"gerkx"
 }
 picture="Thumbnail.png"
-supported_version="1.19.3.0"
+supported_version="1.19.4.2"
 remote_file_id="3292449398"
