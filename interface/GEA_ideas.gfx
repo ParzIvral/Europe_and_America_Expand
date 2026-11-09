@@ -3,6 +3,10 @@ spriteTypes = {
 		name = "GFX_GEA_colonial_government_icon"
 		textureFile = "gfx/interface/autonomy/autonomy_colonial_government_icon.png"
 	}
+	spriteType = {
+		name = "GFX_KR_generic_mio_trait_icon_funds"
+		texturefile = "gfx/interface/military_industrial_organization/trait_icons/generic/funds_icon.png"
+	}
 	#国家精神
 	spriteType = {
 		name = "GFX_idea_GEA_The_benefits_of_plundering"

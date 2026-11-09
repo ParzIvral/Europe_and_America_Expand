@@ -6885,6 +6885,13 @@ scripted_gui = {
 				}
 			}
 			
+			Laszlo_Almasy_visible = {
+				AND = {
+					has_country_flag = HOG_veiw
+					has_idea = EGY_Laszlo_Almasy_hog_pau
+				}
+			}
+
 			### MSF People ###
 			
 			Friedrich_Wilhelm_von_Bissing_visible = {

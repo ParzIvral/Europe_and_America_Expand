@@ -2668,6 +2668,190 @@ SpriteType = {
 		texturefile = "gfx/interface/goals/USA_No_need_for_democratic_republic.png"
 	}
 	SpriteType = {
+		name = "GFX_USA_admiral_leahy"
+		texturefile = "gfx/interface/goals/USA_admiral_leahy.png"
+	}
+	SpriteType = {
+		name = "GFX_USA_admiral_king"
+		texturefile = "gfx/interface/goals/USA_admiral_king.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_reunify"
+		texturefile = "gfx/interface/goals/WCC_reunify.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_American_Pompey"
+		texturefile = "gfx/interface/goals/WCC_American_Pompey.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_End_tyrant"
+		texturefile = "gfx/interface/goals/WCC_End_tyrant.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_salute_comrades"
+		texturefile = "gfx/interface/goals/WCC_salute_comrades.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_lead_heroes_to_their_home"
+		texturefile = "gfx/interface/goals/WCC_lead_heroes_to_their_home.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Perfectly_functioning_democratic_government"
+		texturefile = "gfx/interface/goals/WCC_Perfectly_functioning_democratic_government.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Remember_Declaration_of_Independence"
+		texturefile = "gfx/interface/goals/WCC_Remember_Declaration_of_Independence.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Fixing_Congress"
+		texturefile = "gfx/interface/goals/WCC_Fixing_Congress.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_model_new_law"
+		texturefile = "gfx/interface/goals/WCC_model_new_law.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Bridging_North_South_divide"
+		texturefile = "gfx/interface/goals/WCC_Bridging_North_South_divide.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_defend_american_military_spirit"
+		texturefile = "gfx/interface/goals/WCC_defend_american_military_spirit.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Fairness_morality_progress"
+		texturefile = "gfx/interface/goals/WCC_Fairness_morality_progress.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Make_founding_Fathers_proud"
+		texturefile = "gfx/interface/goals/WCC_Make_founding_Fathers_proud.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_LeMay"
+		texturefile = "gfx/interface/goals/WCC_LeMay.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Unite_MacArthur_faction"
+		texturefile = "gfx/interface/goals/WCC_Unite_MacArthur_faction.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_power_of_lemay"
+		texturefile = "gfx/interface/goals/WCC_power_of_lemay.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_olive_branch_of_the_South"
+		texturefile = "gfx/interface/goals/WCC_olive_branch_of_the_South.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Foment_Red_panic"
+		texturefile = "gfx/interface/goals/WCC_Foment_Red_panic.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Absolute_air_supremacy"
+		texturefile = "gfx/interface/goals/WCC_Absolute_air_supremacy.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Strongman_politics"
+		texturefile = "gfx/interface/goals/WCC_Strongman_politics.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Simple_but_strong_patriotism"
+		texturefile = "gfx/interface/goals/WCC_Simple_but_strong_patriotism.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_American_military_political_system"
+		texturefile = "gfx/interface/goals/WCC_American_military_political_system.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Global_intervention"
+		texturefile = "gfx/interface/goals/WCC_Global_intervention.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Eisenhower"
+		texturefile = "gfx/interface/goals/WCC_Eisenhower.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_new_American_dream"
+		texturefile = "gfx/interface/goals/WCC_new_American_dream.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Go_into_space"
+		texturefile = "gfx/interface/goals/WCC_Go_into_space.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Large_military_order"
+		texturefile = "gfx/interface/goals/WCC_Large_military_order.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_progressive_conservative_party"
+		texturefile = "gfx/interface/goals/WCC_progressive_conservative_party.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_I_LIKE_IKE"
+		texturefile = "gfx/interface/goals/WCC_I_LIKE_IKE.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Ikes_political_machine"
+		texturefile = "gfx/interface/goals/WCC_Ikes_political_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_New_cabinet"
+		texturefile = "gfx/interface/goals/WCC_New_cabinet.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Strengthen_presidency"
+		texturefile = "gfx/interface/goals/WCC_Strengthen_presidency.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_give_power_to_military_industrial_complex"
+		texturefile = "gfx/interface/goals/WCC_give_power_to_military_industrial_complex.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_together_for_victory"
+		texturefile = "gfx/interface/goals/WCC_together_for_victory.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_martial_law_rebuild"
+		texturefile = "gfx/interface/goals/WCC_martial_law_rebuild.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_root_out_traitors"
+		texturefile = "gfx/interface/goals/WCC_root_out_traitors.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_start_rebuild"
+		texturefile = "gfx/interface/goals/WCC_start_rebuild.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Amendment_to_the_Sedition_Act"
+		texturefile = "gfx/interface/goals/WCC_Amendment_to_the_Sedition_Act.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Civic_education"
+		texturefile = "gfx/interface/goals/WCC_Civic_education.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_fate_of_traitorous_enterprise"
+		texturefile = "gfx/interface/goals/WCC_fate_of_traitorous_enterprise.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Public_employment"
+		texturefile = "gfx/interface/goals/WCC_Public_employment.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Grand_ourt_martial"
+		texturefile = "gfx/interface/goals/WCC_Grand_ourt_martial.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Rural_revitalization_law"
+		texturefile = "gfx/interface/goals/WCC_Rural_revitalization_law.png"
+	}
+	SpriteType = {
+		name = "GFX_WCC_Bring_back_the_Good_road_campaign"
+		texturefile = "gfx/interface/goals/WCC_Bring_back_the_Good_road_campaign.png"
+	}
+	SpriteType = {
 		name = "GFX_WCC_Coffee_chocolate_icecream"
 		texturefile = "gfx/interface/goals/WCC_Coffee_chocolate_icecream.png"
 	}
@@ -2799,12 +2983,1703 @@ SpriteType = {
 		name = "GFX_WCC_counter_propaganda"
 		texturefile = "gfx/interface/goals/WCC_counter_propaganda.png"
 	}
-	SpriteType = {
-		name = "GFX_USA_admiral_leahy"
-		texturefile = "gfx/interface/goals/USA_admiral_leahy.png"
+SpriteType = {
+		name = "GFX_TXS_Poor_laws"
+		texturefile = "gfx/interface/goals/TXS_Poor_laws.png"
 	}
 	SpriteType = {
-		name = "GFX_USA_admiral_king"
-		texturefile = "gfx/interface/goals/USA_admiral_king.png"
+		name = "GFX_TXS_Enlarge_National_Guard"
+		texturefile = "gfx/interface/goals/TXS_Enlarge_National_Guard.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_stand_with_company"
+		texturefile = "gfx/interface/goals/TXS_stand_with_company.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Garnar_win_win_win"
+		texturefile = "gfx/interface/goals/TXS_Garnar_win_win_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_five_point_plan"
+		texturefile = "gfx/interface/goals/TXS_five_point.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Rectify_oil_enterprises"
+		texturefile = "gfx/interface/goals/TXS_Rectify_oil_enterprises.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_ODaniels_flour_business"
+		texturefile = "gfx/interface/goals/TXS_ODaniels_flour_business.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_countryside_of_Texas"
+		texturefile = "gfx/interface/goals/TXS_countryside_of_Texas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_sweet_song_of_Texas"
+		texturefile = "gfx/interface/goals/TXS_sweet_song_of_Texas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Ensure_social_security"
+		texturefile = "gfx/interface/goals/TXS_Ensure_social_security.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Reform_judicial_system"
+		texturefile = "gfx/interface/goals/TXS_Reform_judicial_system.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Public_housing"
+		texturefile = "gfx/interface/goals/TXS_Public_housing.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Highways_all_over_Texas"
+		texturefile = "gfx/interface/goals/TXS_Highways_all_over_Texas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Financial_supervision"
+		texturefile = "gfx/interface/goals/TXS_Financial_supervision.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_incomparable_Texas"
+		texturefile = "gfx/interface/goals/TXS_incomparable_Texas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Vigorously_promote_higher_education"
+		texturefile = "gfx/interface/goals/TXS_Vigorously_promote_higher_education.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Fighting_for_the_health_of_all"
+		texturefile = "gfx/interface/goals/TXS_Fighting_for_the_health_of_all.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Texas_without_racial_violence"
+		texturefile = "gfx/interface/goals/TXS_Texas_without_racial_violence.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_we_live_in_a_great_society"
+		texturefile = "gfx/interface/goals/TXS_we_live_in_a_great_society.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_education_spending"
+		texturefile = "gfx/interface/goals/TXS_education_spending.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_public_programs"
+		texturefile = "gfx/interface/goals/TXS_public_programs.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_tough_on_crime"
+		texturefile = "gfx/interface/goals/TXS_tough_on_crime.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_president_guthrie"
+		texturefile = "gfx/interface/goals/TXS_president_guthrie.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_beautiful_texas"
+		texturefile = "gfx/interface/goals/TXS_beautiful_texas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_reform_the_police"
+		texturefile = "gfx/interface/goals/TXS_reform_the_police.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_pension_reforms"
+		texturefile = "gfx/interface/goals/TXS_pension_reforms.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_war_on_poverty"
+		texturefile = "gfx/interface/goals/TXS_war_on_poverty.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_socialist_ideas"
+		texturefile = "gfx/interface/goals/TXS_socialist_ideas.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_neutrality_SACW"
+		texturefile = "gfx/interface/goals/TXS_neutrality_SACW.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_support_unions"
+		texturefile = "gfx/interface/goals/TXS_support_unions.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_abolish_poll_taxes"
+		texturefile = "gfx/interface/goals/TXS_abolish_poll_taxes.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_no_tarrifs"
+		texturefile = "gfx/interface/goals/TXS_no_tarrifs.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_yay_booze"
+		texturefile = "gfx/interface/goals/TXS_yay_booze.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_rural_support"
+		texturefile = "gfx/interface/goals/TXS_rural_support.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_defend_democracy_1"
+		texturefile = "gfx/interface/goals/TXS_defend_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_rewite_constitution"
+		texturefile = "gfx/interface/goals/TXS_rewite_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_garner_soccon"
+		texturefile = "gfx/interface/goals/TXS_garner_soccon.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_screw_syndies"
+		texturefile = "gfx/interface/goals/TXS_screw_syndies.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_news"
+		texturefile = "gfx/interface/goals/TXS_news.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Crack_down_on_oligopolies"
+		texturefile = "gfx/interface/goals/TXS_Crack_down_on_oligopolies.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_buzzing_political_machine"
+		texturefile = "gfx/interface/goals/TXS_buzzing_political_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_red_scare"
+		texturefile = "gfx/interface/goals/TXS_red_scare.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_support_self"
+		texturefile = "gfx/interface/goals/TXS_support_self.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_support_huey_long"
+		texturefile = "gfx/interface/goals/TXS_support_huey_long.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_stand_alone"
+		texturefile = "gfx/interface/goals/TXS_stand_alone.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Enterprise_security"
+		texturefile = "gfx/interface/goals/TXS_Enterprise_security.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Armed_to_protect_our_business"
+		texturefile = "gfx/interface/goals/TXS_Armed_to_protect_our_business.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_our_business"
+		texturefile = "gfx/interface/goals/TXS_our_business.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Hostile_takeover"
+		texturefile = "gfx/interface/goals/TXS_Hostile_takeover.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_money"
+		texturefile = "gfx/interface/goals/TXS_money.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_American_vast_market"
+		texturefile = "gfx/interface/goals/TXS_American_vast_market.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_The_hand_of_an_alchemist"
+		texturefile = "gfx/interface/goals/TXS_The_hand_of_an_alchemist.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Efficiency_is_life"
+		texturefile = "gfx/interface/goals/TXS_Efficiency_is_life.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_The_Texaco_authority"
+		texturefile = "gfx/interface/goals/TXS_The_Texaco_authority.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Reinforced_iron"
+		texturefile = "gfx/interface/goals/TXS_Reinforced_iron.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Flying_into_the_clouds"
+		texturefile = "gfx/interface/goals/TXS_Flying_into_the_clouds.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Meet_the_sentry"
+		texturefile = "gfx/interface/goals/TXS_Meet_the_sentry.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Fordism_and_the_assembly_line"
+		texturefile = "gfx/interface/goals/TXS_Fordism_and_the_assembly_line.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Our_position"
+		texturefile = "gfx/interface/goals/TXS_Our_position.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Backbone_of_America"
+		texturefile = "gfx/interface/goals/TXS_Backbone_of_America.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Engine_roar"
+		texturefile = "gfx/interface/goals/TXS_Engine_roar.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Council_of_Gods"
+		texturefile = "gfx/interface/goals/TXS_Council_of_Gods.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_favorable_laws"
+		texturefile = "gfx/interface/goals/TXS_favorable_laws.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Rieber_is_on_the_throne"
+		texturefile = "gfx/interface/goals/TXS_Rieber_is_on_the_throne.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_ford_win"
+		texturefile = "gfx/interface/goals/TXS_ford_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_dupont_win"
+		texturefile = "gfx/interface/goals/TXS_dupont_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_uss_win"
+		texturefile = "gfx/interface/goals/TXS_uss_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_boeing_win"
+		texturefile = "gfx/interface/goals/TXS_boeing_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_redefinition_of_capitalism"
+		texturefile = "gfx/interface/goals/TXS_redefinition_of_capitalism.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Exterminate_the_unions"
+		texturefile = "gfx/interface/goals/TXS_Exterminate_the_unions.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_country_on_an_assembly_line"
+		texturefile = "gfx/interface/goals/TXS_country_on_an_assembly_line.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_right_wing_technocratic_movement_dominated_by_reason"
+		texturefile = "gfx/interface/goals/TXS_right_wing_technocratic_movement_dominated_by_reason.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Precise_professional_efficient"
+		texturefile = "gfx/interface/goals/TXS_Precise_professional_efficient.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Polish_every_cog_of_the_state_machine"
+		texturefile = "gfx/interface/goals/TXS_Polish_every_cog_of_the_state_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Ford_technical_council"
+		texturefile = "gfx/interface/goals/TXS_Ford_technical_council.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Smite_the_people_of_Zion"
+		texturefile = "gfx/interface/goals/TXS_Smite_the_people_of_Zion.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Constant_surveillance"
+		texturefile = "gfx/interface/goals/TXS_Constant_surveillance.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Brave_New_World"
+		texturefile = "gfx/interface/goals/TXS_Brave_New_World.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Private_defence_force"
+		texturefile = "gfx/interface/goals/TXS_Private_defence_force.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_beyond_privatization"
+		texturefile = "gfx/interface/goals/TXS_beyond_privatization.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_expropriation"
+		texturefile = "gfx/interface/goals/TXS_expropriation.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Vigorously_promote_child_labor"
+		texturefile = "gfx/interface/goals/TXS_Vigorously_promote_child_labor.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Closing_coffin_on_antitrust_law"
+		texturefile = "gfx/interface/goals/TXS_Closing_coffin_on_antitrust_law.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_no_country_but_only_companies"
+		texturefile = "gfx/interface/goals/TXS_no_country_but_only_companies.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_dupont_rule"
+		texturefile = "gfx/interface/goals/TXS_dupont_rule.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_when_money_comes_home"
+		texturefile = "gfx/interface/goals/TXS_when_money_comes_home.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_ultimate_form_of_monopoly"
+		texturefile = "gfx/interface/goals/TXS_ultimate_form_of_monopoly.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Liberalize_the_unions"
+		texturefile = "gfx/interface/goals/TXS_Liberalize_the_unions.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_further_expand_steel_production_capacity"
+		texturefile = "gfx/interface/goals/TXS_further_expand_steel_production_capacity.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Armed_coal_and_steel_police"
+		texturefile = "gfx/interface/goals/TXS_Armed_coal_and_steel_police.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Large_scale_construction"
+		texturefile = "gfx/interface/goals/TXS_Large_scale_construction.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Blast_furnace_more"
+		texturefile = "gfx/interface/goals/TXS_Blast_furnace_more.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Transfer_capacity_to_defense"
+		texturefile = "gfx/interface/goals/TXS_Transfer_capacity_to_defense.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Seeking_new_iron_ore_deposits"
+		texturefile = "gfx/interface/goals/TXS_Seeking_new_iron_ore_deposits.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Steel_corporatism"
+		texturefile = "gfx/interface/goals/TXS_Steel_corporatism.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_fairless_fearless"
+		texturefile = "gfx/interface/goals/TXS_fairless_fearless.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Iron_and_steel_empire"
+		texturefile = "gfx/interface/goals/TXS_Iron_and_steel_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Benefit_brought_by_competition"
+		texturefile = "gfx/interface/goals/TXS_Benefit_brought_by_competition.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Make_war_money"
+		texturefile = "gfx/interface/goals/TXS_Make_war_money.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_High_efficiency_mining"
+		texturefile = "gfx/interface/goals/TXS_High_efficiency_mining.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Expand_the_scope_of_business"
+		texturefile = "gfx/interface/goals/TXS_Expand_the_scope_of_business.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Labor_is_legal_wealth"
+		texturefile = "gfx/interface/goals/TXS_Labor_is_legal_wealth.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_they_cannot_become_conscious"
+		texturefile = "gfx/interface/goals/TXS_they_cannot_become_conscious.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_they_will_never_rebel"
+		texturefile = "gfx/interface/goals/TXS_they_will_never_rebel.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Black_gold_gurgled"
+		texturefile = "gfx/interface/goals/TXS_Black_gold_gurgled.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Rapid_expansion_of_boeing"
+		texturefile = "gfx/interface/goals/TXS_Rapid_expansion_of_boeing.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Righting_the_economic_course"
+		texturefile = "gfx/interface/goals/TXS_Righting_the_economic_course.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_New_Deal_for_science_and_technology"
+		texturefile = "gfx/interface/goals/TXS_New_Deal_for_science_and_technology.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_West_Coast_land_of_technology"
+		texturefile = "gfx/interface/goals/TXS_West_Coast_land_of_technology.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Institutionalized_racial_segregation"
+		texturefile = "gfx/interface/goals/TXS_Institutionalized_racial_segregation.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Flying_dreamer"
+		texturefile = "gfx/interface/goals/TXS_Flying_dreamer.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Flying_fortress"
+		texturefile = "gfx/interface/goals/TXS_Flying_fortress.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_Reach_the_stars"
+		texturefile = "gfx/interface/goals/TXS_Reach_the_stars.png"
+	}
+	SpriteType = {
+		name = "GFX_TXS_The_age_of_rising_into_the_clouds"
+		texturefile = "gfx/interface/goals/TXS_The_age_of_rising_into_the_clouds.png"
+	}
+SpriteType = {
+		name = "GFX_TEX_huey_win"
+		texturefile = "gfx/interface/goals/TEX_huey_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_AFP_future"
+		texturefile = "gfx/interface/goals/TEX_AFP_future.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_long_follower"
+		texturefile = "gfx/interface/goals/TEX_long_follower.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_work_with_right"
+		texturefile = "gfx/interface/goals/TEX_work_with_right.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Devers_lead_army"
+		texturefile = "gfx/interface/goals/TXS_five_point.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_work_with_left"
+		texturefile = "gfx/interface/goals/TEX_work_with_left.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_wealth_share"
+		texturefile = "gfx/interface/goals/TEX_wealth_share.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Reward_for_loyalty"
+		texturefile = "gfx/interface/goals/TEX_Reward_for_loyalty.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_determine_wealth_ceiling"
+		texturefile = "gfx/interface/goals/TEX_determine_wealth_ceiling.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_promote_coughlin"
+		texturefile = "gfx/interface/goals/TEX_promote_coughlin.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_long_political_machine"
+		texturefile = "gfx/interface/goals/TEX_long_political_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Speaker_and_doer"
+		texturefile = "gfx/interface/goals/TEX_Speaker_and_doer.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_american_progress"
+		texturefile = "gfx/interface/goals/TEX_american_progress.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_loyalty_long_family"
+		texturefile = "gfx/interface/goals/TEX_loyalty_long_family.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Supervise_election"
+		texturefile = "gfx/interface/goals/TEX_Supervise_election.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_position_of_minutemen"
+		texturefile = "gfx/interface/goals/TEX_position_of_minutemen.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_religion_relation"
+		texturefile = "gfx/interface/goals/TEX_religion_relation.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_status_of_opposition"
+		texturefile = "gfx/interface/goals/TEX_status_of_opposition.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_owner_of_government"
+		texturefile = "gfx/interface/goals/TEX_owner_of_government.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Sliver_Shirts_support"
+		texturefile = "gfx/interface/goals/TEX_Sliver_Shirts_support.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Adjust_racial_law"
+		texturefile = "gfx/interface/goals/TEX_Adjust_racial_law.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_true_American_spirit"
+		texturefile = "gfx/interface/goals/TEX_true_American_spirit.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_public_education"
+		texturefile = "gfx/interface/goals/TEX_public_education.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Maintain_populist_platform"
+		texturefile = "gfx/interface/goals/TEX_Maintain_populist_platform.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_People_council"
+		texturefile = "gfx/interface/goals/TEX_People_council.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_senator_of_Louisiana"
+		texturefile = "gfx/interface/goals/TEX_senator_of_Louisiana.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_A_devout_person"
+		texturefile = "gfx/interface/goals/TEX_A_devout_person.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_bring_new_blood_to_Minutemen"
+		texturefile = "gfx/interface/goals/TEX_bring_new_blood_to_Minutemen.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_stable_south"
+		texturefile = "gfx/interface/goals/TEX_stable_south.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Absorb_Federalism"
+		texturefile = "gfx/interface/goals/TEX_Absorb_Federalism.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_A_fighter"
+		texturefile = "gfx/interface/goals/TEX_A_fighter.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Progressive_principle"
+		texturefile = "gfx/interface/goals/TEX_Progressive_principle.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Cooperative_economy"
+		texturefile = "gfx/interface/goals/TEX_Cooperative_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Labor_economy"
+		texturefile = "gfx/interface/goals/TEX_Labor_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Keynesian_economy"
+		texturefile = "gfx/interface/goals/TEX_Keynesian_economy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Agricultural_subsidy"
+		texturefile = "gfx/interface/goals/TEX_Agricultural_subsidy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Dismemberment_of_oligarchs"
+		texturefile = "gfx/interface/goals/TEX_Dismemberment_of_oligarchs.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Public_services"
+		texturefile = "gfx/interface/goals/TEX_Public_services.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_cooperative"
+		texturefile = "gfx/interface/goals/TEX_cooperative.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_New_Bank"
+		texturefile = "gfx/interface/goals/TEX_New_Bank.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Townsend_Plan"
+		texturefile = "gfx/interface/goals/TEX_Townsend_Plan.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_no_poor"
+		texturefile = "gfx/interface/goals/TEX_no_poor.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Perfect_Democracy"
+		texturefile = "gfx/interface/goals/TEX_Perfect_Democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_emperor_president"
+		texturefile = "gfx/interface/goals/TEX_emperor_president.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_pelley_win"
+		texturefile = "gfx/interface/goals/TEX_pelley_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Willard_Kemp_be_chosen"
+		texturefile = "gfx/interface/goals/TEX_Willard_Kemp_be_chosen.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Defend_democratic_tradition"
+		texturefile = "gfx/interface/goals/TEX_Defend_democratic_tradition.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_guardian_under_red_tide"
+		texturefile = "gfx/interface/goals/TEX_guardian_under_red_tide.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Smiths_Crusade"
+		texturefile = "gfx/interface/goals/TEX_Smiths_Crusade.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Political_re_education"
+		texturefile = "gfx/interface/goals/TEX_Political_re_education.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Write_new_federal_constitution"
+		texturefile = "gfx/interface/goals/TEX_Write_new_federal_constitution.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Christian_Federation"
+		texturefile = "gfx/interface/goals/TEX_Christian_Federation.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Stand_under_the_same_flag"
+		texturefile = "gfx/interface/goals/TEX_Stand_under_the_same_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Silver_people_arm_yourselves"
+		texturefile = "gfx/interface/goals/TEX_Silver_people_arm_yourselves.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_all_pervasive_investigation_bureau"
+		texturefile = "gfx/interface/goals/TEX_all_pervasive_investigation_bureau.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_National_Annual_Dividend"
+		texturefile = "gfx/interface/goals/TEX_National_Annual_Dividend.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Swallow_up_One_minute_people"
+		texturefile = "gfx/interface/goals/TEX_Swallow_up_One_minute_people.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Cooperative_hands_in_support_of_farmers"
+		texturefile = "gfx/interface/goals/TEX_Cooperative_hands_in_support_of_farmers.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Education_for_American_citizens"
+		texturefile = "gfx/interface/goals/TEX_Education_for_American_citizens.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Implement_employment_registration"
+		texturefile = "gfx/interface/goals/TEX_Implement_employment_registration.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_unique_theosophy_of_spiritual_realm"
+		texturefile = "gfx/interface/goals/TEX_unique_theosophy_of_spiritual_realm.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Find_new_residences_for_non_citizens"
+		texturefile = "gfx/interface/goals/TEX_Find_new_residences_for_non_citizens.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Galahad_Scholarship"
+		texturefile = "gfx/interface/goals/TEX_Galahad_Scholarship.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Referendum"
+		texturefile = "gfx/interface/goals/TEX_Referendum.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Silver_houses_all_over_country"
+		texturefile = "gfx/interface/goals/TEX_Silver_houses_all_over_country.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_it_do_happens_here"
+		texturefile = "gfx/interface/goals/TEX_it_do_happens_here.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_United_States_look_brand_new"
+		texturefile = "gfx/interface/goals/TEX_United_States_look_brand_new.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_lafollette_win"
+		texturefile = "gfx/interface/goals/TEX_lafollette_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Sound_clarion_call_of_progress"
+		texturefile = "gfx/interface/goals/TEX_Sound_clarion_call_of_progress.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Serve_public"
+		texturefile = "gfx/interface/goals/TEX_Serve_public.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Wisconsin_Idea"
+		texturefile = "gfx/interface/goals/TEX_Wisconsin_Idea.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Strengthen_authority_of_Congress"
+		texturefile = "gfx/interface/goals/TEX_Strengthen_authority_of_Congress.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Superior_proportional_representation_system"
+		texturefile = "gfx/interface/goals/TEX_Superior_proportional_representation_system.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_governed_by_the_people"
+		texturefile = "gfx/interface/goals/TEX_governed_by_the_people.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Plumb_Plan"
+		texturefile = "gfx/interface/goals/TEX_Plumb_Plan.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_National_Engineering_Act"
+		texturefile = "gfx/interface/goals/TEX_National_Engineering_Act.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Sewer_Socialism"
+		texturefile = "gfx/interface/goals/TEX_Sewer_Socialism.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_enjoyed_by_the_people"
+		texturefile = "gfx/interface/goals/TEX_enjoyed_by_the_people.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_All_those_who_work_should_not_be_hungry"
+		texturefile = "gfx/interface/goals/TEX_All_those_who_work_should_not_be_hungry.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Public_land_stateowned_farm"
+		texturefile = "gfx/interface/goals/TEX_Public_land_stateowned_farm.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_new_cash"
+		texturefile = "gfx/interface/goals/TEX_new_cash.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_owned_by_the_people"
+		texturefile = "gfx/interface/goals/TEX_owned_by_the_people.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_trust_of_the_founding_father"
+		texturefile = "gfx/interface/goals/TEX_trust_of_the_founding_father.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Legacy_of_Fighting_bob"
+		texturefile = "gfx/interface/goals/TEX_Legacy_of_Fighting_bob.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_dem_win"
+		texturefile = "gfx/interface/goals/TEX_dem_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_odaniel_win"
+		texturefile = "gfx/interface/goals/TEX_odaniel_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_cut_tax"
+		texturefile = "gfx/interface/goals/TEX_cut_tax.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Five_point"
+		texturefile = "gfx/interface/goals/TEX_Five_point.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Merge_with_remnants_of_Dem"
+		texturefile = "gfx/interface/goals/TEX_Merge_with_remnants_of_Dem.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Reduce_all_expenditures"
+		texturefile = "gfx/interface/goals/TEX_Reduce_all_expenditures.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_poor_law"
+		texturefile = "gfx/interface/goals/TEX_poor_law.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_his_flour_business"
+		texturefile = "gfx/interface/goals/TEX_his_flour_business.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Texas_spirit_never_fails"
+		texturefile = "gfx/interface/goals/TEX_Texas_spirit_never_fails.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Negotiate_with_enterprises"
+		texturefile = "gfx/interface/goals/TEX_Negotiate_with_enterprises.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_industrial_build"
+		texturefile = "gfx/interface/goals/TEX_industrial_build.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Presidential_Radio"
+		texturefile = "gfx/interface/goals/TEX_Presidential_Radio.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_oil_giants_will_also_bow"
+		texturefile = "gfx/interface/goals/TEX_oil_giants_will_also_bow.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_fuck_red"
+		texturefile = "gfx/interface/goals/TEX_fuck_red.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_beautiful_usa"
+		texturefile = "gfx/interface/goals/TEX_beautiful_usa.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_True_Christian_values"
+		texturefile = "gfx/interface/goals/TEX_True_Christian_values.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Have_support_in_old_age"
+		texturefile = "gfx/interface/goals/TEX_Have_support_in_old_age.png"
+	}
+
+	SpriteType = {
+		name = "GFX_TEX_go_go_go_minutemen"
+		texturefile = "gfx/interface/goals/TEX_go_go_go_minutemen.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_forts_night"
+		texturefile = "gfx/interface/goals/TEX_forts_night.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_make_minutemen_armed"
+		texturefile = "gfx/interface/goals/TEX_make_minutemen_armed.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_propaganda"
+		texturefile = "gfx/interface/goals/TEX_propaganda.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Devers_lead_army"
+		texturefile = "gfx/interface/goals/TEX_Devers_lead_army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Lightning_Joe_lead_army"
+		texturefile = "gfx/interface/goals/TEX_Lightning_Joe_lead_army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Terrible_Terry_lead_army"
+		texturefile = "gfx/interface/goals/TEX_Terrible_Terry_lead_army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_smith_lead_army"
+		texturefile = "gfx/interface/goals/TEX_smith_lead_army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Galloping_on_the_plain"
+		texturefile = "gfx/interface/goals/TEX_Galloping_on_the_plain.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Kampfgruppe"
+		texturefile = "gfx/interface/goals/TEX_Kampfgruppe.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_speed_infantry"
+		texturefile = "gfx/interface/goals/TEX_speed_infantry.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_modern_Hussite_Fort"
+		texturefile = "gfx/interface/goals/TEX_modern_Hussite_Fort.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_unstoppable_sharp_knife"
+		texturefile = "gfx/interface/goals/TEX_unstoppable_sharp_knife.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_remember_sherman"
+		texturefile = "gfx/interface/goals/TEX_remember_sherman.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_size_first"
+		texturefile = "gfx/interface/goals/TEX_size_first.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_crazy_attack"
+		texturefile = "gfx/interface/goals/TEX_crazy_attack.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_cross_fire_wall"
+		texturefile = "gfx/interface/goals/TEX_cross_fire_wall.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_thunder"
+		texturefile = "gfx/interface/goals/TEX_thunder.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_texas_devil"
+		texturefile = "gfx/interface/goals/TEX_texas_devil.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_promote_Ridgway"
+		texturefile = "gfx/interface/goals/TEX_promote_Ridgway.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_promote_simpson"
+		texturefile = "gfx/interface/goals/TEX_promote_simpson.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Grant_legacy"
+		texturefile = "gfx/interface/goals/TEX_Grant_legacy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_brave_man"
+		texturefile = "gfx/interface/goals/TEX_brave_man.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Christian_Nationalist_Crusade"
+		texturefile = "gfx/interface/goals/TEX_Christian_Nationalist_Crusade.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_let_silver_legion"
+		texturefile = "gfx/interface/goals/TEX_let_silver_legion.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_faith_army"
+		texturefile = "gfx/interface/goals/TEX_faith_army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Bellicosity_is_virtue"
+		texturefile = "gfx/interface/goals/TEX_Bellicosity_is_virtue.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Fire_and_Sulfur"
+		texturefile = "gfx/interface/goals/TEX_Fire_and_Sulfur.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_all_for_front"
+		texturefile = "gfx/interface/goals/TEX_all_for_front.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_middle_industry"
+		texturefile = "gfx/interface/goals/TEX_middle_industry.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_responsibilities_or_die"
+		texturefile = "gfx/interface/goals/TEX_responsibilities_or_die.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_not_to_be_valus"
+		texturefile = "gfx/interface/goals/TEX_not_to_be_valus.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_new_Continental_Army"
+		texturefile = "gfx/interface/goals/TEX_new_Continental_Army.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_west_point"
+		texturefile = "gfx/interface/goals/TEX_west_point.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Eagle_Fly"
+		texturefile = "gfx/interface/goals/TEX_Eagle_Fly.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_huey_died"
+		texturefile = "gfx/interface/goals/TEX_huey_died.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_find_out_outside"
+		texturefile = "gfx/interface/goals/TEX_find_out_outside.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_find_out_in_our_party"
+		texturefile = "gfx/interface/goals/TEX_find_out_in_our_party.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_smith_power_up"
+		texturefile = "gfx/interface/goals/TEX_smith_power_up.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_coughlin_power_up"
+		texturefile = "gfx/interface/goals/TEX_coughlin_power_up.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_earl_power_up"
+		texturefile = "gfx/interface/goals/TEX_earl_power_up.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_bingham_power_up"
+		texturefile = "gfx/interface/goals/TEX_bingham_power_up.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_meeting"
+		texturefile = "gfx/interface/goals/TEX_meeting.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_true_successor"
+		texturefile = "gfx/interface/goals/TEX_true_successor.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_coughlin_father"
+		texturefile = "gfx/interface/goals/TEX_coughlin_father.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_with_Carroll"
+		texturefile = "gfx/interface/goals/TEX_with_Carroll.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Social_Justice"
+		texturefile = "gfx/interface/goals/TEX_Social_Justice.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_with_armstrong"
+		texturefile = "gfx/interface/goals/TEX_with_armstrong.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_true_guadalupism"
+		texturefile = "gfx/interface/goals/TEX_true_guadalupism.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Christ_Holy_Land_Israel"
+		texturefile = "gfx/interface/goals/TEX_Christ_Holy_Land_Israel.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_sermons_radio"
+		texturefile = "gfx/interface/goals/TEX_sermons_radio.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_kill_financer"
+		texturefile = "gfx/interface/goals/TEX_kill_financer.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_kill_jew"
+		texturefile = "gfx/interface/goals/TEX_kill_jew.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_No_more_financial_slavery"
+		texturefile = "gfx/interface/goals/TEX_No_more_financial_slavery.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_No_more_poor"
+		texturefile = "gfx/interface/goals/TEX_No_more_poor.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_No_more_corruption"
+		texturefile = "gfx/interface/goals/TEX_No_more_corruption.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_justice_is_supreme"
+		texturefile = "gfx/interface/goals/TEX_justice_is_supreme.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_dynasty_survive"
+		texturefile = "gfx/interface/goals/TEX_dynasty_survive.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_people_friend"
+		texturefile = "gfx/interface/goals/TEX_people_friend.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_obey_or_be_kicked"
+		texturefile = "gfx/interface/goals/TEX_obey_or_be_kicked.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_louisiana_way"
+		texturefile = "gfx/interface/goals/TEX_louisiana_way.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Good_governance_government"
+		texturefile = "gfx/interface/goals/TEX_Good_governance_government.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_no_more_racial_violence"
+		texturefile = "gfx/interface/goals/TEX_no_more_racial_violence.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Fees_and_retail_taxes"
+		texturefile = "gfx/interface/goals/TEX_Fees_and_retail_taxes.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Field_over_company"
+		texturefile = "gfx/interface/goals/TEX_Field_over_company.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_no_hunger"
+		texturefile = "gfx/interface/goals/TEX_no_hunger.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Worship_Huey_and_trust_Earl"
+		texturefile = "gfx/interface/goals/TEX_Worship_Huey_and_trust_Earl.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_his_legacy"
+		texturefile = "gfx/interface/goals/TEX_his_legacy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Uncle_Earls_touching_speech"
+		texturefile = "gfx/interface/goals/TEX_Uncle_Earls_touching_speech.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_no_patient"
+		texturefile = "gfx/interface/goals/TEX_no_patient.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_clever_country"
+		texturefile = "gfx/interface/goals/TEX_clever_country.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_earl_of_louisiana"
+		texturefile = "gfx/interface/goals/TEX_earl_of_louisiana.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Political_strongman"
+		texturefile = "gfx/interface/goals/TEX_Political_strongman.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Mass_democracy"
+		texturefile = "gfx/interface/goals/TEX_Mass_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Rock_em_Sock_em"
+		texturefile = "gfx/interface/goals/TEX_Rock_em_Sock_em.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_PPP"
+		texturefile = "gfx/interface/goals/TEX_PPP.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_make_american_future"
+		texturefile = "gfx/interface/goals/TEX_make_american_future.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_longist_legacy"
+		texturefile = "gfx/interface/goals/TEX_longist_legacy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_smith_win"
+		texturefile = "gfx/interface/goals/TEX_smith_win.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Kill_Traitors"
+		texturefile = "gfx/interface/goals/TEX_Kill_Traitors.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Kill_evils"
+		texturefile = "gfx/interface/goals/TEX_Kill_evils.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_nation_awaken"
+		texturefile = "gfx/interface/goals/TEX_nation_awaken.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_true_fanatical_believer"
+		texturefile = "gfx/interface/goals/TEX_true_fanatical_believer.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_destruction_of_the_Antichrist"
+		texturefile = "gfx/interface/goals/TEX_destruction_of_the_Antichrist.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Burn_up_modern_Sodom"
+		texturefile = "gfx/interface/goals/TEX_Burn_up_modern_Sodom.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_New_American_Morality"
+		texturefile = "gfx/interface/goals/TEX_New_American_Morality.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_the_cross_and_the_flag"
+		texturefile = "gfx/interface/goals/TEX_the_cross_and_the_flag.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_smith_soilders"
+		texturefile = "gfx/interface/goals/TEX_smith_soilders.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Crusader_of_the_New_Continent"
+		texturefile = "gfx/interface/goals/TEX_Crusader_of_the_New_Continent.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_radical_society"
+		texturefile = "gfx/interface/goals/TEX_radical_society.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_The_middle_class_movement"
+		texturefile = "gfx/interface/goals/TEX_The_middle_class_movement.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_New_National_Insurance"
+		texturefile = "gfx/interface/goals/TEX_New_National_Insurance.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Hopeless_capitalism"
+		texturefile = "gfx/interface/goals/TEX_Hopeless_capitalism.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Rehabilitate_Leftist_Radicals"
+		texturefile = "gfx/interface/goals/TEX_Rehabilitate_Leftist_Radicals.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_common_sence"
+		texturefile = "gfx/interface/goals/TEX_common_sence.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_bellamists"
+		texturefile = "gfx/interface/goals/TEX_bellamists.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_accept_deer_legacy"
+		texturefile = "gfx/interface/goals/TEX_accept_deer_legacy.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_west_Federalist"
+		texturefile = "gfx/interface/goals/TEX_west_Federalist.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Compile_non_capitalist_laws"
+		texturefile = "gfx/interface/goals/TEX_Compile_non_capitalist_laws.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_our_Technocrat"
+		texturefile = "gfx/interface/goals/TEX_our_Technocrat.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_produce_for_use_not_profits"
+		texturefile = "gfx/interface/goals/TEX_produce_for_use_not_profits.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_dreamer_of_prospect_hill"
+		texturefile = "gfx/interface/goals/TEX_dreamer_of_prospect_hill.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_new_path"
+		texturefile = "gfx/interface/goals/TEX_new_path.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_New_american_family"
+		texturefile = "gfx/interface/goals/TEX_New_american_family.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_free_media"
+		texturefile = "gfx/interface/goals/TEX_free_media.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_fair_labour"
+		texturefile = "gfx/interface/goals/TEX_fair_labour.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_law_repair"
+		texturefile = "gfx/interface/goals/TEX_law_repair.png"
+	}
+	SpriteType = {
+		name = "GFX_TEX_Power_lies_with_the_people"
+		texturefile = "gfx/interface/goals/TEX_Power_lies_with_the_people.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_protect_soilder"
+		texturefile = "gfx/interface/goals/TEX_protect_soilder.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_support_company"
+		texturefile = "gfx/interface/goals/TEX_support_company.png"
+	}	
+	SpriteType = {
+		name = "GFX_TEX_Glorious_Republic"
+		texturefile = "gfx/interface/goals/TEX_Glorious_Republic.png"
+	}	
+SpriteType = {
+		name = "GFX_CAL_hearst_win"
+		texturefile = "gfx/interface/goals/CAL_hearst_win.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_winner_takes_all"
+		texturefile = "gfx/interface/goals/CAL_winner_takes_all.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Media_Empire"
+		texturefile = "gfx/interface/goals/CAL_Media_Empire.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Eliminate_the_Red_Devil"
+		texturefile = "gfx/interface/goals/CAL_Eliminate_the_Red_Devil.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_excellent_ones_and_preferential_treatment"
+		texturefile = "gfx/interface/goals/CAL_excellent_ones_and_preferential_treatment.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_california_dream"
+		texturefile = "gfx/interface/goals/CAL_california_dream.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Roaring_Age"
+		texturefile = "gfx/interface/goals/CAL_Roaring_Age.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Wave_the_big_stick"
+		texturefile = "gfx/interface/goals/CAL_Wave_the_big_stick.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Tenney_Committee"
+		texturefile = "gfx/interface/goals/CAL_Tenney_Committee.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Yellow_Peril"
+		texturefile = "gfx/interface/goals/CAL_Yellow_Peril.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_investigation_of_two_parties"
+		texturefile = "gfx/interface/goals/CAL_investigation_of_two_parties.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Tariff_wall"
+		texturefile = "gfx/interface/goals/CAL_Tariff_wall.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_National_Industrial_Union"
+		texturefile = "gfx/interface/goals/CAL_National_Industrial_Union.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Nationalize_Liquor"
+		texturefile = "gfx/interface/goals/CAL_Nationalize_Liquor.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_hearst_friends"
+		texturefile = "gfx/interface/goals/CAL_hearst_friends.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Media_Regulation_Act"
+		texturefile = "gfx/interface/goals/CAL_Media_Regulation_Act.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_citizen_hearst"
+		texturefile = "gfx/interface/goals/CAL_citizen_hearst.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_hearstian_democracy"
+		texturefile = "gfx/interface/goals/CAL_hearstian_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_hughes_wins"
+		texturefile = "gfx/interface/goals/CAL_hughes_wins.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_house_council"
+		texturefile = "gfx/interface/goals/CAL_house_council.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_LasVegas_the_heart_of_the_West"
+		texturefile = "gfx/interface/goals/CAL_LasVegas_the_heart_of_the_West.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_let_us_fly_together"
+		texturefile = "gfx/interface/goals/CAL_let_us_fly_together.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Big_Acquisition"
+		texturefile = "gfx/interface/goals/CAL_Big_Acquisition.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_aviator_of_Nevada"
+		texturefile = "gfx/interface/goals/CAL_The_aviator_of_Nevada.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_work_of_a_genius"
+		texturefile = "gfx/interface/goals/CAL_The_work_of_a_genius.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Our_marionettes"
+		texturefile = "gfx/interface/goals/CAL_Our_marionettes.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_red_bandits_had_nowhere_to_hide"
+		texturefile = "gfx/interface/goals/CAL_red_bandits_had_nowhere_to_hide.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_Hermit_in_Las_Vegas"
+		texturefile = "gfx/interface/goals/CAL_The_Hermit_in_Las_Vegas.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Above_all"
+		texturefile = "gfx/interface/goals/CAL_Above_all.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Mr_House"
+		texturefile = "gfx/interface/goals/CAL_Mr_House.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_our_microphone"
+		texturefile = "gfx/interface/goals/CAL_our_microphone.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Hughes_propaganda_machine"
+		texturefile = "gfx/interface/goals/CAL_Hughes_propaganda_machine.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_welldressed_business_empire"
+		texturefile = "gfx/interface/goals/CAL_welldressed_business_empire.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_avenue_leading_to_prosperity"
+		texturefile = "gfx/interface/goals/CAL_The_avenue_leading_to_prosperity.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Mormon_Mafia"
+		texturefile = "gfx/interface/goals/CAL_Mormon_Mafia.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_only_guarantee_of_prosperity"
+		texturefile = "gfx/interface/goals/CAL_The_only_guarantee_of_prosperity.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Eastern_Exploration"
+		texturefile = "gfx/interface/goals/CAL_Eastern_Exploration.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_hughes_the_creator"
+		texturefile = "gfx/interface/goals/CAL_hughes_the_creator.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_we_rule"
+		texturefile = "gfx/interface/goals/CAL_we_rule.png"
+	}
+
+
+
+	SpriteType = {
+		name = "GFX_CAL_Disney_wins"
+		texturefile = "gfx/interface/goals/CAL_Disney_wins.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Disney_Security_Force"
+		texturefile = "gfx/interface/goals/CAL_Disney_Security_Force.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_we_start"
+		texturefile = "gfx/interface/goals/CAL_we_start.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Abandon_the_ills_of_democracy"
+		texturefile = "gfx/interface/goals/CAL_Abandon_the_ills_of_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Second_Red_Scare"
+		texturefile = "gfx/interface/goals/CAL_Second_Red_Scare.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_disney_propaganda"
+		texturefile = "gfx/interface/goals/CAL_disney_propaganda.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Cultural_imperialism"
+		texturefile = "gfx/interface/goals/CAL_Cultural_imperialism.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Technicalist_discourse"
+		texturefile = "gfx/interface/goals/CAL_Technicalist_discourse.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Technological_prosperity_that_discards_morality"
+		texturefile = "gfx/interface/goals/CAL_Technological_prosperity_that_discards_morality.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_to_tomorrow"
+		texturefile = "gfx/interface/goals/CAL_to_tomorrow.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_pacific_utopia"
+		texturefile = "gfx/interface/goals/CAL_pacific_utopia.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_farsighted"
+		texturefile = "gfx/interface/goals/CAL_farsighted.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_live_with_disney_forever"
+		texturefile = "gfx/interface/goals/CAL_live_with_disney_forever.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_drink_drink_drink"
+		texturefile = "gfx/interface/goals/CAL_drink_drink_drink.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Disney_a_man_of_myth_and_legend"
+		texturefile = "gfx/interface/goals/CAL_Disney_a_man_of_myth_and_legend.png"
+	}
+	
+
+
+	SpriteType = {
+		name = "GFX_CAL_asio_wins"
+		texturefile = "gfx/interface/goals/CAL_asio_wins.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Pacific_shipping_lane"
+		texturefile = "gfx/interface/goals/CAL_Pacific_shipping_lane.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Connect_Jap"
+		texturefile = "gfx/interface/goals/CAL_Connect_Jap.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_past_sins"
+		texturefile = "gfx/interface/goals/CAL_past_sins.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Follow_pro_Japanese_groups"
+		texturefile = "gfx/interface/goals/CAL_Follow_pro_Japanese_groups.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Second_Golden_Rush"
+		texturefile = "gfx/interface/goals/CAL_Second_Golden_Rush.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Invite_Japanese_enterprises"
+		texturefile = "gfx/interface/goals/CAL_Invite_Japanese_enterprises.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_beginning_of_cultural_integration"
+		texturefile = "gfx/interface/goals/CAL_The_beginning_of_cultural_integration.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_the_immigration_wave"
+		texturefile = "gfx/interface/goals/CAL_the_immigration_wave.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_dream_of_prosperity"
+		texturefile = "gfx/interface/goals/CAL_The_dream_of_prosperity.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Japan_is_watching_u"
+		texturefile = "gfx/interface/goals/CAL_Japan_is_watching_u.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_fuck_u_jap"
+		texturefile = "gfx/interface/goals/CAL_fuck_u_jap.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_shadow_samurai"
+		texturefile = "gfx/interface/goals/CAL_shadow_samurai.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_U_are_not_one_of_us"
+		texturefile = "gfx/interface/goals/CAL_U_are_not_one_of_us.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Fasten_the_dog_leash"
+		texturefile = "gfx/interface/goals/CAL_Fasten_the_dog_leash.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_another_Tokyo"
+		texturefile = "gfx/interface/goals/CAL_another_Tokyo.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_the_loyal_country"
+		texturefile = "gfx/interface/goals/CAL_the_loyal_country.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Ode_to_the_Pan_Pacific"
+		texturefile = "gfx/interface/goals/CAL_Ode_to_the_Pan_Pacific.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Cultural_identity_not_bloodline_supremacy"
+		texturefile = "gfx/interface/goals/CAL_Cultural_identity_not_bloodline_supremacy.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Coexistence"
+		texturefile = "gfx/interface/goals/CAL_Coexistence.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_imperial_bridgehead"
+		texturefile = "gfx/interface/goals/CAL_The_imperial_bridgehead.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Blood_transfusion_pump"
+		texturefile = "gfx/interface/goals/CAL_Blood_transfusion_pump.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Complete_integration"
+		texturefile = "gfx/interface/goals/CAL_Complete_integration.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Norton_wins"
+		texturefile = "gfx/interface/goals/CAL_Norton_wins.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Quell_the_riot"
+		texturefile = "gfx/interface/goals/CAL_Quell_the_riot.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Awaken_old_memories"
+		texturefile = "gfx/interface/goals/CAL_Awaken_old_memories.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_New_Emperor_ascends_the_Throne"
+		texturefile = "gfx/interface/goals/CAL_New_Emperor_ascends_the_Throne.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_royal_titles"
+		texturefile = "gfx/interface/goals/CAL_royal_titles.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Norton_cities"
+		texturefile = "gfx/interface/goals/CAL_Norton_cities.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_emperor_reform"
+		texturefile = "gfx/interface/goals/CAL_emperor_reform.png"
+	}
+SpriteType = {
+		name = "GFX_CAL_Norton_democracy"
+		texturefile = "gfx/interface/goals/CAL_Norton_democracy.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Norton_rules"
+		texturefile = "gfx/interface/goals/CAL_Norton_rules.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_A_country_of_harmony_and_friendship"
+		texturefile = "gfx/interface/goals/CAL_A_country_of_harmony_and_friendship.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Citizens_participation_in_politics"
+		texturefile = "gfx/interface/goals/CAL_Citizens_participation_in_politics.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Tame_corporate_giants"
+		texturefile = "gfx/interface/goals/CAL_Tame_corporate_giants.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_contact_army"
+		texturefile = "gfx/interface/goals/CAL_contact_army.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Order_pragmatism_patriotism"
+		texturefile = "gfx/interface/goals/CAL_Order_pragmatism_patriotism.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Salute_to_the_emperor"
+		texturefile = "gfx/interface/goals/CAL_Salute_to_the_emperor.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_roots_of_American_culture"
+		texturefile = "gfx/interface/goals/CAL_The_roots_of_American_culture.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_The_protector_of_Mexico"
+		texturefile = "gfx/interface/goals/CAL_The_protector_of_Mexico.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_Live_forever_in_glory"
+		texturefile = "gfx/interface/goals/CAL_Live_forever_in_glory.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_arnold_win"
+		texturefile = "gfx/interface/goals/CAL_arnold_win.png"
+	}
+	SpriteType = {
+		name = "GFX_CAL_farsight"
+		texturefile = "gfx/interface/goals/CAL_farsight.png"
 	}
 }

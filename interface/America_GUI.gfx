@@ -1,5 +1,288 @@
 spriteTypes = {
+spriteType = {
+		name = "AFP_PATH"
+		texturefile = "gfx/interface/TEXGUI/AFP_PATH.png"
+		transparencecheck = yes
+	}
+
 	spriteType = {
+		name = "NPP_PATH"
+		texturefile = "gfx/interface/TEXGUI/NPP_PATH.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "NPP_PATH2"
+		texturefile = "gfx/interface/TEXGUI/NPP_PATH2.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "NPP_PATH3"
+		texturefile = "gfx/interface/TEXGUI/NPP_PATH4.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "AFP"
+		texturefile = "gfx/interface/TEXGUI/AFP.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "CP"
+		texturefile = "gfx/interface/TEXGUI/CP.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "DP1"
+		texturefile = "gfx/interface/TEXGUI/DP.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "DP2"
+		texturefile = "gfx/interface/TEXGUI/DP.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "NPP"
+		texturefile = "gfx/interface/TEXGUI/NPP.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "pointer1"
+		texturefile = "gfx/interface/TEXGUI/pointer1.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "pointer2"
+		texturefile = "gfx/interface/TEXGUI/pointer2.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "pointer3"
+		texturefile = "gfx/interface/TEXGUI/pointer3.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "pointer4"
+		texturefile = "gfx/interface/TEXGUI/pointer4.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "pointer5"
+		texturefile = "gfx/interface/TEXGUI/pointer5.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "pointer6"
+		texturefile = "gfx/interface/TEXGUI/pointer6.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "smith"
+		texturefile = "gfx/interface/TEXGUI/smith.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "earl"
+		texturefile = "gfx/interface/TEXGUI/earl.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "coughlin"
+		texturefile = "gfx/interface/TEXGUI/coughlin.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "bingham"
+		texturefile = "gfx/interface/TEXGUI/bingham.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "cutting"
+		texturefile = "gfx/interface/TEXGUI/cutting.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "TEXCOSICON"
+		texturefile = "gfx/interface/TXSGUI/TEXCOSICON.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "DUPONTICON"
+		texturefile = "gfx/interface/TXSGUI/DUPONTICON.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "FORDICON"
+		texturefile = "gfx/interface/TXSGUI/FORDICON.png"
+		transparencecheck = yes
+	}
+	
+	spriteType = {
+		name = "USSICON"
+		texturefile = "gfx/interface/TXSGUI/USSICON.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "BOEINGICON"
+		texturefile = "gfx/interface/TXSGUI/BOEINGICON.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "asio"
+		texturefile = "gfx/interface/CALGUI/ASIO1.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco"
+		texturefile = "gfx/interface/CALGUI/ASIO2.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_pol"
+		texturefile = "gfx/interface/CALGUI/ASIO3.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_jap"
+		texturefile = "gfx/interface/CALGUI/ASIO4.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_jap_character"
+		texturefile = "gfx/interface/CALGUI/ASIO5.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_tokyo_attitude"
+		texturefile = "gfx/interface/CALGUI/ASIO6.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_army_attitude"
+		texturefile = "gfx/interface/CALGUI/ASIO7.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_thornburg"
+		texturefile = "gfx/interface/CALGUI/ASIO8.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_arnold"
+		texturefile = "gfx/interface/CALGUI/ASIO9.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_antijap_group"
+		texturefile = "gfx/interface/CALGUI/ASIO10.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_democratic"
+		texturefile = "gfx/interface/CALGUI/ASIO11.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_kuang"
+		texturefile = "gfx/interface/CALGUI/ASIO12.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_progress_bg"
+		texturefile = "gfx/interface/CALGUI/ASIO13.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_progress_fill"
+		texturefile = "gfx/interface/CALGUI/ASIO14.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_1"
+		texturefile = "gfx/interface/CALGUI/ASIO15.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_2"
+		texturefile = "gfx/interface/CALGUI/ASIO16.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_3"
+		texturefile = "gfx/interface/CALGUI/ASIO17.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_4"
+		texturefile = "gfx/interface/CALGUI/ASIO18.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_5"
+		texturefile = "gfx/interface/CALGUI/ASIO19.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_eco_6"
+		texturefile = "gfx/interface/CALGUI/ASIO20.png"
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "asio_pol_large"
+		texturefile = "gfx/interface/CALGUI/ASIO22.png"
+		transparencecheck = yes
+	}
+
+	progressbartype = {
+		name = GFX_CAL_econ_progress_bar
+		textureFile1 = "gfx/interface/CALGUI/ASIO14.png"
+		textureFile2 = "gfx/interface/CALGUI/ASIO21.png"
+    	size = { x = 480 y = 20 }
+    	effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+spriteType = {
 		name = "pp_background"
 		texturefile = "gfx/interface/USAGUI/pp_background.png"
 		transparencecheck = yes
@@ -350,5 +633,5 @@ spriteTypes = {
     	effectFile = "gfx/FX/progress.lua"
 		horizontal = no
 		steps = 100
-	}
+	}	
 }

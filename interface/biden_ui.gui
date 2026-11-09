@@ -5796,6 +5796,12 @@ guiTypes = {
 			spriteType = "GFX_Portrait_Egypt_Taha_Hussein"
 		}
 		
+		iconType = {
+			name = "Laszlo_Almasy"
+			position = { x = 8 y = 10 }
+			spriteType = "GFX_Portrait_EGY_Laszlo_Almasy"
+		}
+
 		### MSF People ###
 		
 		iconType = { #
