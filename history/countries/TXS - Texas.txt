@@ -1,4 +1,4 @@
-﻿#
+#
 capital = 375
 OOB = "Empty"
 

@@ -1,4 +1,4 @@
-﻿#
+#
 focus = {
 	current = "USA_Hoover_speech"
 	progress = 0

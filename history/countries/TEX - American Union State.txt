@@ -1,4 +1,4 @@
-﻿#
+#
 capital = 371
 OOB = "empty"
 starting_train_buffer = 2.0

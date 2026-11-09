@@ -1,0 +1,305 @@
+GEA_INF_01 = {
+	name = GEA_INF_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" "mechanized" "marine" }
+
+	fallback_name = "第%d殖民地卫戍师"
+
+	ordered = {
+		1 = {"1. Malaiische Schutztruppendivision 'Singapur'"}
+		2 = {"2. Malaiische Schutztruppendivision 'Dschohor'"}
+		3 = {"3. Malaiische Schutztruppendivision 'Perak'"}
+		7 = {"4. Malaiische Schutztruppendivision 'Pahang'"}
+		8 = {"4. Indochinesische Schutztruppendivision"}
+		9 = {"5. Indochinesische Schutztruppendivision"}
+		10 = {"5. Malaiische Schutztruppendivision"}
+		11 = {"1. Ostasiatische Division"}
+		14 = {"2. Ostasiatische Division"}
+		100 = {"Auslandskommando Südostasien"}
+		101 = {"Auslands-Festungskommando"}
+		102 = {"Auslandskommando China"}
+		54 = {"1. Indochinesische Schutztruppendivision"}
+		65 = {"2. Indochinesische Schutztruppendivision"}
+		56 = {"3. Indochinesische Schutztruppendivision"}
+		122 = {"6. Indochinesische Schutztruppendivision"}
+		143 = {"7. Indochinesische Schutztruppendivision"}
+	}
+}
+
+GEA_INF_02 = {
+	name = GEA_INF_02_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+	fallback_name = "第%d普鲁士近卫师（东亚）"
+	ordered = {
+		1 = {"1. Preuß. Gardedivision 'zu Eulenburg'"}
+		2 = {"2. Preuß. Gardedivision (Ostasien)"}
+		3 = {"3. Preuß. Gardedivision 'von Richthofen'"}
+		4 = {"4. Preuß. Gardedivision 'Sundevall'"}
+	}
+}
+
+GEA_INF_03 = {
+	name = GEA_INF_03_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "亲王卫队第%d. 师"
+
+	ordered = {
+		1 = {"1. Prinzengarde-Division 'Waldeck und Pyrmont'"}
+		2 = {"2. Prinzengarde-Division 'Reich'"}
+		3 = {"3. Prinzengarde-Division 'Walküre'"}
+		4 = {"4. Prinzengarde-Division 'Nibelungen'"}
+	}
+}
+
+GEA_GENERIC_INF_01 = {
+	name = GEA_GENERIC_INF_01_name
+
+	for_countries = { GEA }
+	can_use = { always = yes }
+	division_types = { "infantry" }
+
+	fallback_name = "第%d步兵师"
+
+	ordered = {
+		1 = { "第%d步兵师" }
+		2 = { "第%d步兵师" }
+		3 = { "第%d步兵师" }
+		4 = { "第%d步兵师" }
+		5 = { "第%d步兵师" }
+		6 = { "第%d步兵师" }
+		7 = { "第%d步兵师" }
+		8 = { "第%d步兵师" }
+		9 = { "第%d步兵师" }
+		10 = { "第%d步兵师" }
+		11 = { "第%d步兵师" }
+		12 = { "第%d步兵师" }
+		13 = { "第%d步兵师" }
+		14 = { "第%d步兵师" }
+		15 = { "第%d步兵师" }
+		16 = { "第%d步兵师" }
+		17 = { "第%d步兵师" }
+		18 = { "第%d步兵师" }
+		19 = { "第%d步兵师" }
+		20 = { "第%d步兵师" }
+	}
+}
+
+GEA_MAR_02 = {
+	name = GEA_MAR_02_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "marine" }
+
+
+
+	fallback_name = "第%d新加坡海军陆战师"
+	ordered = {
+		1 = {"%d. Singapur-Marine-Division"}
+	}
+}
+
+GEA_GAR_01 = {
+	name = GEA_GAR_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "东亚要塞司令部%s"
+	ordered = {
+		1 = { "Festungskommando Fernost" }
+		3 = { "Auslands-Festungskommando" }
+		4 = { "Festungskommando Ostasien %s" }
+		6 = { "Sonderverteidigungsbezirk" }
+	}
+}
+
+GEA_GAR_02 = {
+	name = GEA_GAR_02_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	fallback_name = "守备司令部%s"
+
+	ordered = {
+		1 = { "1. Dschohorgarnison" }
+		2 = { "1. Vietnamesische Garde" }
+		3 = { "Königl. Säbel von Sarawak" }
+		4 = { "2. Dschohorgarnison" }
+		5 = { "1. Penang-Garde" }
+	}
+}
+
+GEA_MIL_01 = {
+	name = GEA_MIL_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "militia" }
+
+
+	fallback_name = "第%d本土辅助部队"
+
+	ordered = {
+		1 = { "Hilfstruppe 'Tonkin'" }
+		2 = { "%d. Einheimische Hilfstruppe" }
+		3 = { "Hilfstruppe 'Tsingtau'" }
+	}
+}
+
+GEA_MIL_02 = {
+	name = GEA_MIL_02_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+
+	fallback_name = "第%d印度支那步枪师"
+
+	ordered = {
+		1 = { "%d. Indochinesische Schützendivision" }
+		2 = { "%d. Indochinesische Schützendivision" }
+		3 = { "%d. Indochinesische Schützendivision" }
+		4 = { "1. Tsingtau-Schützen" }
+	}
+}
+
+GEA_CAV_01 = {
+	name = GEA_CAV_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = { "cavalry" }
+
+	fallback_name = "第%d海军警察团"
+
+	ordered = {
+		1 = { "Marinepolizeiregiment Ostasien" }
+		2 = { "Polizeiregiment 'München'" }
+		3 = { "Polizeiregiment 'Brandenburg'" }
+	}
+}
+
+GEA_MON_01 = {
+	name = GEA_MON_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	link_numbering_with = { GEA_INF_01 }
+
+	division_types = { "mountaineers"  }
+
+	fallback_name = "第%d山地卫戍部队"
+
+	ordered = {
+		20 = { "Bergschutztruppe (Annamitisch)" }
+		1 = { "1. Bergschutztruppe" }
+	}
+}
+
+GEA_ARM_01 = {
+	name = GEA_ARM_01_name
+
+	division_types = { "light_armor" "medium_armor" "heavy_armor" "modern_armor"  }
+
+	for_countries = { GEA }
+	link_numbering_with = { GEA_INF_02 }
+
+	fallback_name = "第%d东亚装甲营"
+
+	ordered = {
+		1 = { "Panzerabteilung 'zu Eulenburg'" }
+		3 = { "Panzerabteilung 'von Richthofen'" }
+		4 = { "Panzerabteilung 'Sundevall'" }
+	}
+}
+
+GEA_MOT_01 = {
+	name = GEA_MOT_01_name
+
+	for_countries = { GEA }
+	link_numbering_with = { GEA_INF_02 }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	fallback_name = "第%d战斗群师"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		1 = { "%d. Kampfgruppe Division" }
+		2 = { "%d. Kampfgruppe Division" }
+		3 = { "%d. Kampfgruppe Division" }
+		4 = { "%d. Kampfgruppe Division" }
+		5 = { "%d. Kampfgruppe Division" }
+		6 = { "%d. Kampfgruppe Division" }
+		7 = { "%d. Kampfgruppe Division" }
+		8 = { "%d. Kampfgruppe Division" }
+		9 = { "%d. Kampfgruppe Division" }
+		10 = { "%d. Kampfgruppe Division" }
+	}
+}
+
+GEA_PAR_01 = {
+	name = GEA_PAR_01_name
+
+	for_countries = { GEA }
+
+	can_use = { always = yes }
+
+	division_types = {  "paratrooper" }
+
+	fallback_name = "第%d伞兵师"
+
+	# Names with numbers (only one number per entry)
+	ordered = {
+		1 = { "%d. Fallschirmjäger Division" }
+		2 = { "%d. Fallschirmjäger Division" }
+		3 = { "%d. Fallschirmjäger Division" }
+		4 = { "%d. Fallschirmjäger Division" }
+		5 = { "%d. Fallschirmjäger Division" }
+		6 = { "%d. Fallschirmjäger Division" }
+		7 = { "%d. Fallschirmjäger Division" }
+		8 = { "%d. Fallschirmjäger Division" }
+		9 = { "%d. Fallschirmjäger Division" }
+		10 = { "%d. Fallschirmjäger Division" }
+	}
+}
+
+
+

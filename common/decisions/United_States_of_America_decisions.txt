@@ -3579,7 +3579,7 @@ USA_recovery_decisions = { #自废墟中崛起
 		days_re_enable = 45
 
 		visible = {
-			has_country_flag = USA_open_cor_decision	
+			has_country_flag = USA_open_cal_decision
 			has_completed_focus = USA_Mechanization_brings_abundance	
 			check_variable = {
 				var = USA_cal_reconstruction_progress
@@ -4571,6 +4571,7 @@ USA_Civil_War_bop_category = { #挽救美利坚
 			add_to_variable = { USA_iww_power_value = USA_sp_monthly_increase }
 			add_to_variable = { USA_afp_power_value = USA_afp_monthly_increase }
 			add_to_variable = { USA_od_power_value = USA_od_monthly_increase }
+			USA_refresh_gui_variable_effect = yes
 			hidden_effect = {
 				if = {
 					limit = {
@@ -11230,6 +11231,48 @@ USA_GER_decisions = { #中欧同盟事务
 	}
 }
 political_actions = {
+	USA_Promote_agricultural_mechanization_peacetime = {
+		name = USA_Promote_agricultural_mechanization_cor
+		icon = generic_agriculture
+		allowed = { tag = USA }
+		cost = 20
+		days_remove = 20
+		days_re_enable = 45
+		visible = {
+			has_global_flag = USA_civil_war_avoided_flag
+			has_completed_focus = USA_Mechanization_brings_abundance
+		}
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+		}
+		remove_effect = {
+			random_owned_state = {
+				limit = {
+					is_core_of = ROOT
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
 	USA_squeeze_the_colonies_dry = {
 		
 		icon = give_cash

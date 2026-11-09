@@ -38628,7 +38628,19 @@ add_namespace = usanew
 
 		option = { #美利坚将战胜一切！
 			name = USA.2033.a
-			add_ideas = USA_NDRC
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							has_idea = USA_NDRC
+							has_idea = USA_NDRC_2
+							has_idea = USA_NDRC_3
+							has_idea = USA_NDRC_4
+						}
+					}
+				}
+				add_ideas = USA_NDRC
+			}
 		}
 	}
 	country_event = { # 暗中刺探

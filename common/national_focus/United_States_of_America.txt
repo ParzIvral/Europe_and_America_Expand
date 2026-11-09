@@ -17810,8 +17810,8 @@ focus_tree = {
 				}
 				add_state_modifier = {
 					modifier = { 
-						monthly_population = 0.2
-						local_resources = 0.15
+						local_manpower = 0.2
+						local_resources_factor = 0.15
 					}
 				}
 			}
@@ -18753,7 +18753,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			unlock_decision_tooltip = USA_Promote_agricultural_mechanization_cor
+			if = {
+				limit = { has_global_flag = USA_civil_war_avoided_flag }
+				unlock_decision_tooltip = USA_Promote_agricultural_mechanization_peacetime
+			}
+			else = {
+				unlock_decision_tooltip = USA_Promote_agricultural_mechanization_cor
+				unlock_decision_tooltip = USA_Promote_agricultural_mechanization_tex
+				unlock_decision_tooltip = USA_Promote_agricultural_mechanization_cal
+			}
 			country_event = {
 				id = USA.1011
 				days = 3
@@ -18823,7 +18831,7 @@ focus_tree = {
 				}
 				add_state_modifier = {
 					modifier = {
-						monthly_population = 0.2
+						local_manpower = 0.2
 						local_supplies = 0.3
 						state_production_speed_buildings_factor = 0.15
 					}
@@ -19232,9 +19240,6 @@ focus_tree = {
 		id = USA_Technology_facilitates_production
 		icon = GFX_USA_Technology_facilitates_production
 		cost = 5
-		available = {
-			has_idea = USA_NDRC
-		}
 		prerequisite = {
 			focus = USA_The_wisdom_of_the_new_era
 		}
@@ -19258,10 +19263,7 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			swap_ideas = {
-				remove_idea = USA_NDRC
-				add_idea = USA_NDRC_2
-			}
+			USA_update_ndrc_idea_effect = yes
 		}
 	}
 
@@ -19324,10 +19326,7 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
-			swap_ideas = {
-				remove_idea = USA_NDRC_2
-				add_idea = USA_NDRC_3
-			}
+			USA_update_ndrc_idea_effect = yes
 		}
 	}
 
@@ -19471,10 +19470,7 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Lead_the_wave_of_science"
-			swap_ideas = {
-				remove_idea = USA_NDRC_3
-				add_idea = USA_NDRC_4
-			}
+			USA_update_ndrc_idea_effect = yes
 		}
 	}
 
@@ -24929,6 +24925,7 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_battleships"
+			custom_effect_tooltip = USA_battleships_tooltip
 			add_unit_bonus = {
 				battleship = {
 					max_organisation = 10
@@ -24947,6 +24944,9 @@ focus_tree = {
 				# FILTERS:
 				folder = naval
 				track = capital_ships
+			}
+			hidden_effect = {
+				add_to_variable = { USA.USA_battleship_organisation = 0.05 }
 			}
 		}
 	}
@@ -25432,6 +25432,12 @@ focus_tree = {
 				track = carriers
 			}
 			navy_experience = 30
+			custom_effect_tooltip = USA_carriers_tooltip
+			hidden_effect = {
+				add_dynamic_modifier = { modifier = USA_naval_stratagem_carrier }
+				add_to_variable = { USA.USA_carrier_organisation = 0.05 }
+				add_to_variable = { USA.USA_carrier_coordination = 0.05 }
+			}
 		}
 	}
 
@@ -25491,9 +25497,8 @@ focus_tree = {
 				uses = 1
 				bonus = 1
 			}
-			custom_effect_tooltip = USA_carriers_tooltip
 			hidden_effect = {
-				add_dynamic_modifier = { modifier = USA_naval_stratagem_carrier }
+				add_to_variable = { USA.USA_carrier_organisation = 0.10 }
 			}
 		}
 	}
@@ -25881,7 +25886,7 @@ focus_tree = {
 			add_equipment_bonus = {
 				name = USA_CV_bonus3
 				bonus = {
-					cv_small_plane_naval_bomber_airframe = {
+					cv_small_plane_cas_airframe = {
 						naval_strike_targetting = 0.075
 						air_defence = -0.05
 					}
@@ -26127,7 +26132,7 @@ focus_tree = {
 			}
 			hidden_effect = {
 				add_to_variable = { USA.USA_submarine_reduction = 0.05 }
-				add_to_variable = { USA.naval_torpedo_hit_chance_factor = 0.05 }
+				add_to_variable = { USA.USA_submarine_torp_hit = 0.05 }
 			}
 		}
 	}
@@ -26270,7 +26275,7 @@ focus_tree = {
 			custom_effect_tooltip = USA_kraken_tooltip
 			hidden_effect = {
 				add_to_variable = { USA.USA_submarine_attack = 0.05 }
-				add_to_variable = { USA.naval_torpedo_hit_chance_factor = 0.05 }
+				add_to_variable = { USA.USA_submarine_torp_hit = 0.05 }
 			}
 			add_tech_bonus = {
 				category = ship_modules_tech
@@ -26352,7 +26357,7 @@ focus_tree = {
 					progress = 0.5
 					amount = 1
 				}
-				add_to_variable = { USA.naval_torpedo_hit_chance_factor = 0.05 }
+				add_to_variable = { USA.USA_submarine_torp_hit = 0.05 }
 			}
 		}
 	}
@@ -27133,7 +27138,7 @@ focus_tree = {
 			hidden_effect = {
 				add_to_variable = { USA.USA_cg_convoys_ws = 0.0015 }
 				add_to_variable = { USA.USA_cg_convoy_escort = 0.07 }
-				add_to_variable = { USA.coastal_bunker_effectiveness_factor = 0.025 }
+				add_to_variable = { USA.USA_cb_effectiveness = 0.025 }
 			}
 		}
 	}
@@ -27365,6 +27370,12 @@ focus_tree = {
 				uses = 1
 				bonus = 1
 			}
+			custom_effect_tooltip = USA_marine_corps_tooltip
+			hidden_effect = {
+				add_to_variable = { USA.USA_marine_attack = 0.05 }
+				add_to_variable = { USA.USA_marine_defense = 0.05 }
+				add_dynamic_modifier = { modifier = USA_marine_corp_modifier }
+			}
 		}
 	}
 
@@ -27401,7 +27412,7 @@ focus_tree = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_urban_warfare"
 			custom_effect_tooltip = USA_urban_warfare_tooltip
 			hidden_effect = { 
-				add_to_variable = { USA.USA_marine_cap = 0.1 }
+				add_to_variable = { USA.USA_marine_cap = -0.1 }
 			}
 		}
 	}
@@ -27759,7 +27770,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = USA_semper_fi_tooltip
 			hidden_effect = { 
-				add_to_variable = { USA.extra_marine_supply_grace = 24 }
+				add_to_variable = { USA.USA_marine_supply_grace = 24 }
 			}	
 		}
 	}

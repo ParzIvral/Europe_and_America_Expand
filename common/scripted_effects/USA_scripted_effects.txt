@@ -1,5 +1,44 @@
 #
+USA_update_ndrc_idea_effect = {
+	if = {
+		limit = { has_idea = USA_NDRC_4 }
+		remove_ideas = { USA_NDRC USA_NDRC_2 USA_NDRC_3 }
+	}
+	else_if = {
+		limit = { has_idea = USA_NDRC_3 }
+		remove_ideas = { USA_NDRC USA_NDRC_2 USA_NDRC_3 }
+		add_ideas = USA_NDRC_4
+	}
+	else_if = {
+		limit = { has_idea = USA_NDRC_2 }
+		remove_ideas = { USA_NDRC USA_NDRC_2 }
+		add_ideas = USA_NDRC_3
+	}
+	else_if = {
+		limit = { has_idea = USA_NDRC }
+		remove_ideas = USA_NDRC
+		add_ideas = USA_NDRC_2
+	}
+	else = {
+		add_ideas = USA_NDRC
+	}
+}
+
 USA_refresh_gui_variable_effect = {
+	hidden_effect = {
+		if = {
+			limit = { has_variable = USA_iww_power_value }
+			clamp_variable = { var = USA_iww_power_value min = 0 }
+		}
+		if = {
+			limit = { has_variable = USA_afp_power_value }
+			clamp_variable = { var = USA_afp_power_value min = 0 }
+		}
+		if = {
+			limit = { has_variable = USA_od_power_value }
+			clamp_variable = { var = USA_od_power_value min = 0 }
+		}
+	}
 	add_to_variable = {
 		var = usa_gui_change
 		value = 1
