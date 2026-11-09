@@ -210676,7 +210676,7 @@ head_of_government = { ### Head of Government ###
 				}
 			}
 			visible = {
-				has_completed_focus = TEX_hillbilly_boys
+				has_completed_focus = TEX_Texas_spirit_never_fails
 				NOT = { has_country_flag = Pat_ODaniel_hog_dead }
 			}
 			on_add = {
@@ -211111,7 +211111,7 @@ head_of_government = { ### Head of Government ###
 				}
 			}
 			visible = {
-				has_completed_focus = TEX_hillbilly_boys
+				has_completed_focus = TEX_Texas_spirit_never_fails
 				NOT = { has_country_flag = Little_Caesar_dead }
 			}
 			on_add = {
@@ -211568,7 +211568,7 @@ head_of_government = { ### Head of Government ###
 				}
 			}
 			visible = {
-				has_completed_focus = TEX_hillbilly_boys
+				has_completed_focus = TEX_Texas_spirit_never_fails
 				NOT = { has_country_flag = Mickey_Wickey_dead }
 			}
 			on_add = {
@@ -212110,7 +212110,7 @@ head_of_government = { ### Head of Government ###
 				}
 			}
 			visible = {
-				has_completed_focus = TEX_hillbilly_boys
+				has_completed_focus = TEX_Texas_spirit_never_fails
 				NOT = { has_country_flag = Leon_McAuliffe_dead }
 			}
 			on_add = {

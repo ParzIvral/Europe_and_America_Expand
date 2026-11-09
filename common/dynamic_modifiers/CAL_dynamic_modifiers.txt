@@ -23,7 +23,6 @@ CAL_Military_control = {
 	state_production_speed_buildings_factor = 0.05
 }
 CAL_jap_military = {
-	hidden = yes
 	enable = { 
 		has_completed_focus = CAL_Pacific_shipping_lane
 	}
@@ -36,7 +35,6 @@ CAL_jap_military = {
 	attrition = CAL_asio_attrition
 }
 CAL_projap_idea = {
-	hidden = yes
 	enable = { 
 		has_completed_focus = CAL_Pacific_shipping_lane
 	}
@@ -48,7 +46,6 @@ CAL_projap_idea = {
 	war_support_factor = CAL_projap_war_support_factor
 }
 CAL_people_support = {
-	hidden = yes
 	enable = { 
 		has_completed_focus = CAL_Pacific_shipping_lane
 	}

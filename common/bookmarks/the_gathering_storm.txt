@@ -257,19 +257,19 @@ bookmarks = {
 			}
 		}
 
-		"NFL" = {
+		"GEA" = {
 			minor = yes
-			history = "NFL_KR_GATHERING_STORM_DESC"
-			ideology = social_conservative
+			history = "GEA_KR_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
 			ideas = {
-				NFL_bad_economy
-				NFL_legacy_of_1932
-				NFL_memories_of_the_regiment
+				GEA_colonial_question
+				GEA_AOG_profit_idea
+				GEA_The_garden_of_the_cartel
 			}
 			focuses = {
-				NFL_plot_begins
-				NFL_commission_of_govt
-				NFL_elections_once_more
+				GEA_Governor_Luckner
+				GEA_The_second_expedition_to_China
+				GEA_Governor_Schorner
 			}
 		}
 

@@ -14740,7 +14740,7 @@ add_namespace = usanew
 					OR = {
 						has_game_rule = {
 							rule = USA_POST_CIVIL_WAR_MACARTHUR
-							option = RULE_OPTION_USA_POST_CIVIL_WAR_MACARTHUR_RESTORE_DEMOCRACY
+							option = USA_POST_CIVIL_WAR_MACARTHUR_RESTORE_DEMOCRACY
 						}
 						has_game_rule = {
 							rule = WCC_american_standoff
@@ -14769,7 +14769,7 @@ add_namespace = usanew
 					OR = {
 						has_game_rule = {
 							rule = USA_POST_CIVIL_WAR_MACARTHUR
-							option = RULE_OPTION_USA_POST_CIVIL_WAR_MACARTHUR_RESTORE_DEMOCRACY
+							option = USA_POST_CIVIL_WAR_MACARTHUR_RESTORE_DEMOCRACY
 						}
 					}
 				}
@@ -18500,6 +18500,10 @@ add_namespace = usanew
 					add_ideas = USA_Gus_Hall_eco_tot #格斯·霍尔
 					add_ideas = USA_Eugene_Dennis_sec_syn #尤金·丹尼斯
 					set_country_flag = USA_President_Browder_1940_flag
+					country_event = {
+						id = USA.833
+						days = 30
+					}
 				}
 				# next primarie
 				country_event = { # 年共和党初选
