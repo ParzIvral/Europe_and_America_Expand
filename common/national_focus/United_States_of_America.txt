@@ -17324,9 +17324,23 @@ focus_tree = {
 			}
 			custom_effect_tooltip = USA_we_will_start_rebuild_tt
 			set_country_flag = USA_we_will_start_rebuild
-			add_to_variable = { USA_NRA_consumer_goods = 0.05 }
-			add_to_variable = { USA_NRA_civilian_speed = 0.025 }
-			add_to_variable = { USA_NRA_military_speed = 0.025 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_civilian_speed = 0.025
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_military_speed = 0.025
+				tooltip = production_speed_arms_factory_factor_tt
+			}
 			hidden_effect = {
 				if = {
 					limit = {
@@ -17385,10 +17399,23 @@ focus_tree = {
 					add_mio_funds = 1500
 				}
 			}
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			add_to_variable = { USA_NRA_factory_output = 0.05 }	
-			add_to_variable = { USA_NRA_efficiency_gain = 0.1 }	
-			custom_effect_tooltip = USA_Support_Hnery_Ford_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_gain = 0.1
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17433,10 +17460,23 @@ focus_tree = {
 				}
 			}
 			add_ideas = USA_Inject_capital_into_General_Motors
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			add_to_variable = { USA_NRA_building_slots = 0.05 }	
-			add_to_variable = { USA_NRA_efficiency_max= 0.10 }	
-			custom_effect_tooltip = USA_Support_General_Motors_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_building_slots = 0.05
+				tooltip = global_building_slots_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_max = 0.10
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17463,10 +17503,23 @@ focus_tree = {
 				USA_Ford_mio_research_bonus_var = 0.1
 			}
 			add_political_power = 10
-			add_to_variable = { USA_NRA_consumer_goods= 0.05 }
-			add_to_variable = { USA_NRA_stability = 0.05 }	
-			add_to_variable = { USA_NRA_factory_output = 0.05 }	
-			custom_effect_tooltip = USA_Let_every_worker_drive_a_Ford_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_stability = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 			country_event = {
 				id = USA.1002 #福特的新设计
 				days = 3
@@ -17507,10 +17560,23 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = USA_unlock_mio_traits
-			add_to_variable = { USA_NRA_consumer_goods = 0.05 }
-			add_to_variable = { USA_NRA_efficiency_gain = 0.025 }
-			add_to_variable = { USA_NRA_efficiency_retention = 0.10 }	
-			custom_effect_tooltip = USA_Not_only_automobile_manufacturing_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_gain = 0.025
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_retention = 0.10
+				tooltip = line_change_production_efficiency_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17606,10 +17672,23 @@ focus_tree = {
 				USA_Ford_mio_research_bonus_var = 0.1
 			}
 			add_political_power = 30
-			add_to_variable = { USA_NRA_civilian_speed = 0.10 }
-			add_to_variable = { USA_NRA_consumer_goods = 0.10 }
-			add_to_variable = { USA_NRA_start_efficiency = 0.10 }
-			custom_effect_tooltip = USA_Luxurious_choice_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_civilian_speed = 0.10
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.10
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_start_efficiency = 0.10
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17650,10 +17729,23 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = USA_unlock_some_mio_traits
-			add_to_variable = { USA_NRA_local_resources = 0.05 }
-			add_to_variable = { USA_NRA_lack_resource_penalty = -0.15 }
-			add_to_variable = { USA_NRA_political_power = -0.1 }
-			custom_effect_tooltip = USA_A_big_leap_in_vertical_integration_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_local_resources = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_lack_resource_penalty = -0.15
+				tooltip = production_lack_of_resource_penalty_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.1
+				tooltip = political_power_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17697,10 +17789,23 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = USA_unlock_some_mio_traits
-			add_to_variable = { USA_NRA_factory_output = 0.10 }
-			add_to_variable = { USA_NRA_building_slots = 0.05 }
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			custom_effect_tooltip = USA_production_capacity_on_assembly_line_has_exploded_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.10
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				USA_NRA_building_slots = 0.05
+				tooltip = global_building_slots_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
 			country_event = {
 				id = USA.1004
 				days = 2
@@ -17753,10 +17858,23 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			add_to_variable = { USA_NRA_research_speed = 0.10 }
-			add_to_variable = { USA_NRA_construction_speed = 0.05 }
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			custom_effect_tooltip = USA_Contribute_to_technological_progress_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_research_speed = 0.10
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_construction_speed = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -17912,8 +18030,15 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_beauty_of_New_England"
 			add_research_slot = 1
-			add_to_variable = { USA_NRA_research_speed = 0.05 }
-			custom_effect_tooltip = USA_The_wisdom_of_the_Ivy_League_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_research_speed = 0.05
+				tooltip = research_speed_factor_tt
+			}
 			country_event = {
 				id = USA.1021
 				days = 10
@@ -18069,10 +18194,23 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { USA_NRA_efficiency_max = 0.10 }
-			add_to_variable = { USA_NRA_factory_output = 0.05 }
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			custom_effect_tooltip = USA_The_Crown_of_American_Industry_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_max = 0.10
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 	}
 
@@ -18093,10 +18231,23 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Black_gold_gurgles_like_a_river"
-			custom_effect_tooltip = USA_Black_gold_gurgles_like_a_river_tt
-			add_to_variable = { USA_NRA_fuel_gain_factor = 0.15 }
-			add_to_variable = { USA_NRA_refinery_speed = 0.10 }
-			add_to_variable = { USA_NRA_local_resources = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_fuel_gain_factor = 0.15
+				tooltip = fuel_gain_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_refinery_speed = 0.10
+				tooltip = production_speed_synthetic_refinery_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_local_resources = 0.05
+				tooltip = local_resources_factor_tt
+			}
 			country_event = {
 				id = USA.1005
 				days = 1
@@ -18165,10 +18316,23 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			add_to_variable = { USA_NRA_building_slots = 0.10 }
-			add_to_variable = { USA_NRA_lack_resource_penalty = -0.05 }
-			custom_effect_tooltip = USA_Let_things_take_their_own_course_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_building_slots = 0.10
+				tooltip = global_building_slots_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_lack_resource_penalty = -0.05
+				tooltip = production_lack_of_resource_penalty_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -18195,10 +18359,23 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Tighten_the_hand_of_the_state"
 			add_political_power = 20
-			add_to_variable = { USA_NRA_factory_energy_consumption = -0.15 }
-			add_to_variable = { USA_NRA_stability = -0.05 }
-			add_to_variable = { USA_NRA_infrastructure_speed = 0.05 }
-			custom_effect_tooltip = USA_Tighten_the_hand_of_the_state_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_factory_energy_consumption = -0.15
+				tooltip = factory_energy_consumption_tt
+			}
+			add_to_variable = {
+				USA_NRA_stability = -0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_infrastructure_speed = 0.05
+				tooltip = production_speed_infrastructure_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -18266,9 +18443,19 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_A_steady_stream_flows_on_drawing_from_the_outside"
-			add_to_variable = { USA_NRA_efficiency_retention = 0.075 }
-			add_to_variable = { USA_NRA_local_resources = 0.05 }
-			custom_effect_tooltip = USA_A_steady_stream_flows_on_drawing_from_the_outside_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_retention = 0.075
+				tooltip = line_change_production_efficiency_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_local_resources = 0.05
+				tooltip = local_resources_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -18340,10 +18527,23 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_World_Factory"
-			add_to_variable = { USA_NRA_construction_speed = 0.10 }
-			add_to_variable = { USA_NRA_efficiency_max = 0.05 }
-			add_to_variable = { USA_NRA_factory_output = 0.05 }
-			custom_effect_tooltip = USA_The_World_Factory_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_construction_speed = 0.10
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_max = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 			remove_ideas = USA_great_depression_4
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -18364,8 +18564,15 @@ focus_tree = {
 		}
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_foundation_of_America"
-			add_to_variable = { USA_NRA_infrastructure_speed = 0.05 }
-			custom_effect_tooltip = USA_The_foundation_of_America_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_infrastructure_speed = 0.05
+				tooltip = production_speed_infrastructure_factor_tt
+			}
 			country_event = {
 				id = USA.1006
 				days = 5
@@ -18474,10 +18681,23 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = USA_strength_westhouse
-			add_to_variable = { USA_NRA_start_efficiency = 0.05 }
-			add_to_variable = { USA_NRA_monthly_population = 0.05 }
-			add_to_variable = { USA_NRA_efficiency_retention = 0.075 }
-			custom_effect_tooltip = USA_Westinghouse_Electric_is_in_the_right_time_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_start_efficiency = 0.05
+				tooltip = production_factory_start_efficiency_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_monthly_population = 0.05
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				USA_NRA_efficiency_retention = 0.075
+				tooltip = line_change_production_efficiency_factor_tt
+			}
 
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
@@ -18500,8 +18720,15 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Mainland_Railway_Plan"
-			add_to_variable = { USA_NRA_railway_speed = 0.1 }
-			custom_effect_tooltip = USA_The_Mainland_Railway_Plan_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_railway_speed = 0.1
+				tooltip = production_speed_rail_way_factor_tt
+			}
 			country_event = {
 				id = USA.1008
 				days = 30
@@ -18535,8 +18762,15 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = { USA_NRA_dockyard_output = 0.1 }
-			custom_effect_tooltip = USA_American_ships_reach_everywhere_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_dockyard_output = 0.1
+				tooltip = industrial_capacity_dockyard_tt
+			}
 			country_event = {
 				id = USA.1012
 				days = 7
@@ -18618,8 +18852,15 @@ focus_tree = {
 				uses = 1
 				category = electronics
 			}
-			add_to_variable = { USA_NRA_radar_speed = 0.1 }
-			custom_effect_tooltip = USA_Communication_entertainment_innovation_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_radar_speed = 0.1
+				tooltip = production_speed_radar_station_factor_tt
+			}
 			
 			country_event = {
 				id = USA.1009
@@ -18653,11 +18894,27 @@ focus_tree = {
 				}
 				unlock_decision_tooltip = USA_Build_cheap_apartments
 			}
-			add_to_variable = { USA_NRA_stability = 0.05 }
-			add_to_variable = { USA_NRA_monthly_population = 0.10 }
-			add_to_variable = { USA_NRA_building_slots = 0.15 }
-			add_to_variable = { USA_NRA_consumer_goods = 0.05 }
-			custom_effect_tooltip = USA_Affordable_apartment_housing_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_stability = 0.05
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_monthly_population = 0.10
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				USA_NRA_building_slots = 0.15
+				tooltip = global_building_slots_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -18705,9 +18962,19 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			add_to_variable = { USA_NRA_monthly_population = 0.05 }
-			add_to_variable = { USA_NRA_infrastructure_speed = 0.05 }
-			custom_effect_tooltip = USA_The_rural_scenery_of_the_United_States_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_monthly_population = 0.05
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				USA_NRA_infrastructure_speed = 0.05
+				tooltip = production_speed_infrastructure_factor_tt
+			}
 			country_event = {
 				id = USA.1010 #予勤劳者的庇护
 				days = 3
@@ -18786,11 +19053,27 @@ focus_tree = {
 
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Everything_is_complete"
-			add_to_variable = { USA_NRA_stability = 0.1 }
-			add_to_variable = { USA_NRA_construction_speed = 0.1 }
-			add_to_variable = {USA_NRA_local_resources = 0.05 }
-			add_to_variable = { USA_NRA_building_slots = 0.1 }
-			custom_effect_tooltip = USA_Everything_is_complete_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_stability = 0.1
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_construction_speed = 0.1
+				tooltip = production_speed_buildings_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_local_resources = 0.05
+				tooltip = local_resources_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_building_slots = 0.1
+				tooltip = global_building_slots_factor_tt
+			}
 		}
 	}
 
@@ -18942,8 +19225,15 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { USA_NRA_infrastructure_speed = 0.05 }
-			custom_effect_tooltip = USA_Fifth_Avenue_leading_to_prosperity_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_infrastructure_speed = 0.05
+				tooltip = production_speed_infrastructure_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -18982,8 +19272,15 @@ focus_tree = {
 			796 = {
 				add_extra_state_shared_building_slots = 1
 			}
-			add_to_variable = { USA_NRA_construction_speed = 0.05 }
-			custom_effect_tooltip = USA_The_ever-expanding_heart_of_New_York_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_construction_speed = 0.05
+				tooltip = production_speed_buildings_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -19041,8 +19338,15 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Financial_empire"
 			add_popularity = { ideology = market_liberal popularity = 0.06 }
-			add_to_variable = { USA_NRA_consumer_goods = -0.1 }
-			custom_effect_tooltip = USA_Financial_empire_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = -0.1
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 	}
@@ -19074,8 +19378,15 @@ focus_tree = {
 					}
 				}
 			}
-			add_to_variable = { USA_NRA_monthly_population = 0.05 }
-			custom_effect_tooltip = USA_lullaby_of_Broadway_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_NRA_modifier
+			}
+			add_to_variable = {
+				USA_NRA_monthly_population = 0.05
+				tooltip = monthly_population_tt
+			}
 			country_event = {
 				id = USA.1018
 				days = 4
@@ -19576,10 +19887,23 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = USA_Army_Reform_MAC }
 			}
 			army_experience = 30
-			add_to_variable = { USA_army_army_org_factor = 0.05 }
-			add_to_variable = { USA_army_army_morale_factor = 0.05 }
-			add_to_variable = { USA_army_max_planning = 0.05 }
-			custom_effect_tooltip = USA_The_supreme_order_from_MacArthur_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Army_Reform_MAC
+			}
+			add_to_variable = {
+				USA_army_army_org_factor = 0.05
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_morale_factor = 0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.05
+				tooltip = max_planning_factor_tt
+			}
 			
 		}
 	}
@@ -19603,12 +19927,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Supreme_General_Staff"
-			add_to_variable = { USA_army_planning_speed  = 0.15 }
-			add_to_variable = { USA_army_max_planning = 0.15 }
-			add_to_variable = { USA_army_breakthrough_factor = 0.05 }
-			add_to_variable = { USA_army_army_speed_factor = 0.05 }
-			add_to_variable = { USA_army_initiative_factor = 0.1 }
-			custom_effect_tooltip = USA_The_Supreme_General_Staff_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_planning_speed = 0.15
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.15
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_speed_factor = 0.05
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_initiative_factor = 0.1
+				tooltip = initiative_factor_tt
+			}
 		}
 	}
 
@@ -19631,9 +19974,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus  USA_Immediate_mobilization"
-			add_to_variable = { USA_army_conscription = 0.02 }
-			add_to_variable = { USA_army_conscription_factor = 0.20 }
-			custom_effect_tooltip = USA_Immediate_mobilization_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_conscription = 0.02
+				tooltip = conscription_tt
+			}
+			add_to_variable = {
+				USA_army_conscription_factor = 0.20
+				tooltip = conscription_factor_tt
+			}
 			division_template = {
 				name = "Standard Division"
 				division_names_group = USA_INF_01
@@ -19713,10 +20066,23 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Strong_leadership_orders_first"
 			add_command_power = 50
-			add_to_variable = { USA_army_initiative_factor = 0.10 }
-			add_to_variable = { USA_army_breakthrough_factor = 0.05 }
-			add_to_variable = { USA_army_mobilization_speed = 0.20 }
-			custom_effect_tooltip = USA_Strong_leadership_orders_first_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_initiative_factor = 0.10
+				tooltip = initiative_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				USA_army_mobilization_speed = 0.20
+				tooltip = mobilization_speed_tt
+			}
 		}
 	}
 
@@ -19749,10 +20115,23 @@ focus_tree = {
 				uses = 2
 				category = signal_company_tech
 			}
-			add_to_variable = { USA_army_land_reinforce_rate = 0.05 }
-			add_to_variable = { USA_army_initiative_factor = 0.075 }
-			add_to_variable = { USA_army_org_loss_when_moving = -0.10 }
-			custom_effect_tooltip = USA_Honor_belief_and_the_sound_of_radio_waves_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_land_reinforce_rate = 0.05
+				tooltip = land_reinforce_rate_tt
+			}
+			add_to_variable = {
+				USA_army_initiative_factor = 0.075
+				tooltip = initiative_factor_tt
+			}
+			add_to_variable = {
+				USA_army_org_loss_when_moving = -0.10
+				tooltip = org_loss_when_moving_tt
+			}
 		}
 	}
 
@@ -19775,10 +20154,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Three_dimensional_modern_warfare"
-			add_to_variable = { USA_army_breakthrough_factor = 0.1 }
-			add_to_variable = { USA_army_attrition = -0.05 }
-			add_to_variable = { USA_army_max_planning = 0.05 }
-			custom_effect_tooltip = USA_Three_dimensional_modern_warfare_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.1
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				USA_army_attrition = -0.05
+				tooltip = attrition_tt
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.05
+				tooltip = max_planning_factor_tt
+			}
 			add_mastery_bonus = {
 				name = USA_Three_dimensional_modern_warfare
 				bonus = 0.1
@@ -19817,10 +20209,23 @@ focus_tree = {
 				add_dynamic_modifier = { modifier = USA_Army_Reform_CRG }
 			}
 			army_experience = 30
-			add_to_variable = { USA_army_conscription = 0.01 }
-			add_to_variable = { USA_army_army_morale_factor = 0.05 }
-			add_to_variable = { USA_army_army_attack_factor = 0.05 }
-			custom_effect_tooltip = USA_Craig_innovative_military_system_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Army_Reform_CRG
+			}
+			add_to_variable = {
+				USA_army_conscription = 0.01
+				tooltip = conscription_tt
+			}
+			add_to_variable = {
+				USA_army_army_morale_factor = 0.05
+				tooltip = army_morale_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
 			
 		}
 	}
@@ -19845,9 +20250,19 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Reform_the_General_Staff_system"
 			add_command_power = 20
-			add_to_variable = { USA_army_max_planning  = 0.05 }
-			add_to_variable = { USA_army_planning_speed  = 0.1 }
-			custom_effect_tooltip = USA_Reform_the_General_Staff_system_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.05
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				USA_army_planning_speed = 0.1
+				tooltip = planning_speed_factor_tt
+			}
 		}
 	}
 
@@ -19871,9 +20286,19 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Correct_theory_leads_to_victory"
 			army_experience = 35
-			add_to_variable = { USA_army_max_planning = 0.05 }
-			add_to_variable = { USA_army_army_attack_factor = 0.05 }
-			custom_effect_tooltip = USA_Correct_theory_leads_to_victory_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.05
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
 			add_mastery_bonus = {
 				name = USA_Correct_theory_leads_to_victory_1
 				bonus = 0.1
@@ -19921,11 +20346,27 @@ focus_tree = {
 				amount = 50
 			}
 
-			add_to_variable = { USA_army_supply_consumption_factor = -0.10 }
-			add_to_variable = { USA_army_out_of_supply_factor = -0.20 }
-			add_to_variable = { USA_army_pocket_penalty = -0.10 }
-			add_to_variable = { USA_army_army_strength_factor = 0.05 }
-			custom_effect_tooltip = USA_An_air_ground_coordinated_logistics_system_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				USA_army_out_of_supply_factor = -0.20
+				tooltip = out_of_supply_factor_tt
+			}
+			add_to_variable = {
+				USA_army_pocket_penalty = -0.10
+				tooltip = pocket_penalty_tt
+			}
+			add_to_variable = {
+				USA_army_army_strength_factor = 0.05
+				tooltip = USA_dynmod_army_strength_factor_tt
+			}
 			
 			
 		}
@@ -19974,12 +20415,31 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Flexible_organizational_system"
-			add_to_variable = { USA_army_planning_speed = 0.10 }
-			add_to_variable = { USA_army_recon_factor = 0.075 }
-			add_to_variable = { USA_army_army_org_factor = 0.10 }
-			add_to_variable = { USA_army_army_attack_factor = 0.05 }
-			add_to_variable = { USA_army_army_defence_factor = 0.05 }
-			custom_effect_tooltip = USA_Flexible_organizational_system_tt
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_planning_speed = 0.10
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_recon_factor = 0.075
+				tooltip = recon_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_defence_factor = 0.05
+				tooltip = army_defence_factor_tt
+			}
 		}
 	}
 
@@ -20193,8 +20653,19 @@ focus_tree = {
 				add_attack = 2
 				add_max_trait = 1
 			}
-			add_to_variable = { USA_army_army_armor_attack_factor = 0.10 }
-			add_to_variable = { USA_army_army_armor_defence_factor = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_armor_attack_factor = 0.10
+				tooltip = army_armor_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_armor_defence_factor = 0.10
+				tooltip = army_armor_defence_factor_tt
+			}
 			add_ideas = USA_Modern_Steel_Knight
 			if = {
 				limit = {
@@ -20227,10 +20698,27 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_rapid_offensive_leading_to_victory"
-			add_to_variable = { USA_army_army_speed_factor = 0.10 }
-			add_to_variable = { USA_army_breakthrough_factor = 0.10 }
-			add_to_variable = { USA_army_mechanized_attack_factor = 0.05 }
-			add_to_variable = { USA_army_mechanized_defence_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.10
+				tooltip = breakthrough_factor_tt
+			}
+			add_to_variable = {
+				USA_army_mechanized_attack_factor = 0.05
+				tooltip = mechanized_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_mechanized_defence_factor = 0.05
+				tooltip = USA_dynmod_mechanized_defence_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20272,9 +20760,23 @@ focus_tree = {
 				remove_idea = USA_Modern_Steel_Knight
 				add_idea = USA_Modern_Steel_Knight_2
 			}
-			add_to_variable = { USA_army_army_armor_attack_factor = 0.05 }
-			add_to_variable = { USA_army_army_armor_defence_factor = 0.05 }
-			add_to_variable = { USA_army_breakthrough_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_armor_attack_factor = 0.05
+				tooltip = army_armor_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_armor_defence_factor = 0.05
+				tooltip = army_armor_defence_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20502,9 +21004,23 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_McNair_Reform"
 			add_to_variable = { USA_reform_var = 1 }
-			add_to_variable = { USA_army_army_speed_factor = 0.10 }
-			add_to_variable = { USA_army_max_planning = 0.10 }
-			add_to_variable = { USA_army_experience_loss_factor = -0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_speed_factor = 0.10
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.10
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				USA_army_experience_loss_factor = -0.05
+				tooltip = experience_loss_factor_tt
+			}
 			USA_Lesley_J_McNair = {
 				add_skill_level = 1
 				add_attack = 1
@@ -20542,8 +21058,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Assemble_artillery_support"
-			add_to_variable = { USA_army_army_artillery_attack_factor = 0.15 }
-			add_to_variable = { USA_army_army_attack_speed_factor = 0.15 }			
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_artillery_attack_factor = 0.15
+				tooltip = army_artillery_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_speed_factor = 0.15
+				tooltip = army_attack_speed_factor_tt
+			}
 			add_tech_bonus = {
 				bonus = 1
 				uses = 2
@@ -20585,9 +21112,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Systematic_and_well_organized_training"
-			add_to_variable = { USA_army_training_time_factor = 0.10 }
-			add_to_variable = { USA_army_experience_gain_factor = 0.10 }
-			add_to_variable = { USA_army_combat_width_factor = -0.20 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_training_time_factor = 0.10
+				tooltip = training_time_factor_tt
+			}
+			add_to_variable = {
+				USA_army_experience_gain_factor = 0.10
+				tooltip = USA_dynmod_experience_gain_factor_tt
+			}
+			add_to_variable = {
+				USA_army_combat_width_factor = -0.20
+				tooltip = USA_dynmod_combat_width_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20686,10 +21227,27 @@ focus_tree = {
 				add_planning = 1
 				add_max_trait = 1
 			}
-			add_to_variable = { USA_army_army_org_factor = 0.10 }
-			add_to_variable = { USA_army_planning_speed = 0.10 }
-			add_to_variable = { USA_army_army_infantry_attack_factor = 0.05 }
-			add_to_variable = { USA_army_army_infantry_defence_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_org_factor = 0.10
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				USA_army_planning_speed = 0.10
+				tooltip = planning_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_infantry_attack_factor = 0.05
+				tooltip = army_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_infantry_defence_factor = 0.05
+				tooltip = army_infantry_defence_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20823,10 +21381,27 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Krueger_Reform"
 			add_to_variable = { USA_reform_var = 1 }
-			add_to_variable = { USA_army_army_infantry_attack_factor = 0.10 }
-			add_to_variable = { USA_army_army_infantry_defence_factor = 0.10 }
-			add_to_variable = { USA_army_motorized_attack_factor = 0.05 }
-			add_to_variable = { USA_army_army_artillery_attack_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_infantry_attack_factor = 0.10
+				tooltip = army_infantry_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_infantry_defence_factor = 0.10
+				tooltip = army_infantry_defence_factor_tt
+			}
+			add_to_variable = {
+				USA_army_motorized_attack_factor = 0.05
+				tooltip = motorized_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_artillery_attack_factor = 0.05
+				tooltip = army_artillery_attack_factor_tt
+			}
 			USA_Walter_Krueger = {
 				add_skill_level = 1				
 				add_attack = 1
@@ -20864,8 +21439,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Strategic_reconnaissance_and_firepower_assessment"
-			add_to_variable = { USA_army_recon_factor = 0.15 }
-			add_to_variable = { USA_army_breakthrough_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_recon_factor = 0.15
+				tooltip = recon_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20909,9 +21495,23 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
-			add_to_variable = { USA_army_army_org_factor  = 0.20 }
-			add_to_variable = { USA_army_army_attack_factor = 0.10 }
-			add_to_variable = { USA_army_army_defence_factor = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_org_factor = 0.20
+				tooltip = army_org_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_factor = 0.10
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_defence_factor = 0.10
+				tooltip = army_defence_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -20968,8 +21568,19 @@ focus_tree = {
 				add_planning = 2
 				add_max_trait = 1
 			}
-			add_to_variable = { USA_army_army_intel_factor = 0.20 }
-			add_to_variable = { USA_army_intel_network_gain_factor = 0.25 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_intel_factor = 0.20
+				tooltip = USA_dynmod_army_intel_factor_tt
+			}
+			add_to_variable = {
+				USA_army_intel_network_gain_factor = 0.25
+				tooltip = intel_network_gain_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21007,7 +21618,15 @@ focus_tree = {
 				add_planning = 1
 			}
 			add_ideas = USA_Traverse_the_foggy_path
-			add_to_variable = { USA_army_intel_network_gain_factor = 0.15 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_intel_network_gain_factor = 0.15
+				tooltip = intel_network_gain_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21048,9 +21667,23 @@ focus_tree = {
 			}
 			custom_effect_tooltip = tooltip_white_line
 			add_potential_special_forces_tree = yes
-			add_to_variable = { USA_army_special_forces_cap = 0.35 }
-			add_to_variable = { USA_army_special_forces_attack_factor = 0.2 }
-			add_to_variable = { USA_army_special_forces_defence_factor = 0.2 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_special_forces_cap = 0.35
+				tooltip = special_forces_cap_tt
+			}
+			add_to_variable = {
+				USA_army_special_forces_attack_factor = 0.2
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_special_forces_defence_factor = 0.2
+				tooltip = special_forces_defence_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21105,9 +21738,23 @@ focus_tree = {
 				add_max_trait = 1
 			}
 			custom_effect_tooltip = expanded_engineer_corps_tech_effect
-			add_to_variable = { USA_army_max_dig_in = 3 }
-			add_to_variable = { USA_army_max_dig_in_factor = 0.10 }
-			add_to_variable = { USA_army_dig_in_speed = 0.25 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_max_dig_in = 3
+				tooltip = max_dig_in_tt
+			}
+			add_to_variable = {
+				USA_army_max_dig_in_factor = 0.10
+				tooltip = max_dig_in_factor_tt
+			}
+			add_to_variable = {
+				USA_army_dig_in_speed = 0.25
+				tooltip = dig_in_speed_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21170,9 +21817,23 @@ focus_tree = {
 				add_logistics = 1
 				add_planning = 1
 			}
-			add_to_variable = { USA_army_supply_consumption_factor = -0.10 }
-			add_to_variable = { USA_army_attrition = -0.05 }
-			add_to_variable = { USA_army_pocket_penalty = -0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_supply_consumption_factor = -0.10
+				tooltip = supply_consumption_factor_tt
+			}
+			add_to_variable = {
+				USA_army_attrition = -0.05
+				tooltip = attrition_tt
+			}
+			add_to_variable = {
+				USA_army_pocket_penalty = -0.05
+				tooltip = pocket_penalty_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21250,9 +21911,23 @@ focus_tree = {
 				add_defense = 1
 				add_max_trait = 1
 			}
-			add_to_variable = { USA_army_army_attack_speed_factor = 0.15 }
-			add_to_variable = { USA_army_max_planning = 0.10 }
-			add_to_variable = { USA_army_breakthrough_factor  = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_attack_speed_factor = 0.15
+				tooltip = army_attack_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_max_planning = 0.10
+				tooltip = max_planning_factor_tt
+			}
+			add_to_variable = {
+				USA_army_breakthrough_factor = 0.05
+				tooltip = breakthrough_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21284,9 +21959,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Truscott_Trot"
-			add_to_variable = { USA_army_army_speed_factor = 0.15 }
-			add_to_variable = { USA_army_army_attack_factor = 0.05 }
-			add_to_variable = { USA_army_initiative_factor  = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_army_speed_factor = 0.15
+				tooltip = army_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_army_army_attack_factor = 0.05
+				tooltip = army_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_initiative_factor = 0.10
+				tooltip = initiative_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21325,9 +22014,23 @@ focus_tree = {
 			else = {
 				set_technology = { night_vision = 1 }
 			}
-			add_to_variable = { USA_army_special_forces_attack_factor = 0.1 }
-			add_to_variable = { USA_army_special_forces_defence_factor = 0.1 }
-			add_to_variable = { USA_army_land_night_attack = 0.25 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_army_reform_dynamic_name
+			}
+			add_to_variable = {
+				USA_army_special_forces_attack_factor = 0.1
+				tooltip = special_forces_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_army_special_forces_defence_factor = 0.1
+				tooltip = special_forces_defence_factor_tt
+			}
+			add_to_variable = {
+				USA_army_land_night_attack = 0.25
+				tooltip = land_night_attack_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_The_supreme_order_from_MacArthur
@@ -21468,10 +22171,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Joint_Action_Statement"
-			custom_effect_tooltip = USA_Joint_Action_Statement_tt
-			add_to_variable = { USA_air_mission_efficiency = 0.1 }
-			add_to_variable = { USA_army_bonus_air_superiority_factor = 0.05 }
-			add_to_variable = { USA_air_agility_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_mission_efficiency = 0.1
+				tooltip = air_mission_efficiency_tt
+			}
+			add_to_variable = {
+				USA_army_bonus_air_superiority_factor = 0.05
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+			add_to_variable = {
+				USA_air_agility_factor = 0.05
+				tooltip = air_agility_factor_tt
+			}
 		}
 	}
 
@@ -21582,14 +22298,21 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Elegant_air_fighter"
 			air_experience = 30
-			add_to_variable = { USA_air_mission_efficiency = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_mission_efficiency = 0.05
+				tooltip = air_mission_efficiency_tt
+			}
 			add_mastery_bonus = {
 				name = USA_Elegant_air_fighter
 				bonus = 0.1
 				days = 365
 				track = fighter_aircraft
 			}
-			custom_effect_tooltip = USA_Elegant_air_fighter_tt
 		}
 	}
 
@@ -21613,9 +22336,19 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Elite_training"			
 			add_political_power = -20
-			custom_effect_tooltip = USA_Elite_training_tt
-			add_to_variable = { USA_air_accidents = -0.15 }
-			add_to_variable = { USA_air_ace_generation_chance_factor = 0.15 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_accidents = -0.15
+				tooltip = USA_dynmod_air_accidents_tt
+			}
+			add_to_variable = {
+				USA_air_ace_generation_chance_factor = 0.15
+				tooltip = air_ace_generation_chance_factor_tt
+			}
 		}
 	}
 
@@ -21638,10 +22371,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_defensive_pursuit"
-			custom_effect_tooltip = USA_defensive_pursuit_tt
-			add_to_variable = { USA_air_mission_xp_gain_factor = 0.05 }
-			add_to_variable = { USA_air_superiority_bonus_in_combat = 0.10 }
-			add_to_variable = { USA_air_agility_factor = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_mission_xp_gain_factor = 0.05
+				tooltip = air_mission_xp_gain_factor_tt
+			}
+			add_to_variable = {
+				USA_air_superiority_bonus_in_combat = 0.10
+				tooltip = air_superiority_bonus_in_combat_tt
+			}
+			add_to_variable = {
+				USA_air_agility_factor = 0.10
+				tooltip = air_agility_factor_tt
+			}
 		}
 	}
 
@@ -21667,8 +22413,15 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Innovation_mobility"
-			custom_effect_tooltip = USA_Innovation_mobility_tt
-			add_to_variable = { USA_air_agility_factor = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_agility_factor = 0.1
+				tooltip = air_agility_factor_tt
+			}
 			add_mastery_bonus = {
 				name = USA_Innovation_mobility
 				bonus = 0.1
@@ -21697,9 +22450,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Four_finger_formation"
-			custom_effect_tooltip = USA_Four_finger_formation_tt
-			add_to_variable = { USA_air_escort_efficiency = 0.10 }
-			add_to_variable = { USA_air_superiority_efficiency = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_escort_efficiency = 0.10
+				tooltip = air_escort_efficiency_tt
+			}
+			add_to_variable = {
+				USA_air_superiority_efficiency = 0.10
+				tooltip = air_superiority_efficiency_tt
+			}
 		}
 	}
 
@@ -21722,10 +22485,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Large_scale_combat_squadron"
-			custom_effect_tooltip = USA_Large_scale_combat_squadron_tt
-			add_to_variable = { USA_air_superiority_efficiency = 0.10 }
-			add_to_variable = { USA_air_escort_efficiency = 0.10 }
-			add_to_variable = { USA_air_mission_efficiency = 0.075 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_superiority_efficiency = 0.10
+				tooltip = air_superiority_efficiency_tt
+			}
+			add_to_variable = {
+				USA_air_escort_efficiency = 0.10
+				tooltip = air_escort_efficiency_tt
+			}
+			add_to_variable = {
+				USA_air_mission_efficiency = 0.075
+				tooltip = air_mission_efficiency_tt
+			}
 		}
 	}
 
@@ -21784,8 +22560,15 @@ focus_tree = {
 			set_rule = {
 				can_generate_female_aces = yes
 			}
-			custom_effect_tooltip = USA_Rotation_of_combatants_tt
-			add_to_variable = { USA_air_ace_generation_chance_factor = 0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_ace_generation_chance_factor = 0.10
+				tooltip = air_ace_generation_chance_factor_tt
+			}
 		}
 	}
 
@@ -21813,14 +22596,21 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Supporters_coming_from_the_air"
 			air_experience = 30
-			add_to_variable = { USA_air_cas_efficiency = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_cas_efficiency = 0.05
+				tooltip = air_cas_efficiency_tt
+			}
 			add_mastery_bonus = {
 				name = USA_Supporters_coming_from_the_air
 				bonus = 0.1
 				days = 365
 				track = combat_support
 			}
-			custom_effect_tooltip = USA_Supporters_coming_from_the_air_tt
 		}
 	}
 
@@ -21889,8 +22679,15 @@ focus_tree = {
 					add_mio_funds = 1000
 				}
 			}
-			custom_effect_tooltip = USA_Supporters_coming_from_the_air_tt
-			add_to_variable = { USA_air_cas_efficiency = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_cas_efficiency = 0.05
+				tooltip = air_cas_efficiency_tt
+			}
 		}
 	}
 
@@ -21921,9 +22718,19 @@ focus_tree = {
 				uses = 1
 				category = electronics
 			}
-			custom_effect_tooltip = USA_Contact_us_immediately_tt
-			add_to_variable = { USA_air_cas_present_factor = 0.1 }
-			add_to_variable = { USA_air_cas_efficiency = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_cas_present_factor = 0.1
+				tooltip = air_cas_present_factor_tt
+			}
+			add_to_variable = {
+				USA_air_cas_efficiency = 0.1
+				tooltip = air_cas_efficiency_tt
+			}
 		}
 	}
 
@@ -21946,9 +22753,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Cut_off_the_transport_aorta"
-			custom_effect_tooltip = USA_Cut_off_the_transport_aorta_tt
-			add_to_variable = { USA_air_cas_present_factor = 0.05 }
-			add_to_variable = { USA_port_strike = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_cas_present_factor = 0.05
+				tooltip = air_cas_present_factor_tt
+			}
+			add_to_variable = {
+				USA_port_strike = 0.1
+				tooltip = port_strike_tt
+			}
 		}
 	}
 
@@ -21998,9 +22815,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_hunt_like_eagle"
-			custom_effect_tooltip = USA_hunt_like_eagle_tt
-			add_to_variable = { USA_ground_attack_factor = 0.1 }
-			add_to_variable = { USA_strike_aircraft_track_mastery_gain_factor = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_ground_attack_factor = 0.1
+				tooltip = ground_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_strike_aircraft_track_mastery_gain_factor = 0.1
+				tooltip = USA_dynmod_strike_aircraft_track_mastery_gain_factor_tt
+			}
 		}
 	}
 
@@ -22024,10 +22851,23 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Maneuvering_and_attacking_tactics"
 			add_war_support = 0.05
-			custom_effect_tooltip = USA_Maneuvering_and_attacking_tactics_tt
-			add_to_variable = { USA_air_superiority_bonus_in_combat = 0.1 }
-			add_to_variable = { USA_ground_attack_factor = 0.1 }
-			add_to_variable = { USA_air_cas_efficiency = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_superiority_bonus_in_combat = 0.1
+				tooltip = air_superiority_bonus_in_combat_tt
+			}
+			add_to_variable = {
+				USA_ground_attack_factor = 0.1
+				tooltip = ground_attack_factor_tt
+			}
+			add_to_variable = {
+				USA_air_cas_efficiency = 0.05
+				tooltip = air_cas_efficiency_tt
+			}
 		}
 	}
 
@@ -22055,14 +22895,21 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters"
 			air_experience = 30
-			add_to_variable = { USA_air_strategic_bomber_bombing_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_strategic_bomber_bombing_factor = 0.05
+				tooltip = air_strategic_bomber_bombing_factor_tt
+			}
 			add_mastery_bonus = {
 				name = USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters
 				bonus = 0.1
 				days = 365
 				track = heavy_aircraft
 			}
-			custom_effect_tooltip = USA_The_Destroyer_at_an_altitude_of_ten_thousand_meters_tt
 		}
 	}
 	
@@ -22085,9 +22932,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Global_Strategy"
-			custom_effect_tooltip = USA_Global_Strategy_tt
-			add_to_variable = { USA_strategic_bomb_visibility = 0.05 }
-			add_to_variable = { USA_air_range_factor = 0.15 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_strategic_bomb_visibility = 0.05
+				tooltip = USA_dynmod_strategic_bomb_visibility_tt
+			}
+			add_to_variable = {
+				USA_air_range_factor = 0.15
+				tooltip = air_range_factor_tt
+			}
 			if = {
 				limit = { NOT = { has_tech = paratroopers } }
 				set_technology = { paratroopers = 1 }
@@ -22159,9 +23016,19 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Leap_across_the_ocean"
-			custom_effect_tooltip = USA_Leap_across_the_ocean_tt
-			add_to_variable = { USA_air_mission_efficiency = 0.1 }
-			add_to_variable = { USA_air_range_factor = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_mission_efficiency = 0.1
+				tooltip = air_mission_efficiency_tt
+			}
+			add_to_variable = {
+				USA_air_range_factor = 0.1
+				tooltip = air_range_factor_tt
+			}
 		}
 	}
 
@@ -22213,10 +23080,23 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Daytime_bombing"
-			custom_effect_tooltip = USA_Daytime_bombing_tt
-			add_to_variable = { USA_strategic_bomb_visibility = -0.2 }
-			add_to_variable = { USA_air_strategic_bomber_bombing_factor = 0.25 }
-			add_to_variable = { USA_air_weather_penalty = -0.10 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_strategic_bomb_visibility = -0.2
+				tooltip = USA_dynmod_strategic_bomb_visibility_tt
+			}
+			add_to_variable = {
+				USA_air_strategic_bomber_bombing_factor = 0.25
+				tooltip = air_strategic_bomber_bombing_factor_tt
+			}
+			add_to_variable = {
+				USA_air_weather_penalty = -0.10
+				tooltip = air_weather_penalty_tt
+			}
 			
 		}
 	}
@@ -22241,9 +23121,19 @@ focus_tree = {
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Conquer_the_blue_sky"
 			add_war_support = 0.1
-			custom_effect_tooltip = USA_Conquer_the_blue_sky_tt
-			add_to_variable = { USA_army_bonus_air_superiority_factor = 0.075 }
-			add_to_variable = { USA_air_ace_generation_chance_factor = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_army_bonus_air_superiority_factor = 0.075
+				tooltip = army_bonus_air_superiority_factor_tt
+			}
+			add_to_variable = {
+				USA_air_ace_generation_chance_factor = 0.05
+				tooltip = air_ace_generation_chance_factor_tt
+			}
 		}
 	}
 
@@ -22266,9 +23156,16 @@ focus_tree = {
 		available_if_capitulated = yes
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Not_a_blade_of_grass_grows"
-			custom_effect_tooltip = USA_Not_a_blade_of_grass_grows_tt
 			add_to_variable = { UUSA_air_strategic_bomber_bombing_factor = 0.1 }
-			add_to_variable = { USA_air_mission_efficiency = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Air_Reform
+			}
+			add_to_variable = {
+				USA_air_mission_efficiency = 0.1
+				tooltip = air_mission_efficiency_tt
+			}
 		}
 	}
 
@@ -23656,9 +24553,19 @@ focus_tree = {
 					producer = USA
 				}
 			}
-			custom_effect_tooltip = USA_The_Friendship_Ship_of_Lucetania_tt
-			add_to_variable = { USA_Trade_in_Alliance_trade_opinion_factor = 0.15 }
-			add_to_variable = { USA_Trade_in_Allianc_factory_output = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_trade_opinion_factor = 0.15
+				tooltip = trade_opinion_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Allianc_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 
@@ -23679,11 +24586,32 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_Re-delineate_the_boundaries_of_oceans"
-			custom_effect_tooltip = USA_Re-delineate_the_boundaries_of_oceans_tt
-			add_to_variable = { USA_Trade_in_Alliance_speed_dockyard = 0.1 }
-			add_to_variable = { USA_Trade_in_Alliance_repair_speed = 0.15 }
-			add_to_variable = { USA_Trade_in_Alliance_navy_max_range = 0.15 }
-			add_to_variable = { USA_Trade_in_Alliance_sortie_efficiency = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_speed_dockyard = 0.1
+				tooltip = production_speed_dockyard_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_repair_speed = 0.15
+				tooltip = repair_speed_factor_tt
+			}
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Navy_Reform
+			}
+			add_to_variable = {
+				USA_navy_max_range_factor = 0.15
+				tooltip = navy_max_range_factor_tt
+			}
+			add_to_variable = {
+				USA_sortie_efficiency = 0.1
+				tooltip = sortie_efficiency_tt
+			}
 		}
 	}
 
@@ -23704,11 +24632,27 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_trade_window_with_Central_European_Union"
-			custom_effect_tooltip = USA_trade_window_with_Central_European_Union_tt
-			add_to_variable = { USA_Trade_in_Alliance_efficiency_max = 0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_consumer_goods = -0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_trade_opinion_factor = 0.1 }
-			add_to_variable = { USA_Trade_in_Alliance_lack_resource_penalty = -0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_efficiency_max = 0.05
+				tooltip = production_factory_max_efficiency_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_consumer_goods = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_trade_opinion_factor = 0.1
+				tooltip = trade_opinion_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_lack_resource_penalty = -0.1
+				tooltip = production_lack_of_resource_penalty_factor_tt
+			}
 		}
 	}
 
@@ -23734,15 +24678,37 @@ focus_tree = {
 				limit = {
 					country_exists = GEA
 				}
-				add_to_variable = { USA_Trade_in_Alliance_local_resources = 0.1 }
-				add_to_variable = { USA_Trade_in_Alliance_dockyard_output = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_Trade_in_Alliance_modifier
+				}
+				add_to_variable = {
+					USA_Trade_in_Alliance_local_resources = 0.1
+					tooltip = local_resources_factor_tt
+				}
+				add_to_variable = {
+					USA_Trade_in_Alliance_dockyard_output = 0.05
+					tooltip = industrial_capacity_dockyard_tt
+				}
 			}
 			if = {
 				limit = { 
 					country_exists = MAF
 				}
-				add_to_variable = { USA_Trade_in_Alliance_infrastructure_speed = 0.05 }
-				add_to_variable = { USA_Trade_in_Alliance_building_slots = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_Trade_in_Alliance_modifier
+				}
+				add_to_variable = {
+					USA_Trade_in_Alliance_infrastructure_speed = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_Trade_in_Alliance_building_slots = 0.05
+					tooltip = global_building_slots_factor_tt
+				}
 			}
 		}
 	}
@@ -23791,11 +24757,27 @@ focus_tree = {
 		y = 1
 		completion_reward = {
 			log = "[GetDateText]: [Root.GetName]: Focus USA_The_beauty_of_the_old_and_new_worlds"
-			custom_effect_tooltip = USA_The_beauty_of_the_old_and_new_worlds_tt
-			add_to_variable = { USA_Trade_in_Alliance_research_speed = 0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_trade_opinion_factor = 0.1 }
-			add_to_variable = { USA_Trade_in_Allianc_monthly_population = 0.1 }
-			add_to_variable = { USA_Trade_in_Alliance_efficiency_gain = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_research_speed = 0.05
+				tooltip = research_speed_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_trade_opinion_factor = 0.1
+				tooltip = trade_opinion_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Allianc_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_efficiency_gain = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
 		}
 	}
 

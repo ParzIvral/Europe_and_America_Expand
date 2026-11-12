@@ -11142,10 +11142,23 @@ USA_GER_decisions = { #中欧同盟事务
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Invest_UKR_FARM"
-			custom_effect_tooltip = USA_Invest_UKR_FARM_tt
-			add_to_variable = { USA_Trade_in_Alliance_political_power = -0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_consumer_goods = -0.05 }
-			add_to_variable = { USA_Trade_in_Allianc_monthly_population = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_consumer_goods = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Allianc_monthly_population = 0.1
+				tooltip = monthly_population_tt
+			}
 		}
 	}
 	USA_Invest_UKR_Industry = { #投资乌克兰工业
@@ -11168,10 +11181,23 @@ USA_GER_decisions = { #中欧同盟事务
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Invest_UKR_Industry"
-			custom_effect_tooltip = USA_Invest_UKR_Industry_tt
-			add_to_variable = { USA_Trade_in_Alliance_political_power = -0.05 }
-			add_to_variable = { USA_Trade_in_Allianc_factory_output = 0.03 }
-			add_to_variable = { USA_Trade_in_Allianc_civilian_speed = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Allianc_factory_output = 0.03
+				tooltip = industrial_capacity_factory_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Allianc_civilian_speed = 0.05
+				tooltip = production_speed_industrial_complex_factor_tt
+			}
 		}
 	}
 	USA_Invest_CON_Mine = { #开发刚果地区矿业
@@ -11197,10 +11223,23 @@ USA_GER_decisions = { #中欧同盟事务
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Invest_CON_Mine"
-			custom_effect_tooltip = USA_Invest_CON_Mine_tt
-			add_to_variable = { USA_Trade_in_Alliance_political_power = -0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_consumer_goods = 0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_local_resources = 0.1 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_local_resources = 0.1
+				tooltip = local_resources_factor_tt
+			}
 		}
 	}
 	USA_Invest_SWE = { #投资瑞典工业
@@ -11223,10 +11262,23 @@ USA_GER_decisions = { #中欧同盟事务
 
 		remove_effect = {
 			log = "[GetDateText]: [Root.GetName]: Decision remove USA_Invest_SWE"
-			custom_effect_tooltip = USA_Invest_SWE_tt
-			add_to_variable = { USA_Trade_in_Alliance_political_power = -0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_efficiency_gain = 0.05 }
-			add_to_variable = { USA_Trade_in_Alliance_research_speed = 0.03 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_Trade_in_Alliance_modifier
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_efficiency_gain = 0.05
+				tooltip = production_factory_efficiency_gain_factor_tt
+			}
+			add_to_variable = {
+				USA_Trade_in_Alliance_research_speed = 0.03
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 }
@@ -17157,11 +17209,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -25
 			FROM = {
 				add_stability = 0.05
-				custom_effect_tooltip = USA_reconstruct_british_public_services_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.06 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.05
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.04
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.06
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
 
 				add_to_variable = { var = USA_reconstructed_british_public_services_count value = 1 }
 			}
@@ -17206,13 +17274,35 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_reconstruct_british_coal_and_ports target: [From.GetName]"
 			FROM = {
 				add_stability = 0.03
-				custom_effect_tooltip = USA_reconstruct_british_coal_and_ports_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_consumer_goods_factor value = -0.08 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_factory_output_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.04
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.05
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_consumer_goods_factor = -0.08
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_factory_output_factor = 0.05
+					tooltip = industrial_capacity_factory_tt
+				}
 
 				add_to_variable = { var = USA_reconstructed_british_coal_and_ports_count value = 1 }
 			}
@@ -17251,12 +17341,31 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -10
 			FROM = {
 				add_stability = 0.05
-				custom_effect_tooltip = USA_britain_food_and_fuel_mission_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_consumer_goods_factor value = -0.08 }
-				add_to_variable = { var = USA_britain_reconstruction_factory_output_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.05
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_consumer_goods_factor = -0.08
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_factory_output_factor = 0.05
+					tooltip = industrial_capacity_factory_tt
+				}
 				
 				add_to_variable = { var = USA_britain_food_and_fuel_mission_count value = 1 }
 			}
@@ -17295,11 +17404,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_war_support = 0.05
-				custom_effect_tooltip = USA_britain_disarm_home_guard_cells_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.06 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.06
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.05
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 
 				add_to_variable = { var = USA_britain_disarmed_home_guard_cells_count value = 1 }
 			}
@@ -17339,11 +17464,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 15
 				add_stability = 0.05
-				custom_effect_tooltip = USA_britain_restore_county_administration_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.06 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.06
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -17380,13 +17521,35 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				custom_effect_tooltip = USA_britain_clear_transport_bottlenecks_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.07 }
-				add_to_variable = { var = USA_britain_reconstruction_consumer_goods_factor value = -0.13 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.15 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.07
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_consumer_goods_factor = -0.13
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.15
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 
 			}
 		}
@@ -17419,9 +17582,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_stability = -0.02
 				add_war_support = 0.05
-				custom_effect_tooltip = USA_britain_halifax_restore_constables_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 				add_popularity = {
 					ideology = authoritarian_democrat
 					popularity = 0.06
@@ -17458,10 +17631,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_stability = 0.03
 				add_political_power = 25
-				custom_effect_tooltip = USA_britain_halifax_secure_the_crown_lands_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
 
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
@@ -17505,11 +17691,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
 				add_popularity = { ideology = national_populist popularity = 0.02 }
-				custom_effect_tooltip = USA_britain_halifax_Anglo_Saxon_blood_ties_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.06 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.06
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -17542,9 +17744,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				army_experience = 20
 				add_war_support = 0.06
 				add_stability = -0.01
-				custom_effect_tooltip = USA_britain_lee_train_security_regiments_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.03 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
 				add_manpower = 2500
 			}
 		}
@@ -17577,11 +17789,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				air_experience = 15
 				add_war_support = 0.02
-				custom_effect_tooltip = USA_britain_lee_expand_airfields_tt
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_factory_output_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_factory_output_factor = 0.05
+					tooltip = industrial_capacity_factory_tt
+				}
 				random_owned_state = {
 					add_building_construction = { type = air_base level = 2 instant_build = yes }
 				}
@@ -17620,9 +17848,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				army_experience = 10
 				add_stability = 0.02
 				add_war_support = 0.02
-				custom_effect_tooltip = USA_britain_lee_secure_naval_stations_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.02 }
-				add_to_variable = { var = USA_britain_reconstruction_factory_output_factor value = 0.10 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.02
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_factory_output_factor = 0.10
+					tooltip = industrial_capacity_factory_tt
+				}
 			}
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
@@ -17665,9 +17903,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.03
 				add_political_power = 35
 				add_popularity = { ideology = market_liberal popularity = 0.06 }
-				custom_effect_tooltip = USA_britain_kennedy_reopen_city_clearing_houses_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -17701,10 +17949,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_stability = 0.02
 				add_war_support = 0.01
 				add_popularity = { ideology = market_liberal popularity = 0.04 }
-				custom_effect_tooltip = USA_britain_kennedy_atlantic_information_service_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_war_support_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.03 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_war_support_factor = 0.05
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.03
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -17737,11 +17998,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_political_power = 25
 				add_stability = -0.01
 				add_popularity = { ideology = market_liberal popularity = 0.04 }
-				custom_effect_tooltip = USA_britain_kennedy_invite_atlantic_investors_tt
-				add_to_variable = { var = USA_britain_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_political_power_factor value = 0.03 }
-				add_to_variable = { var = USA_britain_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_britain_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_britain_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_political_power_factor = 0.03
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_britain_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 			126 = {
 				add_extra_state_shared_building_slots = 1
@@ -17814,11 +18091,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -15
 			FROM = {
 				add_stability = 0.04
-				custom_effect_tooltip = USA_france_food_relief_and_public_order_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.04 }
-				add_to_variable = { var = USA_france_reconstruction_consumer_goods_factor value = -0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.05
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
+				}
 				add_to_variable = { var = USA_france_food_relief_and_public_order_count value = 1 }
 			}
 		}
@@ -17853,10 +18146,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_war_support = 0.04
 				add_stability = -0.01
-				custom_effect_tooltip = USA_france_disarm_communal_militias_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.06 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.06
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 				add_to_variable = { var = USA_france_disarm_communal_militias_count value = 1 }
 			}
 		}
@@ -17890,10 +18196,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				custom_effect_tooltip = USA_france_repair_railways_and_ports_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.06 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.06
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.04
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 				add_to_variable = { var = USA_france_repair_railways_and_ports_count value = 1 }
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
@@ -17930,10 +18249,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_france_rebuild_northern_industry target: [From.GetName]"
 			add_political_power = -30
 			FROM = {
-				custom_effect_tooltip = USA_france_rebuild_northern_industry_tt
-				add_to_variable = { var = USA_france_reconstruction_consumer_goods_factor value = -0.05 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.06 }
-				add_to_variable = { var = USA_france_reconstruction_factory_output_factor value = 0.06 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.06
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_factory_output_factor = 0.06
+					tooltip = industrial_capacity_factory_tt
+				}
 				add_to_variable = { var = USA_france_rebuild_northern_industry_count value = 1 }
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
@@ -17972,11 +18304,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 20
 				add_stability = 0.04
-				custom_effect_tooltip = USA_france_reopen_prefectures_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.06 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.04 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.10 }
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.06
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.04
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.10
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
 				set_country_flag = USA_france_reopened_prefectures
 			}
 		}
@@ -18011,14 +18359,39 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 25
 				add_stability = 0.03
-				custom_effect_tooltip = USA_france_credit_and_currency_board_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.10 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.14 }
-				add_to_variable = { var = USA_france_reconstruction_consumer_goods_factor value = -0.20 }
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.08 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_factory_output_factor value = 0.08 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.05
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.10
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.14
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_consumer_goods_factor = -0.20
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.08
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_factory_output_factor = 0.08
+					tooltip = industrial_capacity_factory_tt
+				}
 				set_country_flag = USA_france_credit_and_currency_board
 			}
 		}
@@ -18047,9 +18420,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_stability = 0.02
 				army_experience = 10
-				custom_effect_tooltip = USA_france_hilldring_civil_affairs_detachments_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.02 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18078,10 +18461,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_war_support = 0.04
 				add_stability = -0.01
-				custom_effect_tooltip = USA_france_hilldring_map_security_zones_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.02 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_factory_output_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.02
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_factory_output_factor = 0.05
+					tooltip = industrial_capacity_factory_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18108,10 +18504,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_france_hilldring_engineer_governance target: [From.GetName]"
 			add_political_power = -25
 			FROM = {
-				custom_effect_tooltip = USA_france_hilldring_engineer_governance_tt
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_factory_output_factor value = 0.10 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_factory_output_factor = 0.10
+					tooltip = industrial_capacity_factory_tt
+				}
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
@@ -18144,9 +18553,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 25
 				add_stability = 0.03
-				custom_effect_tooltip = USA_france_murphy_embassy_administration_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.05
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18174,11 +18593,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				custom_effect_tooltip = USA_france_murphy_atlantic_credits_tt
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.03
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18206,10 +18641,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
 				add_stability = 0.03
-				custom_effect_tooltip = USA_france_murphy_recruit_moderate_notables_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.06 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.02 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.06
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.02
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18238,10 +18686,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_war_support = 0.04
 				add_stability = 0.01
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
-				custom_effect_tooltip = USA_france_la_rocque_social_order_leagues_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18269,10 +18730,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_manpower = 1500
 				add_stability = 0.02
-				custom_effect_tooltip = USA_france_la_rocque_veteran_labor_bureaus_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_france_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18299,10 +18773,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_france_la_rocque_catholic_charity_networks target: [From.GetName]"
 			FROM = {
 				add_stability = 0.04
-				custom_effect_tooltip = USA_france_la_rocque_catholic_charity_networks_tt
-				add_to_variable = { var = USA_france_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_france_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_france_reconstruction_political_power_factor value = 0.06 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_france_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_france_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_france_reconstruction_political_power_factor = 0.06
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18364,11 +18851,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -15
 			FROM = {
 				add_stability = 0.04
-				custom_effect_tooltip = USA_germany_food_relief_and_denazification_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.04 }
-				add_to_variable = { var = USA_germany_reconstruction_consumer_goods_factor value = -0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.05
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
+				}
 				add_to_variable = { var = USA_germany_food_relief_and_denazification_count value = 1 }
 			}
 		}
@@ -18397,10 +18900,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_war_support = 0.04
 				add_stability = -0.01
-				custom_effect_tooltip = USA_germany_disarm_freikorps_cells_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.06 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.06
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 				add_to_variable = { var = USA_germany_disarm_freikorps_cells_count value = 1 }
 			}
 		}
@@ -18428,10 +18944,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				custom_effect_tooltip = USA_germany_repair_rhine_and_railways_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.06 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.06
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.04
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 				add_to_variable = { var = USA_germany_repair_rhine_and_railways_count value = 1 }
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
@@ -18462,10 +18991,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_germany_restore_ruhr_industry target: [From.GetName]"
 			add_political_power = -30
 			FROM = {
-				custom_effect_tooltip = USA_germany_restore_ruhr_industry_tt
-				add_to_variable = { var = USA_germany_reconstruction_consumer_goods_factor value = -0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.06 }
-				add_to_variable = { var = USA_germany_reconstruction_factory_output_factor value = 0.06 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_consumer_goods_factor = -0.05
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.06
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_factory_output_factor = 0.06
+					tooltip = industrial_capacity_factory_tt
+				}
 				add_to_variable = { var = USA_germany_restore_ruhr_industry_count value = 1 }
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
@@ -18498,11 +19040,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 20
 				add_stability = 0.04
-				custom_effect_tooltip = USA_germany_reopen_lander_administration_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.06 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.04 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.10 }
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.06
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.04
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.10
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
 				set_country_flag = USA_germany_reopened_lander_administration
 			}
 		}
@@ -18531,14 +19089,39 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 25
 				add_stability = 0.03
-				custom_effect_tooltip = USA_germany_credit_and_currency_board_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.10 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.14 }
-				add_to_variable = { var = USA_germany_reconstruction_consumer_goods_factor value = -0.20 }
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.08 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_factory_output_factor value = 0.08 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.05
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.10
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.14
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_consumer_goods_factor = -0.20
+					tooltip = consumer_goods_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.08
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_factory_output_factor = 0.08
+					tooltip = industrial_capacity_factory_tt
+				}
 				set_country_flag = USA_germany_credit_and_currency_board
 			}
 		}
@@ -18564,9 +19147,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_stability = 0.02
 				army_experience = 10
-				custom_effect_tooltip = USA_germany_mcnarney_military_governor_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.02 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18592,10 +19185,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_war_support = 0.04
 				add_stability = -0.01
-				custom_effect_tooltip = USA_germany_mcnarney_constabulary_zones_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.02 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_factory_output_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.02
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_factory_output_factor = 0.05
+					tooltip = industrial_capacity_factory_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18619,10 +19225,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_germany_mcnarney_arsenal_supervision target: [From.GetName]"
 			add_political_power = -25
 			FROM = {
-				custom_effect_tooltip = USA_germany_mcnarney_arsenal_supervision_tt
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_factory_output_factor value = 0.10 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_factory_output_factor = 0.10
+					tooltip = industrial_capacity_factory_tt
+				}
 				random_owned_state = {
 					add_extra_state_shared_building_slots = 1
 					add_building_construction = { type = infrastructure level = 1 instant_build = yes }
@@ -18652,9 +19271,19 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_political_power = 25
 				add_stability = 0.03
-				custom_effect_tooltip = USA_germany_mccloy_legal_mission_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.05
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18679,11 +19308,27 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			add_political_power = -20
 			FROM = {
 				add_stability = 0.02
-				custom_effect_tooltip = USA_germany_mccloy_atlantic_credits_tt
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.03
+					tooltip = political_power_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18708,10 +19353,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.05 }
 				add_stability = 0.03
-				custom_effect_tooltip = USA_germany_mccloy_recruit_moderate_ministers_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.06 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.02 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.06
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.02
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18737,10 +19395,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 				add_war_support = 0.04
 				add_stability = 0.01
 				add_popularity = { ideology = authoritarian_democrat popularity = 0.04 }
-				custom_effect_tooltip = USA_germany_goerdeler_municipal_order_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.04 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.04 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.04
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.03
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.04
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18765,10 +19436,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			FROM = {
 				add_manpower = 1500
 				add_stability = 0.02
-				custom_effect_tooltip = USA_germany_goerdeler_christian_labor_bureaus_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_infrastructure_speed_factor value = 0.05 }
-				add_to_variable = { var = USA_germany_reconstruction_industrial_speed_factor value = 0.05 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_infrastructure_speed_factor = 0.05
+					tooltip = production_speed_infrastructure_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_industrial_speed_factor = 0.05
+					tooltip = production_speed_industrial_complex_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }
@@ -18792,10 +19476,23 @@ USA_european_reconstruction_decisions = { #广布吾等善意
 			log = "[GetDateText]: [Root.GetName]: Decision complete USA_germany_goerdeler_protestant_relief_networks target: [From.GetName]"
 			FROM = {
 				add_stability = 0.04
-				custom_effect_tooltip = USA_germany_goerdeler_protestant_relief_networks_tt
-				add_to_variable = { var = USA_germany_reconstruction_stability_factor value = 0.03 }
-				add_to_variable = { var = USA_germany_reconstruction_war_support_factor value = 0.02 }
-				add_to_variable = { var = USA_germany_reconstruction_political_power_factor value = 0.06 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_germany_reconstruction_modifier
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_stability_factor = 0.03
+					tooltip = stability_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_war_support_factor = 0.02
+					tooltip = war_support_factor_tt
+				}
+				add_to_variable = {
+					USA_germany_reconstruction_political_power_factor = 0.06
+					tooltip = political_power_factor_tt
+				}
 			}
 		}
 		ai_will_do = { factor = 100 }

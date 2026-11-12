@@ -600,21 +600,54 @@
 			set_variable = { USA_mac_army_loyalty = 1 }
 		}
 		else = {
-			add_to_variable = { USA_junta_political_power = 0.005 }
-			add_to_variable = { USA_junta_stability = 0.005 }
-			add_to_variable = { USA_junta_war_support = 0.005 }
-			add_to_variable = { USA_junta_military_speed = 0.0075 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_junta_modifier
+			}
+			add_to_variable = {
+				USA_junta_political_power = 0.005
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_stability = 0.005
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_war_support = 0.005
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_military_speed = 0.0075
+				tooltip = production_speed_arms_factory_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_Call_on_patriotic_youth
 				}
-				add_to_variable = { USA_junta_training_time_army_factor = -0.0075 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_junta_modifier
+				}
+				add_to_variable = {
+					USA_junta_training_time_army_factor = -0.0075
+					tooltip = USA_dynmod_training_time_army_factor_tt
+				}
 			}
 			if = {
 				limit = {
 					has_completed_focus = USA_Citizen_military_education
 				}
-				add_to_variable = { USA_junta_army_org_factor = 0.005 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_junta_modifier
+				}
+				add_to_variable = {
+					USA_junta_army_org_factor = 0.005
+					tooltip = army_org_factor_tt
+				}
 			}
 
 		}
@@ -638,21 +671,54 @@
 			set_variable = { USA_mac_army_loyalty = 0 }
 		}
 		else = {
-			add_to_variable = { USA_junta_political_power = -0.005 }
-			add_to_variable = { USA_junta_stability = -0.005 }
-			add_to_variable = { USA_junta_war_support = -0.005 }
-			add_to_variable = { USA_junta_military_speed = -0.0075 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_junta_modifier
+			}
+			add_to_variable = {
+				USA_junta_political_power = -0.005
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_stability = -0.005
+				tooltip = stability_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_war_support = -0.005
+				tooltip = war_support_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_military_speed = -0.0075
+				tooltip = production_speed_arms_factory_factor_tt
+			}
 			if = {
 				limit = {
 					has_completed_focus = USA_Call_on_patriotic_youth
 				}
-				add_to_variable = { USA_junta_training_time_army_factor = 0.0075 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_junta_modifier
+				}
+				add_to_variable = {
+					USA_junta_training_time_army_factor = 0.0075
+					tooltip = USA_dynmod_training_time_army_factor_tt
+				}
 			}
 			if = {
 				limit = {
 					has_completed_focus = USA_Citizen_military_education
 				}
-				add_to_variable = { USA_junta_army_org_factor = -0.005 }
+				custom_effect_tooltip = tooltip_white_line
+				custom_effect_tooltip = {
+					localization_key = tooltip_modify_dynmod
+					DYNMOD = USA_junta_modifier
+				}
+				add_to_variable = {
+					USA_junta_army_org_factor = -0.005
+					tooltip = army_org_factor_tt
+				}
 			}
 		}
 		add_to_variable = {
@@ -675,8 +741,19 @@
 			set_variable = { USA_mac_army_loyalty = 0 }
 		}
 		else = {
-			add_to_variable = { USA_junta_consumer_goods = -0.02 }
-			add_to_variable = { USA_junta_research_speed = 0.01 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_junta_modifier
+			}
+			add_to_variable = {
+				USA_junta_consumer_goods = -0.02
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_research_speed = 0.01
+				tooltip = research_speed_factor_tt
+			}
 		}
 		add_to_variable = {
 			var = usa_gui_change
@@ -698,8 +775,19 @@
 			set_variable = { USA_mac_army_loyalty = 1 }
 		}
 		else = {
-			add_to_variable = { USA_junta_consumer_goods = 0.02 }
-			add_to_variable = { USA_junta_research_speed = -0.01 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_junta_modifier
+			}
+			add_to_variable = {
+				USA_junta_consumer_goods = 0.02
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_junta_research_speed = -0.01
+				tooltip = research_speed_factor_tt
+			}
 		}
 		add_to_variable = {
 			var = usa_gui_change
@@ -710,13 +798,39 @@
 	USA_syndicalist_decrease_5 = {
 		custom_effect_tooltip = USA_syndicalist_decrease_5_tt
 		add_to_variable = { USA_Syndicalist_Resistance = -5 }
-		add_to_variable = { USA_syndicalist_stability = 0.0025 }
-		add_to_variable = { USA_syndicalist_war_support = 0.0025 }
-		add_to_variable = { USA_syndicalist_political_power_gain = 0.005 }
-		add_to_variable = { USA_syndicalist_factory_output = 0.005 }
-		add_to_variable = { USA_syndicalist_totalist_drift = -0.0025 }
-		add_to_variable = { USA_syndicalist_syndicalist_drift = -0.0025 }
-		add_to_variable = { USA_syndicalist_radical_socialist_drift = -0.0025 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_syndicalist_modifier
+		}
+		add_to_variable = {
+			USA_syndicalist_stability = 0.0025
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_war_support = 0.0025
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_political_power_gain = 0.005
+			tooltip = political_power_gain_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_factory_output = 0.005
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_totalist_drift = -0.0025
+			tooltip = USA_dynmod_totalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_syndicalist_drift = -0.0025
+			tooltip = USA_dynmod_syndicalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_radical_socialist_drift = -0.0025
+			tooltip = USA_dynmod_radical_socialist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -726,13 +840,39 @@
 	USA_syndicalist_decrease_10 = {
 		custom_effect_tooltip = USA_syndicalist_decrease_10_tt
 		add_to_variable = { USA_Syndicalist_Resistance = -10 }
-		add_to_variable = { USA_syndicalist_stability = 0.005 }
-		add_to_variable = { USA_syndicalist_war_support = 0.005 }
-		add_to_variable = { USA_syndicalist_political_power_gain = 0.01 }
-		add_to_variable = { USA_syndicalist_factory_output = 0.01 }
-		add_to_variable = { USA_syndicalist_totalist_drift = -0.005 }
-		add_to_variable = { USA_syndicalist_syndicalist_drift = -0.005 }
-		add_to_variable = { USA_syndicalist_radical_socialist_drift = -0.005 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_syndicalist_modifier
+		}
+		add_to_variable = {
+			USA_syndicalist_stability = 0.005
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_war_support = 0.005
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_political_power_gain = 0.01
+			tooltip = political_power_gain_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_factory_output = 0.01
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_totalist_drift = -0.005
+			tooltip = USA_dynmod_totalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_syndicalist_drift = -0.005
+			tooltip = USA_dynmod_syndicalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_radical_socialist_drift = -0.005
+			tooltip = USA_dynmod_radical_socialist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -742,13 +882,39 @@
 	USA_syndicalist_decrease_15 = {
 		custom_effect_tooltip = USA_syndicalist_decrease_15_tt
 		add_to_variable = { USA_Syndicalist_Resistance = -15 }
-		add_to_variable = { USA_syndicalist_stability = 0.0075 }
-		add_to_variable = { USA_syndicalist_war_support = 0.0075 }
-		add_to_variable = { USA_syndicalist_political_power_gain = 0.015 }
-		add_to_variable = { USA_syndicalist_factory_output = 0.015 }
-		add_to_variable = { USA_syndicalist_totalist_drift = -0.0075 }
-		add_to_variable = { USA_syndicalist_syndicalist_drift = -0.0075 }
-		add_to_variable = { USA_syndicalist_radical_socialist_drift = -0.0075 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_syndicalist_modifier
+		}
+		add_to_variable = {
+			USA_syndicalist_stability = 0.0075
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_war_support = 0.0075
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_political_power_gain = 0.015
+			tooltip = political_power_gain_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_factory_output = 0.015
+			tooltip = industrial_capacity_factory_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_totalist_drift = -0.0075
+			tooltip = USA_dynmod_totalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_syndicalist_drift = -0.0075
+			tooltip = USA_dynmod_syndicalist_drift_tt
+		}
+		add_to_variable = {
+			USA_syndicalist_radical_socialist_drift = -0.0075
+			tooltip = USA_dynmod_radical_socialist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -758,11 +924,31 @@
 	USA_minutemen_decrease_5 = {
 		custom_effect_tooltip = USA_minutemen_decrease_5_tt
 		add_to_variable = { USA_Minutemen_Resistance = -5 }
-		add_to_variable = { USA_minutemen_stability = 0.0025 }
-		add_to_variable = { USA_minutemen_war_support = 0.0025 }
-		add_to_variable = { USA_minutemen_construction_speed = 0.005 }
-		add_to_variable = { USA_minutemen_local_resources = 0.005 }
-		add_to_variable = { USA_minutemen_authoritarian_democrat_drift = -0.0025 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_minutemen_modifier
+		}
+		add_to_variable = {
+			USA_minutemen_stability = 0.0025
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_war_support = 0.0025
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_construction_speed = 0.005
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_local_resources = 0.005
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_authoritarian_democrat_drift = -0.0025
+			tooltip = USA_dynmod_authoritarian_democrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -772,11 +958,31 @@
 	USA_minutemen_decrease_10 = {
 		custom_effect_tooltip = USA_minutemen_decrease_10_tt
 		add_to_variable = { USA_Minutemen_Resistance = -10 }
-		add_to_variable = { USA_minutemen_stability = 0.005 }
-		add_to_variable = { USA_minutemen_war_support = 0.005 }
-		add_to_variable = { USA_minutemen_construction_speed = 0.01 }
-		add_to_variable = { USA_minutemen_local_resources = 0.01 }
-		add_to_variable = { USA_minutemen_authoritarian_democrat_drift = -0.005 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_minutemen_modifier
+		}
+		add_to_variable = {
+			USA_minutemen_stability = 0.005
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_war_support = 0.005
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_construction_speed = 0.01
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_local_resources = 0.01
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_authoritarian_democrat_drift = -0.005
+			tooltip = USA_dynmod_authoritarian_democrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -787,11 +993,31 @@
 	USA_minutemen_decrease_15 = {
 		custom_effect_tooltip = USA_minutemen_decrease_15_tt
 		add_to_variable = { USA_Minutemen_Resistance = -15 }
-		add_to_variable = { USA_minutemen_stability = 0.0075 }
-		add_to_variable = { USA_minutemen_war_support = 0.0075 }
-		add_to_variable = { USA_minutemen_construction_speed = 0.015 }
-		add_to_variable = { USA_minutemen_local_resources = 0.015 }
-		add_to_variable = { USA_minutemen_authoritarian_democrat_drift = -0.0075 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_minutemen_modifier
+		}
+		add_to_variable = {
+			USA_minutemen_stability = 0.0075
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_war_support = 0.0075
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_construction_speed = 0.015
+			tooltip = production_speed_buildings_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_local_resources = 0.015
+			tooltip = local_resources_factor_tt
+		}
+		add_to_variable = {
+			USA_minutemen_authoritarian_democrat_drift = -0.0075
+			tooltip = USA_dynmod_authoritarian_democrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -801,11 +1027,31 @@
 	USA_kkk_decrease_5 = {
 		custom_effect_tooltip = USA_kkk_decrease_5_tt
 		add_to_variable = { USA_Klan_Resistance = -5 }
-		add_to_variable = { USA_kkk_stability = 0.0025 }
-		add_to_variable = { USA_kkk_war_support = 0.0025 }
-		add_to_variable = { USA_kkk_monthly_population = 0.005 }
-		add_to_variable = { USA_kkk_conscription_factor = 0.005 }
-		add_to_variable = { USA_kkk_national_populist_drift = -0.0025 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_kkk_modifier
+		}
+		add_to_variable = {
+			USA_kkk_stability = 0.0025
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_war_support = 0.0025
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_monthly_population = 0.005
+			tooltip = monthly_population_tt
+		}
+		add_to_variable = {
+			USA_kkk_conscription_factor = 0.005
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_national_populist_drift = -0.0025
+			tooltip = USA_dynmod_national_populist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -815,11 +1061,31 @@
 	USA_kkk_decrease_10 = {
 		custom_effect_tooltip = USA_kkk_decrease_10_tt
 		add_to_variable = { USA_Klan_Resistance = -10 }
-		add_to_variable = { USA_kkk_stability = 0.005 }
-		add_to_variable = { USA_kkk_war_support = 0.005 }
-		add_to_variable = { USA_kkk_monthly_population = 0.01 }
-		add_to_variable = { USA_kkk_conscription_factor = 0.01 }
-		add_to_variable = { USA_kkk_national_populist_drift = -0.005 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_kkk_modifier
+		}
+		add_to_variable = {
+			USA_kkk_stability = 0.005
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_war_support = 0.005
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_monthly_population = 0.01
+			tooltip = monthly_population_tt
+		}
+		add_to_variable = {
+			USA_kkk_conscription_factor = 0.01
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_national_populist_drift = -0.005
+			tooltip = USA_dynmod_national_populist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -829,11 +1095,31 @@
 	USA_kkk_decrease_15 = {
 		custom_effect_tooltip = USA_kkk_decrease_15_tt
 		add_to_variable = { USA_Klan_Resistance = -15 }
-		add_to_variable = { USA_kkk_stability = 0.0075 }
-		add_to_variable = { USA_kkk_war_support = 0.0075 }
-		add_to_variable = { USA_kkk_monthly_population = 0.015 }
-		add_to_variable = { USA_kkk_conscription_factor = 0.015 }
-		add_to_variable = { USA_kkk_national_populist_drift = -0.0075 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_kkk_modifier
+		}
+		add_to_variable = {
+			USA_kkk_stability = 0.0075
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_war_support = 0.0075
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_monthly_population = 0.015
+			tooltip = monthly_population_tt
+		}
+		add_to_variable = {
+			USA_kkk_conscription_factor = 0.015
+			tooltip = conscription_factor_tt
+		}
+		add_to_variable = {
+			USA_kkk_national_populist_drift = -0.0075
+			tooltip = USA_dynmod_national_populist_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -843,11 +1129,31 @@
 	USA_black_legion_decrease_5 = {
 		custom_effect_tooltip = USA_black_legion_decrease_5_tt
 		add_to_variable = { USA_Black_legion_Resistance = -5 }
-		add_to_variable = { USA_black_legion_stability = 0.0025 }
-		add_to_variable = { USA_black_legion_war_support = 0.0025 }
-		add_to_variable = { USA_black_legion_efficiency_gain = 0.005 }
-		add_to_variable = { USA_black_legion_efficiency_max = 0.005 }
-		add_to_variable = { USA_black_legion_paternal_autocrat_drift = -0.0025 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_black_legion_modifier
+		}
+		add_to_variable = {
+			USA_black_legion_stability = 0.0025
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_war_support = 0.0025
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_gain = 0.005
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_max = 0.005
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_paternal_autocrat_drift = -0.0025
+			tooltip = USA_dynmod_paternal_autocrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -857,11 +1163,31 @@
 	USA_black_legion_decrease_10 = {
 		custom_effect_tooltip = USA_black_legion_decrease_10_tt
 		add_to_variable = { USA_Black_legion_Resistance = -10 }
-		add_to_variable = { USA_black_legion_stability = 0.005 }
-		add_to_variable = { USA_black_legion_war_support = 0.005 }
-		add_to_variable = { USA_black_legion_efficiency_gain = 0.01 }
-		add_to_variable = { USA_black_legion_efficiency_max = 0.01 }
-		add_to_variable = { USA_black_legion_paternal_autocrat_drift = -0.005 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_black_legion_modifier
+		}
+		add_to_variable = {
+			USA_black_legion_stability = 0.005
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_war_support = 0.005
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_gain = 0.01
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_max = 0.01
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_paternal_autocrat_drift = -0.005
+			tooltip = USA_dynmod_paternal_autocrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1
@@ -871,11 +1197,31 @@
 	USA_black_legion_decrease_15 = {
 		custom_effect_tooltip = USA_black_legion_decrease_15_tt
 		add_to_variable = { USA_Black_legion_Resistance = -15 }
-		add_to_variable = { USA_black_legion_stability = 0.0075 }
-		add_to_variable = { USA_black_legion_war_support = 0.0075 }
-		add_to_variable = { USA_black_legion_efficiency_gain = 0.015 }
-		add_to_variable = { USA_black_legion_efficiency_max = 0.015 }
-		add_to_variable = { USA_black_legion_paternal_autocrat_drift = -0.0075 }
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = {
+			localization_key = tooltip_modify_dynmod
+			DYNMOD = USA_black_legion_modifier
+		}
+		add_to_variable = {
+			USA_black_legion_stability = 0.0075
+			tooltip = stability_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_war_support = 0.0075
+			tooltip = war_support_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_gain = 0.015
+			tooltip = production_factory_efficiency_gain_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_efficiency_max = 0.015
+			tooltip = production_factory_max_efficiency_factor_tt
+		}
+		add_to_variable = {
+			USA_black_legion_paternal_autocrat_drift = -0.0075
+			tooltip = USA_dynmod_paternal_autocrat_drift_tt
+		}
 		add_to_variable = {
 			var = usa_gui_change
 			value = 1

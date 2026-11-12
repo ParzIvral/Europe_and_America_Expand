@@ -33079,16 +33079,36 @@ add_namespace = usanew
 			name = USA.1004.a
 			add_political_power = 30
 			increase_ruling_party_popularity_by_3 = yes
-			custom_effect_tooltip = USA_Let_every_worker_drive_a_Ford_tt
-			add_to_variable = { USA_NRA_consumer_goods= 0.05 }
-			add_to_variable = { USA_NRA_stability = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = 0.05
+				tooltip = consumer_goods_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_stability = 0.05
+				tooltip = stability_factor_tt
+			}
 		}
 
 		option = { #正值困难时期，难道他们就不能无私奉献一些？
 			name = USA.1004.b
-			custom_effect_tooltip = USA_Support_Hnery_Ford_tt_3
-			add_to_variable = { USA_NRA_political_power = -0.05 }
-			add_to_variable = { USA_NRA_factory_output = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_political_power = -0.05
+				tooltip = political_power_factor_tt
+			}
+			add_to_variable = {
+				USA_NRA_factory_output = 0.05
+				tooltip = industrial_capacity_factory_tt
+			}
 		}
 	}
 
@@ -33435,14 +33455,28 @@ add_namespace = usanew
 
 		option = { #肯尼迪家族扎根政界多年，堪为助力
 			name = USA.1020.a
-			custom_effect_tooltip = USA_NEE_event_1_tt
-			add_to_variable = { USA_NRA_political_power = 0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_political_power = 0.05
+				tooltip = political_power_factor_tt
+			}
 		}
 
 		option = { #阿斯特家族跟商界关系密切，与他们合作
 			name = USA.1020.b
-			custom_effect_tooltip = USA_NEE_event_2_tt
-			add_to_variable = { USA_NRA_consumer_goods = -0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_consumer_goods = -0.05
+				tooltip = consumer_goods_factor_tt
+			}
 		}
 
 		option = { #范德比尔特家族的社会影响力巨大，有助于我们
@@ -33463,14 +33497,28 @@ add_namespace = usanew
 		option = { #更青睐常青藤联盟的大学
 			name = USA.1021.a
 			add_political_power = 35
-			custom_effect_tooltip = USA_NEE_event_4_tt
-			add_to_variable = { USA_NRA_research_speed = -0.025 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_research_speed = -0.025
+				tooltip = research_speed_factor_tt
+			}
 		}
 
 		option = { #还是帮帮那些更年轻的大学吧
 			name = USA.1021.b
-			custom_effect_tooltip = USA_NEE_event_3_tt
-			add_to_variable = { USA_NRA_research_speed = -0.05 }
+			custom_effect_tooltip = tooltip_white_line
+			custom_effect_tooltip = {
+				localization_key = tooltip_modify_dynmod
+				DYNMOD = USA_economic_dynamic_name
+			}
+			add_to_variable = {
+				USA_NRA_research_speed = -0.05
+				tooltip = research_speed_factor_tt
+			}
 		}
 	}
 

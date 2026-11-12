@@ -1,5 +1,14 @@
 #美国	
 	defined_text = {
+		name = GetUSAArmyReformName
+		text = {
+			trigger = { has_dynamic_modifier = USA_Army_Reform_CRG }
+			localization_key = USA_Army_Reform_CRG
+		}
+		text = { localization_key = USA_Army_Reform_MAC }
+	}
+
+	defined_text = {
 		name = tech_extensive_reconnaissance_effect
 		text = {
 			localization_key = tech_effect|tech_extensive_reconnaissance
